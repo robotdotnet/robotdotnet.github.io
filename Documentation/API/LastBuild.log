@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="2015.5.2.0" projectFile="C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Sandcastle.shfbproj" started="6/16/2015 6:14:11 PM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+Locating components in the following folder(s):
+   C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2015.5.2.0
+Copyright &#169; 2006-2015, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\NetworkTablesDotNet.dll
+    Found assembly &#39;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\NetworkTablesDotNet.dll&#39;
+Source: C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\NetworkTablesDotNet.xml
+Source: C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.dll
+    Found assembly &#39;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.dll&#39;
+Source: C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.Extras.dll
+    Found assembly &#39;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.Extras.dll&#39;
+Source: C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.Extras.xml
+Source: C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.xml
+
+Copying XML comments files
+    C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\NetworkTablesDotNet.xml -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\NetworkTablesDotNet.xml
+    C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.Extras.xml -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\WPILib.Extras.xml
+    C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\sources\WPILib.xml -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\WPILib.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0050
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0180
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 6/16/2015 6:14:11 PM.
+Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Loaded 3 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 18 namespaces, 190 types, and 1655 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.59
+    Last step completed in 00:00:00.6610
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 6/16/2015 6:14:12 PM.
+Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.ungrouped&quot;.
+  AddNamespaceGroups (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Added 3 namespace group entries
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+    Unique name M_NetworkTablesDotNet_NetworkTables_NetworkTable_AddTableListener_1 generated for M:NetworkTablesDotNet.NetworkTables.NetworkTable.AddTableListener(NetworkTablesDotNet.Tables.ITableListener,System.Boolean)
+    Unique name M_NetworkTablesDotNet_NetworkTables_NetworkTable_AddTableListener_2 generated for M:NetworkTablesDotNet.NetworkTables.NetworkTable.AddTableListener(System.String,NetworkTablesDotNet.Tables.ITableListener,System.Boolean)
+    Unique name M_NetworkTablesDotNet_NetworkTables_NetworkTable_GetBoolean_1 generated for M:NetworkTablesDotNet.NetworkTables.NetworkTable.GetBoolean(System.String,System.Boolean)
+    Unique name M_NetworkTablesDotNet_NetworkTables_NetworkTable_GetNumber_1 generated for M:NetworkTablesDotNet.NetworkTables.NetworkTable.GetNumber(System.String,System.Double)
+    Unique name M_NetworkTablesDotNet_NetworkTables_NetworkTable_GetString_1 generated for M:NetworkTablesDotNet.NetworkTables.NetworkTable.GetString(System.String,System.String)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_AbstractNetworkTableEntryStore_GetEntry_1 generated for M:NetworkTablesDotNet.NetworkTables2.AbstractNetworkTableEntryStore.GetEntry(System.String)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_AbstractNetworkTableEntryStore_PutOutgoing_1 generated for M:NetworkTablesDotNet.NetworkTables2.AbstractNetworkTableEntryStore.PutOutgoing(System.String,NetworkTablesDotNet.NetworkTables2.Type.NetworkTableEntryType,System.Object)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_NetworkTableEntry__ctor_1 generated for M:NetworkTablesDotNet.NetworkTables2.NetworkTableEntry.#ctor(System.String,NetworkTablesDotNet.NetworkTables2.Type.NetworkTableEntryType,System.Object)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_NetworkTableEntry_ForcePut_1 generated for M:NetworkTablesDotNet.NetworkTables2.NetworkTableEntry.ForcePut(System.Char,System.Object)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_NetworkTableNode_PutValue_1 generated for M:NetworkTablesDotNet.NetworkTables2.NetworkTableNode.PutValue(System.String,System.Object)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_TableKeyExistsWithDifferentTypeException__ctor_1 generated for M:NetworkTablesDotNet.NetworkTables2.TableKeyExistsWithDifferentTypeException.#ctor(System.String,NetworkTablesDotNet.NetworkTables2.Type.NetworkTableEntryType,System.String)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_Util_List__ctor_1 generated for M:NetworkTablesDotNet.NetworkTables2.Util.List.#ctor(System.Int32)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_Util_List_Remove_1 generated for M:NetworkTablesDotNet.NetworkTables2.Util.List.Remove(System.Object)
+    Unique name M_NetworkTablesDotNet_NetworkTables2_Util_ResizeableArrayObject__ctor_1 generated for M:NetworkTablesDotNet.NetworkTables2.Util.ResizeableArrayObject.#ctor(System.Int32)
+    Unique name M_NetworkTablesDotNet_Tables_ITable_AddTableListener_1 generated for M:NetworkTablesDotNet.Tables.ITable.AddTableListener(NetworkTablesDotNet.Tables.ITableListener,System.Boolean)
+    Unique name M_NetworkTablesDotNet_Tables_ITable_AddTableListener_2 generated for M:NetworkTablesDotNet.Tables.ITable.AddTableListener(System.String,NetworkTablesDotNet.Tables.ITableListener,System.Boolean)
+    Unique name M_NetworkTablesDotNet_Tables_ITable_GetBoolean_1 generated for M:NetworkTablesDotNet.Tables.ITable.GetBoolean(System.String,System.Boolean)
+    Unique name M_NetworkTablesDotNet_Tables_ITable_GetNumber_1 generated for M:NetworkTablesDotNet.Tables.ITable.GetNumber(System.String,System.Double)
+    Unique name M_NetworkTablesDotNet_Tables_ITable_GetString_1 generated for M:NetworkTablesDotNet.Tables.ITable.GetString(System.String,System.String)
+    Unique name M_WPILib_AnalogAccelerometer__ctor_1 generated for M:WPILib.AnalogAccelerometer.#ctor(WPILib.AnalogInput)
+    Unique name M_WPILib_AnalogPotentiometer__ctor_1 generated for M:WPILib.AnalogPotentiometer.#ctor(System.Int32,System.Double)
+    Unique name M_WPILib_AnalogPotentiometer__ctor_2 generated for M:WPILib.AnalogPotentiometer.#ctor(System.Int32,System.Double,System.Double)
+    Unique name M_WPILib_AnalogPotentiometer__ctor_3 generated for M:WPILib.AnalogPotentiometer.#ctor(WPILib.AnalogInput)
+    Unique name M_WPILib_AnalogPotentiometer__ctor_4 generated for M:WPILib.AnalogPotentiometer.#ctor(WPILib.AnalogInput,System.Double)
+    Unique name M_WPILib_AnalogPotentiometer__ctor_5 generated for M:WPILib.AnalogPotentiometer.#ctor(WPILib.AnalogInput,System.Double,System.Double)
+    Unique name M_WPILib_AnalogTrigger__ctor_1 generated for M:WPILib.AnalogTrigger.#ctor(WPILib.AnalogInput)
+    Unique name M_WPILib_CANJaguar_EnableControl_1 generated for M:WPILib.CANJaguar.EnableControl(System.Double)
+    Unique name M_WPILib_CANJaguar_RequestMessage_1 generated for M:WPILib.CANJaguar.RequestMessage(System.Int32,System.Int32)
+    Unique name M_WPILib_CANJaguar_SendMessage_1 generated for M:WPILib.CANJaguar.SendMessage(System.Int32,System.Byte[],System.Int32,System.Int32)
+    Unique name M_WPILib_CANJaguar_Set_1 generated for M:WPILib.CANJaguar.Set(System.Double,System.Byte)
+    Unique name M_WPILib_CANJaguar_SetCurrentMode_1 generated for M:WPILib.CANJaguar.SetCurrentMode(WPILib.CANJaguar.EncoderTag,System.Int32,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_CANJaguar_SetCurrentMode_2 generated for M:WPILib.CANJaguar.SetCurrentMode(WPILib.CANJaguar.PotentiometerTag,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_CANJaguar_SetCurrentMode_3 generated for M:WPILib.CANJaguar.SetCurrentMode(WPILib.CANJaguar.QuadEncoderTag,System.Int32,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_CANJaguar_SetPercentMode_1 generated for M:WPILib.CANJaguar.SetPercentMode(WPILib.CANJaguar.EncoderTag,System.Int32)
+    Unique name M_WPILib_CANJaguar_SetPercentMode_2 generated for M:WPILib.CANJaguar.SetPercentMode(WPILib.CANJaguar.PotentiometerTag)
+    Unique name M_WPILib_CANJaguar_SetPercentMode_3 generated for M:WPILib.CANJaguar.SetPercentMode(WPILib.CANJaguar.QuadEncoderTag,System.Int32)
+    Unique name M_WPILib_CANJaguar_SetPositionMode_1 generated for M:WPILib.CANJaguar.SetPositionMode(WPILib.CANJaguar.QuadEncoderTag,System.Int32,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_CANJaguar_SetSpeedMode_1 generated for M:WPILib.CANJaguar.SetSpeedMode(WPILib.CANJaguar.QuadEncoderTag,System.Int32,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_CANJaguar_SetVoltageMode_1 generated for M:WPILib.CANJaguar.SetVoltageMode(WPILib.CANJaguar.EncoderTag,System.Int32)
+    Unique name M_WPILib_CANJaguar_SetVoltageMode_2 generated for M:WPILib.CANJaguar.SetVoltageMode(WPILib.CANJaguar.PotentiometerTag)
+    Unique name M_WPILib_CANJaguar_SetVoltageMode_3 generated for M:WPILib.CANJaguar.SetVoltageMode(WPILib.CANJaguar.QuadEncoderTag,System.Int32)
+    Unique name M_WPILib_CANTalon_Set_1 generated for M:WPILib.CANTalon.Set(System.Double,System.Byte)
+    Unique name M_WPILib_CANTalon_SetPID_1 generated for M:WPILib.CANTalon.SetPID(System.Double,System.Double,System.Double,System.Double,System.Int32,System.Double,System.Int32)
+    Unique name M_WPILib_Compressor__ctor_1 generated for M:WPILib.Compressor.#ctor(System.Int32)
+    Unique name M_WPILib_Counter__ctor_1 generated for M:WPILib.Counter.#ctor(System.Int32)
+    Unique name M_WPILib_Counter__ctor_2 generated for M:WPILib.Counter.#ctor(WPILib.AnalogTrigger)
+    Unique name M_WPILib_Counter__ctor_3 generated for M:WPILib.Counter.#ctor(WPILib.DigitalSource)
+    Unique name M_WPILib_Counter__ctor_4 generated for M:WPILib.Counter.#ctor(WPILib.EncodingType,WPILib.DigitalSource,WPILib.DigitalSource,System.Boolean)
+    Unique name M_WPILib_Counter_SetDownSource_1 generated for M:WPILib.Counter.SetDownSource(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)
+    Unique name M_WPILib_Counter_SetDownSource_2 generated for M:WPILib.Counter.SetDownSource(WPILib.DigitalSource)
+    Unique name M_WPILib_Counter_SetUpSource_1 generated for M:WPILib.Counter.SetUpSource(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)
+    Unique name M_WPILib_Counter_SetUpSource_2 generated for M:WPILib.Counter.SetUpSource(WPILib.DigitalSource)
+    Unique name M_WPILib_DigitalOutput_Pulse_1 generated for M:WPILib.DigitalOutput.Pulse(System.Single)
+    Unique name M_WPILib_DoubleSolenoid__ctor_1 generated for M:WPILib.DoubleSolenoid.#ctor(System.Int32,System.Int32,System.Int32)
+    Unique name M_WPILib_Encoder__ctor_1 generated for M:WPILib.Encoder.#ctor(System.Int32,System.Int32,System.Boolean)
+    Unique name M_WPILib_Encoder__ctor_2 generated for M:WPILib.Encoder.#ctor(System.Int32,System.Int32,System.Boolean,WPILib.EncodingType)
+    Unique name M_WPILib_Encoder__ctor_3 generated for M:WPILib.Encoder.#ctor(System.Int32,System.Int32,System.Int32)
+    Unique name M_WPILib_Encoder__ctor_4 generated for M:WPILib.Encoder.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)
+    Unique name M_WPILib_Encoder__ctor_5 generated for M:WPILib.Encoder.#ctor(WPILib.DigitalSource,WPILib.DigitalSource)
+    Unique name M_WPILib_Encoder__ctor_6 generated for M:WPILib.Encoder.#ctor(WPILib.DigitalSource,WPILib.DigitalSource,System.Boolean)
+    Unique name M_WPILib_Encoder__ctor_7 generated for M:WPILib.Encoder.#ctor(WPILib.DigitalSource,WPILib.DigitalSource,System.Boolean,WPILib.EncodingType)
+    Unique name M_WPILib_Encoder__ctor_8 generated for M:WPILib.Encoder.#ctor(WPILib.DigitalSource,WPILib.DigitalSource,WPILib.DigitalSource)
+    Unique name M_WPILib_Encoder__ctor_9 generated for M:WPILib.Encoder.#ctor(WPILib.DigitalSource,WPILib.DigitalSource,WPILib.DigitalSource,System.Boolean)
+    Unique name M_WPILib_Encoder_SetIndexSource_1 generated for M:WPILib.Encoder.SetIndexSource(System.Int32,WPILib.Encoder.IndexingType)
+    Unique name M_WPILib_Encoder_SetIndexSource_2 generated for M:WPILib.Encoder.SetIndexSource(WPILib.DigitalSource)
+    Unique name M_WPILib_Encoder_SetIndexSource_3 generated for M:WPILib.Encoder.SetIndexSource(WPILib.DigitalSource,WPILib.Encoder.IndexingType)
+    Unique name M_WPILib_GearTooth__ctor_1 generated for M:WPILib.GearTooth.#ctor(System.Int32,System.Boolean)
+    Unique name M_WPILib_GearTooth__ctor_2 generated for M:WPILib.GearTooth.#ctor(WPILib.DigitalSource)
+    Unique name M_WPILib_GearTooth__ctor_3 generated for M:WPILib.GearTooth.#ctor(WPILib.DigitalSource,System.Boolean)
+    Unique name M_WPILib_GenericHID_GetBumper_1 generated for M:WPILib.GenericHID.GetBumper(WPILib.Hand)
+    Unique name M_WPILib_GenericHID_GetPOV_1 generated for M:WPILib.GenericHID.GetPOV(System.Int32)
+    Unique name M_WPILib_GenericHID_GetTop_1 generated for M:WPILib.GenericHID.GetTop(WPILib.Hand)
+    Unique name M_WPILib_GenericHID_GetTrigger_1 generated for M:WPILib.GenericHID.GetTrigger(WPILib.Hand)
+    Unique name M_WPILib_GenericHID_GetX_1 generated for M:WPILib.GenericHID.GetX(WPILib.Hand)
+    Unique name M_WPILib_GenericHID_GetY_1 generated for M:WPILib.GenericHID.GetY(WPILib.Hand)
+    Unique name M_WPILib_GenericHID_GetZ_1 generated for M:WPILib.GenericHID.GetZ(WPILib.Hand)
+    Unique name M_WPILib_Gyro__ctor_1 generated for M:WPILib.Gyro.#ctor(WPILib.AnalogInput)
+    Unique name M_WPILib_InterruptableSensorBase_RequestInterrupts_1 generated for M:WPILib.InterruptableSensorBase.RequestInterrupts(System.Action)
+    Unique name M_WPILib_InterruptableSensorBase_RequestInterrupts_2 generated for M:WPILib.InterruptableSensorBase.RequestInterrupts(System.Action{System.UInt32,System.Object},System.Object)
+    Unique name M_WPILib_InterruptableSensorBase_WaitForInterrupt_1 generated for M:WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double,System.Boolean)
+    Unique name M_WPILib_ISpeedController_Set_1 generated for M:WPILib.ISpeedController.Set(System.Double,System.Byte)
+    Unique name M_WPILib_Jaguar_Set_1 generated for M:WPILib.Jaguar.Set(System.Double,System.Byte)
+    Unique name M_WPILib_Joystick__ctor_1 generated for M:WPILib.Joystick.#ctor(System.Int32,System.Int32,System.Int32)
+    Unique name M_WPILib_Notifier__ctor_1 generated for M:WPILib.Notifier.#ctor(System.Action{System.Object},System.Object)
+    Unique name M_WPILib_PIDController__ctor_1 generated for M:WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,System.Double,WPILib.IPIDSource,WPILib.IPIDOutput,System.Double)
+    Unique name M_WPILib_PIDController__ctor_2 generated for M:WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,WPILib.IPIDSource,WPILib.IPIDOutput)
+    Unique name M_WPILib_PIDController__ctor_3 generated for M:WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,WPILib.IPIDSource,WPILib.IPIDOutput,System.Double)
+    Unique name M_WPILib_PIDController_SetPID_1 generated for M:WPILib.PIDController.SetPID(System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_PWM_SetBounds_1 generated for M:WPILib.PWM.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    Unique name M_WPILib_Relay__ctor_1 generated for M:WPILib.Relay.#ctor(System.Int32,WPILib.Relay.Direction)
+    Unique name M_WPILib_Resource_Allocate_1 generated for M:WPILib.Resource.Allocate(System.Int32)
+    Unique name M_WPILib_RobotDrive__ctor_1 generated for M:WPILib.RobotDrive.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+    Unique name M_WPILib_RobotDrive__ctor_2 generated for M:WPILib.RobotDrive.#ctor(WPILib.ISpeedController,WPILib.ISpeedController)
+    Unique name M_WPILib_RobotDrive__ctor_3 generated for M:WPILib.RobotDrive.#ctor(WPILib.ISpeedController,WPILib.ISpeedController,WPILib.ISpeedController,WPILib.ISpeedController)
+    Unique name M_WPILib_RobotDrive_ArcadeDrive_1 generated for M:WPILib.RobotDrive.ArcadeDrive(System.Double,System.Double,System.Boolean)
+    Unique name M_WPILib_RobotDrive_ArcadeDrive_2 generated for M:WPILib.RobotDrive.ArcadeDrive(WPILib.GenericHID)
+    Unique name M_WPILib_RobotDrive_ArcadeDrive_3 generated for M:WPILib.RobotDrive.ArcadeDrive(WPILib.GenericHID,System.Boolean)
+    Unique name M_WPILib_RobotDrive_ArcadeDrive_4 generated for M:WPILib.RobotDrive.ArcadeDrive(WPILib.GenericHID,System.Int32,WPILib.GenericHID,System.Int32)
+    Unique name M_WPILib_RobotDrive_ArcadeDrive_5 generated for M:WPILib.RobotDrive.ArcadeDrive(WPILib.GenericHID,System.Int32,WPILib.GenericHID,System.Int32,System.Boolean)
+    Unique name M_WPILib_RobotDrive_TankDrive_1 generated for M:WPILib.RobotDrive.TankDrive(System.Double,System.Double,System.Boolean)
+    Unique name M_WPILib_RobotDrive_TankDrive_2 generated for M:WPILib.RobotDrive.TankDrive(WPILib.GenericHID,System.Int32,WPILib.GenericHID,System.Int32)
+    Unique name M_WPILib_RobotDrive_TankDrive_3 generated for M:WPILib.RobotDrive.TankDrive(WPILib.GenericHID,System.Int32,WPILib.GenericHID,System.Int32,System.Boolean)
+    Unique name M_WPILib_RobotDrive_TankDrive_4 generated for M:WPILib.RobotDrive.TankDrive(WPILib.GenericHID,WPILib.GenericHID)
+    Unique name M_WPILib_RobotDrive_TankDrive_5 generated for M:WPILib.RobotDrive.TankDrive(WPILib.GenericHID,WPILib.GenericHID,System.Boolean)
+    Unique name M_WPILib_SerialPort__ctor_1 generated for M:WPILib.SerialPort.#ctor(System.Int32,WPILib.Port,System.Int32)
+    Unique name M_WPILib_SerialPort__ctor_2 generated for M:WPILib.SerialPort.#ctor(System.Int32,WPILib.Port,System.Int32,WPILib.Parity)
+    Unique name M_WPILib_SerialPort__ctor_3 generated for M:WPILib.SerialPort.#ctor(System.Int32,WPILib.Port,System.Int32,WPILib.Parity,WPILib.StopBits)
+    Unique name M_WPILib_SerialPort_EnableTermination_1 generated for M:WPILib.SerialPort.EnableTermination(System.Char)
+    Unique name M_WPILib_SerialPort_ReadString_1 generated for M:WPILib.SerialPort.ReadString(System.Int32)
+    Unique name M_WPILib_Solenoid__ctor_1 generated for M:WPILib.Solenoid.#ctor(System.Int32,System.Int32)
+    Unique name M_WPILib_Talon_Set_1 generated for M:WPILib.Talon.Set(System.Double,System.Byte)
+    Unique name M_WPILib_TalonSRX_Set_1 generated for M:WPILib.TalonSRX.Set(System.Double,System.Byte)
+    Unique name M_WPILib_Ultrasonic__ctor_1 generated for M:WPILib.Ultrasonic.#ctor(WPILib.DigitalOutput,WPILib.DigitalInput,WPILib.Ultrasonic.Unit)
+    Unique name M_WPILib_Victor_Set_1 generated for M:WPILib.Victor.Set(System.Double,System.Byte)
+    Unique name M_WPILib_VictorSP_Set_1 generated for M:WPILib.VictorSP.Set(System.Double,System.Byte)
+    Unique name M_WPILib_Buttons_InternalButton__ctor_1 generated for M:WPILib.Buttons.InternalButton.#ctor(System.Boolean)
+    Unique name M_WPILib_Buttons_NetworkButton__ctor_1 generated for M:WPILib.Buttons.NetworkButton.#ctor(System.String,System.String)
+    Unique name M_WPILib_Commands_Command__ctor_1 generated for M:WPILib.Commands.Command.#ctor(System.Double)
+    Unique name M_WPILib_Commands_Command__ctor_2 generated for M:WPILib.Commands.Command.#ctor(System.String)
+    Unique name M_WPILib_Commands_Command__ctor_3 generated for M:WPILib.Commands.Command.#ctor(System.String,System.Double)
+    Unique name M_WPILib_Commands_CommandGroup__ctor_1 generated for M:WPILib.Commands.CommandGroup.#ctor(System.String)
+    Unique name M_WPILib_Commands_CommandGroup_AddParallel_1 generated for M:WPILib.Commands.CommandGroup.AddParallel(WPILib.Commands.Command,System.Double)
+    Unique name M_WPILib_Commands_CommandGroup_AddSequential_1 generated for M:WPILib.Commands.CommandGroup.AddSequential(WPILib.Commands.Command,System.Double)
+    Unique name M_WPILib_Commands_IllegalUseOfCommandException__ctor_1 generated for M:WPILib.Commands.IllegalUseOfCommandException.#ctor(System.String)
+    Unique name M_WPILib_Commands_IpidCommand__ctor_1 generated for M:WPILib.Commands.IpidCommand.#ctor(System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidCommand__ctor_2 generated for M:WPILib.Commands.IpidCommand.#ctor(System.String,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidCommand__ctor_3 generated for M:WPILib.Commands.IpidCommand.#ctor(System.String,System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidSubsystem__ctor_1 generated for M:WPILib.Commands.IpidSubsystem.#ctor(System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidSubsystem__ctor_2 generated for M:WPILib.Commands.IpidSubsystem.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidSubsystem__ctor_3 generated for M:WPILib.Commands.IpidSubsystem.#ctor(System.String,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidSubsystem__ctor_4 generated for M:WPILib.Commands.IpidSubsystem.#ctor(System.String,System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_IpidSubsystem__ctor_5 generated for M:WPILib.Commands.IpidSubsystem.#ctor(System.String,System.Double,System.Double,System.Double,System.Double,System.Double)
+    Unique name M_WPILib_Commands_Subsystem__ctor_1 generated for M:WPILib.Commands.Subsystem.#ctor(System.String)
+    Unique name M_WPILib_Exceptions_BaseSystemNotInitializedException__ctor_1 generated for M:WPILib.Exceptions.BaseSystemNotInitializedException.#ctor(System.String)
+    Unique name M_WPILib_Exceptions_UncleanStatusException__ctor_1 generated for M:WPILib.Exceptions.UncleanStatusException.#ctor(System.Int32)
+    Unique name M_WPILib_Exceptions_UncleanStatusException__ctor_2 generated for M:WPILib.Exceptions.UncleanStatusException.#ctor(System.Int32,System.String)
+    Unique name M_WPILib_Exceptions_UncleanStatusException__ctor_3 generated for M:WPILib.Exceptions.UncleanStatusException.#ctor(System.String)
+    Unique name M_WPILib_LiveWindows_LiveWindow_AddActuator_1 generated for M:WPILib.LiveWindows.LiveWindow.AddActuator(System.String,System.Int32,WPILib.LiveWindows.ILiveWindowSendable)
+    Unique name M_WPILib_LiveWindows_LiveWindow_AddActuator_2 generated for M:WPILib.LiveWindows.LiveWindow.AddActuator(System.String,System.String,WPILib.LiveWindows.ILiveWindowSendable)
+    Unique name M_WPILib_LiveWindows_LiveWindow_AddSensor_1 generated for M:WPILib.LiveWindows.LiveWindow.AddSensor(System.String,System.String,WPILib.LiveWindows.ILiveWindowSendable)
+    Unique name M_WPILib_SmartDashboards_SmartDashboard_PutData_1 generated for M:WPILib.SmartDashboards.SmartDashboard.PutData(WPILib.INamedSendable)
+  XslTransform (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.95
+    Last step completed in 00:00:01.0841
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0490
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 6/16/2015 6:14:13 PM.
+Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.13
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.2090
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.1620
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.0350
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 6/16/2015 6:14:13 PM.
+Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
+BuildReferenceTopics:
+  BuildAssembler (v2015.5.2.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables2] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables2.Connection] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables2.Stream] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables2.Thread] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables2.Type] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.NetworkTables2.Util] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:NetworkTablesDotNet.Tables] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.AnalogTrigger.CreateOutput(HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.AnalogTrigger.CreateOutput(HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.AnalogTriggerOutput.#ctor(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.AnalogTriggerOutput.#ctor(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.CANTalon.SetForwardSoftLimitEnabled(System.Boolean)] Unknown reference link target &#39;T:HAL_Base.CTR_Code&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.CANTalon.SetForwardSoftLimitEnabled(System.Boolean)] Unknown reference link target &#39;T:HAL_Base.CTR_Code&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.CANTalon.SetReverseSoftLimitEnabled(System.Boolean)] Unknown reference link target &#39;T:HAL_Base.CTR_Code&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.CANTalon.SetReverseSoftLimitEnabled(System.Boolean)] Unknown reference link target &#39;T:HAL_Base.CTR_Code&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.Counter.SetDownSource(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.Counter.SetDownSource(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.Counter.SetUpSource(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:WPILib.Counter.SetUpSource(WPILib.AnalogTrigger,HAL_Base.AnalogTriggerType)] Unknown reference link target &#39;T:HAL_Base.AnalogTriggerType&#39;. [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [G:NetworkTablesDotNet.NetworkTables2] Missing &lt;summary&gt; documentation [C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj]
+  Processed 2142 topic(s)
+  21 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 5 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 5 of 30.
+Done Building Project &quot;C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\BuildReferenceTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.91
+    Last step completed in 00:00:31.0149
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+
+Clearing any prior web/markdown output
+    Last step completed in 00:00:00.0040
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder, version 2015.5.2.0
+Copyright c 2006-2015, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing Help 1 files in C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1
+Processed 2142 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\RobotDotNet.hhk
+Saving HTML Help 1 table of contents to C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\RobotDotNet.hhc
+
+Processing website files in C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website
+Processed 2142 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\WebKI.xml
+Saving website table of contents to C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\WebTOC.xml
+    Last step completed in 00:00:04.3963
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help2.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-Help2.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help2.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-Help2.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.2020
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00.0150
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling c:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\RobotDotNet.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 5 seconds
+  
+  2,144	Topics
+  
+  25,589	Local links
+  
+  6,158	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created c:\Users\thad\Documents\GitHub\Release-Tools\Documentation-Builder\Help\Working\Output\HtmlHelp1\RobotDotNet.chm, 1,461,948 bytes
+  
+  Compression decreased file by 14,516,862 bytes.
+  
+    Last step completed in 00:00:05.9865
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0020
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:10.3426
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 1000 files
+Copied 1500 files
+Copied 2000 files
+Copied 2500 files
+Copied 2743 files for the website content
+    Last step completed in 00:00:01.8331
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:02.2156
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 6/16/2015 6:15:09 PM.  Total time: 00:00:58.5641
+
+</buildStep>
+</shfbBuild>
