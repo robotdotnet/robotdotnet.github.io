@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
-  <HelpKINode Title="A property" Url="html/P_WPILib_Extras_XboxController_A.htm" />
   <HelpKINode Title="AbsoluteTolerance enumeration member" Url="html/T_WPILib_PIDController_ToleranceType.htm" />
   <HelpKINode Title="AbstractNetworkTableEntryStore class">
     <HelpKINode Title="AbstractNetworkTableEntryStore Class" Url="html/T_NetworkTables_NetworkTables2_AbstractNetworkTableEntryStore.htm" />
@@ -359,8 +358,6 @@
   <HelpKINode Title="AverageBits property" Url="html/P_WPILib_AnalogInput_AverageBits.htm" />
   <HelpKINode Title="Averaged property" Url="html/P_WPILib_AnalogTrigger_Averaged.htm" />
   <HelpKINode Title="AxisCount property" Url="html/P_WPILib_Joystick_AxisCount.htm" />
-  <HelpKINode Title="B property" Url="html/P_WPILib_Extras_XboxController_B.htm" />
-  <HelpKINode Title="Back property" Url="html/P_WPILib_Extras_XboxController_Back.htm" />
   <HelpKINode Title="BadMessage method">
     <HelpKINode Title="ClientConnectionAdapter.BadMessage Method " Url="html/M_NetworkTables_NetworkTables2_Client_ClientConnectionAdapter_BadMessage.htm" />
     <HelpKINode Title="ConnectionAdapter.BadMessage Method " Url="html/M_NetworkTables_NetworkTables2_Connection_ConnectionAdapter_BadMessage.htm" />
@@ -416,11 +413,6 @@
   <HelpKINode Title="Brake enumeration member" Url="html/T_WPILib_NeutralMode.htm" />
   <HelpKINode Title="Broadcast method" Url="html/M_WPILib_I2C_Broadcast.htm" />
   <HelpKINode Title="BrownedOut property" Url="html/P_WPILib_DriverStation_BrownedOut.htm" />
-  <HelpKINode Title="BusVoltage property">
-    <HelpKINode Title="CANJaguar.BusVoltage Property " Url="html/P_WPILib_CANJaguar_BusVoltage.htm" />
-    <HelpKINode Title="CANTalon.BusVoltage Property " Url="html/P_WPILib_CANTalon_BusVoltage.htm" />
-    <HelpKINode Title="ICANSpeedController.BusVoltage Property " Url="html/P_WPILib_ICANSpeedController_BusVoltage.htm" />
-  </HelpKINode>
   <HelpKINode Title="BusVoltageFault enumeration member" Url="html/T_WPILib_Faults.htm" />
   <HelpKINode Title="Button class">
     <HelpKINode Title="Button Class" Url="html/T_WPILib_Buttons_Button.htm" />
@@ -451,6 +443,7 @@
   <HelpKINode Title="ButtonScheduler.Start method" Url="html/M_WPILib_Buttons_ButtonScheduler_Start.htm" />
   <HelpKINode Title="BytesReceived property" Url="html/P_WPILib_SerialPort_BytesReceived.htm" />
   <HelpKINode Title="Calc method" Url="html/M_NetworkTables_NetworkTables2_Util_StringCache_Calc.htm" />
+  <HelpKINode Title="Calculate method" Url="html/M_WPILib_PIDController_Calculate.htm" />
   <HelpKINode Title="CallCalculate method" Url="html/M_WPILib_PIDController_CallCalculate.htm" />
   <HelpKINode Title="Cancel method" Url="html/M_WPILib_Commands_Command_Cancel.htm" />
   <HelpKINode Title="Canceled property" Url="html/P_WPILib_Commands_Command_Canceled.htm" />
@@ -475,7 +468,6 @@
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_CANJaguar.htm" />
   </HelpKINode>
   <HelpKINode Title="CANJaguar.Alive property" Url="html/P_WPILib_CANJaguar_Alive.htm" />
-  <HelpKINode Title="CANJaguar.BusVoltage property" Url="html/P_WPILib_CANJaguar_BusVoltage.htm" />
   <HelpKINode Title="CANJaguar.CANJaguar constructor" Url="html/M_WPILib_CANJaguar__ctor.htm" />
   <HelpKINode Title="CANJaguar.ConfigNeutralMode property" Url="html/P_WPILib_CANJaguar_ConfigNeutralMode.htm" />
   <HelpKINode Title="CANJaguar.ConfigSoftPositionLimits method" Url="html/M_WPILib_CANJaguar_ConfigSoftPositionLimits.htm" />
@@ -486,74 +478,66 @@
   <HelpKINode Title="CANJaguar.DisableControl method" Url="html/M_WPILib_CANJaguar_DisableControl.htm" />
   <HelpKINode Title="CANJaguar.DisableSoftPositionLimits method" Url="html/M_WPILib_CANJaguar_DisableSoftPositionLimits.htm" />
   <HelpKINode Title="CANJaguar.Dispose method" Url="html/M_WPILib_CANJaguar_Dispose.htm" />
+  <HelpKINode Title="CANJaguar.Enable method" Url="html/M_WPILib_CANJaguar_Enable.htm" />
   <HelpKINode Title="CANJaguar.EnableControl method" Url="html/Overload_WPILib_CANJaguar_EnableControl.htm" />
+  <HelpKINode Title="CANJaguar.Enabled property" Url="html/P_WPILib_CANJaguar_Enabled.htm" />
   <HelpKINode Title="CANJaguar.EncoderCodesPerRev property" Url="html/P_WPILib_CANJaguar_EncoderCodesPerRev.htm" />
-  <HelpKINode Title="CANJaguar.EncoderTag structure">
-    <HelpKINode Title="CANJaguar.EncoderTag Structure" Url="html/T_WPILib_CANJaguar_EncoderTag.htm" />
-    <HelpKINode Title="about CANJaguar.EncoderTag structure" Url="html/T_WPILib_CANJaguar_EncoderTag.htm" />
-  </HelpKINode>
   <HelpKINode Title="CANJaguar.Expiration property" Url="html/P_WPILib_CANJaguar_Expiration.htm" />
-  <HelpKINode Title="CANJaguar.Faults property" Url="html/P_WPILib_CANJaguar_Faults.htm" />
   <HelpKINode Title="CANJaguar.FaultTime property" Url="html/P_WPILib_CANJaguar_FaultTime.htm" />
   <HelpKINode Title="CANJaguar.FirmwareVersion property" Url="html/P_WPILib_CANJaguar_FirmwareVersion.htm" />
   <HelpKINode Title="CANJaguar.ForwardLimit property" Url="html/P_WPILib_CANJaguar_ForwardLimit.htm" />
-  <HelpKINode Title="CANJaguar.ForwardLimitOK property" Url="html/P_WPILib_CANJaguar_ForwardLimitOK.htm" />
   <HelpKINode Title="CANJaguar.FXP16_EQ method" Url="html/M_WPILib_CANJaguar_FXP16_EQ.htm" />
   <HelpKINode Title="CANJaguar.FXP8_EQ method" Url="html/M_WPILib_CANJaguar_FXP8_EQ.htm" />
   <HelpKINode Title="CANJaguar.Get method" Url="html/M_WPILib_CANJaguar_Get.htm" />
+  <HelpKINode Title="CANJaguar.GetBusVoltage method" Url="html/M_WPILib_CANJaguar_GetBusVoltage.htm" />
   <HelpKINode Title="CANJaguar.GetControlMode method" Url="html/M_WPILib_CANJaguar_GetControlMode.htm" />
+  <HelpKINode Title="CANJaguar.GetError method" Url="html/M_WPILib_CANJaguar_GetError.htm" />
+  <HelpKINode Title="CANJaguar.GetFaults method" Url="html/M_WPILib_CANJaguar_GetFaults.htm" />
+  <HelpKINode Title="CANJaguar.GetForwardLimitOK method" Url="html/M_WPILib_CANJaguar_GetForwardLimitOK.htm" />
   <HelpKINode Title="CANJaguar.GetHardwareVersion method" Url="html/M_WPILib_CANJaguar_GetHardwareVersion.htm" />
   <HelpKINode Title="CANJaguar.GetMessage method" Url="html/M_WPILib_CANJaguar_GetMessage.htm" />
+  <HelpKINode Title="CANJaguar.GetOutputCurrent method" Url="html/M_WPILib_CANJaguar_GetOutputCurrent.htm" />
+  <HelpKINode Title="CANJaguar.GetOutputVoltage method" Url="html/M_WPILib_CANJaguar_GetOutputVoltage.htm" />
+  <HelpKINode Title="CANJaguar.GetPosition method" Url="html/M_WPILib_CANJaguar_GetPosition.htm" />
+  <HelpKINode Title="CANJaguar.GetReverseLimitOK method" Url="html/M_WPILib_CANJaguar_GetReverseLimitOK.htm" />
+  <HelpKINode Title="CANJaguar.GetSpeed method" Url="html/M_WPILib_CANJaguar_GetSpeed.htm" />
+  <HelpKINode Title="CANJaguar.GetTemperature method" Url="html/M_WPILib_CANJaguar_GetTemperature.htm" />
   <HelpKINode Title="CANJaguar.I property" Url="html/P_WPILib_CANJaguar_I.htm" />
   <HelpKINode Title="CANJaguar.InitTable method" Url="html/M_WPILib_CANJaguar_InitTable.htm" />
+  <HelpKINode Title="CANJaguar.Inverted property" Url="html/P_WPILib_CANJaguar_Inverted.htm" />
   <HelpKINode Title="CANJaguar.kApproxBusVoltage field" Url="html/F_WPILib_CANJaguar_kApproxBusVoltage.htm" />
   <HelpKINode Title="CANJaguar.kButVoltageFault field" Url="html/F_WPILib_CANJaguar_kButVoltageFault.htm" />
   <HelpKINode Title="CANJaguar.kControllerRate field" Url="html/F_WPILib_CANJaguar_kControllerRate.htm" />
   <HelpKINode Title="CANJaguar.kCurrentFault field" Url="html/F_WPILib_CANJaguar_kCurrentFault.htm" />
-  <HelpKINode Title="CANJaguar.kEncoder field" Url="html/F_WPILib_CANJaguar_kEncoder.htm" />
   <HelpKINode Title="CANJaguar.kForwardLimit field" Url="html/F_WPILib_CANJaguar_kForwardLimit.htm" />
   <HelpKINode Title="CANJaguar.kGateDriverFault field" Url="html/F_WPILib_CANJaguar_kGateDriverFault.htm" />
   <HelpKINode Title="CANJaguar.kMaxMessageDataSize field" Url="html/F_WPILib_CANJaguar_kMaxMessageDataSize.htm" />
-  <HelpKINode Title="CANJaguar.kPotentiometer field" Url="html/F_WPILib_CANJaguar_kPotentiometer.htm" />
-  <HelpKINode Title="CANJaguar.kQuadEncoder field" Url="html/F_WPILib_CANJaguar_kQuadEncoder.htm" />
   <HelpKINode Title="CANJaguar.kReverseLimit field" Url="html/F_WPILib_CANJaguar_kReverseLimit.htm" />
   <HelpKINode Title="CANJaguar.kTemeperatureFault field" Url="html/F_WPILib_CANJaguar_kTemeperatureFault.htm" />
   <HelpKINode Title="CANJaguar.LimitMode property" Url="html/P_WPILib_CANJaguar_LimitMode.htm" />
   <HelpKINode Title="CANJaguar.MaxOutputVoltage property" Url="html/P_WPILib_CANJaguar_MaxOutputVoltage.htm" />
-  <HelpKINode Title="CANJaguar.OutputCurrent property" Url="html/P_WPILib_CANJaguar_OutputCurrent.htm" />
-  <HelpKINode Title="CANJaguar.OutputVoltage property" Url="html/P_WPILib_CANJaguar_OutputVoltage.htm" />
   <HelpKINode Title="CANJaguar.P property" Url="html/P_WPILib_CANJaguar_P.htm" />
   <HelpKINode Title="CANJaguar.PidWrite method" Url="html/M_WPILib_CANJaguar_PidWrite.htm" />
-  <HelpKINode Title="CANJaguar.Position property" Url="html/P_WPILib_CANJaguar_Position.htm" />
-  <HelpKINode Title="CANJaguar.PotentiometerTag structure">
-    <HelpKINode Title="CANJaguar.PotentiometerTag Structure" Url="html/T_WPILib_CANJaguar_PotentiometerTag.htm" />
-    <HelpKINode Title="about CANJaguar.PotentiometerTag structure" Url="html/T_WPILib_CANJaguar_PotentiometerTag.htm" />
-  </HelpKINode>
   <HelpKINode Title="CANJaguar.PotentiometerTurns property" Url="html/P_WPILib_CANJaguar_PotentiometerTurns.htm" />
-  <HelpKINode Title="CANJaguar.QuadEncoderTag structure">
-    <HelpKINode Title="CANJaguar.QuadEncoderTag Structure" Url="html/T_WPILib_CANJaguar_QuadEncoderTag.htm" />
-    <HelpKINode Title="about CANJaguar.QuadEncoderTag structure" Url="html/T_WPILib_CANJaguar_QuadEncoderTag.htm" />
-  </HelpKINode>
   <HelpKINode Title="CANJaguar.RequestMessage method" Url="html/Overload_WPILib_CANJaguar_RequestMessage.htm" />
+  <HelpKINode Title="CANJaguar.Reset method" Url="html/M_WPILib_CANJaguar_Reset.htm" />
   <HelpKINode Title="CANJaguar.ReverseLimit property" Url="html/P_WPILib_CANJaguar_ReverseLimit.htm" />
-  <HelpKINode Title="CANJaguar.ReverseLimitOK property" Url="html/P_WPILib_CANJaguar_ReverseLimitOK.htm" />
   <HelpKINode Title="CANJaguar.SafetyEnabled property" Url="html/P_WPILib_CANJaguar_SafetyEnabled.htm" />
   <HelpKINode Title="CANJaguar.SendMessage method" Url="html/Overload_WPILib_CANJaguar_SendMessage.htm" />
   <HelpKINode Title="CANJaguar.Set method" Url="html/Overload_WPILib_CANJaguar_Set.htm" />
-  <HelpKINode Title="CANJaguar.SetCurrentMode method" Url="html/Overload_WPILib_CANJaguar_SetCurrentMode.htm" />
-  <HelpKINode Title="CANJaguar.SetPercentMode method" Url="html/Overload_WPILib_CANJaguar_SetPercentMode.htm" />
+  <HelpKINode Title="CANJaguar.SetCurrentMode method" Url="html/M_WPILib_CANJaguar_SetCurrentMode.htm" />
+  <HelpKINode Title="CANJaguar.SetPercentMode method" Url="html/M_WPILib_CANJaguar_SetPercentMode.htm" />
   <HelpKINode Title="CANJaguar.SetPID method" Url="html/M_WPILib_CANJaguar_SetPID.htm" />
-  <HelpKINode Title="CANJaguar.SetPositionMode method" Url="html/Overload_WPILib_CANJaguar_SetPositionMode.htm" />
-  <HelpKINode Title="CANJaguar.SetSpeedMode method" Url="html/Overload_WPILib_CANJaguar_SetSpeedMode.htm" />
+  <HelpKINode Title="CANJaguar.Setpoint property" Url="html/P_WPILib_CANJaguar_Setpoint.htm" />
+  <HelpKINode Title="CANJaguar.SetSpeedMode method" Url="html/M_WPILib_CANJaguar_SetSpeedMode.htm" />
   <HelpKINode Title="CANJaguar.SetupPeriodicStatus method" Url="html/M_WPILib_CANJaguar_SetupPeriodicStatus.htm" />
-  <HelpKINode Title="CANJaguar.SetVoltageMode method" Url="html/Overload_WPILib_CANJaguar_SetVoltageMode.htm" />
+  <HelpKINode Title="CANJaguar.SetVoltageMode method" Url="html/M_WPILib_CANJaguar_SetVoltageMode.htm" />
   <HelpKINode Title="CANJaguar.SmartDashboardType property" Url="html/P_WPILib_CANJaguar_SmartDashboardType.htm" />
-  <HelpKINode Title="CANJaguar.Speed property" Url="html/P_WPILib_CANJaguar_Speed.htm" />
+  <HelpKINode Title="CANJaguar.SourceMode enumeration" Url="html/T_WPILib_CANJaguar_SourceMode.htm" />
   <HelpKINode Title="CANJaguar.StartLiveWindowMode method" Url="html/M_WPILib_CANJaguar_StartLiveWindowMode.htm" />
   <HelpKINode Title="CANJaguar.StopLiveWindowMode method" Url="html/M_WPILib_CANJaguar_StopLiveWindowMode.htm" />
   <HelpKINode Title="CANJaguar.StopMotor method" Url="html/M_WPILib_CANJaguar_StopMotor.htm" />
   <HelpKINode Title="CANJaguar.Table property" Url="html/P_WPILib_CANJaguar_Table.htm" />
-  <HelpKINode Title="CANJaguar.Temperature property" Url="html/P_WPILib_CANJaguar_Temperature.htm" />
   <HelpKINode Title="CANJaguar.UpdatePeriodicStatus method" Url="html/M_WPILib_CANJaguar_UpdatePeriodicStatus.htm" />
   <HelpKINode Title="CANJaguar.UpdateSyncGroup method" Url="html/M_WPILib_CANJaguar_UpdateSyncGroup.htm" />
   <HelpKINode Title="CANJaguar.UpdateTable method" Url="html/M_WPILib_CANJaguar_UpdateTable.htm" />
@@ -608,7 +592,6 @@
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_CANTalon.htm" />
   </HelpKINode>
   <HelpKINode Title="CANTalon.Alive property" Url="html/P_WPILib_CANTalon_Alive.htm" />
-  <HelpKINode Title="CANTalon.BusVoltage property" Url="html/P_WPILib_CANTalon_BusVoltage.htm" />
   <HelpKINode Title="CANTalon.CANTalon constructor" Url="html/M_WPILib_CANTalon__ctor.htm" />
   <HelpKINode Title="CANTalon.ClearIAccum method" Url="html/M_WPILib_CANTalon_ClearIAccum.htm" />
   <HelpKINode Title="CANTalon.ClearStickyFaults method" Url="html/M_WPILib_CANTalon_ClearStickyFaults.htm" />
@@ -626,8 +609,10 @@
   <HelpKINode Title="CANTalon.DisableControl method" Url="html/M_WPILib_CANTalon_DisableControl.htm" />
   <HelpKINode Title="CANTalon.DisableSoftPositionLimits method" Url="html/M_WPILib_CANTalon_DisableSoftPositionLimits.htm" />
   <HelpKINode Title="CANTalon.Dispose method" Url="html/M_WPILib_CANTalon_Dispose.htm" />
+  <HelpKINode Title="CANTalon.Enable method" Url="html/M_WPILib_CANTalon_Enable.htm" />
   <HelpKINode Title="CANTalon.EnableBrakeMode method" Url="html/M_WPILib_CANTalon_EnableBrakeMode.htm" />
   <HelpKINode Title="CANTalon.EnableControl method" Url="html/M_WPILib_CANTalon_EnableControl.htm" />
+  <HelpKINode Title="CANTalon.Enabled property" Url="html/P_WPILib_CANTalon_Enabled.htm" />
   <HelpKINode Title="CANTalon.EnableLimitSwitches method" Url="html/M_WPILib_CANTalon_EnableLimitSwitches.htm" />
   <HelpKINode Title="CANTalon.EncoderCodesPerRev property" Url="html/P_WPILib_CANTalon_EncoderCodesPerRev.htm" />
   <HelpKINode Title="CANTalon.Expiration property" Url="html/P_WPILib_CANTalon_Expiration.htm" />
@@ -638,14 +623,12 @@
   <HelpKINode Title="CANTalon.FaultOverTemp property" Url="html/P_WPILib_CANTalon_FaultOverTemp.htm" />
   <HelpKINode Title="CANTalon.FaultReverseLimit property" Url="html/P_WPILib_CANTalon_FaultReverseLimit.htm" />
   <HelpKINode Title="CANTalon.FaultReverseSoftLimit property" Url="html/P_WPILib_CANTalon_FaultReverseSoftLimit.htm" />
-  <HelpKINode Title="CANTalon.Faults property" Url="html/P_WPILib_CANTalon_Faults.htm" />
   <HelpKINode Title="CANTalon.FaultTime property" Url="html/P_WPILib_CANTalon_FaultTime.htm" />
   <HelpKINode Title="CANTalon.FaultUnderVoltage property" Url="html/P_WPILib_CANTalon_FaultUnderVoltage.htm" />
   <HelpKINode Title="CANTalon.FeedbackDevice enumeration" Url="html/T_WPILib_CANTalon_FeedbackDevice.htm" />
   <HelpKINode Title="CANTalon.FeedBackDevice property" Url="html/P_WPILib_CANTalon_FeedBackDevice.htm" />
   <HelpKINode Title="CANTalon.FirmwareVersion property" Url="html/P_WPILib_CANTalon_FirmwareVersion.htm" />
   <HelpKINode Title="CANTalon.ForwardLimit property" Url="html/P_WPILib_CANTalon_ForwardLimit.htm" />
-  <HelpKINode Title="CANTalon.ForwardLimitOK property" Url="html/P_WPILib_CANTalon_ForwardLimitOK.htm" />
   <HelpKINode Title="CANTalon.ForwardLimitSwitchNormallyOpen property" Url="html/P_WPILib_CANTalon_ForwardLimitSwitchNormallyOpen.htm" />
   <HelpKINode Title="CANTalon.ForwardSoftLimit property" Url="html/P_WPILib_CANTalon_ForwardSoftLimit.htm" />
   <HelpKINode Title="CANTalon.ForwardSoftLimitEnabled property" Url="html/P_WPILib_CANTalon_ForwardSoftLimitEnabled.htm" />
@@ -653,29 +636,40 @@
   <HelpKINode Title="CANTalon.GetAnalogInPosition method" Url="html/M_WPILib_CANTalon_GetAnalogInPosition.htm" />
   <HelpKINode Title="CANTalon.GetAnalogInRaw method" Url="html/M_WPILib_CANTalon_GetAnalogInRaw.htm" />
   <HelpKINode Title="CANTalon.GetAnalogInVelocity method" Url="html/M_WPILib_CANTalon_GetAnalogInVelocity.htm" />
+  <HelpKINode Title="CANTalon.GetBusVoltage method" Url="html/M_WPILib_CANTalon_GetBusVoltage.htm" />
   <HelpKINode Title="CANTalon.GetClosedLoopError method" Url="html/M_WPILib_CANTalon_GetClosedLoopError.htm" />
   <HelpKINode Title="CANTalon.GetCloseLoopRampRate method" Url="html/M_WPILib_CANTalon_GetCloseLoopRampRate.htm" />
   <HelpKINode Title="CANTalon.GetControlMode method" Url="html/M_WPILib_CANTalon_GetControlMode.htm" />
   <HelpKINode Title="CANTalon.GetDeviceID method" Url="html/M_WPILib_CANTalon_GetDeviceID.htm" />
   <HelpKINode Title="CANTalon.GetEncoderPosition method" Url="html/M_WPILib_CANTalon_GetEncoderPosition.htm" />
   <HelpKINode Title="CANTalon.GetEncoderVelocity method" Url="html/M_WPILib_CANTalon_GetEncoderVelocity.htm" />
+  <HelpKINode Title="CANTalon.GetError method" Url="html/M_WPILib_CANTalon_GetError.htm" />
   <HelpKINode Title="CANTalon.GetF method" Url="html/M_WPILib_CANTalon_GetF.htm" />
+  <HelpKINode Title="CANTalon.GetFaults method" Url="html/M_WPILib_CANTalon_GetFaults.htm" />
   <HelpKINode Title="CANTalon.GetFeedbackDevice method" Url="html/M_WPILib_CANTalon_GetFeedbackDevice.htm" />
+  <HelpKINode Title="CANTalon.GetForwardLimitOK method" Url="html/M_WPILib_CANTalon_GetForwardLimitOK.htm" />
   <HelpKINode Title="CANTalon.GetForwardSoftLimit method" Url="html/M_WPILib_CANTalon_GetForwardSoftLimit.htm" />
   <HelpKINode Title="CANTalon.GetForwardSoftLimitEnabled method" Url="html/M_WPILib_CANTalon_GetForwardSoftLimitEnabled.htm" />
   <HelpKINode Title="CANTalon.GetIaccum method" Url="html/M_WPILib_CANTalon_GetIaccum.htm" />
   <HelpKINode Title="CANTalon.GetIZone method" Url="html/M_WPILib_CANTalon_GetIZone.htm" />
   <HelpKINode Title="CANTalon.GetNumberOfQuadIdxRises method" Url="html/M_WPILib_CANTalon_GetNumberOfQuadIdxRises.htm" />
+  <HelpKINode Title="CANTalon.GetOutputCurrent method" Url="html/M_WPILib_CANTalon_GetOutputCurrent.htm" />
+  <HelpKINode Title="CANTalon.GetOutputVoltage method" Url="html/M_WPILib_CANTalon_GetOutputVoltage.htm" />
   <HelpKINode Title="CANTalon.GetPinStateQuadA method" Url="html/M_WPILib_CANTalon_GetPinStateQuadA.htm" />
   <HelpKINode Title="CANTalon.GetPinStateQuadB method" Url="html/M_WPILib_CANTalon_GetPinStateQuadB.htm" />
   <HelpKINode Title="CANTalon.GetPinStateQuadIdx method" Url="html/M_WPILib_CANTalon_GetPinStateQuadIdx.htm" />
+  <HelpKINode Title="CANTalon.GetPosition method" Url="html/M_WPILib_CANTalon_GetPosition.htm" />
   <HelpKINode Title="CANTalon.GetProfile method" Url="html/M_WPILib_CANTalon_GetProfile.htm" />
+  <HelpKINode Title="CANTalon.GetReverseLimitOK method" Url="html/M_WPILib_CANTalon_GetReverseLimitOK.htm" />
   <HelpKINode Title="CANTalon.GetReverseSoftLimit method" Url="html/M_WPILib_CANTalon_GetReverseSoftLimit.htm" />
   <HelpKINode Title="CANTalon.GetReverseSoftLimitEnabled method" Url="html/M_WPILib_CANTalon_GetReverseSoftLimitEnabled.htm" />
   <HelpKINode Title="CANTalon.GetSetpoint method" Url="html/M_WPILib_CANTalon_GetSetpoint.htm" />
+  <HelpKINode Title="CANTalon.GetSpeed method" Url="html/M_WPILib_CANTalon_GetSpeed.htm" />
+  <HelpKINode Title="CANTalon.GetTemperature method" Url="html/M_WPILib_CANTalon_GetTemperature.htm" />
   <HelpKINode Title="CANTalon.GetVoltageRampRate method" Url="html/M_WPILib_CANTalon_GetVoltageRampRate.htm" />
   <HelpKINode Title="CANTalon.I property" Url="html/P_WPILib_CANTalon_I.htm" />
   <HelpKINode Title="CANTalon.InitTable method" Url="html/M_WPILib_CANTalon_InitTable.htm" />
+  <HelpKINode Title="CANTalon.Inverted property" Url="html/P_WPILib_CANTalon_Inverted.htm" />
   <HelpKINode Title="CANTalon.IsBreakEnabledduringNeutral method" Url="html/M_WPILib_CANTalon_IsBreakEnabledduringNeutral.htm" />
   <HelpKINode Title="CANTalon.IsControlEnabled method" Url="html/M_WPILib_CANTalon_IsControlEnabled.htm" />
   <HelpKINode Title="CANTalon.IsForwardLimitSwitchClosed method" Url="html/M_WPILib_CANTalon_IsForwardLimitSwitchClosed.htm" />
@@ -684,15 +678,12 @@
   <HelpKINode Title="CANTalon.LimitMode property" Url="html/P_WPILib_CANTalon_LimitMode.htm" />
   <HelpKINode Title="CANTalon.MaxOutputVoltage property" Url="html/P_WPILib_CANTalon_MaxOutputVoltage.htm" />
   <HelpKINode Title="CANTalon.MotorControlMode property" Url="html/P_WPILib_CANTalon_MotorControlMode.htm" />
-  <HelpKINode Title="CANTalon.OutputCurrent property" Url="html/P_WPILib_CANTalon_OutputCurrent.htm" />
-  <HelpKINode Title="CANTalon.OutputVoltage property" Url="html/P_WPILib_CANTalon_OutputVoltage.htm" />
   <HelpKINode Title="CANTalon.P property" Url="html/P_WPILib_CANTalon_P.htm" />
   <HelpKINode Title="CANTalon.PidWrite method" Url="html/M_WPILib_CANTalon_PidWrite.htm" />
-  <HelpKINode Title="CANTalon.Position property" Url="html/P_WPILib_CANTalon_Position.htm" />
   <HelpKINode Title="CANTalon.PotentiometerTurns property" Url="html/P_WPILib_CANTalon_PotentiometerTurns.htm" />
   <HelpKINode Title="CANTalon.Profile property" Url="html/P_WPILib_CANTalon_Profile.htm" />
+  <HelpKINode Title="CANTalon.Reset method" Url="html/M_WPILib_CANTalon_Reset.htm" />
   <HelpKINode Title="CANTalon.ReverseLimit property" Url="html/P_WPILib_CANTalon_ReverseLimit.htm" />
-  <HelpKINode Title="CANTalon.ReverseLimitOK property" Url="html/P_WPILib_CANTalon_ReverseLimitOK.htm" />
   <HelpKINode Title="CANTalon.ReverseLimitSwitchNormallyOpen property" Url="html/P_WPILib_CANTalon_ReverseLimitSwitchNormallyOpen.htm" />
   <HelpKINode Title="CANTalon.ReverseOutput method" Url="html/M_WPILib_CANTalon_ReverseOutput.htm" />
   <HelpKINode Title="CANTalon.ReverseSensor method" Url="html/M_WPILib_CANTalon_ReverseSensor.htm" />
@@ -716,7 +707,6 @@
   <HelpKINode Title="CANTalon.SetReverseSoftLimitEnabled method" Url="html/M_WPILib_CANTalon_SetReverseSoftLimitEnabled.htm" />
   <HelpKINode Title="CANTalon.SetVoltageRampRate method" Url="html/M_WPILib_CANTalon_SetVoltageRampRate.htm" />
   <HelpKINode Title="CANTalon.SmartDashboardType property" Url="html/P_WPILib_CANTalon_SmartDashboardType.htm" />
-  <HelpKINode Title="CANTalon.Speed property" Url="html/P_WPILib_CANTalon_Speed.htm" />
   <HelpKINode Title="CANTalon.StartLiveWindowMode method" Url="html/M_WPILib_CANTalon_StartLiveWindowMode.htm" />
   <HelpKINode Title="CANTalon.StatusFrameRate enumeration" Url="html/T_WPILib_CANTalon_StatusFrameRate.htm" />
   <HelpKINode Title="CANTalon.StickyFaultForwardLimit property" Url="html/P_WPILib_CANTalon_StickyFaultForwardLimit.htm" />
@@ -728,7 +718,6 @@
   <HelpKINode Title="CANTalon.StopLiveWindowMode method" Url="html/M_WPILib_CANTalon_StopLiveWindowMode.htm" />
   <HelpKINode Title="CANTalon.StopMotor method" Url="html/M_WPILib_CANTalon_StopMotor.htm" />
   <HelpKINode Title="CANTalon.Table property" Url="html/P_WPILib_CANTalon_Table.htm" />
-  <HelpKINode Title="CANTalon.Temperature property" Url="html/P_WPILib_CANTalon_Temperature.htm" />
   <HelpKINode Title="CANTalon.UpdateTable method" Url="html/M_WPILib_CANTalon_UpdateTable.htm" />
   <HelpKINode Title="CANTalon.ValueChanged method" Url="html/M_WPILib_CANTalon_ValueChanged.htm" />
   <HelpKINode Title="CANTalon.VoltageRampRate property" Url="html/P_WPILib_CANTalon_VoltageRampRate.htm" />
@@ -771,6 +760,7 @@
   <HelpKINode Title="CheckedAllocationException.CheckedAllocationException constructor" Url="html/M_WPILib_Exceptions_CheckedAllocationException__ctor.htm" />
   <HelpKINode Title="CheckMotors method" Url="html/M_WPILib_MotorSafetyHelper_CheckMotors.htm" />
   <HelpKINode Title="CheckPdpChannel method" Url="html/M_WPILib_SensorBase_CheckPdpChannel.htm" />
+  <HelpKINode Title="CheckPDPModule method" Url="html/M_WPILib_SensorBase_CheckPDPModule.htm" />
   <HelpKINode Title="CheckPwmChannel method" Url="html/M_WPILib_SensorBase_CheckPwmChannel.htm" />
   <HelpKINode Title="CheckRelayChannel method" Url="html/M_WPILib_SensorBase_CheckRelayChannel.htm" />
   <HelpKINode Title="CheckSolenoidChannel method" Url="html/M_WPILib_SensorBase_CheckSolenoidChannel.htm" />
@@ -998,7 +988,6 @@
     <HelpKINode Title="CANTalon.ConfigSoftPositionLimits Method " Url="html/M_WPILib_CANTalon_ConfigSoftPositionLimits.htm" />
     <HelpKINode Title="ICANSpeedController.ConfigSoftPositionLimits Method " Url="html/M_WPILib_ICANSpeedController_ConfigSoftPositionLimits.htm" />
   </HelpKINode>
-  <HelpKINode Title="ConfirmString method" Url="html/M_WPILib_Preferences_ImproperPreferenceKeyException_ConfirmString.htm" />
   <HelpKINode Title="Connected method">
     <HelpKINode Title="IRemoteConnectionListener.Connected Method " Url="html/M_NetworkTables_Tables_IRemoteConnectionListener_Connected.htm" />
     <HelpKINode Title="NetworkTableConnectionListenerAdapter.Connected Method " Url="html/M_NetworkTables_NetworkTables_NetworkTableConnectionListenerAdapter_Connected.htm" />
@@ -1170,7 +1159,7 @@
   <HelpKINode Title="Delay method">
     <HelpKINode Title="HardwareTimer.Delay Method " Url="html/M_WPILib_Internal_HardwareTimer_Delay.htm" />
     <HelpKINode Title="Timer.Delay Method " Url="html/M_WPILib_Timer_Delay.htm" />
-    <HelpKINode Title="Timer.IStaticInterface.Delay Method " Url="html/M_WPILib_Timer_IStaticInterface_Delay.htm" />
+    <HelpKINode Title="Timer.IStaticTimerInterface.Delay Method " Url="html/M_WPILib_Timer_IStaticTimerInterface_Delay.htm" />
   </HelpKINode>
   <HelpKINode Title="Delete method" Url="html/M_WPILib_CANTalon_Delete.htm" />
   <HelpKINode Title="DeleteFromQueue method" Url="html/M_WPILib_Notifier_DeleteFromQueue.htm" />
@@ -1365,6 +1354,9 @@
   <HelpKINode Title="DriverStation.GetAlliance method" Url="html/M_WPILib_DriverStation_GetAlliance.htm" />
   <HelpKINode Title="DriverStation.GetBatteryVoltage method" Url="html/M_WPILib_DriverStation_GetBatteryVoltage.htm" />
   <HelpKINode Title="DriverStation.GetData method" Url="html/M_WPILib_DriverStation_GetData.htm" />
+  <HelpKINode Title="DriverStation.GetJoystickIsXbox method" Url="html/M_WPILib_DriverStation_GetJoystickIsXbox.htm" />
+  <HelpKINode Title="DriverStation.GetJoystickName method" Url="html/M_WPILib_DriverStation_GetJoystickName.htm" />
+  <HelpKINode Title="DriverStation.GetJoystickType method" Url="html/M_WPILib_DriverStation_GetJoystickType.htm" />
   <HelpKINode Title="DriverStation.GetLocation method" Url="html/M_WPILib_DriverStation_GetLocation.htm" />
   <HelpKINode Title="DriverStation.GetStickAxis method" Url="html/M_WPILib_DriverStation_GetStickAxis.htm" />
   <HelpKINode Title="DriverStation.GetStickAxisCount method" Url="html/M_WPILib_DriverStation_GetStickAxisCount.htm" />
@@ -1392,6 +1384,8 @@
   <HelpKINode Title="DSAtached property" Url="html/P_WPILib_DriverStation_DSAtached.htm" />
   <HelpKINode Title="DtrDsr enumeration member" Url="html/T_WPILib_FlowControl.htm" />
   <HelpKINode Title="Enable method">
+    <HelpKINode Title="CANJaguar.Enable Method " Url="html/M_WPILib_CANJaguar_Enable.htm" />
+    <HelpKINode Title="CANTalon.Enable Method " Url="html/M_WPILib_CANTalon_Enable.htm" />
     <HelpKINode Title="IController.Enable Method " Url="html/M_WPILib_IController_Enable.htm" />
     <HelpKINode Title="PIDController.Enable Method " Url="html/M_WPILib_PIDController_Enable.htm" />
     <HelpKINode Title="PIDSubsystem.Enable Method " Url="html/M_WPILib_Commands_PIDSubsystem_Enable.htm" />
@@ -1404,6 +1398,8 @@
   </HelpKINode>
   <HelpKINode Title="Enabled method" Url="html/M_WPILib_Compressor_Enabled.htm" />
   <HelpKINode Title="Enabled property">
+    <HelpKINode Title="CANJaguar.Enabled Property " Url="html/P_WPILib_CANJaguar_Enabled.htm" />
+    <HelpKINode Title="CANTalon.Enabled Property " Url="html/P_WPILib_CANTalon_Enabled.htm" />
     <HelpKINode Title="DriverStation.Enabled Property " Url="html/P_WPILib_DriverStation_Enabled.htm" />
     <HelpKINode Title="PIDController.Enabled Property " Url="html/P_WPILib_PIDController_Enabled.htm" />
     <HelpKINode Title="RobotState.Enabled Property " Url="html/P_WPILib_RobotState_Enabled.htm" />
@@ -1425,6 +1421,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Encoder.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Encoder.htm" />
   </HelpKINode>
+  <HelpKINode Title="Encoder enumeration member" Url="html/T_WPILib_CANJaguar_SourceMode.htm" />
   <HelpKINode Title="Encoder.Direction property" Url="html/P_WPILib_Encoder_Direction.htm" />
   <HelpKINode Title="Encoder.Dispose method" Url="html/M_WPILib_Encoder_Dispose.htm" />
   <HelpKINode Title="Encoder.DistancePerPulse property" Url="html/P_WPILib_Encoder_DistancePerPulse.htm" />
@@ -1462,9 +1459,6 @@
   </HelpKINode>
   <HelpKINode Title="EncoderFalling enumeration member" Url="html/T_WPILib_CANTalon_FeedbackDevice.htm" />
   <HelpKINode Title="EncoderRising enumeration member" Url="html/T_WPILib_CANTalon_FeedbackDevice.htm" />
-  <HelpKINode Title="EncoderTag structure">
-    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_CANJaguar_EncoderTag.htm" />
-  </HelpKINode>
   <HelpKINode Title="EncodingScale property" Url="html/P_WPILib_Encoder_EncodingScale.htm" />
   <HelpKINode Title="EncodingType enumeration" Url="html/T_WPILib_EncodingType.htm" />
   <HelpKINode Title="End method">
@@ -1486,10 +1480,9 @@
   <HelpKINode Title="entryStore field" Url="html/F_NetworkTables_NetworkTables2_NetworkTableNode_entryStore.htm" />
   <HelpKINode Title="ENTRY_ASSIGNMENT field" Url="html/F_NetworkTables_NetworkTables2_NetworkTableMessageType_ENTRY_ASSIGNMENT.htm" />
   <HelpKINode Title="Error class">
-    <HelpKINode Title="methods" Url="html/Methods_T_NetworkTables_NetworkTables2_Client_ClientConnectionState_Error.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_NetworkTables_NetworkTables2_Server_ServerConnectionState_Error.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_NetworkTables_NetworkTables2_Client_ClientConnectionState_Error.htm" />
   </HelpKINode>
-  <HelpKINode Title="Error property" Url="html/P_WPILib_PIDController_Error.htm" />
   <HelpKINode Title="Even enumeration member" Url="html/T_WPILib_Parity.htm" />
   <HelpKINode Title="Execute method">
     <HelpKINode Title="ButtonScheduler.Execute Method " Url="html/M_WPILib_Buttons_ButtonScheduler_Execute.htm" />
@@ -1528,11 +1521,6 @@
   <HelpKINode Title="FaultReverseLimit property" Url="html/P_WPILib_CANTalon_FaultReverseLimit.htm" />
   <HelpKINode Title="FaultReverseSoftLimit property" Url="html/P_WPILib_CANTalon_FaultReverseSoftLimit.htm" />
   <HelpKINode Title="Faults enumeration" Url="html/T_WPILib_Faults.htm" />
-  <HelpKINode Title="Faults property">
-    <HelpKINode Title="CANJaguar.Faults Property " Url="html/P_WPILib_CANJaguar_Faults.htm" />
-    <HelpKINode Title="CANTalon.Faults Property " Url="html/P_WPILib_CANTalon_Faults.htm" />
-    <HelpKINode Title="ICANSpeedController.Faults Property " Url="html/P_WPILib_ICANSpeedController_Faults.htm" />
-  </HelpKINode>
   <HelpKINode Title="FaultTime property">
     <HelpKINode Title="CANJaguar.FaultTime Property " Url="html/P_WPILib_CANJaguar_FaultTime.htm" />
     <HelpKINode Title="CANTalon.FaultTime Property " Url="html/P_WPILib_CANTalon_FaultTime.htm" />
@@ -1599,11 +1587,6 @@
     <HelpKINode Title="CANTalon.ForwardLimit Property " Url="html/P_WPILib_CANTalon_ForwardLimit.htm" />
     <HelpKINode Title="ICANSpeedController.ForwardLimit Property " Url="html/P_WPILib_ICANSpeedController_ForwardLimit.htm" />
   </HelpKINode>
-  <HelpKINode Title="ForwardLimitOK property">
-    <HelpKINode Title="CANJaguar.ForwardLimitOK Property " Url="html/P_WPILib_CANJaguar_ForwardLimitOK.htm" />
-    <HelpKINode Title="CANTalon.ForwardLimitOK Property " Url="html/P_WPILib_CANTalon_ForwardLimitOK.htm" />
-    <HelpKINode Title="ICANSpeedController.ForwardLimitOK Property " Url="html/P_WPILib_ICANSpeedController_ForwardLimitOK.htm" />
-  </HelpKINode>
   <HelpKINode Title="ForwardLimitSwitchNormallyOpen property" Url="html/P_WPILib_CANTalon_ForwardLimitSwitchNormallyOpen.htm" />
   <HelpKINode Title="ForwardSoftLimit property" Url="html/P_WPILib_CANTalon_ForwardSoftLimit.htm" />
   <HelpKINode Title="ForwardSoftLimitEnabled property" Url="html/P_WPILib_CANTalon_ForwardSoftLimitEnabled.htm" />
@@ -1612,11 +1595,6 @@
     <HelpKINode Title="Encoder.FPGAIndex Property " Url="html/P_WPILib_Encoder_FPGAIndex.htm" />
   </HelpKINode>
   <HelpKINode Title="FPGATime property" Url="html/P_WPILib_Utility_FPGATime.htm" />
-  <HelpKINode Title="FPGATimestamp property">
-    <HelpKINode Title="HardwareTimer.FPGATimestamp Property " Url="html/P_WPILib_Internal_HardwareTimer_FPGATimestamp.htm" />
-    <HelpKINode Title="Timer.FPGATimestamp Property " Url="html/P_WPILib_Timer_FPGATimestamp.htm" />
-    <HelpKINode Title="Timer.IStaticInterface.FPGATimestamp Property " Url="html/P_WPILib_Timer_IStaticInterface_FPGATimestamp.htm" />
-  </HelpKINode>
   <HelpKINode Title="FrontLeft enumeration member" Url="html/T_WPILib_MotorType.htm" />
   <HelpKINode Title="FrontRight enumeration member" Url="html/T_WPILib_MotorType.htm" />
   <HelpKINode Title="FullRangeScaleFactor property" Url="html/P_WPILib_PWM_FullRangeScaleFactor.htm" />
@@ -1642,20 +1620,19 @@
     <HelpKINode Title="about GenericHID class" Url="html/T_WPILib_GenericHID.htm" />
     <HelpKINode Title="constructor" Url="html/M_WPILib_GenericHID__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_GenericHID.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_WPILib_GenericHID.htm" />
   </HelpKINode>
   <HelpKINode Title="GenericHID.GenericHID constructor" Url="html/M_WPILib_GenericHID__ctor.htm" />
   <HelpKINode Title="GenericHID.GetBumper method" Url="html/Overload_WPILib_GenericHID_GetBumper.htm" />
   <HelpKINode Title="GenericHID.GetPOV method" Url="html/Overload_WPILib_GenericHID_GetPOV.htm" />
   <HelpKINode Title="GenericHID.GetRawAxis method" Url="html/M_WPILib_GenericHID_GetRawAxis.htm" />
   <HelpKINode Title="GenericHID.GetRawButton method" Url="html/M_WPILib_GenericHID_GetRawButton.htm" />
+  <HelpKINode Title="GenericHID.GetThrottle method" Url="html/M_WPILib_GenericHID_GetThrottle.htm" />
   <HelpKINode Title="GenericHID.GetTop method" Url="html/Overload_WPILib_GenericHID_GetTop.htm" />
   <HelpKINode Title="GenericHID.GetTrigger method" Url="html/Overload_WPILib_GenericHID_GetTrigger.htm" />
+  <HelpKINode Title="GenericHID.GetTwist method" Url="html/M_WPILib_GenericHID_GetTwist.htm" />
   <HelpKINode Title="GenericHID.GetX method" Url="html/Overload_WPILib_GenericHID_GetX.htm" />
   <HelpKINode Title="GenericHID.GetY method" Url="html/Overload_WPILib_GenericHID_GetY.htm" />
   <HelpKINode Title="GenericHID.GetZ method" Url="html/Overload_WPILib_GenericHID_GetZ.htm" />
-  <HelpKINode Title="GenericHID.Throttle property" Url="html/P_WPILib_GenericHID_Throttle.htm" />
-  <HelpKINode Title="GenericHID.Twist property" Url="html/P_WPILib_GenericHID_Twist.htm" />
   <HelpKINode Title="Get method">
     <HelpKINode Title="AnalogPotentiometer.Get Method " Url="html/M_WPILib_AnalogPotentiometer_Get.htm" />
     <HelpKINode Title="AnalogTriggerOutput.Get Method " Url="html/M_WPILib_AnalogTriggerOutput_Get.htm" />
@@ -1683,9 +1660,10 @@
     <HelpKINode Title="StringArray.Get Method " Url="html/M_NetworkTables_NetworkTables2_Type_StringArray_Get.htm" />
     <HelpKINode Title="StringCache.Get Method " Url="html/M_NetworkTables_NetworkTables2_Util_StringCache_Get.htm" />
     <HelpKINode Title="Timer.Get Method " Url="html/M_WPILib_Timer_Get.htm" />
-    <HelpKINode Title="Timer.Interface.Get Method " Url="html/M_WPILib_Timer_Interface_Get.htm" />
+    <HelpKINode Title="Timer.ITimerInterface.Get Method " Url="html/M_WPILib_Timer_ITimerInterface_Get.htm" />
     <HelpKINode Title="Trigger.Get Method " Url="html/M_WPILib_Buttons_Trigger_Get.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetA method" Url="html/M_WPILib_Extras_XboxController_GetA.htm" />
   <HelpKINode Title="GetAcceleration method">
     <HelpKINode Title="ADXL345.GetAcceleration Method " Url="html/M_WPILib_ADXL345_GetAcceleration.htm" />
     <HelpKINode Title="ADXL345_I2C.GetAcceleration Method " Url="html/M_WPILib_ADXL345_I2C_GetAcceleration.htm" />
@@ -1712,6 +1690,8 @@
   <HelpKINode Title="GetAverageVoltage method" Url="html/M_WPILib_AnalogInput_GetAverageVoltage.htm" />
   <HelpKINode Title="GetAxis method" Url="html/M_WPILib_Joystick_GetAxis.htm" />
   <HelpKINode Title="GetAxisChannel method" Url="html/M_WPILib_Joystick_GetAxisChannel.htm" />
+  <HelpKINode Title="GetB method" Url="html/M_WPILib_Extras_XboxController_GetB.htm" />
+  <HelpKINode Title="GetBack method" Url="html/M_WPILib_Extras_XboxController_GetBack.htm" />
   <HelpKINode Title="GetBatteryVoltage method" Url="html/M_WPILib_DriverStation_GetBatteryVoltage.htm" />
   <HelpKINode Title="GetBoolean method">
     <HelpKINode Title="ITable.GetBoolean Method " Url="html/Overload_NetworkTables_Tables_ITable_GetBoolean.htm" />
@@ -1723,6 +1703,11 @@
   <HelpKINode Title="GetBumper method">
     <HelpKINode Title="GenericHID.GetBumper Method " Url="html/Overload_WPILib_GenericHID_GetBumper.htm" />
     <HelpKINode Title="Joystick.GetBumper Method " Url="html/Overload_WPILib_Joystick_GetBumper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetBusVoltage method">
+    <HelpKINode Title="CANJaguar.GetBusVoltage Method " Url="html/M_WPILib_CANJaguar_GetBusVoltage.htm" />
+    <HelpKINode Title="CANTalon.GetBusVoltage Method " Url="html/M_WPILib_CANTalon_GetBusVoltage.htm" />
+    <HelpKINode Title="ICANSpeedController.GetBusVoltage Method " Url="html/M_WPILib_ICANSpeedController_GetBusVoltage.htm" />
   </HelpKINode>
   <HelpKINode Title="GetButton method" Url="html/M_WPILib_Joystick_GetButton.htm" />
   <HelpKINode Title="GetClosedLoopError method" Url="html/M_WPILib_CANTalon_GetClosedLoopError.htm" />
@@ -1766,11 +1751,31 @@
     <HelpKINode Title="ServerConnectionAdapter.GetEntry Method " Url="html/M_NetworkTables_NetworkTables2_Server_ServerConnectionAdapter_GetEntry.htm" />
   </HelpKINode>
   <HelpKINode Title="GetEntryStore method" Url="html/M_NetworkTables_NetworkTables2_NetworkTableNode_GetEntryStore.htm" />
+  <HelpKINode Title="GetError method">
+    <HelpKINode Title="CANJaguar.GetError Method " Url="html/M_WPILib_CANJaguar_GetError.htm" />
+    <HelpKINode Title="CANTalon.GetError Method " Url="html/M_WPILib_CANTalon_GetError.htm" />
+    <HelpKINode Title="PIDController.GetError Method " Url="html/M_WPILib_PIDController_GetError.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetF method" Url="html/M_WPILib_CANTalon_GetF.htm" />
+  <HelpKINode Title="GetFaults method">
+    <HelpKINode Title="CANJaguar.GetFaults Method " Url="html/M_WPILib_CANJaguar_GetFaults.htm" />
+    <HelpKINode Title="CANTalon.GetFaults Method " Url="html/M_WPILib_CANTalon_GetFaults.htm" />
+    <HelpKINode Title="ICANSpeedController.GetFaults Method " Url="html/M_WPILib_ICANSpeedController_GetFaults.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetFeedbackDevice method" Url="html/M_WPILib_CANTalon_GetFeedbackDevice.htm" />
   <HelpKINode Title="GetFloat method" Url="html/M_WPILib_Preferences_GetFloat.htm" />
+  <HelpKINode Title="GetForwardLimitOK method">
+    <HelpKINode Title="CANJaguar.GetForwardLimitOK Method " Url="html/M_WPILib_CANJaguar_GetForwardLimitOK.htm" />
+    <HelpKINode Title="CANTalon.GetForwardLimitOK Method " Url="html/M_WPILib_CANTalon_GetForwardLimitOK.htm" />
+    <HelpKINode Title="ICANSpeedController.GetForwardLimitOK Method " Url="html/M_WPILib_ICANSpeedController_GetForwardLimitOK.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetForwardSoftLimit method" Url="html/M_WPILib_CANTalon_GetForwardSoftLimit.htm" />
   <HelpKINode Title="GetForwardSoftLimitEnabled method" Url="html/M_WPILib_CANTalon_GetForwardSoftLimitEnabled.htm" />
+  <HelpKINode Title="GetFPGATimestamp method">
+    <HelpKINode Title="HardwareTimer.GetFPGATimestamp Method " Url="html/M_WPILib_Internal_HardwareTimer_GetFPGATimestamp.htm" />
+    <HelpKINode Title="Timer.GetFPGATimestamp Method " Url="html/M_WPILib_Timer_GetFPGATimestamp.htm" />
+    <HelpKINode Title="Timer.IStaticTimerInterface.GetFPGATimestamp Method " Url="html/M_WPILib_Timer_IStaticTimerInterface_GetFPGATimestamp.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetGroup method" Url="html/M_WPILib_Commands_Command_GetGroup.htm" />
   <HelpKINode Title="GetHardwareVersion method" Url="html/M_WPILib_CANJaguar_GetHardwareVersion.htm" />
   <HelpKINode Title="GetIaccum method" Url="html/M_WPILib_CANTalon_GetIaccum.htm" />
@@ -1781,14 +1786,29 @@
   </HelpKINode>
   <HelpKINode Title="GetInstance method" Url="html/M_WPILib_Preferences_GetInstance.htm" />
   <HelpKINode Title="GetInt method" Url="html/M_WPILib_Preferences_GetInt.htm" />
+  <HelpKINode Title="GetIsXbox method" Url="html/M_WPILib_Joystick_GetIsXbox.htm" />
   <HelpKINode Title="GetIZone method" Url="html/M_WPILib_CANTalon_GetIZone.htm" />
+  <HelpKINode Title="GetJoystickIsXbox method" Url="html/M_WPILib_DriverStation_GetJoystickIsXbox.htm" />
+  <HelpKINode Title="GetJoystickName method" Url="html/M_WPILib_DriverStation_GetJoystickName.htm" />
+  <HelpKINode Title="GetJoystickType method" Url="html/M_WPILib_DriverStation_GetJoystickType.htm" />
+  <HelpKINode Title="GetLeftBumper method" Url="html/M_WPILib_Extras_XboxController_GetLeftBumper.htm" />
+  <HelpKINode Title="GetLeftStickButton method" Url="html/M_WPILib_Extras_XboxController_GetLeftStickButton.htm" />
+  <HelpKINode Title="GetLeftTrigger method" Url="html/M_WPILib_Extras_XboxController_GetLeftTrigger.htm" />
+  <HelpKINode Title="GetLeftXAxis method" Url="html/M_WPILib_Extras_XboxController_GetLeftXAxis.htm" />
+  <HelpKINode Title="GetLeftYAxis method" Url="html/M_WPILib_Extras_XboxController_GetLeftYAxis.htm" />
   <HelpKINode Title="GetLocation method" Url="html/M_WPILib_DriverStation_GetLocation.htm" />
   <HelpKINode Title="GetLong method" Url="html/M_WPILib_Preferences_GetLong.htm" />
   <HelpKINode Title="GetMagnitude method" Url="html/M_WPILib_Joystick_GetMagnitude.htm" />
+  <HelpKINode Title="GetMatchTime method">
+    <HelpKINode Title="HardwareTimer.GetMatchTime Method " Url="html/M_WPILib_Internal_HardwareTimer_GetMatchTime.htm" />
+    <HelpKINode Title="Timer.GetMatchTime Method " Url="html/M_WPILib_Timer_GetMatchTime.htm" />
+    <HelpKINode Title="Timer.IStaticTimerInterface.GetMatchTime Method " Url="html/M_WPILib_Timer_IStaticTimerInterface_GetMatchTime.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetMessage method">
     <HelpKINode Title="BoundaryException.GetMessage Method " Url="html/M_WPILib_Exceptions_BoundaryException_GetMessage.htm" />
     <HelpKINode Title="CANJaguar.GetMessage Method " Url="html/M_WPILib_CANJaguar_GetMessage.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetName method" Url="html/M_WPILib_Joystick_GetName.htm" />
   <HelpKINode Title="GetNode method" Url="html/M_NetworkTables_NetworkTables_NetworkTableProvider_GetNode.htm" />
   <HelpKINode Title="GetNumber method">
     <HelpKINode Title="ITable.GetNumber Method " Url="html/Overload_NetworkTables_Tables_ITable_GetNumber.htm" />
@@ -1797,9 +1817,19 @@
   </HelpKINode>
   <HelpKINode Title="GetNumberOfQuadIdxRises method" Url="html/M_WPILib_CANTalon_GetNumberOfQuadIdxRises.htm" />
   <HelpKINode Title="GetNumMotors method" Url="html/M_WPILib_RobotDrive_GetNumMotors.htm" />
+  <HelpKINode Title="GetOutputCurrent method">
+    <HelpKINode Title="CANJaguar.GetOutputCurrent Method " Url="html/M_WPILib_CANJaguar_GetOutputCurrent.htm" />
+    <HelpKINode Title="CANTalon.GetOutputCurrent Method " Url="html/M_WPILib_CANTalon_GetOutputCurrent.htm" />
+    <HelpKINode Title="ICANSpeedController.GetOutputCurrent Method " Url="html/M_WPILib_ICANSpeedController_GetOutputCurrent.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetOutputStream method">
     <HelpKINode Title="IOStream.GetOutputStream Method " Url="html/M_NetworkTables_NetworkTables2_Stream_IOStream_GetOutputStream.htm" />
     <HelpKINode Title="SimpleIOStream.GetOutputStream Method " Url="html/M_NetworkTables_NetworkTables2_Stream_SimpleIOStream_GetOutputStream.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetOutputVoltage method">
+    <HelpKINode Title="CANJaguar.GetOutputVoltage Method " Url="html/M_WPILib_CANJaguar_GetOutputVoltage.htm" />
+    <HelpKINode Title="CANTalon.GetOutputVoltage Method " Url="html/M_WPILib_CANTalon_GetOutputVoltage.htm" />
+    <HelpKINode Title="ICANSpeedController.GetOutputVoltage Method " Url="html/M_WPILib_ICANSpeedController_GetOutputVoltage.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPCMSolenoidBlackList method" Url="html/M_WPILib_SolenoidBase_GetPCMSolenoidBlackList.htm" />
   <HelpKINode Title="GetPCMSolenoidVoltageFault method" Url="html/M_WPILib_SolenoidBase_GetPCMSolenoidVoltageFault.htm" />
@@ -1814,6 +1844,9 @@
   <HelpKINode Title="GetPinStateQuadB method" Url="html/M_WPILib_CANTalon_GetPinStateQuadB.htm" />
   <HelpKINode Title="GetPinStateQuadIdx method" Url="html/M_WPILib_CANTalon_GetPinStateQuadIdx.htm" />
   <HelpKINode Title="GetPosition method">
+    <HelpKINode Title="CANJaguar.GetPosition Method " Url="html/M_WPILib_CANJaguar_GetPosition.htm" />
+    <HelpKINode Title="CANTalon.GetPosition Method " Url="html/M_WPILib_CANTalon_GetPosition.htm" />
+    <HelpKINode Title="ICANSpeedController.GetPosition Method " Url="html/M_WPILib_ICANSpeedController_GetPosition.htm" />
     <HelpKINode Title="PIDCommand.GetPosition Method " Url="html/M_WPILib_Commands_PIDCommand_GetPosition.htm" />
     <HelpKINode Title="PIDSubsystem.GetPosition Method " Url="html/M_WPILib_Commands_PIDSubsystem_GetPosition.htm" />
     <HelpKINode Title="PWM.GetPosition Method " Url="html/M_WPILib_PWM_GetPosition.htm" />
@@ -1842,8 +1875,18 @@
     <HelpKINode Title="GenericHID.GetRawButton Method " Url="html/M_WPILib_GenericHID_GetRawButton.htm" />
     <HelpKINode Title="Joystick.GetRawButton Method " Url="html/M_WPILib_Joystick_GetRawButton.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetReverseLimitOK method">
+    <HelpKINode Title="CANJaguar.GetReverseLimitOK Method " Url="html/M_WPILib_CANJaguar_GetReverseLimitOK.htm" />
+    <HelpKINode Title="CANTalon.GetReverseLimitOK Method " Url="html/M_WPILib_CANTalon_GetReverseLimitOK.htm" />
+    <HelpKINode Title="ICANSpeedController.GetReverseLimitOK Method " Url="html/M_WPILib_ICANSpeedController_GetReverseLimitOK.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetReverseSoftLimit method" Url="html/M_WPILib_CANTalon_GetReverseSoftLimit.htm" />
   <HelpKINode Title="GetReverseSoftLimitEnabled method" Url="html/M_WPILib_CANTalon_GetReverseSoftLimitEnabled.htm" />
+  <HelpKINode Title="GetRightBumper method" Url="html/M_WPILib_Extras_XboxController_GetRightBumper.htm" />
+  <HelpKINode Title="GetRightStickButton method" Url="html/M_WPILib_Extras_XboxController_GetRightStickButton.htm" />
+  <HelpKINode Title="GetRightTrigger method" Url="html/M_WPILib_Extras_XboxController_GetRightTrigger.htm" />
+  <HelpKINode Title="GetRightXAxis method" Url="html/M_WPILib_Extras_XboxController_GetRightXAxis.htm" />
+  <HelpKINode Title="GetRightYAxis method" Url="html/M_WPILib_Extras_XboxController_GetRightYAxis.htm" />
   <HelpKINode Title="GetRootTable method" Url="html/M_NetworkTables_NetworkTables_NetworkTableProvider_GetRootTable.htm" />
   <HelpKINode Title="GetSelected method" Url="html/M_WPILib_SmartDashboards_SendableChooser_GetSelected.htm" />
   <HelpKINode Title="GetSequenceNumber method" Url="html/M_NetworkTables_NetworkTables2_NetworkTableEntry_GetSequenceNumber.htm" />
@@ -1853,7 +1896,13 @@
     <HelpKINode Title="PIDCommand.GetSetpoint Method " Url="html/M_WPILib_Commands_PIDCommand_GetSetpoint.htm" />
     <HelpKINode Title="PIDSubsystem.GetSetpoint Method " Url="html/M_WPILib_Commands_PIDSubsystem_GetSetpoint.htm" />
   </HelpKINode>
-  <HelpKINode Title="GetSpeed method" Url="html/M_WPILib_PWM_GetSpeed.htm" />
+  <HelpKINode Title="GetSpeed method">
+    <HelpKINode Title="CANJaguar.GetSpeed Method " Url="html/M_WPILib_CANJaguar_GetSpeed.htm" />
+    <HelpKINode Title="CANTalon.GetSpeed Method " Url="html/M_WPILib_CANTalon_GetSpeed.htm" />
+    <HelpKINode Title="ICANSpeedController.GetSpeed Method " Url="html/M_WPILib_ICANSpeedController_GetSpeed.htm" />
+    <HelpKINode Title="PWM.GetSpeed Method " Url="html/M_WPILib_PWM_GetSpeed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetStart method" Url="html/M_WPILib_Extras_XboxController_GetStart.htm" />
   <HelpKINode Title="GetStatus method" Url="html/M_WPILib_Exceptions_UncleanStatusException_GetStatus.htm" />
   <HelpKINode Title="GetStickAxis method" Url="html/M_WPILib_DriverStation_GetStickAxis.htm" />
   <HelpKINode Title="GetStickAxisCount method" Url="html/M_WPILib_DriverStation_GetStickAxisCount.htm" />
@@ -1883,7 +1932,16 @@
     <HelpKINode Title="NetworkTable.GetTable Method " Url="html/M_NetworkTables_NetworkTable_GetTable.htm" />
     <HelpKINode Title="NetworkTableProvider.GetTable Method " Url="html/M_NetworkTables_NetworkTables_NetworkTableProvider_GetTable.htm" />
   </HelpKINode>
-  <HelpKINode Title="GetTemperature method" Url="html/M_WPILib_PowerDistributionPanel_GetTemperature.htm" />
+  <HelpKINode Title="GetTemperature method">
+    <HelpKINode Title="CANJaguar.GetTemperature Method " Url="html/M_WPILib_CANJaguar_GetTemperature.htm" />
+    <HelpKINode Title="CANTalon.GetTemperature Method " Url="html/M_WPILib_CANTalon_GetTemperature.htm" />
+    <HelpKINode Title="ICANSpeedController.GetTemperature Method " Url="html/M_WPILib_ICANSpeedController_GetTemperature.htm" />
+    <HelpKINode Title="PowerDistributionPanel.GetTemperature Method " Url="html/M_WPILib_PowerDistributionPanel_GetTemperature.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetThrottle method">
+    <HelpKINode Title="GenericHID.GetThrottle Method " Url="html/M_WPILib_GenericHID_GetThrottle.htm" />
+    <HelpKINode Title="Joystick.GetThrottle Method " Url="html/M_WPILib_Joystick_GetThrottle.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetTop method">
     <HelpKINode Title="GenericHID.GetTop Method " Url="html/Overload_WPILib_GenericHID_GetTop.htm" />
     <HelpKINode Title="Joystick.GetTop Method " Url="html/Overload_WPILib_Joystick_GetTop.htm" />
@@ -1895,8 +1953,13 @@
     <HelpKINode Title="GenericHID.GetTrigger Method " Url="html/Overload_WPILib_GenericHID_GetTrigger.htm" />
     <HelpKINode Title="Joystick.GetTrigger Method " Url="html/Overload_WPILib_Joystick_GetTrigger.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetTwist method">
+    <HelpKINode Title="GenericHID.GetTwist Method " Url="html/M_WPILib_GenericHID_GetTwist.htm" />
+    <HelpKINode Title="Joystick.GetTwist Method " Url="html/M_WPILib_Joystick_GetTwist.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetType method">
     <HelpKINode Title="ComplexData.GetType Method " Url="html/M_NetworkTables_NetworkTables2_Type_ComplexData_GetType.htm" />
+    <HelpKINode Title="Joystick.GetType Method " Url="html/M_WPILib_Joystick_GetType.htm" />
     <HelpKINode Title="NetworkTableEntry.GetType Method " Url="html/M_NetworkTables_NetworkTables2_NetworkTableEntry_GetType.htm" />
     <HelpKINode Title="NetworkTableEntryTypeManager.GetType Method " Url="html/Overload_NetworkTables_NetworkTables2_Type_NetworkTableEntryTypeManager_GetType.htm" />
     <HelpKINode Title="Scheduler.GetType Method " Url="html/M_WPILib_Commands_Scheduler_GetType.htm" />
@@ -1919,12 +1982,14 @@
     <HelpKINode Title="GenericHID.GetX Method " Url="html/Overload_WPILib_GenericHID_GetX.htm" />
     <HelpKINode Title="IAccelerometer.GetX Method " Url="html/M_WPILib_Interfaces_IAccelerometer_GetX.htm" />
     <HelpKINode Title="Joystick.GetX Method " Url="html/Overload_WPILib_Joystick_GetX.htm" />
+    <HelpKINode Title="XboxController.GetX Method " Url="html/Overload_WPILib_Extras_XboxController_GetX.htm" />
   </HelpKINode>
   <HelpKINode Title="GetY method">
     <HelpKINode Title="ADXL345.GetY Method " Url="html/M_WPILib_ADXL345_GetY.htm" />
     <HelpKINode Title="GenericHID.GetY Method " Url="html/Overload_WPILib_GenericHID_GetY.htm" />
     <HelpKINode Title="IAccelerometer.GetY Method " Url="html/M_WPILib_Interfaces_IAccelerometer_GetY.htm" />
     <HelpKINode Title="Joystick.GetY Method " Url="html/Overload_WPILib_Joystick_GetY.htm" />
+    <HelpKINode Title="XboxController.GetY Method " Url="html/Overload_WPILib_Extras_XboxController_GetY.htm" />
   </HelpKINode>
   <HelpKINode Title="GetZ method">
     <HelpKINode Title="ADXL345.GetZ Method " Url="html/M_WPILib_ADXL345_GetZ.htm" />
@@ -1989,12 +2054,11 @@
     <HelpKINode Title="about HardwareTimer class" Url="html/T_WPILib_Internal_HardwareTimer.htm" />
     <HelpKINode Title="constructor" Url="html/M_WPILib_Internal_HardwareTimer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Internal_HardwareTimer.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Internal_HardwareTimer.htm" />
   </HelpKINode>
   <HelpKINode Title="HardwareTimer.Delay method" Url="html/M_WPILib_Internal_HardwareTimer_Delay.htm" />
-  <HelpKINode Title="HardwareTimer.FPGATimestamp property" Url="html/P_WPILib_Internal_HardwareTimer_FPGATimestamp.htm" />
+  <HelpKINode Title="HardwareTimer.GetFPGATimestamp method" Url="html/M_WPILib_Internal_HardwareTimer_GetFPGATimestamp.htm" />
+  <HelpKINode Title="HardwareTimer.GetMatchTime method" Url="html/M_WPILib_Internal_HardwareTimer_GetMatchTime.htm" />
   <HelpKINode Title="HardwareTimer.HardwareTimer constructor" Url="html/M_WPILib_Internal_HardwareTimer__ctor.htm" />
-  <HelpKINode Title="HardwareTimer.MatchTime property" Url="html/P_WPILib_Internal_HardwareTimer_MatchTime.htm" />
   <HelpKINode Title="HardwareTimer.NewTimer method" Url="html/M_WPILib_Internal_HardwareTimer_NewTimer.htm" />
   <HelpKINode Title="HardwareTimer.TimerImpl class">
     <HelpKINode Title="HardwareTimer.TimerImpl Class" Url="html/T_WPILib_Internal_HardwareTimer_TimerImpl.htm" />
@@ -2010,7 +2074,7 @@
   <HelpKINode Title="HasPeriodPassed method">
     <HelpKINode Title="HardwareTimer.TimerImpl.HasPeriodPassed Method " Url="html/M_WPILib_Internal_HardwareTimer_TimerImpl_HasPeriodPassed.htm" />
     <HelpKINode Title="Timer.HasPeriodPassed Method " Url="html/M_WPILib_Timer_HasPeriodPassed.htm" />
-    <HelpKINode Title="Timer.Interface.HasPeriodPassed Method " Url="html/M_WPILib_Timer_Interface_HasPeriodPassed.htm" />
+    <HelpKINode Title="Timer.ITimerInterface.HasPeriodPassed Method " Url="html/M_WPILib_Timer_ITimerInterface_HasPeriodPassed.htm" />
   </HelpKINode>
   <HelpKINode Title="HLUsageReporting class">
     <HelpKINode Title="HLUsageReporting Class" Url="html/T_WPILib_HLUsageReporting.htm" />
@@ -2069,30 +2133,30 @@
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_ICANSpeedController.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_ICANSpeedController.htm" />
   </HelpKINode>
-  <HelpKINode Title="ICANSpeedController.BusVoltage property" Url="html/P_WPILib_ICANSpeedController_BusVoltage.htm" />
   <HelpKINode Title="ICANSpeedController.ConfigNeutralMode property" Url="html/P_WPILib_ICANSpeedController_ConfigNeutralMode.htm" />
   <HelpKINode Title="ICANSpeedController.ConfigSoftPositionLimits method" Url="html/M_WPILib_ICANSpeedController_ConfigSoftPositionLimits.htm" />
   <HelpKINode Title="ICANSpeedController.D property" Url="html/P_WPILib_ICANSpeedController_D.htm" />
   <HelpKINode Title="ICANSpeedController.DisableSoftPositionLimits method" Url="html/M_WPILib_ICANSpeedController_DisableSoftPositionLimits.htm" />
   <HelpKINode Title="ICANSpeedController.EncoderCodesPerRev property" Url="html/P_WPILib_ICANSpeedController_EncoderCodesPerRev.htm" />
-  <HelpKINode Title="ICANSpeedController.Faults property" Url="html/P_WPILib_ICANSpeedController_Faults.htm" />
   <HelpKINode Title="ICANSpeedController.FaultTime property" Url="html/P_WPILib_ICANSpeedController_FaultTime.htm" />
   <HelpKINode Title="ICANSpeedController.FirmwareVersion property" Url="html/P_WPILib_ICANSpeedController_FirmwareVersion.htm" />
   <HelpKINode Title="ICANSpeedController.ForwardLimit property" Url="html/P_WPILib_ICANSpeedController_ForwardLimit.htm" />
-  <HelpKINode Title="ICANSpeedController.ForwardLimitOK property" Url="html/P_WPILib_ICANSpeedController_ForwardLimitOK.htm" />
+  <HelpKINode Title="ICANSpeedController.GetBusVoltage method" Url="html/M_WPILib_ICANSpeedController_GetBusVoltage.htm" />
+  <HelpKINode Title="ICANSpeedController.GetFaults method" Url="html/M_WPILib_ICANSpeedController_GetFaults.htm" />
+  <HelpKINode Title="ICANSpeedController.GetForwardLimitOK method" Url="html/M_WPILib_ICANSpeedController_GetForwardLimitOK.htm" />
+  <HelpKINode Title="ICANSpeedController.GetOutputCurrent method" Url="html/M_WPILib_ICANSpeedController_GetOutputCurrent.htm" />
+  <HelpKINode Title="ICANSpeedController.GetOutputVoltage method" Url="html/M_WPILib_ICANSpeedController_GetOutputVoltage.htm" />
+  <HelpKINode Title="ICANSpeedController.GetPosition method" Url="html/M_WPILib_ICANSpeedController_GetPosition.htm" />
+  <HelpKINode Title="ICANSpeedController.GetReverseLimitOK method" Url="html/M_WPILib_ICANSpeedController_GetReverseLimitOK.htm" />
+  <HelpKINode Title="ICANSpeedController.GetSpeed method" Url="html/M_WPILib_ICANSpeedController_GetSpeed.htm" />
+  <HelpKINode Title="ICANSpeedController.GetTemperature method" Url="html/M_WPILib_ICANSpeedController_GetTemperature.htm" />
   <HelpKINode Title="ICANSpeedController.I property" Url="html/P_WPILib_ICANSpeedController_I.htm" />
   <HelpKINode Title="ICANSpeedController.LimitMode property" Url="html/P_WPILib_ICANSpeedController_LimitMode.htm" />
   <HelpKINode Title="ICANSpeedController.MaxOutputVoltage property" Url="html/P_WPILib_ICANSpeedController_MaxOutputVoltage.htm" />
-  <HelpKINode Title="ICANSpeedController.OutputCurrent property" Url="html/P_WPILib_ICANSpeedController_OutputCurrent.htm" />
-  <HelpKINode Title="ICANSpeedController.OutputVoltage property" Url="html/P_WPILib_ICANSpeedController_OutputVoltage.htm" />
   <HelpKINode Title="ICANSpeedController.P property" Url="html/P_WPILib_ICANSpeedController_P.htm" />
-  <HelpKINode Title="ICANSpeedController.Position property" Url="html/P_WPILib_ICANSpeedController_Position.htm" />
   <HelpKINode Title="ICANSpeedController.PotentiometerTurns property" Url="html/P_WPILib_ICANSpeedController_PotentiometerTurns.htm" />
   <HelpKINode Title="ICANSpeedController.ReverseLimit property" Url="html/P_WPILib_ICANSpeedController_ReverseLimit.htm" />
-  <HelpKINode Title="ICANSpeedController.ReverseLimitOK property" Url="html/P_WPILib_ICANSpeedController_ReverseLimitOK.htm" />
   <HelpKINode Title="ICANSpeedController.SetPID method" Url="html/M_WPILib_ICANSpeedController_SetPID.htm" />
-  <HelpKINode Title="ICANSpeedController.Speed property" Url="html/P_WPILib_ICANSpeedController_Speed.htm" />
-  <HelpKINode Title="ICANSpeedController.Temperature property" Url="html/P_WPILib_ICANSpeedController_Temperature.htm" />
   <HelpKINode Title="ICANSpeedController.VoltageRampRate property" Url="html/P_WPILib_ICANSpeedController_VoltageRampRate.htm" />
   <HelpKINode Title="IController interface">
     <HelpKINode Title="IController Interface" Url="html/T_WPILib_IController.htm" />
@@ -2147,11 +2211,6 @@
   <HelpKINode Title="Implementation property">
     <HelpKINode Title="HLUsageReporting.Implementation Property " Url="html/P_WPILib_HLUsageReporting_Implementation.htm" />
     <HelpKINode Title="RobotState.Implementation Property " Url="html/P_WPILib_RobotState_Implementation.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ImproperPreferenceKeyException class">
-    <HelpKINode Title="events" Url="html/Events_T_WPILib_Preferences_ImproperPreferenceKeyException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Preferences_ImproperPreferenceKeyException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Preferences_ImproperPreferenceKeyException.htm" />
   </HelpKINode>
   <HelpKINode Title="INamedSendable interface">
     <HelpKINode Title="INamedSendable Interface" Url="html/T_WPILib_INamedSendable.htm" />
@@ -2234,7 +2293,6 @@
     <HelpKINode Title="Scheduler.Instance Property " Url="html/P_WPILib_Commands_Scheduler_Instance.htm" />
   </HelpKINode>
   <HelpKINode Title="Interface interface">
-    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Timer_Interface.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_HLUsageReporting_Interface.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_RobotState_Interface.htm" />
   </HelpKINode>
@@ -2303,6 +2361,12 @@
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Exceptions_InvalidValueException.htm" />
   </HelpKINode>
   <HelpKINode Title="InvalidValueException.InvalidValueException constructor" Url="html/M_WPILib_Exceptions_InvalidValueException__ctor.htm" />
+  <HelpKINode Title="Inverted property">
+    <HelpKINode Title="CANJaguar.Inverted Property " Url="html/P_WPILib_CANJaguar_Inverted.htm" />
+    <HelpKINode Title="CANTalon.Inverted Property " Url="html/P_WPILib_CANTalon_Inverted.htm" />
+    <HelpKINode Title="ISpeedController.Inverted Property " Url="html/P_WPILib_ISpeedController_Inverted.htm" />
+    <HelpKINode Title="PWMSpeedController.Inverted Property " Url="html/P_WPILib_PWMSpeedController_Inverted.htm" />
+  </HelpKINode>
   <HelpKINode Title="InWindow property" Url="html/P_WPILib_AnalogTrigger_InWindow.htm" />
   <HelpKINode Title="IN_SYNC_WITH_SERVER field" Url="html/F_NetworkTables_NetworkTables2_Client_ClientConnectionState_IN_SYNC_WITH_SERVER.htm" />
   <HelpKINode Title="IOException method">
@@ -2365,7 +2429,6 @@
   </HelpKINode>
   <HelpKINode Title="IRemoteConnectionListener.Connected method" Url="html/M_NetworkTables_Tables_IRemoteConnectionListener_Connected.htm" />
   <HelpKINode Title="IRemoteConnectionListener.Disconnected method" Url="html/M_NetworkTables_Tables_IRemoteConnectionListener_Disconnected.htm" />
-  <HelpKINode Title="IsAcceptable method" Url="html/M_WPILib_Preferences_ImproperPreferenceKeyException_IsAcceptable.htm" />
   <HelpKINode Title="IsAccumulatorChannel property" Url="html/P_WPILib_AnalogInput_IsAccumulatorChannel.htm" />
   <HelpKINode Title="IsAutonomous property" Url="html/P_WPILib_RobotBase_IsAutonomous.htm" />
   <HelpKINode Title="IsBlackListed method" Url="html/M_WPILib_Solenoid_IsBlackListed.htm" />
@@ -2408,9 +2471,11 @@
     <HelpKINode Title="ISpeedController Interface" Url="html/T_WPILib_ISpeedController.htm" />
     <HelpKINode Title="about ISpeedController interface" Url="html/T_WPILib_ISpeedController.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_ISpeedController.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_WPILib_ISpeedController.htm" />
   </HelpKINode>
   <HelpKINode Title="ISpeedController.Disable method" Url="html/M_WPILib_ISpeedController_Disable.htm" />
   <HelpKINode Title="ISpeedController.Get method" Url="html/M_WPILib_ISpeedController_Get.htm" />
+  <HelpKINode Title="ISpeedController.Inverted property" Url="html/P_WPILib_ISpeedController_Inverted.htm" />
   <HelpKINode Title="ISpeedController.Set method" Url="html/Overload_WPILib_ISpeedController_Set.htm" />
   <HelpKINode Title="IsRangeValid method" Url="html/M_WPILib_Ultrasonic_IsRangeValid.htm" />
   <HelpKINode Title="IsReal property" Url="html/P_WPILib_RobotBase_IsReal.htm" />
@@ -2427,9 +2492,8 @@
   </HelpKINode>
   <HelpKINode Title="IsSimulation property" Url="html/P_WPILib_RobotBase_IsSimulation.htm" />
   <HelpKINode Title="IsSysActive method" Url="html/M_WPILib_DriverStation_IsSysActive.htm" />
-  <HelpKINode Title="IStaticInterface interface">
-    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Timer_IStaticInterface.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Timer_IStaticInterface.htm" />
+  <HelpKINode Title="IStaticTimerInterface interface">
+    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Timer_IStaticTimerInterface.htm" />
   </HelpKINode>
   <HelpKINode Title="IsTest property" Url="html/P_WPILib_RobotBase_IsTest.htm" />
   <HelpKINode Title="IsTimedOut method" Url="html/M_WPILib_Commands_Command_IsTimedOut.htm" />
@@ -2485,6 +2549,9 @@
   <HelpKINode Title="IterativeRobot.TeleopPeriodic method" Url="html/M_WPILib_IterativeRobot_TeleopPeriodic.htm" />
   <HelpKINode Title="IterativeRobot.TestInit method" Url="html/M_WPILib_IterativeRobot_TestInit.htm" />
   <HelpKINode Title="IterativeRobot.TestPeriodic method" Url="html/M_WPILib_IterativeRobot_TestPeriodic.htm" />
+  <HelpKINode Title="ITimerInterface interface">
+    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Timer_ITimerInterface.htm" />
+  </HelpKINode>
   <HelpKINode Title="IZone property" Url="html/P_WPILib_CANTalon_IZone.htm" />
   <HelpKINode Title="Jaguar class">
     <HelpKINode Title="Jaguar Class" Url="html/T_WPILib_Jaguar.htm" />
@@ -2512,12 +2579,17 @@
   <HelpKINode Title="Joystick.GetButton method" Url="html/M_WPILib_Joystick_GetButton.htm" />
   <HelpKINode Title="Joystick.GetDirectionDegrees method" Url="html/M_WPILib_Joystick_GetDirectionDegrees.htm" />
   <HelpKINode Title="Joystick.GetDirectionRadians method" Url="html/M_WPILib_Joystick_GetDirectionRadians.htm" />
+  <HelpKINode Title="Joystick.GetIsXbox method" Url="html/M_WPILib_Joystick_GetIsXbox.htm" />
   <HelpKINode Title="Joystick.GetMagnitude method" Url="html/M_WPILib_Joystick_GetMagnitude.htm" />
+  <HelpKINode Title="Joystick.GetName method" Url="html/M_WPILib_Joystick_GetName.htm" />
   <HelpKINode Title="Joystick.GetPOV method" Url="html/Overload_WPILib_Joystick_GetPOV.htm" />
   <HelpKINode Title="Joystick.GetRawAxis method" Url="html/M_WPILib_Joystick_GetRawAxis.htm" />
   <HelpKINode Title="Joystick.GetRawButton method" Url="html/M_WPILib_Joystick_GetRawButton.htm" />
+  <HelpKINode Title="Joystick.GetThrottle method" Url="html/M_WPILib_Joystick_GetThrottle.htm" />
   <HelpKINode Title="Joystick.GetTop method" Url="html/Overload_WPILib_Joystick_GetTop.htm" />
   <HelpKINode Title="Joystick.GetTrigger method" Url="html/Overload_WPILib_Joystick_GetTrigger.htm" />
+  <HelpKINode Title="Joystick.GetTwist method" Url="html/M_WPILib_Joystick_GetTwist.htm" />
+  <HelpKINode Title="Joystick.GetType method" Url="html/M_WPILib_Joystick_GetType.htm" />
   <HelpKINode Title="Joystick.GetX method" Url="html/Overload_WPILib_Joystick_GetX.htm" />
   <HelpKINode Title="Joystick.GetY method" Url="html/Overload_WPILib_Joystick_GetY.htm" />
   <HelpKINode Title="Joystick.GetZ method" Url="html/Overload_WPILib_Joystick_GetZ.htm" />
@@ -2528,8 +2600,6 @@
   <HelpKINode Title="Joystick.SetOutput method" Url="html/M_WPILib_Joystick_SetOutput.htm" />
   <HelpKINode Title="Joystick.SetOutputs method" Url="html/M_WPILib_Joystick_SetOutputs.htm" />
   <HelpKINode Title="Joystick.SetRumble method" Url="html/M_WPILib_Joystick_SetRumble.htm" />
-  <HelpKINode Title="Joystick.Throttle property" Url="html/P_WPILib_Joystick_Throttle.htm" />
-  <HelpKINode Title="Joystick.Twist property" Url="html/P_WPILib_Joystick_Twist.htm" />
   <HelpKINode Title="JoystickPorts field" Url="html/F_WPILib_DriverStation_JoystickPorts.htm" />
   <HelpKINode Title="Jumper enumeration member" Url="html/T_WPILib_NeutralMode.htm" />
   <HelpKINode Title="Justify enumeration member" Url="html/T_WPILib_ADXL345_DataFormat.htm" />
@@ -2559,24 +2629,16 @@
     <HelpKINode Title="ServerConnectionAdapter.KeepAlive Method " Url="html/M_NetworkTables_NetworkTables2_Server_ServerConnectionAdapter_KeepAlive.htm" />
   </HelpKINode>
   <HelpKINode Title="KEEP_ALIVE field" Url="html/F_NetworkTables_NetworkTables2_NetworkTableMessageType_KEEP_ALIVE.htm" />
-  <HelpKINode Title="kEncoder field" Url="html/F_WPILib_CANJaguar_kEncoder.htm" />
   <HelpKINode Title="Keys method" Url="html/M_NetworkTables_NetworkTables2_AbstractNetworkTableEntryStore_Keys.htm" />
   <HelpKINode Title="Keys property" Url="html/P_WPILib_Preferences_Keys.htm" />
   <HelpKINode Title="kForwardLimit field" Url="html/F_WPILib_CANJaguar_kForwardLimit.htm" />
   <HelpKINode Title="kGateDriverFault field" Url="html/F_WPILib_CANJaguar_kGateDriverFault.htm" />
   <HelpKINode Title="kMaxMessageDataSize field" Url="html/F_WPILib_CANJaguar_kMaxMessageDataSize.htm" />
-  <HelpKINode Title="kPotentiometer field" Url="html/F_WPILib_CANJaguar_kPotentiometer.htm" />
-  <HelpKINode Title="kQuadEncoder field" Url="html/F_WPILib_CANJaguar_kQuadEncoder.htm" />
   <HelpKINode Title="kReverseLimit field" Url="html/F_WPILib_CANJaguar_kReverseLimit.htm" />
   <HelpKINode Title="kTemeperatureFault field" Url="html/F_WPILib_CANJaguar_kTemeperatureFault.htm" />
   <HelpKINode Title="Left enumeration member" Url="html/T_WPILib_Hand.htm" />
-  <HelpKINode Title="LeftBumper property" Url="html/P_WPILib_Extras_XboxController_LeftBumper.htm" />
   <HelpKINode Title="LeftRumble enumeration member" Url="html/T_WPILib_Joystick_RumbleType.htm" />
   <HelpKINode Title="LeftRumble property" Url="html/P_WPILib_Extras_XboxController_LeftRumble.htm" />
-  <HelpKINode Title="LeftStickButton property" Url="html/P_WPILib_Extras_XboxController_LeftStickButton.htm" />
-  <HelpKINode Title="LeftTrigger property" Url="html/P_WPILib_Extras_XboxController_LeftTrigger.htm" />
-  <HelpKINode Title="LeftXAxis property" Url="html/P_WPILib_Extras_XboxController_LeftXAxis.htm" />
-  <HelpKINode Title="LeftYAxis property" Url="html/P_WPILib_Extras_XboxController_LeftYAxis.htm" />
   <HelpKINode Title="Limit method" Url="html/M_WPILib_RobotDrive_Limit.htm" />
   <HelpKINode Title="LimitMode enumeration" Url="html/T_WPILib_LimitMode.htm" />
   <HelpKINode Title="LimitMode property">
@@ -2620,12 +2682,7 @@
   <HelpKINode Title="MakeClean method" Url="html/M_NetworkTables_NetworkTables2_NetworkTableEntry_MakeClean.htm" />
   <HelpKINode Title="MakeDirty method" Url="html/M_NetworkTables_NetworkTables2_NetworkTableEntry_MakeDirty.htm" />
   <HelpKINode Title="Mark enumeration member" Url="html/T_WPILib_Parity.htm" />
-  <HelpKINode Title="MatchTime property">
-    <HelpKINode Title="DriverStation.MatchTime Property " Url="html/P_WPILib_DriverStation_MatchTime.htm" />
-    <HelpKINode Title="HardwareTimer.MatchTime Property " Url="html/P_WPILib_Internal_HardwareTimer_MatchTime.htm" />
-    <HelpKINode Title="Timer.IStaticInterface.MatchTime Property " Url="html/P_WPILib_Timer_IStaticInterface_MatchTime.htm" />
-    <HelpKINode Title="Timer.MatchTime Property " Url="html/P_WPILib_Timer_MatchTime.htm" />
-  </HelpKINode>
+  <HelpKINode Title="MatchTime property" Url="html/P_WPILib_DriverStation_MatchTime.htm" />
   <HelpKINode Title="MaxJoystickAxes field" Url="html/F_WPILib_DriverStation_MaxJoystickAxes.htm" />
   <HelpKINode Title="MaxJoystickPOVs field" Url="html/F_WPILib_DriverStation_MaxJoystickPOVs.htm" />
   <HelpKINode Title="MaxNegativePwm property" Url="html/P_WPILib_PWM_MaxNegativePwm.htm" />
@@ -2692,7 +2749,6 @@
   <HelpKINode Title="m_indexSource field" Url="html/F_WPILib_Encoder_m_indexSource.htm" />
   <HelpKINode Title="m_interrupt field" Url="html/F_WPILib_InterruptableSensorBase_m_interrupt.htm" />
   <HelpKINode Title="m_interruptIndex field" Url="html/F_WPILib_InterruptableSensorBase_m_interruptIndex.htm" />
-  <HelpKINode Title="m_invertedMotors field" Url="html/F_WPILib_RobotDrive_m_invertedMotors.htm" />
   <HelpKINode Title="m_isSynchronousInterrupt field" Url="html/F_WPILib_InterruptableSensorBase_m_isSynchronousInterrupt.htm" />
   <HelpKINode Title="m_maxOutput field" Url="html/F_WPILib_RobotDrive_m_maxOutput.htm" />
   <HelpKINode Title="m_moduleNumber field" Url="html/F_WPILib_SolenoidBase_m_moduleNumber.htm" />
@@ -3039,9 +3095,10 @@
   <HelpKINode Title="NewStreamProvider method" Url="html/M_NetworkTables_NetworkTables2_Stream_SocketStreams_NewStreamProvider.htm" />
   <HelpKINode Title="NewTimer method">
     <HelpKINode Title="HardwareTimer.NewTimer Method " Url="html/M_WPILib_Internal_HardwareTimer_NewTimer.htm" />
-    <HelpKINode Title="Timer.IStaticInterface.NewTimer Method " Url="html/M_WPILib_Timer_IStaticInterface_NewTimer.htm" />
+    <HelpKINode Title="Timer.IStaticTimerInterface.NewTimer Method " Url="html/M_WPILib_Timer_IStaticTimerInterface_NewTimer.htm" />
   </HelpKINode>
   <HelpKINode Title="None enumeration member">
+    <HelpKINode Title="CANJaguar.SourceMode Enumeration" Url="html/T_WPILib_CANJaguar_SourceMode.htm" />
     <HelpKINode Title="FlowControl Enumeration" Url="html/T_WPILib_FlowControl.htm" />
     <HelpKINode Title="Parity Enumeration" Url="html/T_WPILib_Parity.htm" />
   </HelpKINode>
@@ -3163,16 +3220,6 @@
   <HelpKINode Title="OutgoingEntryReceiverNull.OfferOutgoingUpdate method" Url="html/M_NetworkTables_NetworkTables2_OutgoingEntryReceiverNull_OfferOutgoingUpdate.htm" />
   <HelpKINode Title="OutgoingEntryReceiverNull.OutgoingEntryReceiverNull constructor" Url="html/M_NetworkTables_NetworkTables2_OutgoingEntryReceiverNull__ctor.htm" />
   <HelpKINode Title="outgoingReceiver field" Url="html/F_NetworkTables_NetworkTables2_AbstractNetworkTableEntryStore_outgoingReceiver.htm" />
-  <HelpKINode Title="OutputCurrent property">
-    <HelpKINode Title="CANJaguar.OutputCurrent Property " Url="html/P_WPILib_CANJaguar_OutputCurrent.htm" />
-    <HelpKINode Title="CANTalon.OutputCurrent Property " Url="html/P_WPILib_CANTalon_OutputCurrent.htm" />
-    <HelpKINode Title="ICANSpeedController.OutputCurrent Property " Url="html/P_WPILib_ICANSpeedController_OutputCurrent.htm" />
-  </HelpKINode>
-  <HelpKINode Title="OutputVoltage property">
-    <HelpKINode Title="CANJaguar.OutputVoltage Property " Url="html/P_WPILib_CANJaguar_OutputVoltage.htm" />
-    <HelpKINode Title="CANTalon.OutputVoltage Property " Url="html/P_WPILib_CANTalon_OutputVoltage.htm" />
-    <HelpKINode Title="ICANSpeedController.OutputVoltage Property " Url="html/P_WPILib_ICANSpeedController_OutputVoltage.htm" />
-  </HelpKINode>
   <HelpKINode Title="OversampleBits property" Url="html/P_WPILib_AnalogInput_OversampleBits.htm" />
   <HelpKINode Title="P property">
     <HelpKINode Title="CANJaguar.P Property " Url="html/P_WPILib_CANJaguar_P.htm" />
@@ -3183,6 +3230,7 @@
   <HelpKINode Title="Parity enumeration" Url="html/T_WPILib_Parity.htm" />
   <HelpKINode Title="PATH_SEPARATOR field" Url="html/F_NetworkTables_NetworkTable_PATH_SEPARATOR.htm" />
   <HelpKINode Title="PDPChannels field" Url="html/F_WPILib_SensorBase_PDPChannels.htm" />
+  <HelpKINode Title="PDPModules field" Url="html/F_WPILib_SensorBase_PDPModules.htm" />
   <HelpKINode Title="PercentTolerance enumeration member" Url="html/T_WPILib_PIDController_ToleranceType.htm" />
   <HelpKINode Title="PercentVbus enumeration member" Url="html/T_WPILib_ControlMode.htm" />
   <HelpKINode Title="PeriodicRunnable interface">
@@ -3225,6 +3273,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_PIDController.htm" />
   </HelpKINode>
   <HelpKINode Title="PIDController property" Url="html/P_WPILib_Commands_PIDSubsystem_PIDController.htm" />
+  <HelpKINode Title="PIDController.Calculate method" Url="html/M_WPILib_PIDController_Calculate.htm" />
   <HelpKINode Title="PIDController.CallCalculate method" Url="html/M_WPILib_PIDController_CallCalculate.htm" />
   <HelpKINode Title="PIDController.Continouous property" Url="html/P_WPILib_PIDController_Continouous.htm" />
   <HelpKINode Title="PIDController.D property" Url="html/P_WPILib_PIDController_D.htm" />
@@ -3233,9 +3282,9 @@
   <HelpKINode Title="PIDController.Dispose method" Url="html/M_WPILib_PIDController_Dispose.htm" />
   <HelpKINode Title="PIDController.Enable method" Url="html/M_WPILib_PIDController_Enable.htm" />
   <HelpKINode Title="PIDController.Enabled property" Url="html/P_WPILib_PIDController_Enabled.htm" />
-  <HelpKINode Title="PIDController.Error property" Url="html/P_WPILib_PIDController_Error.htm" />
   <HelpKINode Title="PIDController.F property" Url="html/P_WPILib_PIDController_F.htm" />
   <HelpKINode Title="PIDController.Get method" Url="html/M_WPILib_PIDController_Get.htm" />
+  <HelpKINode Title="PIDController.GetError method" Url="html/M_WPILib_PIDController_GetError.htm" />
   <HelpKINode Title="PIDController.I property" Url="html/P_WPILib_PIDController_I.htm" />
   <HelpKINode Title="PIDController.InitTable method" Url="html/M_WPILib_PIDController_InitTable.htm" />
   <HelpKINode Title="PIDController.OnTarget property" Url="html/P_WPILib_PIDController_OnTarget.htm" />
@@ -3312,16 +3361,9 @@
   <HelpKINode Title="Pop method" Url="html/M_NetworkTables_NetworkTables2_Util_Stack_Pop.htm" />
   <HelpKINode Title="Port enumeration" Url="html/T_WPILib_Port.htm" />
   <HelpKINode Title="Position enumeration member" Url="html/T_WPILib_ControlMode.htm" />
-  <HelpKINode Title="Position property">
-    <HelpKINode Title="CANJaguar.Position Property " Url="html/P_WPILib_CANJaguar_Position.htm" />
-    <HelpKINode Title="CANTalon.Position Property " Url="html/P_WPILib_CANTalon_Position.htm" />
-    <HelpKINode Title="ICANSpeedController.Position Property " Url="html/P_WPILib_ICANSpeedController_Position.htm" />
-  </HelpKINode>
   <HelpKINode Title="PositionRelative property" Url="html/P_WPILib_Commands_PIDSubsystem_PositionRelative.htm" />
   <HelpKINode Title="PositiveScaleFactor property" Url="html/P_WPILib_PWM_PositiveScaleFactor.htm" />
-  <HelpKINode Title="PotentiometerTag structure">
-    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_CANJaguar_PotentiometerTag.htm" />
-  </HelpKINode>
+  <HelpKINode Title="Potentiometer enumeration member" Url="html/T_WPILib_CANJaguar_SourceMode.htm" />
   <HelpKINode Title="PotentiometerTurns property">
     <HelpKINode Title="CANJaguar.PotentiometerTurns Property " Url="html/P_WPILib_CANJaguar_PotentiometerTurns.htm" />
     <HelpKINode Title="CANTalon.PotentiometerTurns Property " Url="html/P_WPILib_CANTalon_PotentiometerTurns.htm" />
@@ -3332,7 +3374,7 @@
   <HelpKINode Title="PowerDistributionPanel class">
     <HelpKINode Title="PowerDistributionPanel Class" Url="html/T_WPILib_PowerDistributionPanel.htm" />
     <HelpKINode Title="about PowerDistributionPanel class" Url="html/T_WPILib_PowerDistributionPanel.htm" />
-    <HelpKINode Title="constructor" Url="html/M_WPILib_PowerDistributionPanel__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_WPILib_PowerDistributionPanel__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_PowerDistributionPanel.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_PowerDistributionPanel.htm" />
   </HelpKINode>
@@ -3344,7 +3386,7 @@
   <HelpKINode Title="PowerDistributionPanel.GetTotalPower method" Url="html/M_WPILib_PowerDistributionPanel_GetTotalPower.htm" />
   <HelpKINode Title="PowerDistributionPanel.GetVoltage method" Url="html/M_WPILib_PowerDistributionPanel_GetVoltage.htm" />
   <HelpKINode Title="PowerDistributionPanel.InitTable method" Url="html/M_WPILib_PowerDistributionPanel_InitTable.htm" />
-  <HelpKINode Title="PowerDistributionPanel.PowerDistributionPanel constructor" Url="html/M_WPILib_PowerDistributionPanel__ctor.htm" />
+  <HelpKINode Title="PowerDistributionPanel.PowerDistributionPanel constructor" Url="html/Overload_WPILib_PowerDistributionPanel__ctor.htm" />
   <HelpKINode Title="PowerDistributionPanel.ResetEnergyTotal method" Url="html/M_WPILib_PowerDistributionPanel_ResetEnergyTotal.htm" />
   <HelpKINode Title="PowerDistributionPanel.SmartDashboardType property" Url="html/P_WPILib_PowerDistributionPanel_SmartDashboardType.htm" />
   <HelpKINode Title="PowerDistributionPanel.StartLiveWindowMode method" Url="html/M_WPILib_PowerDistributionPanel_StartLiveWindowMode.htm" />
@@ -3365,14 +3407,6 @@
   <HelpKINode Title="Preferences.GetInt method" Url="html/M_WPILib_Preferences_GetInt.htm" />
   <HelpKINode Title="Preferences.GetLong method" Url="html/M_WPILib_Preferences_GetLong.htm" />
   <HelpKINode Title="Preferences.GetString method" Url="html/M_WPILib_Preferences_GetString.htm" />
-  <HelpKINode Title="Preferences.ImproperPreferenceKeyException class">
-    <HelpKINode Title="Preferences.ImproperPreferenceKeyException Class" Url="html/T_WPILib_Preferences_ImproperPreferenceKeyException.htm" />
-    <HelpKINode Title="about Preferences.ImproperPreferenceKeyException class" Url="html/T_WPILib_Preferences_ImproperPreferenceKeyException.htm" />
-    <HelpKINode Title="constructor" Url="html/M_WPILib_Preferences_ImproperPreferenceKeyException__ctor.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Preferences.ImproperPreferenceKeyException.ConfirmString method" Url="html/M_WPILib_Preferences_ImproperPreferenceKeyException_ConfirmString.htm" />
-  <HelpKINode Title="Preferences.ImproperPreferenceKeyException.ImproperPreferenceKeyException constructor" Url="html/M_WPILib_Preferences_ImproperPreferenceKeyException__ctor.htm" />
-  <HelpKINode Title="Preferences.ImproperPreferenceKeyException.IsAcceptable method" Url="html/M_WPILib_Preferences_ImproperPreferenceKeyException_IsAcceptable.htm" />
   <HelpKINode Title="Preferences.Keys property" Url="html/P_WPILib_Preferences_Keys.htm" />
   <HelpKINode Title="Preferences.PutBoolean method" Url="html/M_WPILib_Preferences_PutBoolean.htm" />
   <HelpKINode Title="Preferences.PutDouble method" Url="html/M_WPILib_Preferences_PutDouble.htm" />
@@ -3503,15 +3537,14 @@
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_PWMSpeedController.htm" />
   </HelpKINode>
   <HelpKINode Title="PWMSpeedController.Get method" Url="html/M_WPILib_PWMSpeedController_Get.htm" />
+  <HelpKINode Title="PWMSpeedController.Inverted property" Url="html/P_WPILib_PWMSpeedController_Inverted.htm" />
   <HelpKINode Title="PWMSpeedController.PidWrite method" Url="html/M_WPILib_PWMSpeedController_PidWrite.htm" />
   <HelpKINode Title="PWMSpeedController.PWMSpeedController constructor" Url="html/M_WPILib_PWMSpeedController__ctor.htm" />
   <HelpKINode Title="PWMSpeedController.Set method" Url="html/Overload_WPILib_PWMSpeedController_Set.htm" />
   <HelpKINode Title="QuadEncoder enumeration member">
+    <HelpKINode Title="CANJaguar.SourceMode Enumeration" Url="html/T_WPILib_CANJaguar_SourceMode.htm" />
     <HelpKINode Title="CANTalon.FeedbackDevice Enumeration" Url="html/T_WPILib_CANTalon_FeedbackDevice.htm" />
     <HelpKINode Title="CANTalon.StatusFrameRate Enumeration" Url="html/T_WPILib_CANTalon_StatusFrameRate.htm" />
-  </HelpKINode>
-  <HelpKINode Title="QuadEncoderTag structure">
-    <HelpKINode Title="methods" Url="html/Methods_T_WPILib_CANJaguar_QuadEncoderTag.htm" />
   </HelpKINode>
   <HelpKINode Title="Queue method" Url="html/M_NetworkTables_NetworkTables2_Util_HalfQueue_Queue.htm" />
   <HelpKINode Title="Rate enumeration member" Url="html/T_WPILib_PIDSourceParameter.htm" />
@@ -3607,6 +3640,8 @@
   <HelpKINode Title="RequestMessage method" Url="html/Overload_WPILib_CANJaguar_RequestMessage.htm" />
   <HelpKINode Title="Requires method" Url="html/M_WPILib_Commands_Command_Requires.htm" />
   <HelpKINode Title="Reset method">
+    <HelpKINode Title="CANJaguar.Reset Method " Url="html/M_WPILib_CANJaguar_Reset.htm" />
+    <HelpKINode Title="CANTalon.Reset Method " Url="html/M_WPILib_CANTalon_Reset.htm" />
     <HelpKINode Title="Counter.Reset Method " Url="html/M_WPILib_Counter_Reset.htm" />
     <HelpKINode Title="Encoder.Reset Method " Url="html/M_WPILib_Encoder_Reset.htm" />
     <HelpKINode Title="Gyro.Reset Method " Url="html/M_WPILib_Gyro_Reset.htm" />
@@ -3614,7 +3649,7 @@
     <HelpKINode Title="ICounterBase.Reset Method " Url="html/M_WPILib_ICounterBase_Reset.htm" />
     <HelpKINode Title="PIDController.Reset Method " Url="html/M_WPILib_PIDController_Reset.htm" />
     <HelpKINode Title="SerialPort.Reset Method " Url="html/M_WPILib_SerialPort_Reset.htm" />
-    <HelpKINode Title="Timer.Interface.Reset Method " Url="html/M_WPILib_Timer_Interface_Reset.htm" />
+    <HelpKINode Title="Timer.ITimerInterface.Reset Method " Url="html/M_WPILib_Timer_ITimerInterface_Reset.htm" />
     <HelpKINode Title="Timer.Reset Method " Url="html/M_WPILib_Timer_Reset.htm" />
   </HelpKINode>
   <HelpKINode Title="ResetAccumulator method" Url="html/M_WPILib_AnalogInput_ResetAccumulator.htm" />
@@ -3667,11 +3702,6 @@
     <HelpKINode Title="CANTalon.ReverseLimit Property " Url="html/P_WPILib_CANTalon_ReverseLimit.htm" />
     <HelpKINode Title="ICANSpeedController.ReverseLimit Property " Url="html/P_WPILib_ICANSpeedController_ReverseLimit.htm" />
   </HelpKINode>
-  <HelpKINode Title="ReverseLimitOK property">
-    <HelpKINode Title="CANJaguar.ReverseLimitOK Property " Url="html/P_WPILib_CANJaguar_ReverseLimitOK.htm" />
-    <HelpKINode Title="CANTalon.ReverseLimitOK Property " Url="html/P_WPILib_CANTalon_ReverseLimitOK.htm" />
-    <HelpKINode Title="ICANSpeedController.ReverseLimitOK Property " Url="html/P_WPILib_ICANSpeedController_ReverseLimitOK.htm" />
-  </HelpKINode>
   <HelpKINode Title="ReverseLimitSwitchNormallyOpen property" Url="html/P_WPILib_CANTalon_ReverseLimitSwitchNormallyOpen.htm" />
   <HelpKINode Title="ReverseOutput method" Url="html/M_WPILib_CANTalon_ReverseOutput.htm" />
   <HelpKINode Title="ReverseSensor method" Url="html/M_WPILib_CANTalon_ReverseSensor.htm" />
@@ -3681,13 +3711,8 @@
   <HelpKINode Title="RevSoftLimit enumeration member" Url="html/T_WPILib_Faults.htm" />
   <HelpKINode Title="RevSolenoidBlackListed property" Url="html/P_WPILib_DoubleSolenoid_RevSolenoidBlackListed.htm" />
   <HelpKINode Title="Right enumeration member" Url="html/T_WPILib_Hand.htm" />
-  <HelpKINode Title="RightBumper property" Url="html/P_WPILib_Extras_XboxController_RightBumper.htm" />
   <HelpKINode Title="RightRumble enumeration member" Url="html/T_WPILib_Joystick_RumbleType.htm" />
   <HelpKINode Title="RightRumble property" Url="html/P_WPILib_Extras_XboxController_RightRumble.htm" />
-  <HelpKINode Title="RightStickButton property" Url="html/P_WPILib_Extras_XboxController_RightStickButton.htm" />
-  <HelpKINode Title="RightTrigger property" Url="html/P_WPILib_Extras_XboxController_RightTrigger.htm" />
-  <HelpKINode Title="RightXAxis property" Url="html/P_WPILib_Extras_XboxController_RightXAxis.htm" />
-  <HelpKINode Title="RightYAxis property" Url="html/P_WPILib_Extras_XboxController_RightYAxis.htm" />
   <HelpKINode Title="RisingEdge enumeration member" Url="html/T_WPILib_WaitResult.htm" />
   <HelpKINode Title="RobotBase class">
     <HelpKINode Title="RobotBase Class" Url="html/T_WPILib_RobotBase.htm" />
@@ -3738,7 +3763,6 @@
   <HelpKINode Title="RobotDrive.m_allocatedSpeedControllers field" Url="html/F_WPILib_RobotDrive_m_allocatedSpeedControllers.htm" />
   <HelpKINode Title="RobotDrive.m_frontLeftMotor field" Url="html/F_WPILib_RobotDrive_m_frontLeftMotor.htm" />
   <HelpKINode Title="RobotDrive.m_frontRightMotor field" Url="html/F_WPILib_RobotDrive_m_frontRightMotor.htm" />
-  <HelpKINode Title="RobotDrive.m_invertedMotors field" Url="html/F_WPILib_RobotDrive_m_invertedMotors.htm" />
   <HelpKINode Title="RobotDrive.m_maxOutput field" Url="html/F_WPILib_RobotDrive_m_maxOutput.htm" />
   <HelpKINode Title="RobotDrive.m_rearLeftMotor field" Url="html/F_WPILib_RobotDrive_m_rearLeftMotor.htm" />
   <HelpKINode Title="RobotDrive.m_rearRightMotor field" Url="html/F_WPILib_RobotDrive_m_rearRightMotor.htm" />
@@ -3909,6 +3933,7 @@
   <HelpKINode Title="SensorBase.CheckAnalogOutputChannel method" Url="html/M_WPILib_SensorBase_CheckAnalogOutputChannel.htm" />
   <HelpKINode Title="SensorBase.CheckDigitalChannel method" Url="html/M_WPILib_SensorBase_CheckDigitalChannel.htm" />
   <HelpKINode Title="SensorBase.CheckPdpChannel method" Url="html/M_WPILib_SensorBase_CheckPdpChannel.htm" />
+  <HelpKINode Title="SensorBase.CheckPDPModule method" Url="html/M_WPILib_SensorBase_CheckPDPModule.htm" />
   <HelpKINode Title="SensorBase.CheckPwmChannel method" Url="html/M_WPILib_SensorBase_CheckPwmChannel.htm" />
   <HelpKINode Title="SensorBase.CheckRelayChannel method" Url="html/M_WPILib_SensorBase_CheckRelayChannel.htm" />
   <HelpKINode Title="SensorBase.CheckSolenoidChannel method" Url="html/M_WPILib_SensorBase_CheckSolenoidChannel.htm" />
@@ -3917,10 +3942,12 @@
   <HelpKINode Title="SensorBase.DigitalChannels field" Url="html/F_WPILib_SensorBase_DigitalChannels.htm" />
   <HelpKINode Title="SensorBase.Dispose method" Url="html/M_WPILib_SensorBase_Dispose.htm" />
   <HelpKINode Title="SensorBase.PDPChannels field" Url="html/F_WPILib_SensorBase_PDPChannels.htm" />
+  <HelpKINode Title="SensorBase.PDPModules field" Url="html/F_WPILib_SensorBase_PDPModules.htm" />
   <HelpKINode Title="SensorBase.PwmChannels field" Url="html/F_WPILib_SensorBase_PwmChannels.htm" />
   <HelpKINode Title="SensorBase.RelayChannels field" Url="html/F_WPILib_SensorBase_RelayChannels.htm" />
   <HelpKINode Title="SensorBase.SensorBase constructor" Url="html/M_WPILib_SensorBase__ctor.htm" />
   <HelpKINode Title="SensorBase.SolenoidChannels field" Url="html/F_WPILib_SensorBase_SolenoidChannels.htm" />
+  <HelpKINode Title="SensorBase.SolenoidModules field" Url="html/F_WPILib_SensorBase_SolenoidModules.htm" />
   <HelpKINode Title="SensorBase.SystemClockTicksPerMicrosecond field" Url="html/F_WPILib_SensorBase_SystemClockTicksPerMicrosecond.htm" />
   <HelpKINode Title="SENT_HELLO_TO_SERVER field" Url="html/F_NetworkTables_NetworkTables2_Client_ClientConnectionState_SENT_HELLO_TO_SERVER.htm" />
   <HelpKINode Title="SerialPort class">
@@ -4103,7 +4130,7 @@
   <HelpKINode Title="SetClockRate method" Url="html/M_WPILib_SPI_SetClockRate.htm" />
   <HelpKINode Title="SetCloseLoopRampRate method" Url="html/M_WPILib_CANTalon_SetCloseLoopRampRate.htm" />
   <HelpKINode Title="SetControlMode method" Url="html/M_WPILib_CANTalon_SetControlMode.htm" />
-  <HelpKINode Title="SetCurrentMode method" Url="html/Overload_WPILib_CANJaguar_SetCurrentMode.htm" />
+  <HelpKINode Title="SetCurrentMode method" Url="html/M_WPILib_CANJaguar_SetCurrentMode.htm" />
   <HelpKINode Title="SetDefaultCommand method" Url="html/M_WPILib_Commands_Subsystem_SetDefaultCommand.htm" />
   <HelpKINode Title="SetDirection method" Url="html/M_WPILib_Relay_SetDirection.htm" />
   <HelpKINode Title="SetDistanceUnits method" Url="html/M_WPILib_Ultrasonic_SetDistanceUnits.htm" />
@@ -4142,7 +4169,7 @@
     <HelpKINode Title="PIDSubsystem.SetOutputRange Method " Url="html/M_WPILib_Commands_PIDSubsystem_SetOutputRange.htm" />
   </HelpKINode>
   <HelpKINode Title="SetOutputs method" Url="html/M_WPILib_Joystick_SetOutputs.htm" />
-  <HelpKINode Title="SetPercentMode method" Url="html/Overload_WPILib_CANJaguar_SetPercentMode.htm" />
+  <HelpKINode Title="SetPercentMode method" Url="html/M_WPILib_CANJaguar_SetPercentMode.htm" />
   <HelpKINode Title="SetPercentTolerance method">
     <HelpKINode Title="PIDController.SetPercentTolerance Method " Url="html/M_WPILib_PIDController_SetPercentTolerance.htm" />
     <HelpKINode Title="PIDSubsystem.SetPercentTolerance Method " Url="html/M_WPILib_Commands_PIDSubsystem_SetPercentTolerance.htm" />
@@ -4154,6 +4181,7 @@
     <HelpKINode Title="PIDController.SetPID Method " Url="html/Overload_WPILib_PIDController_SetPID.htm" />
   </HelpKINode>
   <HelpKINode Title="Setpoint property">
+    <HelpKINode Title="CANJaguar.Setpoint Property " Url="html/P_WPILib_CANJaguar_Setpoint.htm" />
     <HelpKINode Title="CANTalon.Setpoint Property " Url="html/P_WPILib_CANTalon_Setpoint.htm" />
     <HelpKINode Title="PIDController.Setpoint Property " Url="html/P_WPILib_PIDController_Setpoint.htm" />
   </HelpKINode>
@@ -4161,7 +4189,6 @@
     <HelpKINode Title="CANTalon.SetPosition Method " Url="html/M_WPILib_CANTalon_SetPosition.htm" />
     <HelpKINode Title="PWM.SetPosition Method " Url="html/M_WPILib_PWM_SetPosition.htm" />
   </HelpKINode>
-  <HelpKINode Title="SetPositionMode method" Url="html/Overload_WPILib_CANJaguar_SetPositionMode.htm" />
   <HelpKINode Title="SetPressed method" Url="html/M_WPILib_Buttons_InternalButton_SetPressed.htm" />
   <HelpKINode Title="SetProfile method" Url="html/M_WPILib_CANTalon_SetProfile.htm" />
   <HelpKINode Title="SetPulseLengthMode method" Url="html/M_WPILib_Counter_SetPulseLengthMode.htm" />
@@ -4180,7 +4207,7 @@
   <HelpKINode Title="SetSetpointRelative method" Url="html/M_WPILib_Commands_PIDCommand_SetSetpointRelative.htm" />
   <HelpKINode Title="SetSize method" Url="html/M_NetworkTables_NetworkTables2_Type_ArrayData_SetSize.htm" />
   <HelpKINode Title="SetSpeed method" Url="html/M_WPILib_PWM_SetSpeed.htm" />
-  <HelpKINode Title="SetSpeedMode method" Url="html/Overload_WPILib_CANJaguar_SetSpeedMode.htm" />
+  <HelpKINode Title="SetSpeedMode method" Url="html/M_WPILib_CANJaguar_SetSpeedMode.htm" />
   <HelpKINode Title="SetTableProvider method" Url="html/M_NetworkTables_NetworkTable_SetTableProvider.htm" />
   <HelpKINode Title="SetTeam method" Url="html/M_NetworkTables_NetworkTable_SetTeam.htm" />
   <HelpKINode Title="SetTimeout method" Url="html/M_WPILib_Commands_Command_SetTimeout.htm" />
@@ -4193,7 +4220,7 @@
     <HelpKINode Title="InterruptableSensorBase.SetUpSourceEdge Method " Url="html/M_WPILib_InterruptableSensorBase_SetUpSourceEdge.htm" />
   </HelpKINode>
   <HelpKINode Title="SetVoltage method" Url="html/M_WPILib_AnalogOutput_SetVoltage.htm" />
-  <HelpKINode Title="SetVoltageMode method" Url="html/Overload_WPILib_CANJaguar_SetVoltageMode.htm" />
+  <HelpKINode Title="SetVoltageMode method" Url="html/M_WPILib_CANJaguar_SetVoltageMode.htm" />
   <HelpKINode Title="SetVoltageRampRate method" Url="html/M_WPILib_CANTalon_SetVoltageRampRate.htm" />
   <HelpKINode Title="SetZeroLatch method" Url="html/M_WPILib_PWM_SetZeroLatch.htm" />
   <HelpKINode Title="Shutdown method" Url="html/M_NetworkTables_NetworkTables2_Server_ServerConnectionAdapter_Shutdown.htm" />
@@ -4332,13 +4359,9 @@
   <HelpKINode Title="SolenoidBase.Set method" Url="html/M_WPILib_SolenoidBase_Set.htm" />
   <HelpKINode Title="SolenoidBase.SolenoidBase constructor" Url="html/M_WPILib_SolenoidBase__ctor.htm" />
   <HelpKINode Title="SolenoidChannels field" Url="html/F_WPILib_SensorBase_SolenoidChannels.htm" />
+  <HelpKINode Title="SolenoidModules field" Url="html/F_WPILib_SensorBase_SolenoidModules.htm" />
   <HelpKINode Title="Space enumeration member" Url="html/T_WPILib_Parity.htm" />
   <HelpKINode Title="Speed enumeration member" Url="html/T_WPILib_ControlMode.htm" />
-  <HelpKINode Title="Speed property">
-    <HelpKINode Title="CANJaguar.Speed Property " Url="html/P_WPILib_CANJaguar_Speed.htm" />
-    <HelpKINode Title="CANTalon.Speed Property " Url="html/P_WPILib_CANTalon_Speed.htm" />
-    <HelpKINode Title="ICANSpeedController.Speed Property " Url="html/P_WPILib_ICANSpeedController_Speed.htm" />
-  </HelpKINode>
   <HelpKINode Title="SPI class">
     <HelpKINode Title="SPI Class" Url="html/T_WPILib_SPI.htm" />
     <HelpKINode Title="about SPI class" Url="html/T_WPILib_SPI.htm" />
@@ -4378,11 +4401,10 @@
     <HelpKINode Title="Compressor.Start Method " Url="html/M_WPILib_Compressor_Start.htm" />
     <HelpKINode Title="HardwareTimer.TimerImpl.Start Method " Url="html/M_WPILib_Internal_HardwareTimer_TimerImpl_Start.htm" />
     <HelpKINode Title="ServerIncomingStreamMonitor.Start Method " Url="html/M_NetworkTables_NetworkTables2_Server_ServerIncomingStreamMonitor_Start.htm" />
-    <HelpKINode Title="Timer.Interface.Start Method " Url="html/M_WPILib_Timer_Interface_Start.htm" />
+    <HelpKINode Title="Timer.ITimerInterface.Start Method " Url="html/M_WPILib_Timer_ITimerInterface_Start.htm" />
     <HelpKINode Title="Timer.Start Method " Url="html/M_WPILib_Timer_Start.htm" />
     <HelpKINode Title="WriteManager.Start Method " Url="html/M_NetworkTables_NetworkTables2_WriteManager_Start.htm" />
   </HelpKINode>
-  <HelpKINode Title="Start property" Url="html/P_WPILib_Extras_XboxController_Start.htm" />
   <HelpKINode Title="StartCommand class">
     <HelpKINode Title="StartCommand Class" Url="html/T_WPILib_Commands_StartCommand.htm" />
     <HelpKINode Title="about StartCommand class" Url="html/T_WPILib_Commands_StartCommand.htm" />
@@ -4440,7 +4462,7 @@
     <HelpKINode Title="Notifier.Stop Method " Url="html/M_WPILib_Notifier_Stop.htm" />
     <HelpKINode Title="NTThread.Stop Method " Url="html/M_NetworkTables_NetworkTables2_Thread_NTThread_Stop.htm" />
     <HelpKINode Title="ServerIncomingStreamMonitor.Stop Method " Url="html/M_NetworkTables_NetworkTables2_Server_ServerIncomingStreamMonitor_Stop.htm" />
-    <HelpKINode Title="Timer.Interface.Stop Method " Url="html/M_WPILib_Timer_Interface_Stop.htm" />
+    <HelpKINode Title="Timer.ITimerInterface.Stop Method " Url="html/M_WPILib_Timer_ITimerInterface_Stop.htm" />
     <HelpKINode Title="Timer.Stop Method " Url="html/M_WPILib_Timer_Stop.htm" />
     <HelpKINode Title="WriteManager.Stop Method " Url="html/M_NetworkTables_NetworkTables2_WriteManager_Stop.htm" />
   </HelpKINode>
@@ -4593,11 +4615,6 @@
   <HelpKINode Title="TankDrive method" Url="html/Overload_WPILib_RobotDrive_TankDrive.htm" />
   <HelpKINode Title="TeleopInit method" Url="html/M_WPILib_IterativeRobot_TeleopInit.htm" />
   <HelpKINode Title="TeleopPeriodic method" Url="html/M_WPILib_IterativeRobot_TeleopPeriodic.htm" />
-  <HelpKINode Title="Temperature property">
-    <HelpKINode Title="CANJaguar.Temperature Property " Url="html/P_WPILib_CANJaguar_Temperature.htm" />
-    <HelpKINode Title="CANTalon.Temperature Property " Url="html/P_WPILib_CANTalon_Temperature.htm" />
-    <HelpKINode Title="ICANSpeedController.Temperature Property " Url="html/P_WPILib_ICANSpeedController_Temperature.htm" />
-  </HelpKINode>
   <HelpKINode Title="TemperatureFault enumeration member" Url="html/T_WPILib_Faults.htm" />
   <HelpKINode Title="Test method" Url="html/M_WPILib_SampleRobot_Test.htm" />
   <HelpKINode Title="Test property">
@@ -4608,10 +4625,6 @@
   <HelpKINode Title="TestInit method" Url="html/M_WPILib_IterativeRobot_TestInit.htm" />
   <HelpKINode Title="TestPeriodic method" Url="html/M_WPILib_IterativeRobot_TestPeriodic.htm" />
   <HelpKINode Title="Throttle enumeration member" Url="html/T_WPILib_Joystick_AxisType.htm" />
-  <HelpKINode Title="Throttle property">
-    <HelpKINode Title="GenericHID.Throttle Property " Url="html/P_WPILib_GenericHID_Throttle.htm" />
-    <HelpKINode Title="Joystick.Throttle Property " Url="html/P_WPILib_Joystick_Throttle.htm" />
-  </HelpKINode>
   <HelpKINode Title="Timeout enumeration member" Url="html/T_WPILib_WaitResult.htm" />
   <HelpKINode Title="Timeout property" Url="html/P_WPILib_SerialPort_Timeout.htm" />
   <HelpKINode Title="Timer class">
@@ -4619,30 +4632,29 @@
     <HelpKINode Title="about Timer class" Url="html/T_WPILib_Timer.htm" />
     <HelpKINode Title="constructor" Url="html/M_WPILib_Timer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Timer.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Timer.htm" />
   </HelpKINode>
   <HelpKINode Title="Timer.Delay method" Url="html/M_WPILib_Timer_Delay.htm" />
-  <HelpKINode Title="Timer.FPGATimestamp property" Url="html/P_WPILib_Timer_FPGATimestamp.htm" />
   <HelpKINode Title="Timer.Get method" Url="html/M_WPILib_Timer_Get.htm" />
+  <HelpKINode Title="Timer.GetFPGATimestamp method" Url="html/M_WPILib_Timer_GetFPGATimestamp.htm" />
+  <HelpKINode Title="Timer.GetMatchTime method" Url="html/M_WPILib_Timer_GetMatchTime.htm" />
   <HelpKINode Title="Timer.HasPeriodPassed method" Url="html/M_WPILib_Timer_HasPeriodPassed.htm" />
-  <HelpKINode Title="Timer.Interface interface">
-    <HelpKINode Title="Timer.Interface Interface" Url="html/T_WPILib_Timer_Interface.htm" />
-    <HelpKINode Title="about Timer.Interface interface" Url="html/T_WPILib_Timer_Interface.htm" />
+  <HelpKINode Title="Timer.IStaticTimerInterface interface">
+    <HelpKINode Title="Timer.IStaticTimerInterface Interface" Url="html/T_WPILib_Timer_IStaticTimerInterface.htm" />
+    <HelpKINode Title="about Timer.IStaticTimerInterface interface" Url="html/T_WPILib_Timer_IStaticTimerInterface.htm" />
   </HelpKINode>
-  <HelpKINode Title="Timer.Interface.Get method" Url="html/M_WPILib_Timer_Interface_Get.htm" />
-  <HelpKINode Title="Timer.Interface.HasPeriodPassed method" Url="html/M_WPILib_Timer_Interface_HasPeriodPassed.htm" />
-  <HelpKINode Title="Timer.Interface.Reset method" Url="html/M_WPILib_Timer_Interface_Reset.htm" />
-  <HelpKINode Title="Timer.Interface.Start method" Url="html/M_WPILib_Timer_Interface_Start.htm" />
-  <HelpKINode Title="Timer.Interface.Stop method" Url="html/M_WPILib_Timer_Interface_Stop.htm" />
-  <HelpKINode Title="Timer.IStaticInterface interface">
-    <HelpKINode Title="Timer.IStaticInterface Interface" Url="html/T_WPILib_Timer_IStaticInterface.htm" />
-    <HelpKINode Title="about Timer.IStaticInterface interface" Url="html/T_WPILib_Timer_IStaticInterface.htm" />
+  <HelpKINode Title="Timer.IStaticTimerInterface.Delay method" Url="html/M_WPILib_Timer_IStaticTimerInterface_Delay.htm" />
+  <HelpKINode Title="Timer.IStaticTimerInterface.GetFPGATimestamp method" Url="html/M_WPILib_Timer_IStaticTimerInterface_GetFPGATimestamp.htm" />
+  <HelpKINode Title="Timer.IStaticTimerInterface.GetMatchTime method" Url="html/M_WPILib_Timer_IStaticTimerInterface_GetMatchTime.htm" />
+  <HelpKINode Title="Timer.IStaticTimerInterface.NewTimer method" Url="html/M_WPILib_Timer_IStaticTimerInterface_NewTimer.htm" />
+  <HelpKINode Title="Timer.ITimerInterface interface">
+    <HelpKINode Title="Timer.ITimerInterface Interface" Url="html/T_WPILib_Timer_ITimerInterface.htm" />
+    <HelpKINode Title="about Timer.ITimerInterface interface" Url="html/T_WPILib_Timer_ITimerInterface.htm" />
   </HelpKINode>
-  <HelpKINode Title="Timer.IStaticInterface.Delay method" Url="html/M_WPILib_Timer_IStaticInterface_Delay.htm" />
-  <HelpKINode Title="Timer.IStaticInterface.FPGATimestamp property" Url="html/P_WPILib_Timer_IStaticInterface_FPGATimestamp.htm" />
-  <HelpKINode Title="Timer.IStaticInterface.MatchTime property" Url="html/P_WPILib_Timer_IStaticInterface_MatchTime.htm" />
-  <HelpKINode Title="Timer.IStaticInterface.NewTimer method" Url="html/M_WPILib_Timer_IStaticInterface_NewTimer.htm" />
-  <HelpKINode Title="Timer.MatchTime property" Url="html/P_WPILib_Timer_MatchTime.htm" />
+  <HelpKINode Title="Timer.ITimerInterface.Get method" Url="html/M_WPILib_Timer_ITimerInterface_Get.htm" />
+  <HelpKINode Title="Timer.ITimerInterface.HasPeriodPassed method" Url="html/M_WPILib_Timer_ITimerInterface_HasPeriodPassed.htm" />
+  <HelpKINode Title="Timer.ITimerInterface.Reset method" Url="html/M_WPILib_Timer_ITimerInterface_Reset.htm" />
+  <HelpKINode Title="Timer.ITimerInterface.Start method" Url="html/M_WPILib_Timer_ITimerInterface_Start.htm" />
+  <HelpKINode Title="Timer.ITimerInterface.Stop method" Url="html/M_WPILib_Timer_ITimerInterface_Stop.htm" />
   <HelpKINode Title="Timer.Reset method" Url="html/M_WPILib_Timer_Reset.htm" />
   <HelpKINode Title="Timer.Start method" Url="html/M_WPILib_Timer_Start.htm" />
   <HelpKINode Title="Timer.Stop method" Url="html/M_WPILib_Timer_Stop.htm" />
@@ -4699,10 +4711,6 @@
   <HelpKINode Title="Trigger.WhileActive method" Url="html/M_WPILib_Buttons_Trigger_WhileActive.htm" />
   <HelpKINode Title="TriggerState property" Url="html/P_WPILib_AnalogTrigger_TriggerState.htm" />
   <HelpKINode Title="Twist enumeration member" Url="html/T_WPILib_Joystick_AxisType.htm" />
-  <HelpKINode Title="Twist property">
-    <HelpKINode Title="GenericHID.Twist Property " Url="html/P_WPILib_GenericHID_Twist.htm" />
-    <HelpKINode Title="Joystick.Twist Property " Url="html/P_WPILib_Joystick_Twist.htm" />
-  </HelpKINode>
   <HelpKINode Title="Two enumeration member" Url="html/T_WPILib_StopBits.htm" />
   <HelpKINode Title="TYPE field">
     <HelpKINode Title="BooleanArray.TYPE Field" Url="html/F_NetworkTables_NetworkTables2_Type_BooleanArray_TYPE.htm" />
@@ -4921,9 +4929,7 @@
   <HelpKINode Title="WPILib.CAN.CANMessageNotFoundException class" Url="html/T_WPILib_CAN_CANMessageNotFoundException.htm" />
   <HelpKINode Title="WPILib.CAN.CANNotInitializedException class" Url="html/T_WPILib_CAN_CANNotInitializedException.htm" />
   <HelpKINode Title="WPILib.CANJaguar class" Url="html/T_WPILib_CANJaguar.htm" />
-  <HelpKINode Title="WPILib.CANJaguar.EncoderTag structure" Url="html/T_WPILib_CANJaguar_EncoderTag.htm" />
-  <HelpKINode Title="WPILib.CANJaguar.PotentiometerTag structure" Url="html/T_WPILib_CANJaguar_PotentiometerTag.htm" />
-  <HelpKINode Title="WPILib.CANJaguar.QuadEncoderTag structure" Url="html/T_WPILib_CANJaguar_QuadEncoderTag.htm" />
+  <HelpKINode Title="WPILib.CANJaguar.SourceMode enumeration" Url="html/T_WPILib_CANJaguar_SourceMode.htm" />
   <HelpKINode Title="WPILib.CANTalon class" Url="html/T_WPILib_CANTalon.htm" />
   <HelpKINode Title="WPILib.CANTalon.FeedbackDevice enumeration" Url="html/T_WPILib_CANTalon_FeedbackDevice.htm" />
   <HelpKINode Title="WPILib.CANTalon.StatusFrameRate enumeration" Url="html/T_WPILib_CANTalon_StatusFrameRate.htm" />
@@ -5015,7 +5021,6 @@
   <HelpKINode Title="WPILib.Port enumeration" Url="html/T_WPILib_Port.htm" />
   <HelpKINode Title="WPILib.PowerDistributionPanel class" Url="html/T_WPILib_PowerDistributionPanel.htm" />
   <HelpKINode Title="WPILib.Preferences class" Url="html/T_WPILib_Preferences.htm" />
-  <HelpKINode Title="WPILib.Preferences.ImproperPreferenceKeyException class" Url="html/T_WPILib_Preferences_ImproperPreferenceKeyException.htm" />
   <HelpKINode Title="WPILib.PWM class" Url="html/T_WPILib_PWM.htm" />
   <HelpKINode Title="WPILib.PWMSpeedController class" Url="html/T_WPILib_PWMSpeedController.htm" />
   <HelpKINode Title="WPILib.Relay class" Url="html/T_WPILib_Relay.htm" />
@@ -5042,8 +5047,8 @@
   <HelpKINode Title="WPILib.Talon class" Url="html/T_WPILib_Talon.htm" />
   <HelpKINode Title="WPILib.TalonSRX class" Url="html/T_WPILib_TalonSRX.htm" />
   <HelpKINode Title="WPILib.Timer class" Url="html/T_WPILib_Timer.htm" />
-  <HelpKINode Title="WPILib.Timer.Interface interface" Url="html/T_WPILib_Timer_Interface.htm" />
-  <HelpKINode Title="WPILib.Timer.IStaticInterface interface" Url="html/T_WPILib_Timer_IStaticInterface.htm" />
+  <HelpKINode Title="WPILib.Timer.IStaticTimerInterface interface" Url="html/T_WPILib_Timer_IStaticTimerInterface.htm" />
+  <HelpKINode Title="WPILib.Timer.ITimerInterface interface" Url="html/T_WPILib_Timer_ITimerInterface.htm" />
   <HelpKINode Title="WPILib.Ultrasonic class" Url="html/T_WPILib_Ultrasonic.htm" />
   <HelpKINode Title="WPILib.Ultrasonic.Unit enumeration" Url="html/T_WPILib_Ultrasonic_Unit.htm" />
   <HelpKINode Title="WPILib.Utility class" Url="html/T_WPILib_Utility.htm" />
@@ -5087,7 +5092,6 @@
     <HelpKINode Title="ADXL345.Axes Enumeration" Url="html/T_WPILib_ADXL345_Axes.htm" />
     <HelpKINode Title="Joystick.AxisType Enumeration" Url="html/T_WPILib_Joystick_AxisType.htm" />
   </HelpKINode>
-  <HelpKINode Title="X property" Url="html/P_WPILib_Extras_XboxController_X.htm" />
   <HelpKINode Title="XAxis field" Url="html/F_WPILib_ADXL345_AllAxes_XAxis.htm" />
   <HelpKINode Title="XboxController class">
     <HelpKINode Title="XboxController Class" Url="html/T_WPILib_Extras_XboxController.htm" />
@@ -5096,31 +5100,30 @@
     <HelpKINode Title="methods" Url="html/Methods_T_WPILib_Extras_XboxController.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_WPILib_Extras_XboxController.htm" />
   </HelpKINode>
-  <HelpKINode Title="XboxController.A property" Url="html/P_WPILib_Extras_XboxController_A.htm" />
-  <HelpKINode Title="XboxController.B property" Url="html/P_WPILib_Extras_XboxController_B.htm" />
-  <HelpKINode Title="XboxController.Back property" Url="html/P_WPILib_Extras_XboxController_Back.htm" />
-  <HelpKINode Title="XboxController.LeftBumper property" Url="html/P_WPILib_Extras_XboxController_LeftBumper.htm" />
+  <HelpKINode Title="XboxController.GetA method" Url="html/M_WPILib_Extras_XboxController_GetA.htm" />
+  <HelpKINode Title="XboxController.GetB method" Url="html/M_WPILib_Extras_XboxController_GetB.htm" />
+  <HelpKINode Title="XboxController.GetBack method" Url="html/M_WPILib_Extras_XboxController_GetBack.htm" />
+  <HelpKINode Title="XboxController.GetLeftBumper method" Url="html/M_WPILib_Extras_XboxController_GetLeftBumper.htm" />
+  <HelpKINode Title="XboxController.GetLeftStickButton method" Url="html/M_WPILib_Extras_XboxController_GetLeftStickButton.htm" />
+  <HelpKINode Title="XboxController.GetLeftTrigger method" Url="html/M_WPILib_Extras_XboxController_GetLeftTrigger.htm" />
+  <HelpKINode Title="XboxController.GetLeftXAxis method" Url="html/M_WPILib_Extras_XboxController_GetLeftXAxis.htm" />
+  <HelpKINode Title="XboxController.GetLeftYAxis method" Url="html/M_WPILib_Extras_XboxController_GetLeftYAxis.htm" />
+  <HelpKINode Title="XboxController.GetRightBumper method" Url="html/M_WPILib_Extras_XboxController_GetRightBumper.htm" />
+  <HelpKINode Title="XboxController.GetRightStickButton method" Url="html/M_WPILib_Extras_XboxController_GetRightStickButton.htm" />
+  <HelpKINode Title="XboxController.GetRightTrigger method" Url="html/M_WPILib_Extras_XboxController_GetRightTrigger.htm" />
+  <HelpKINode Title="XboxController.GetRightXAxis method" Url="html/M_WPILib_Extras_XboxController_GetRightXAxis.htm" />
+  <HelpKINode Title="XboxController.GetRightYAxis method" Url="html/M_WPILib_Extras_XboxController_GetRightYAxis.htm" />
+  <HelpKINode Title="XboxController.GetStart method" Url="html/M_WPILib_Extras_XboxController_GetStart.htm" />
+  <HelpKINode Title="XboxController.GetX method" Url="html/Overload_WPILib_Extras_XboxController_GetX.htm" />
+  <HelpKINode Title="XboxController.GetY method" Url="html/Overload_WPILib_Extras_XboxController_GetY.htm" />
   <HelpKINode Title="XboxController.LeftRumble property" Url="html/P_WPILib_Extras_XboxController_LeftRumble.htm" />
-  <HelpKINode Title="XboxController.LeftStickButton property" Url="html/P_WPILib_Extras_XboxController_LeftStickButton.htm" />
-  <HelpKINode Title="XboxController.LeftTrigger property" Url="html/P_WPILib_Extras_XboxController_LeftTrigger.htm" />
-  <HelpKINode Title="XboxController.LeftXAxis property" Url="html/P_WPILib_Extras_XboxController_LeftXAxis.htm" />
-  <HelpKINode Title="XboxController.LeftYAxis property" Url="html/P_WPILib_Extras_XboxController_LeftYAxis.htm" />
-  <HelpKINode Title="XboxController.RightBumper property" Url="html/P_WPILib_Extras_XboxController_RightBumper.htm" />
   <HelpKINode Title="XboxController.RightRumble property" Url="html/P_WPILib_Extras_XboxController_RightRumble.htm" />
-  <HelpKINode Title="XboxController.RightStickButton property" Url="html/P_WPILib_Extras_XboxController_RightStickButton.htm" />
-  <HelpKINode Title="XboxController.RightTrigger property" Url="html/P_WPILib_Extras_XboxController_RightTrigger.htm" />
-  <HelpKINode Title="XboxController.RightXAxis property" Url="html/P_WPILib_Extras_XboxController_RightXAxis.htm" />
-  <HelpKINode Title="XboxController.RightYAxis property" Url="html/P_WPILib_Extras_XboxController_RightYAxis.htm" />
-  <HelpKINode Title="XboxController.Start property" Url="html/P_WPILib_Extras_XboxController_Start.htm" />
-  <HelpKINode Title="XboxController.X property" Url="html/P_WPILib_Extras_XboxController_X.htm" />
   <HelpKINode Title="XboxController.XboxController constructor" Url="html/M_WPILib_Extras_XboxController__ctor.htm" />
-  <HelpKINode Title="XboxController.Y property" Url="html/P_WPILib_Extras_XboxController_Y.htm" />
   <HelpKINode Title="XonXoff enumeration member" Url="html/T_WPILib_FlowControl.htm" />
   <HelpKINode Title="Y enumeration member">
     <HelpKINode Title="ADXL345.Axes Enumeration" Url="html/T_WPILib_ADXL345_Axes.htm" />
     <HelpKINode Title="Joystick.AxisType Enumeration" Url="html/T_WPILib_Joystick_AxisType.htm" />
   </HelpKINode>
-  <HelpKINode Title="Y property" Url="html/P_WPILib_Extras_XboxController_Y.htm" />
   <HelpKINode Title="YAxis field" Url="html/F_WPILib_ADXL345_AllAxes_YAxis.htm" />
   <HelpKINode Title="Z enumeration member">
     <HelpKINode Title="ADXL345.Axes Enumeration" Url="html/T_WPILib_ADXL345_Axes.htm" />
