@@ -5,4 +5,4 @@ title: Documentation
 
 Testing
 
-* [WPILib API Reference](robotdotnet.github.io/Documentation/API/index.html)
+* [WPILib API Reference](http://robotdotnet.github.io/Documentation/API/index.html)
