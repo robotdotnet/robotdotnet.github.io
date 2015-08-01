@@ -2,7 +2,7 @@
 _gh_pages
 _site
 .ruby-version
-Gemfile.lock
+.sass-cache
 
 # Numerous always-ignore extensions
 *.diff
