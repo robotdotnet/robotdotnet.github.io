@@ -19,7 +19,7 @@ To use the WPILib, import WPILib "using WPILib" in C# or "Imports WPILib" in Vis
 
 ### Why is there an error when trying to use the Encoder class?
 
-By default, when creating a new class, "using System.Text" will automatically be included. System.Text includes an Encoder class, which is interfering with WPILib encoder class. There are 2 ways to solve this problem.
+By default, when creating a new class, "using System.Text" will automatically be included. System.Text includes an Encoder class, which is interfering with WPILib encoder class. There are 2 ways to solve this problem:
 
 * Remove "using System.Text". This is the recommended fix if you are not using anything in the System.Text namespace.
 * Add "using Encoder = WPILib.Encoder" to the usings. This will make any reference to Encoder use the WPILib version. If you need to use System.Text's Encoder, you will have to use its fully qualified name "System.Text.Encoder".
