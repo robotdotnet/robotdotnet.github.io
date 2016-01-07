@@ -683,6 +683,7 @@
   <HelpKINode Title="ButtonScheduler.m_pressedLast field" Url="html/F_WPILib_Buttons_ButtonScheduler_m_pressedLast.htm" />
   <HelpKINode Title="ButtonScheduler.Start method" Url="html/M_WPILib_Buttons_ButtonScheduler_Start.htm" />
   <HelpKINode Title="Calculate method" Url="html/M_WPILib_PIDController_Calculate.htm" />
+  <HelpKINode Title="CalculateFeedForward method" Url="html/M_WPILib_PIDController_CalculateFeedForward.htm" />
   <HelpKINode Title="Calibrate method">
     <HelpKINode Title="ADXRS450_Gyro.Calibrate Method " Url="html/M_WPILib_ADXRS450_Gyro_Calibrate.htm" />
     <HelpKINode Title="AHRS.Calibrate Method " Url="html/M_WPILib_Extras_NavX_AHRS_Calibrate.htm" />
@@ -2099,8 +2100,8 @@
   </HelpKINode>
   <HelpKINode Title="FlushOnAccess enumeration member" Url="html/T_WPILib_SerialPort_WriteBufferModeEnum.htm" />
   <HelpKINode Title="FlushWhenFull enumeration member" Url="html/T_WPILib_SerialPort_WriteBufferModeEnum.htm" />
-  <HelpKINode Title="FMSAttached property" Url="html/P_WPILib_DriverStation_FMSAttached.htm" />
   <HelpKINode Title="FmsAttached property" Url="html/P_HAL_Simulator_Data_DSControlData_FmsAttached.htm" />
+  <HelpKINode Title="FMSAttached property" Url="html/P_WPILib_DriverStation_FMSAttached.htm" />
   <HelpKINode Title="Follower enumeration member" Url="html/T_WPILib_Interfaces_ControlMode.htm" />
   <HelpKINode Title="ForceApplied property" Url="html/P_HAL_Simulator_Mechanisms_DriveWheelMechanism_ForceApplied.htm" />
   <HelpKINode Title="Forward enumeration member">
@@ -2298,6 +2299,7 @@
     <HelpKINode Title="DriverStation.GetData Method " Url="html/M_WPILib_DriverStation_GetData.htm" />
     <HelpKINode Title="SmartDashboard.GetData Method " Url="html/M_WPILib_SmartDashboard_SmartDashboard_GetData.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetDeltaSetpoint method" Url="html/M_WPILib_PIDController_GetDeltaSetpoint.htm" />
   <HelpKINode Title="GetDirection method">
     <HelpKINode Title="Counter.GetDirection Method " Url="html/M_WPILib_Counter_GetDirection.htm" />
     <HelpKINode Title="Encoder.GetDirection Method " Url="html/M_WPILib_Encoder_GetDirection.htm" />
@@ -3431,14 +3433,14 @@
   </HelpKINode>
   <HelpKINode Title="k2G enumeration member" Url="html/T_WPILib_Interfaces_AccelerometerRange.htm" />
   <HelpKINode Title="K2X enumeration member">
-    <HelpKINode Title="EncodingType Enumeration" Url="html/T_HAL_Simulator_Inputs_EncodingType.htm" />
     <HelpKINode Title="EncodingType Enumeration" Url="html/T_WPILib_Interfaces_EncodingType.htm" />
+    <HelpKINode Title="EncodingType Enumeration" Url="html/T_HAL_Simulator_Inputs_EncodingType.htm" />
     <HelpKINode Title="PeriodMultiplier Enumeration" Url="html/T_WPILib_PeriodMultiplier.htm" />
   </HelpKINode>
   <HelpKINode Title="k4G enumeration member" Url="html/T_WPILib_Interfaces_AccelerometerRange.htm" />
   <HelpKINode Title="K4X enumeration member">
-    <HelpKINode Title="EncodingType Enumeration" Url="html/T_HAL_Simulator_Inputs_EncodingType.htm" />
     <HelpKINode Title="EncodingType Enumeration" Url="html/T_WPILib_Interfaces_EncodingType.htm" />
+    <HelpKINode Title="EncodingType Enumeration" Url="html/T_HAL_Simulator_Inputs_EncodingType.htm" />
     <HelpKINode Title="PeriodMultiplier Enumeration" Url="html/T_WPILib_PeriodMultiplier.htm" />
   </HelpKINode>
   <HelpKINode Title="k8G enumeration member" Url="html/T_WPILib_Interfaces_AccelerometerRange.htm" />
@@ -4028,6 +4030,7 @@
     <HelpKINode Title="PIDSubsystem.PIDController Property " Url="html/P_WPILib_Commands_PIDSubsystem_PIDController.htm" />
   </HelpKINode>
   <HelpKINode Title="PIDController.Calculate method" Url="html/M_WPILib_PIDController_Calculate.htm" />
+  <HelpKINode Title="PIDController.CalculateFeedForward method" Url="html/M_WPILib_PIDController_CalculateFeedForward.htm" />
   <HelpKINode Title="PIDController.Continuous property" Url="html/P_WPILib_PIDController_Continuous.htm" />
   <HelpKINode Title="PIDController.D property" Url="html/P_WPILib_PIDController_D.htm" />
   <HelpKINode Title="PIDController.DefaultPeriod field" Url="html/F_WPILib_PIDController_DefaultPeriod.htm" />
@@ -4038,6 +4041,7 @@
   <HelpKINode Title="PIDController.F property" Url="html/P_WPILib_PIDController_F.htm" />
   <HelpKINode Title="PIDController.Get method" Url="html/M_WPILib_PIDController_Get.htm" />
   <HelpKINode Title="PIDController.GetAvgError method" Url="html/M_WPILib_PIDController_GetAvgError.htm" />
+  <HelpKINode Title="PIDController.GetDeltaSetpoint method" Url="html/M_WPILib_PIDController_GetDeltaSetpoint.htm" />
   <HelpKINode Title="PIDController.GetError method" Url="html/M_WPILib_PIDController_GetError.htm" />
   <HelpKINode Title="PIDController.I property" Url="html/P_WPILib_PIDController_I.htm" />
   <HelpKINode Title="PIDController.InitTable method" Url="html/M_WPILib_PIDController_InitTable.htm" />
