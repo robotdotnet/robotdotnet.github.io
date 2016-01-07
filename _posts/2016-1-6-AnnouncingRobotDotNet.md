@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initial RobotDotNet 2016 
+title: Initial RobotDotNet 2016 Release
 ---
 
 Just in time for the 2016 kickoff, we are happy to announce the initial release of RobotDotNet, a port of the FRC libraries to DotNet and C#. This port has been worked on over the past offseason, and has been thoroughly tested. Here's whats working so far.
