@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Announcing Initial 2016 Release.
+title: Initial RobotDotNet 2016 
 ---
 
 Just in time for the 2016 kickoff, we are happy to announce the initial release of RobotDotNet, a port of the FRC libraries to DotNet and C#. This port has been worked on over the past offseason, and has been thoroughly tested. Here's whats working so far.
@@ -20,11 +20,12 @@ The WPILib has all the features you know from FIRST, in addition to some cool ne
 
 In order to run on the RoboRIO, the newest version of Mono (4.2.1) has been compiled using NI's compilation tools.
 
-Our documentation can be found at our website, [URL="http://robotdotnet.github.io/Documentation/API/index.html"]which is located here.[/URL]
+Our documentation can be found at our website, [which is located here.](http://robotdotnet.github.io/Documentation/API/index.html)
 
 Instructions for downloading the extension and the libraries can be found at the tutorials page. The extension is uploaded to the Visual Studio Gallery, and the library has been uploaded to NuGet for easy updating. 
 
 It has been an interesting project to take on, and I would like to thank some people:
+
 * Jeremy Koritzinsky, who helped with much of the porting and created the Attributed Command Model
 * Shockwave 4488, who let me borrow a robot for much of the offseason to test and make sure everything worked, in addition to porting previous robot code.
 * FIRST and WPI, for providing a great set of libraries to start from.
