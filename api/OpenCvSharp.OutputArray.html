@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OutputArray
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OutputArray
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="OpenCvSharp_OutputArray" data-uid="OpenCvSharp.OutputArray">Class OutputArray
+              </h1>
+              <div class="markdown level0 summary"><p>Proxy datatype for passing Mat&#39;s and List&lt;&gt;&#39;s as output parameters</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+                  <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+                  <div class="level3"><span class="xref">OutputArray</span></div>
+                  <div class="level4"><a class="xref" href="OpenCvSharp.InputOutputArray.html">InputOutputArray</a></div>
+                  <div class="level4"><a class="xref" href="OpenCvSharp.OutputArrayOfMatList.html">OutputArrayOfMatList</a></div>
+                  <div class="level4"><a class="xref" href="OpenCvSharp.OutputArrayOfStructList-1.html">OutputArrayOfStructList</a>&lt;T&gt;</div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
+              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
+              <h5 id="OpenCvSharp_OutputArray_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class OutputArray : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_AssignResult.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.AssignResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L167">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_AssignResult_" data-uid="OpenCvSharp.OutputArray.AssignResult*"></a>
+              <h4 id="OpenCvSharp_OutputArray_AssignResult" data-uid="OpenCvSharp.OutputArray.AssignResult">AssignResult()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AssignResult()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_Create_OpenCvSharp_Gpu_GpuMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.Create(OpenCvSharp.Gpu.GpuMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L243">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_Create_" data-uid="OpenCvSharp.OutputArray.Create*"></a>
+              <h4 id="OpenCvSharp_OutputArray_Create_OpenCvSharp_Gpu_GpuMat_" data-uid="OpenCvSharp.OutputArray.Create(OpenCvSharp.Gpu.GpuMat)">Create(GpuMat)</h4>
+              <div class="markdown level1 summary"><p>Creates a proxy class of the specified matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static OutputArray Create(GpuMat mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Gpu.GpuMat.html">GpuMat</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_Create_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.Create(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L233">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_Create_" data-uid="OpenCvSharp.OutputArray.Create*"></a>
+              <h4 id="OpenCvSharp_OutputArray_Create_OpenCvSharp_Mat_" data-uid="OpenCvSharp.OutputArray.Create(OpenCvSharp.Mat)">Create(Mat)</h4>
+              <div class="markdown level1 summary"><p>Creates a proxy class of the specified matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static OutputArray Create(Mat mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_Create_System_Collections_Generic_List_OpenCvSharp_Mat__.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.Create(System.Collections.Generic.List%7BOpenCvSharp.Mat%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L267">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_Create_" data-uid="OpenCvSharp.OutputArray.Create*"></a>
+              <h4 id="OpenCvSharp_OutputArray_Create_System_Collections_Generic_List_OpenCvSharp_Mat__" data-uid="OpenCvSharp.OutputArray.Create(System.Collections.Generic.List{OpenCvSharp.Mat})">Create(List&lt;Mat&gt;)</h4>
+              <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static OutputArrayOfMatList Create(List&lt;Mat&gt; list)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenCvSharp.Mat.html">Mat</a>&gt;</td>
+                    <td><span class="parametername">list</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArrayOfMatList.html">OutputArrayOfMatList</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_Create__1_System_Collections_Generic_List___0__.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.Create%60%601(System.Collections.Generic.List%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L254">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_Create_" data-uid="OpenCvSharp.OutputArray.Create*"></a>
+              <h4 id="OpenCvSharp_OutputArray_Create__1_System_Collections_Generic_List___0__" data-uid="OpenCvSharp.OutputArray.Create``1(System.Collections.Generic.List{``0})">Create&lt;T&gt;(List&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static OutputArrayOfStructList&lt;T&gt; Create&lt;T&gt;(List&lt;T&gt; list)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="parametername">list</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArrayOfStructList-1.html">OutputArrayOfStructList</a>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L59">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_Dispose_" data-uid="OpenCvSharp.OutputArray.Dispose*"></a>
+              <h4 id="OpenCvSharp_OutputArray_Dispose_System_Boolean_" data-uid="OpenCvSharp.OutputArray.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">disposing</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_Fix.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.Fix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L200">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_Fix_" data-uid="OpenCvSharp.OutputArray.Fix*"></a>
+              <h4 id="OpenCvSharp_OutputArray_Fix" data-uid="OpenCvSharp.OutputArray.Fix">Fix()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Fix()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_GetGpuMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.GetGpuMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L141">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_GetGpuMat_" data-uid="OpenCvSharp.OutputArray.GetGpuMat*"></a>
+              <h4 id="OpenCvSharp_OutputArray_GetGpuMat" data-uid="OpenCvSharp.OutputArray.GetGpuMat">GetGpuMat()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Mat GetGpuMat()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_GetMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.GetMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L123">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_GetMat_" data-uid="OpenCvSharp.OutputArray.GetMat*"></a>
+              <h4 id="OpenCvSharp_OutputArray_GetMat" data-uid="OpenCvSharp.OutputArray.GetMat">GetMat()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Mat GetMat()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_GetVectorOfMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.GetVectorOfMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L159">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_GetVectorOfMat_" data-uid="OpenCvSharp.OutputArray.GetVectorOfMat*"></a>
+              <h4 id="OpenCvSharp_OutputArray_GetVectorOfMat" data-uid="OpenCvSharp.OutputArray.GetVectorOfMat">GetVectorOfMat()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;Mat&gt; GetVectorOfMat()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.Mat.html">Mat</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_IsGpuMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.IsGpuMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L132">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_IsGpuMat_" data-uid="OpenCvSharp.OutputArray.IsGpuMat*"></a>
+              <h4 id="OpenCvSharp_OutputArray_IsGpuMat" data-uid="OpenCvSharp.OutputArray.IsGpuMat">IsGpuMat()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsGpuMat()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_IsMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.IsMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L114">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_IsMat_" data-uid="OpenCvSharp.OutputArray.IsMat*"></a>
+              <h4 id="OpenCvSharp_OutputArray_IsMat" data-uid="OpenCvSharp.OutputArray.IsMat">IsMat()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsMat()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_IsReady.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L210">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_IsReady_" data-uid="OpenCvSharp.OutputArray.IsReady*"></a>
+              <h4 id="OpenCvSharp_OutputArray_IsReady" data-uid="OpenCvSharp.OutputArray.IsReady">IsReady()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsReady()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_IsVectorOfMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.IsVectorOfMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L150">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_IsVectorOfMat_" data-uid="OpenCvSharp.OutputArray.IsVectorOfMat*"></a>
+              <h4 id="OpenCvSharp_OutputArray_IsVectorOfMat" data-uid="OpenCvSharp.OutputArray.IsVectorOfMat">IsVectorOfMat()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsVectorOfMat()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_ThrowIfNotReady.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.ThrowIfNotReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L222">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_ThrowIfNotReady_" data-uid="OpenCvSharp.OutputArray.ThrowIfNotReady*"></a>
+              <h4 id="OpenCvSharp_OutputArray_ThrowIfNotReady" data-uid="OpenCvSharp.OutputArray.ThrowIfNotReady">ThrowIfNotReady()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ThrowIfNotReady()</code></pre>
+              </div>
+              <h3 id="operators">Operators
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_op_Implicit_OpenCvSharp_Gpu_GpuMat__OpenCvSharp_OutputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.op_Implicit(OpenCvSharp.Gpu.GpuMat)~OpenCvSharp.OutputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L99">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_op_Implicit_" data-uid="OpenCvSharp.OutputArray.op_Implicit*"></a>
+              <h4 id="OpenCvSharp_OutputArray_op_Implicit_OpenCvSharp_Gpu_GpuMat__OpenCvSharp_OutputArray" data-uid="OpenCvSharp.OutputArray.op_Implicit(OpenCvSharp.Gpu.GpuMat)~OpenCvSharp.OutputArray">Implicit(GpuMat to OutputArray)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static implicit operator OutputArray(GpuMat mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Gpu.GpuMat.html">GpuMat</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray_op_Implicit_OpenCvSharp_Mat__OpenCvSharp_OutputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray.op_Implicit(OpenCvSharp.Mat)~OpenCvSharp.OutputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L89">View Source</a>
+              </span>
+              <a id="OpenCvSharp_OutputArray_op_Implicit_" data-uid="OpenCvSharp.OutputArray.op_Implicit*"></a>
+              <h4 id="OpenCvSharp_OutputArray_op_Implicit_OpenCvSharp_Mat__OpenCvSharp_OutputArray" data-uid="OpenCvSharp.OutputArray.op_Implicit(OpenCvSharp.Mat)~OpenCvSharp.OutputArray">Implicit(Mat to OutputArray)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static implicit operator OutputArray(Mat mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_OutputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.OutputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/OutputArray.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

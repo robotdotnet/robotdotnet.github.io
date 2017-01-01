@@ -1,0 +1,815 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Compressor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Compressor
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_Compressor" data-uid="WPILib.Compressor">Class Compressor
+              </h1>
+              <div class="markdown level0 summary"><p>Class for operating the PCM Compressor. The PWM will automatically run in close-loop mode
+by default whenever a <a class="xref" href="WPILib.Solenoid.html">Solenoid</a> object is created.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+                  <div class="level2"><span class="xref">Compressor</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_Compressor_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class Compressor : SensorBase, IDisposable, ILiveWindowSendable, ISendable</code></pre>
+              </div>
+              <h5 id="WPILib_Compressor_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>For most cases the <a class="xref" href="WPILib.Compressor.html">Compressor</a> object does not
+need to be instantiated or used in a robot program.
+<p>This class is only This class is only required in cases where more detailed 
+status or to enable/disable closed loop control. Note: you cannot operate the compressor 
+directly from this class as doing so would circumvent the safety provided in using the 
+pressure switch and closed loop control. You can only turn off closed loop control, 
+thereby stopping the compressor from operating.</p>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor__ctor.md&amp;value=---%0Auid%3A%20WPILib.Compressor.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L39">View Source</a>
+              </span>
+              <a id="WPILib_Compressor__ctor_" data-uid="WPILib.Compressor.#ctor*"></a>
+              <h4 id="WPILib_Compressor__ctor" data-uid="WPILib.Compressor.#ctor">Compressor()</h4>
+              <div class="markdown level1 summary"><p>Create an instance of the <a class="xref" href="WPILib.Compressor.html">Compressor</a> class using the default module.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Compressor()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Compressor.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L31">View Source</a>
+              </span>
+              <a id="WPILib_Compressor__ctor_" data-uid="WPILib.Compressor.#ctor*"></a>
+              <h4 id="WPILib_Compressor__ctor_System_Int32_" data-uid="WPILib.Compressor.#ctor(System.Int32)">Compressor(Int32)</h4>
+              <div class="markdown level1 summary"><p>Create an instance of the <a class="xref" href="WPILib.Compressor.html">Compressor</a> class</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Compressor(int pcmId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">pcmId</span></td>
+                    <td><p>The PCM CAN device ID.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_ClosedLoopControl.md&amp;value=---%0Auid%3A%20WPILib.Compressor.ClosedLoopControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L118">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_ClosedLoopControl_" data-uid="WPILib.Compressor.ClosedLoopControl*"></a>
+              <h4 id="WPILib_Compressor_ClosedLoopControl" data-uid="WPILib.Compressor.ClosedLoopControl">ClosedLoopControl</h4>
+              <div class="markdown level1 summary"><p>Gets or sets whether closed loop control is enabled on the compressor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ClosedLoopControl { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.Compressor.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L233">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_SmartDashboardType_" data-uid="WPILib.Compressor.SmartDashboardType*"></a>
+              <h4 id="WPILib_Compressor_SmartDashboardType" data-uid="WPILib.Compressor.SmartDashboardType">SmartDashboardType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_Table.md&amp;value=---%0Auid%3A%20WPILib.Compressor.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L231">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_Table_" data-uid="WPILib.Compressor.Table*"></a>
+              <h4 id="WPILib_Compressor_Table" data-uid="WPILib.Compressor.Table">Table</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_ClearAllPCMStickyFaults.md&amp;value=---%0Auid%3A%20WPILib.Compressor.ClearAllPCMStickyFaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L217">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_ClearAllPCMStickyFaults_" data-uid="WPILib.Compressor.ClearAllPCMStickyFaults*"></a>
+              <h4 id="WPILib_Compressor_ClearAllPCMStickyFaults" data-uid="WPILib.Compressor.ClearAllPCMStickyFaults">ClearAllPCMStickyFaults()</h4>
+              <div class="markdown level1 summary"><p>Clears ALL sticky faults inside the PCM that the compressor is wired to.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ClearAllPCMStickyFaults()</code></pre>
+              </div>
+              <h5 id="WPILib_Compressor_ClearAllPCMStickyFaults_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If a sticky fault is set, then it will be persistently cleared. Compressor drive
+may be momentarily disabled while flages are being cleard. Care should be 
+taken to not call this too frequently, otherwise normal compressor functionality
+may be prevented.</p>
+<p>If no sticky faults are set then this call will have no effect.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_Enabled.md&amp;value=---%0Auid%3A%20WPILib.Compressor.Enabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L84">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_Enabled_" data-uid="WPILib.Compressor.Enabled*"></a>
+              <h4 id="WPILib_Compressor_Enabled" data-uid="WPILib.Compressor.Enabled">Enabled()</h4>
+              <div class="markdown level1 summary"><p>Gets whether the compressor is enabled.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Enabled()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorCurrent.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorCurrent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L107">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorCurrent_" data-uid="WPILib.Compressor.GetCompressorCurrent*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorCurrent" data-uid="WPILib.Compressor.GetCompressorCurrent">GetCompressorCurrent()</h4>
+              <div class="markdown level1 summary"><p>Gets the Current being drawed by the compressor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetCompressorCurrent()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorCurrentTooHighFault.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorCurrentTooHighFault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L151">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorCurrentTooHighFault_" data-uid="WPILib.Compressor.GetCompressorCurrentTooHighFault*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorCurrentTooHighFault" data-uid="WPILib.Compressor.GetCompressorCurrentTooHighFault">GetCompressorCurrentTooHighFault()</h4>
+              <div class="markdown level1 summary"><p>Gets if the compressor is disabled due to the current draw being too high.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetCompressorCurrentTooHighFault()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the compressor is disabled due to current being too high.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorCurrentTooHighStickyFault.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorCurrentTooHighStickyFault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L139">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorCurrentTooHighStickyFault_" data-uid="WPILib.Compressor.GetCompressorCurrentTooHighStickyFault*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorCurrentTooHighStickyFault" data-uid="WPILib.Compressor.GetCompressorCurrentTooHighStickyFault">GetCompressorCurrentTooHighStickyFault()</h4>
+              <div class="markdown level1 summary"><p>Gets if PCM has a sticky fault for the compressor current draw being too high.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetCompressorCurrentTooHighStickyFault()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if sticky fault is set for the current draw being too high.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorNotConnectedFault.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorNotConnectedFault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L199">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorNotConnectedFault_" data-uid="WPILib.Compressor.GetCompressorNotConnectedFault*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorNotConnectedFault" data-uid="WPILib.Compressor.GetCompressorNotConnectedFault">GetCompressorNotConnectedFault()</h4>
+              <div class="markdown level1 summary"><p>Gets if the compressor is disabled due to the compressor output not being connected.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetCompressorNotConnectedFault()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the compressor is not connected.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorNotConnectedStickyFault.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorNotConnectedStickyFault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L187">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorNotConnectedStickyFault_" data-uid="WPILib.Compressor.GetCompressorNotConnectedStickyFault*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorNotConnectedStickyFault" data-uid="WPILib.Compressor.GetCompressorNotConnectedStickyFault">GetCompressorNotConnectedStickyFault()</h4>
+              <div class="markdown level1 summary"><p>Gets if PCM has a sticky fault for the compressor output not being connected.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetCompressorNotConnectedStickyFault()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if sticky fault is set for the compressor output not being connected.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorShortedFault.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorShortedFault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L175">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorShortedFault_" data-uid="WPILib.Compressor.GetCompressorShortedFault*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorShortedFault" data-uid="WPILib.Compressor.GetCompressorShortedFault">GetCompressorShortedFault()</h4>
+              <div class="markdown level1 summary"><p>Gets if the compressor is disabled due to an apparent short in the compressor output.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetCompressorShortedFault()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the compressor is shorted.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetCompressorShortedStickyFault.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetCompressorShortedStickyFault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L163">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetCompressorShortedStickyFault_" data-uid="WPILib.Compressor.GetCompressorShortedStickyFault*"></a>
+              <h4 id="WPILib_Compressor_GetCompressorShortedStickyFault" data-uid="WPILib.Compressor.GetCompressorShortedStickyFault">GetCompressorShortedStickyFault()</h4>
+              <div class="markdown level1 summary"><p>Gets if PCM has a sticky fault for the compressor output being shorted.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetCompressorShortedStickyFault()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if sticky fault is set for the compressor output being shorted.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_GetPressureSwitchValue.md&amp;value=---%0Auid%3A%20WPILib.Compressor.GetPressureSwitchValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L95">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_GetPressureSwitchValue_" data-uid="WPILib.Compressor.GetPressureSwitchValue*"></a>
+              <h4 id="WPILib_Compressor_GetPressureSwitchValue" data-uid="WPILib.Compressor.GetPressureSwitchValue">GetPressureSwitchValue()</h4>
+              <div class="markdown level1 summary"><p>Gets the value of the pressure switch.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool GetPressureSwitchValue()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Compressor.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L225">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_InitTable_" data-uid="WPILib.Compressor.InitTable*"></a>
+              <h4 id="WPILib_Compressor_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Compressor.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="parametername">subtable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_Start.md&amp;value=---%0Auid%3A%20WPILib.Compressor.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L64">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_Start_" data-uid="WPILib.Compressor.Start*"></a>
+              <h4 id="WPILib_Compressor_Start" data-uid="WPILib.Compressor.Start">Start()</h4>
+              <div class="markdown level1 summary"><p>Start the compressor running in closed loop control mode.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+              </div>
+              <h5 id="WPILib_Compressor_Start_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Use this method in cases where you would like to manually
+stop and start the compressor for applications such as conserving
+battery or making sure that the compressor motor doesn&#39;t start
+during critical operations.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.Compressor.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L241">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_StartLiveWindowMode_" data-uid="WPILib.Compressor.StartLiveWindowMode*"></a>
+              <h4 id="WPILib_Compressor_StartLiveWindowMode" data-uid="WPILib.Compressor.StartLiveWindowMode">StartLiveWindowMode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_Stop.md&amp;value=---%0Auid%3A%20WPILib.Compressor.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L76">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_Stop_" data-uid="WPILib.Compressor.Stop*"></a>
+              <h4 id="WPILib_Compressor_Stop" data-uid="WPILib.Compressor.Stop">Stop()</h4>
+              <div class="markdown level1 summary"><p>Stop the compressor from running in closed loop control mode.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+              </div>
+              <h5 id="WPILib_Compressor_Stop_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Use this method in cases where you would like to manually
+stop and start the compressor for applications such as conserving
+battery or making sure that the compressor motor doesn&#39;t start
+during critical operations.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.Compressor.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L245">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_StopLiveWindowMode_" data-uid="WPILib.Compressor.StopLiveWindowMode*"></a>
+              <h4 id="WPILib_Compressor_StopLiveWindowMode" data-uid="WPILib.Compressor.StopLiveWindowMode">StopLiveWindowMode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.Compressor.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L235">View Source</a>
+              </span>
+              <a id="WPILib_Compressor_UpdateTable_" data-uid="WPILib.Compressor.UpdateTable*"></a>
+              <h4 id="WPILib_Compressor_UpdateTable" data-uid="WPILib.Compressor.UpdateTable">UpdateTable()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Compressor.md&amp;value=---%0Auid%3A%20WPILib.Compressor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Compressor.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

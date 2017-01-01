@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CvContourPolygon
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CvContourPolygon
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="OpenCvSharp_Blob_CvContourPolygon" data-uid="OpenCvSharp.Blob.CvContourPolygon">Class CvContourPolygon
+              </h1>
+              <div class="markdown level0 summary"><p>Polygon based contour.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenCvSharp.Point.html">Point</a>&gt;</div>
+                  <div class="level2"><span class="xref">CvContourPolygon</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Add(OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.Add(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.AddRange(System.Collections.Generic.IEnumerable&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.AsReadOnly()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.BinarySearch(System.Int32, System.Int32, OpenCvSharp.Point, System.Collections.Generic.IComparer&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.BinarySearch(OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.BinarySearch(OpenCvSharp.Point, System.Collections.Generic.IComparer&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Clear()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Contains(OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.Contains(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.ConvertAll&lt;TOutput&gt;(System.Converter&lt;OpenCvSharp.Point, TOutput&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.CopyTo(OpenCvSharp.Point[])</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.CopyTo(System.Int32, OpenCvSharp.Point[], System.Int32, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.CopyTo(OpenCvSharp.Point[], System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Exists(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Find(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindAll(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindIndex(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindIndex(System.Int32, System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindIndex(System.Int32, System.Int32, System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindLast(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindLastIndex(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindLastIndex(System.Int32, System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.FindLastIndex(System.Int32, System.Int32, System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.ForEach(System.Action&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.GetEnumerator()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.Generic.IEnumerable&lt;OpenCvSharp.Point&gt;.GetEnumerator()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IEnumerable.GetEnumerator()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.GetRange(System.Int32, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.IndexOf(OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.IndexOf(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.IndexOf(OpenCvSharp.Point, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.IndexOf(OpenCvSharp.Point, System.Int32, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Insert(System.Int32, OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.Insert(System.Int32, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.InsertRange(System.Int32, System.Collections.Generic.IEnumerable&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.LastIndexOf(OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.LastIndexOf(OpenCvSharp.Point, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.LastIndexOf(OpenCvSharp.Point, System.Int32, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Remove(OpenCvSharp.Point)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.Remove(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.RemoveAll(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.RemoveAt(System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.RemoveRange(System.Int32, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Reverse()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Reverse(System.Int32, System.Int32)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Sort()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Sort(System.Collections.Generic.IComparer&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Sort(System.Int32, System.Int32, System.Collections.Generic.IComparer&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Sort(System.Comparison&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.ToArray()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.TrimExcess()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.TrueForAll(System.Predicate&lt;OpenCvSharp.Point&gt;)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Capacity</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Count</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.IsFixedSize</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.Generic.ICollection&lt;OpenCvSharp.Point&gt;.IsReadOnly</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.IsReadOnly</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.ICollection.IsSynchronized</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.ICollection.SyncRoot</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.Item[System.Int32]</span>
+                </div>
+                <div>
+                  <span class="xref">System.Collections.Generic.List&lt;OpenCvSharp.Point&gt;.System.Collections.IList.Item[System.Int32]</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:OpenCvSharp.Blob</h6>
+              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
+              <h5 id="OpenCvSharp_Blob_CvContourPolygon_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class CvContourPolygon : List&lt;Point&gt;, IList&lt;Point&gt;, ICollection&lt;Point&gt;, IList, ICollection, IReadOnlyList&lt;Point&gt;, IReadOnlyCollection&lt;Point&gt;, IEnumerable&lt;Point&gt;, IEnumerable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon__ctor.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L34">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon__ctor_" data-uid="OpenCvSharp.Blob.CvContourPolygon.#ctor*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon__ctor" data-uid="OpenCvSharp.Blob.CvContourPolygon.#ctor">CvContourPolygon()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CvContourPolygon()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon__ctor_System_Collections_Generic_IEnumerable_OpenCvSharp_Point__.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.%23ctor(System.Collections.Generic.IEnumerable%7BOpenCvSharp.Point%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L42">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon__ctor_" data-uid="OpenCvSharp.Blob.CvContourPolygon.#ctor*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon__ctor_System_Collections_Generic_IEnumerable_OpenCvSharp_Point__" data-uid="OpenCvSharp.Blob.CvContourPolygon.#ctor(System.Collections.Generic.IEnumerable{OpenCvSharp.Point})">CvContourPolygon(IEnumerable&lt;Point&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CvContourPolygon(IEnumerable&lt;Point&gt; list)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.Point.html">Point</a>&gt;</td>
+                    <td><span class="parametername">list</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Area.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Area%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L67">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Area_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Area*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Area" data-uid="OpenCvSharp.Blob.CvContourPolygon.Area">Area()</h4>
+              <div class="markdown level1 summary"><p>Calculates area of a polygonal contour. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Area()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>Area of the contour.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Circularity.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Circularity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L90">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Circularity_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Circularity*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Circularity" data-uid="OpenCvSharp.Blob.CvContourPolygon.Circularity">Circularity()</h4>
+              <div class="markdown level1 summary"><p>Calculates the circularity of a polygon (compactness measure).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Circularity()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>Circularity: a non-negative value, where 0 correspond with a circumference.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_ContourConvexHull.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.ContourConvexHull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L110">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_ContourConvexHull_" data-uid="OpenCvSharp.Blob.CvContourPolygon.ContourConvexHull*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_ContourConvexHull" data-uid="OpenCvSharp.Blob.CvContourPolygon.ContourConvexHull">ContourConvexHull()</h4>
+              <div class="markdown level1 summary"><p>Calculates convex hull of a contour.
+Uses the Melkman Algorithm. Code based on the version in <a href="http://w3.impa.br/~rdcastan/Cgeometry/">http://w3.impa.br/~rdcastan/Cgeometry/</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CvContourPolygon ContourConvexHull()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Blob.CvContourPolygon.html">CvContourPolygon</a></td>
+                    <td><p>Convex hull.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Perimeter.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Perimeter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L173">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Perimeter_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Perimeter*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Perimeter" data-uid="OpenCvSharp.Blob.CvContourPolygon.Perimeter">Perimeter()</h4>
+              <div class="markdown level1 summary"><p>Calculates perimeter of a chain code contour.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Perimeter()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>Perimeter of the contour.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Render_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Render(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L198">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Render_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Render*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Render_OpenCvSharp_Mat_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Render(OpenCvSharp.Mat)">Render(Mat)</h4>
+              <div class="markdown level1 summary"><p>Draw a polygon.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(Mat img)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">img</span></td>
+                    <td><p>Image to draw on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Render_OpenCvSharp_Mat_OpenCvSharp_Scalar_.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Render(OpenCvSharp.Mat%2COpenCvSharp.Scalar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L208">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Render_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Render*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Render_OpenCvSharp_Mat_OpenCvSharp_Scalar_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Render(OpenCvSharp.Mat,OpenCvSharp.Scalar)">Render(Mat, Scalar)</h4>
+              <div class="markdown level1 summary"><p>Draw a polygon.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(Mat img, Scalar color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">img</span></td>
+                    <td><p>Image to draw on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Scalar.html">Scalar</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td><p>Color to draw (default, white).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Simplify.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Simplify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L237">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Simplify_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Simplify*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Simplify" data-uid="OpenCvSharp.Blob.CvContourPolygon.Simplify">Simplify()</h4>
+              <div class="markdown level1 summary"><p>Simplify a polygon reducing the number of vertex according the distance &quot;delta&quot;. 
+Uses a version of the Ramer-Douglas-Peucker algorithm (<a href="http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm">http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm</a>). </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CvContourPolygon Simplify()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Blob.CvContourPolygon.html">CvContourPolygon</a></td>
+                    <td><p>A simplify version of the original polygon.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_Simplify_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.Simplify(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L248">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_Simplify_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Simplify*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_Simplify_System_Double_" data-uid="OpenCvSharp.Blob.CvContourPolygon.Simplify(System.Double)">Simplify(Double)</h4>
+              <div class="markdown level1 summary"><p>Simplify a polygon reducing the number of vertex according the distance &quot;delta&quot;. 
+Uses a version of the Ramer-Douglas-Peucker algorithm (<a href="http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm">http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm</a>). </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CvContourPolygon Simplify(double delta)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">delta</span></td>
+                    <td><p>Minimun distance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Blob.CvContourPolygon.html">CvContourPolygon</a></td>
+                    <td><p>A simplify version of the original polygon.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_ToString.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L51">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_ToString_" data-uid="OpenCvSharp.Blob.CvContourPolygon.ToString*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_ToString" data-uid="OpenCvSharp.Blob.CvContourPolygon.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Converts this to CSV string</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_WriteAsCsv_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.WriteAsCsv(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L357">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_WriteAsCsv_" data-uid="OpenCvSharp.Blob.CvContourPolygon.WriteAsCsv*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_WriteAsCsv_System_String_" data-uid="OpenCvSharp.Blob.CvContourPolygon.WriteAsCsv(System.String)">WriteAsCsv(String)</h4>
+              <div class="markdown level1 summary"><p>Write a contour to a CSV (Comma-separated values) file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void WriteAsCsv(string fileName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">fileName</span></td>
+                    <td><p>File name.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_WriteAsSvg_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.WriteAsSvg(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L374">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_WriteAsSvg_" data-uid="OpenCvSharp.Blob.CvContourPolygon.WriteAsSvg*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_WriteAsSvg_System_String_" data-uid="OpenCvSharp.Blob.CvContourPolygon.WriteAsSvg(System.String)">WriteAsSvg(String)</h4>
+              <div class="markdown level1 summary"><p>Write a contour to a SVG file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void WriteAsSvg(string fileName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">fileName</span></td>
+                    <td><p>File name</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon_WriteAsSvg_System_String_OpenCvSharp_Scalar_OpenCvSharp_Scalar_.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon.WriteAsSvg(System.String%2COpenCvSharp.Scalar%2COpenCvSharp.Scalar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L385">View Source</a>
+              </span>
+              <a id="OpenCvSharp_Blob_CvContourPolygon_WriteAsSvg_" data-uid="OpenCvSharp.Blob.CvContourPolygon.WriteAsSvg*"></a>
+              <h4 id="OpenCvSharp_Blob_CvContourPolygon_WriteAsSvg_System_String_OpenCvSharp_Scalar_OpenCvSharp_Scalar_" data-uid="OpenCvSharp.Blob.CvContourPolygon.WriteAsSvg(System.String,OpenCvSharp.Scalar,OpenCvSharp.Scalar)">WriteAsSvg(String, Scalar, Scalar)</h4>
+              <div class="markdown level1 summary"><p>Write a contour to a SVG file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void WriteAsSvg(string fileName, Scalar stroke, Scalar fill)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">fileName</span></td>
+                    <td><p>File name</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Scalar.html">Scalar</a></td>
+                    <td><span class="parametername">stroke</span></td>
+                    <td><p>Stroke color</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Scalar.html">Scalar</a></td>
+                    <td><span class="parametername">fill</span></td>
+                    <td><p>Fill color</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_Blob_CvContourPolygon.md&amp;value=---%0Auid%3A%20OpenCvSharp.Blob.CvContourPolygon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/Blob/CvContourPolygon.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

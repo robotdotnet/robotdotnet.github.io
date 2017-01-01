@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PWMSpeedController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PWMSpeedController
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_PWMSpeedController" data-uid="WPILib.PWMSpeedController">Class PWMSpeedController
+              </h1>
+              <div class="markdown level0 summary"><p>This is the base class for all PWM Speed Controllers.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.PWM.html">PWM</a></div>
+                  <div class="level3"><a class="xref" href="WPILib.SafePWM.html">SafePWM</a></div>
+                  <div class="level4"><span class="xref">PWMSpeedController</span></div>
+                  <div class="level5"><a class="xref" href="WPILib.Jaguar.html">Jaguar</a></div>
+                  <div class="level5"><a class="xref" href="WPILib.SD540.html">SD540</a></div>
+                  <div class="level5"><a class="xref" href="WPILib.Spark.html">Spark</a></div>
+                  <div class="level5"><a class="xref" href="WPILib.Talon.html">Talon</a></div>
+                  <div class="level5"><a class="xref" href="WPILib.TalonSRX.html">TalonSRX</a></div>
+                  <div class="level5"><a class="xref" href="WPILib.Victor.html">Victor</a></div>
+                  <div class="level5"><a class="xref" href="WPILib.VictorSP.html">VictorSP</a></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_Expiration">SafePWM.Expiration</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_Alive">SafePWM.Alive</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_StopMotor">SafePWM.StopMotor()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_SafetyEnabled">SafePWM.SafetyEnabled</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_Description">SafePWM.Description</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_Feed">SafePWM.Feed()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SafePWM.html#WPILib_SafePWM_Disable">SafePWM.Disable()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Dispose">PWM.Dispose()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_DeadbandElimination">PWM.DeadbandElimination</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetRawBounds_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">PWM.SetRawBounds(Int32, Int32, Int32, Int32, Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetBounds_System_Double_System_Double_System_Double_System_Double_System_Double_">PWM.SetBounds(Double, Double, Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetRawBounds_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__">PWM.GetRawBounds(Int32, Int32, Int32, Int32, Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Channel">PWM.Channel</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetPosition_System_Double_">PWM.SetPosition(Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetPosition">PWM.GetPosition()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetSpeed_System_Double_">PWM.SetSpeed(Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetSpeed">PWM.GetSpeed()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetRaw_System_Int32_">PWM.SetRaw(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetRaw">PWM.GetRaw()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_PeriodMultiplier">PWM.PeriodMultiplier</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetZeroLatch">PWM.SetZeroLatch()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetDisabled">PWM.SetDisabled()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SmartDashboardType">PWM.SmartDashboardType</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_InitTable_NetworkTables_Tables_ITable_">PWM.InitTable(ITable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_UpdateTable">PWM.UpdateTable()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Table">PWM.Table</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_StartLiveWindowMode">PWM.StartLiveWindowMode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">PWM.ValueChanged(ITable, String, Value, NotifyFlags)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_StopLiveWindowMode">PWM.StopLiveWindowMode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_PWMSpeedController_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class PWMSpeedController : SafePWM, ILiveWindowSendable, ISendable, ITableListener, IMotorSafety, ISpeedController, IPIDOutput, IDisposable</code></pre>
+              </div>
+              <h5 id="WPILib_PWMSpeedController_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>The Java and C++ versions this explicitly implemented in every speed controller.
+It is easier to have this as the base class, and only have to run and init function.
+This saves time from copy pasting code every time a new motor controller is added.</p>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L20">View Source</a>
+              </span>
+              <a id="WPILib_PWMSpeedController__ctor_" data-uid="WPILib.PWMSpeedController.#ctor*"></a>
+              <h4 id="WPILib_PWMSpeedController__ctor_System_Int32_" data-uid="WPILib.PWMSpeedController.#ctor(System.Int32)">PWMSpeedController(Int32)</h4>
+              <div class="markdown level1 summary"><p>Constructor for a PWM Speed Controller.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected PWMSpeedController(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The PWM Channel that the Speed Controller is attached to. 0-9 are on-board, 10-19 are on the MXP port</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController_Inverted.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController.Inverted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L53">View Source</a>
+              </span>
+              <a id="WPILib_PWMSpeedController_Inverted_" data-uid="WPILib.PWMSpeedController.Inverted*"></a>
+              <h4 id="WPILib_PWMSpeedController_Inverted" data-uid="WPILib.PWMSpeedController.Inverted">Inverted</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Inverted { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISpeedController.html#WPILib_Interfaces_ISpeedController_Inverted">ISpeedController.Inverted</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController_Get.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L39">View Source</a>
+              </span>
+              <a id="WPILib_PWMSpeedController_Get_" data-uid="WPILib.PWMSpeedController.Get*"></a>
+              <h4 id="WPILib_PWMSpeedController_Get" data-uid="WPILib.PWMSpeedController.Get">Get()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual double Get()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISpeedController.html#WPILib_Interfaces_ISpeedController_Get">ISpeedController.Get()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController_PidWrite_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController.PidWrite(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L26">View Source</a>
+              </span>
+              <a id="WPILib_PWMSpeedController_PidWrite_" data-uid="WPILib.PWMSpeedController.PidWrite*"></a>
+              <h4 id="WPILib_PWMSpeedController_PidWrite_System_Double_" data-uid="WPILib.PWMSpeedController.PidWrite(System.Double)">PidWrite(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void PidWrite(double value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDOutput.html#WPILib_Interfaces_IPIDOutput_PidWrite_System_Double_">IPIDOutput.PidWrite(Double)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController_Set_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController.Set(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L32">View Source</a>
+              </span>
+              <a id="WPILib_PWMSpeedController_Set_" data-uid="WPILib.PWMSpeedController.Set*"></a>
+              <h4 id="WPILib_PWMSpeedController_Set_System_Double_" data-uid="WPILib.PWMSpeedController.Set(System.Double)">Set(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Set(double value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISpeedController.html#WPILib_Interfaces_ISpeedController_Set_System_Double_">ISpeedController.Set(Double)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController_Set_System_Double_System_Byte_.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController.Set(System.Double%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L45">View Source</a>
+              </span>
+              <a id="WPILib_PWMSpeedController_Set_" data-uid="WPILib.PWMSpeedController.Set*"></a>
+              <h4 id="WPILib_PWMSpeedController_Set_System_Double_System_Byte_" data-uid="WPILib.PWMSpeedController.Set(System.Double,System.Byte)">Set(Double, Byte)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[Obsolete(&quot;For compatibility with CAN Jaguar. Please use Set(double) instead.&quot;)]
+public virtual void Set(double value, byte syncGroup)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span></td>
+                    <td><span class="parametername">syncGroup</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISpeedController.html#WPILib_Interfaces_ISpeedController_Set_System_Double_System_Byte_">ISpeedController.Set(Double, Byte)</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PWMSpeedController.md&amp;value=---%0Auid%3A%20WPILib.PWMSpeedController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PWMSpeedController.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

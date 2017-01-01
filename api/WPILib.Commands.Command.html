@@ -1,0 +1,1209 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Command
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Command
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_Commands_Command" data-uid="WPILib.Commands.Command">Class Command
+              </h1>
+              <div class="markdown level0 summary"><p>The Command class is at the very core of the entire command framework.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">Command</span></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.PIDCommand.html">PIDCommand</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.PrintCommand.html">PrintCommand</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.WaitCommand.html">WaitCommand</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.WaitForChildren.html">WaitForChildren</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.WaitUntilCommand.html">WaitUntilCommand</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib.Commands</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_Commands_Command_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class Command : INamedSendable, ISendable, ITableListener</code></pre>
+              </div>
+              <h5 id="WPILib_Commands_Command_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>Every command can be started with a call to <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Start">Start()</a>.
+Once a command is started it will call <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Initialize">Initialize()</a>, and then
+will repeatedly call <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Execute">Execute()</a> until the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsFinished">IsFinished()</a>
+returns true.  Once it does, <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> will be called.</p>
+<p>However, if at any point while it is running <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Cancel">Cancel()</a> is called, then
+the command will be stopped and <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Interrupted()</a> will be called.</p>
+<p>If a command uses a <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a>, then it should specify that it does so by
+calling the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem_">Requires(Subsystem)</a> method
+in its constructor. Note that a Command may have multiple requirements, and
+<a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem_">Requires(Subsystem)</a> should be
+called for each one.</p>
+<p>If a command is running and a new command with shared requirements is started,
+then one of two things will happen.  If the active command is interruptible,
+then <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Cancel">Cancel()</a> will be called and the command will be removed
+to make way for the new one.  If the active command is not interruptible, the
+other one will not even be started, and the active one will continue functioning.</p>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__ctor.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L54">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__ctor_" data-uid="WPILib.Commands.Command.#ctor*"></a>
+              <h4 id="WPILib_Commands_Command__ctor" data-uid="WPILib.Commands.Command.#ctor">Command()</h4>
+              <div class="markdown level1 summary"><p>Creates a new command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Command()</code></pre>
+              </div>
+              <h5 id="WPILib_Commands_Command__ctor_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The name of this command will be set to its class name.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__ctor_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.%23ctor(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L79">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__ctor_" data-uid="WPILib.Commands.Command.#ctor*"></a>
+              <h4 id="WPILib_Commands_Command__ctor_System_Double_" data-uid="WPILib.Commands.Command.#ctor(System.Double)">Command(Double)</h4>
+              <div class="markdown level1 summary"><p>Creates a new command with the given timeout and a default name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Command(double timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">timeout</span></td>
+                    <td><p>The time (in seconds) before this command &quot;times out&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command__ctor_System_Double__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The default name is the name of the class.</p>
+</div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>If given a negative timeout</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command__ctor_System_Double__seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a></div>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__ctor_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L65">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__ctor_" data-uid="WPILib.Commands.Command.#ctor*"></a>
+              <h4 id="WPILib_Commands_Command__ctor_System_String_" data-uid="WPILib.Commands.Command.#ctor(System.String)">Command(String)</h4>
+              <div class="markdown level1 summary"><p>Creates a new command with the given name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Command(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name for this command</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If name is null</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__ctor_System_String_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.%23ctor(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L94">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__ctor_" data-uid="WPILib.Commands.Command.#ctor*"></a>
+              <h4 id="WPILib_Commands_Command__ctor_System_String_System_Double_" data-uid="WPILib.Commands.Command.#ctor(System.String,System.Double)">Command(String, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates a new command with the given name and timeout.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Command(string name, double timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name of the command</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">timeout</span></td>
+                    <td><p>The time (in seconds) before this command &quot;times out&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>If given a negative timeout</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command__ctor_System_String_System_Double__seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a></div>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Canceled.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Canceled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L454">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Canceled_" data-uid="WPILib.Commands.Command.Canceled*"></a>
+              <h4 id="WPILib_Commands_Command_Canceled" data-uid="WPILib.Commands.Command.Canceled">Canceled</h4>
+              <div class="markdown level1 summary"><p>Gets whether or not this has been canceled.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Canceled { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Interruptible.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Interruptible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L468">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Interruptible_" data-uid="WPILib.Commands.Command.Interruptible*"></a>
+              <h4 id="WPILib_Commands_Command_Interruptible" data-uid="WPILib.Commands.Command.Interruptible">Interruptible</h4>
+              <div class="markdown level1 summary"><p>Get or Set whether or not this command can be interrupted.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Interruptible { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Name.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L108">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Name_" data-uid="WPILib.Commands.Command.Name*"></a>
+              <h4 id="WPILib_Commands_Command_Name" data-uid="WPILib.Commands.Command.Name">Name</h4>
+              <div class="markdown level1 summary"><p>Returns the name of this command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.INamedSendable.html#WPILib_Interfaces_INamedSendable_Name">INamedSendable.Name</a></div>
+              <h5 id="WPILib_Commands_Command_Name_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If no name was specified in the constructor, 
+then the default is the name of the class.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_RunWhenDisabled.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.RunWhenDisabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L516">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_RunWhenDisabled_" data-uid="WPILib.Commands.Command.RunWhenDisabled*"></a>
+              <h4 id="WPILib_Commands_Command_RunWhenDisabled" data-uid="WPILib.Commands.Command.RunWhenDisabled">RunWhenDisabled</h4>
+              <div class="markdown level1 summary"><p>Gets or Sets whether or not this <a class="xref" href="WPILib.Commands.Command.html">Command</a> should run when the robot is disabled.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool RunWhenDisabled { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_RunWhenDisabled_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>By default a command will not run when the robot is disabled, and will in fact be canceled.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L547">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_SmartDashboardType_" data-uid="WPILib.Commands.Command.SmartDashboardType*"></a>
+              <h4 id="WPILib_Commands_Command_SmartDashboardType" data-uid="WPILib.Commands.Command.SmartDashboardType">SmartDashboardType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string SmartDashboardType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Table.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L544">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Table_" data-uid="WPILib.Commands.Command.Table*"></a>
+              <h4 id="WPILib_Commands_Command_Table" data-uid="WPILib.Commands.Command.Table">Table</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__End.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command._End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L283">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__End_" data-uid="WPILib.Commands.Command._End*"></a>
+              <h4 id="WPILib_Commands_Command__End" data-uid="WPILib.Commands.Command._End">_End()</h4>
+              <div class="markdown level1 summary"><p>A shadow method called before <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void _End()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__Initialize.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command._Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L243">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__Initialize_" data-uid="WPILib.Commands.Command._Initialize*"></a>
+              <h4 id="WPILib_Commands_Command__Initialize" data-uid="WPILib.Commands.Command._Initialize">_Initialize()</h4>
+              <div class="markdown level1 summary"><p>A shadow method called before <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Initialize">Initialize()</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void _Initialize()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command__Interrupted.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command._Interrupted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L301">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command__Interrupted_" data-uid="WPILib.Commands.Command._Interrupted*"></a>
+              <h4 id="WPILib_Commands_Command__Interrupted" data-uid="WPILib.Commands.Command._Interrupted">_Interrupted()</h4>
+              <div class="markdown level1 summary"><p>A shadow method called before <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Interrupted()</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void _Interrupted()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Cancel.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Cancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L426">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Cancel_" data-uid="WPILib.Commands.Command.Cancel*"></a>
+              <h4 id="WPILib_Commands_Command_Cancel" data-uid="WPILib.Commands.Command.Cancel">Cancel()</h4>
+              <div class="markdown level1 summary"><p>This will cancel the current command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+              </div>
+              <h5 id="WPILib_Commands_Command_Cancel_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This will cancel the current command eventually. It can be called multiple times.
+And it can be called when the command is not running. If the command is running though,
+then the command will be marked as canceled and eventually removed.
+<p>A command cannot be canceled if it is a part of a <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a>,
+you must cancel the <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> instead.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_DoesRequire_WPILib_Commands_Subsystem_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.DoesRequire(WPILib.Commands.Subsystem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L491">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_DoesRequire_" data-uid="WPILib.Commands.Command.DoesRequire*"></a>
+              <h4 id="WPILib_Commands_Command_DoesRequire_WPILib_Commands_Subsystem_" data-uid="WPILib.Commands.Command.DoesRequire(WPILib.Commands.Subsystem)">DoesRequire(Subsystem)</h4>
+              <div class="markdown level1 summary"><p>Checks if the command requires the given <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DoesRequire(Subsystem system)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></td>
+                    <td><span class="parametername">system</span></td>
+                    <td><p>The system</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>Whether or not the subsystem is required, or false if given null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_End.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L278">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_End_" data-uid="WPILib.Commands.Command.End*"></a>
+              <h4 id="WPILib_Commands_Command_End" data-uid="WPILib.Commands.Command.End">End()</h4>
+              <div class="markdown level1 summary"><p>Called when the command ended peacefully</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void End()</code></pre>
+              </div>
+              <h5 id="WPILib_Commands_Command_End_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is where you may want to wrap up loose ends, 
+like shutting off a motor that was being used in the command.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Execute.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Execute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L252">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Execute_" data-uid="WPILib.Commands.Command.Execute*"></a>
+              <h4 id="WPILib_Commands_Command_Execute" data-uid="WPILib.Commands.Command.Execute">Execute()</h4>
+              <div class="markdown level1 summary"><p>The execute method is called repeatedly until this <a class="xref" href="WPILib.Commands.Command.html">Command</a>
+either finishes or is canceled.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void Execute()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_GetGroup.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.GetGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L504">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_GetGroup_" data-uid="WPILib.Commands.Command.GetGroup*"></a>
+              <h4 id="WPILib_Commands_Command_GetGroup" data-uid="WPILib.Commands.Command.GetGroup">GetGroup()</h4>
+              <div class="markdown level1 summary"><p>Returns the <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> this command is a part of.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CommandGroup GetGroup()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></td>
+                    <td><p>The <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> that this command is a part of (or null if not in a group)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_GetGroup_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Will return null if this <a class="xref" href="WPILib.Commands.Command.html">Command</a> is not in a group.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Initialize.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L238">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Initialize_" data-uid="WPILib.Commands.Command.Initialize*"></a>
+              <h4 id="WPILib_Commands_Command_Initialize" data-uid="WPILib.Commands.Command.Initialize">Initialize()</h4>
+              <div class="markdown level1 summary"><p>The initialize method is called the first time this Command is run after
+being started.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void Initialize()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L530">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_InitTable_" data-uid="WPILib.Commands.Command.InitTable*"></a>
+              <h4 id="WPILib_Commands_Command_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Commands.Command.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void InitTable(ITable subtable)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="parametername">subtable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Interrupted.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Interrupted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L296">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Interrupted_" data-uid="WPILib.Commands.Command.Interrupted*"></a>
+              <h4 id="WPILib_Commands_Command_Interrupted" data-uid="WPILib.Commands.Command.Interrupted">Interrupted()</h4>
+              <div class="markdown level1 summary"><p>Called when the command ends because somebody called <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Cancel">Cancel()</a> or another command
+shared the same requirements as this one, and booted it out.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void Interrupted()</code></pre>
+              </div>
+              <h5 id="WPILib_Commands_Command_Interrupted_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is where you may want to wrap up loose ends,
+like shutting off a motor that was being used in the command.
+Generally, it is useful to call the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> method
+within this method.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_IsFinished.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.IsFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L271">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_IsFinished_" data-uid="WPILib.Commands.Command.IsFinished*"></a>
+              <h4 id="WPILib_Commands_Command_IsFinished" data-uid="WPILib.Commands.Command.IsFinished">IsFinished()</h4>
+              <div class="markdown level1 summary"><p>Returns whether this command is finished.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract bool IsFinished()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>Whether this command is finished</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_IsFinished_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If it is, then the command will be removed and
+<a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> will be called.
+<p>It may be useful for a team to reference the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a>
+method for time-sensitive commands.</p>
+</div>
+              <h5 id="WPILib_Commands_Command_IsFinished_seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a></div>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_IsRunning.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.IsRunning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L410">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_IsRunning_" data-uid="WPILib.Commands.Command.IsRunning*"></a>
+              <h4 id="WPILib_Commands_Command_IsRunning" data-uid="WPILib.Commands.Command.IsRunning">IsRunning()</h4>
+              <div class="markdown level1 summary"><p>Returns whether or not the command is running.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsRunning()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>Whether or not the command is running</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_IsRunning_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This may return true even if the command has been canceled,
+as it may not have yet called <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Interrupted()</a></p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_IsTimedOut.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.IsTimedOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L318">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_IsTimedOut_" data-uid="WPILib.Commands.Command.IsTimedOut*"></a>
+              <h4 id="WPILib_Commands_Command_IsTimedOut" data-uid="WPILib.Commands.Command.IsTimedOut">IsTimedOut()</h4>
+              <div class="markdown level1 summary"><p>Returns whether or not the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_TimeSinceInitialized">TimeSinceInitialized()</a> 
+method returns a number which is greater then or equal to the timeout for the command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected bool IsTimedOut()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>Whether the time has expired.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_IsTimedOut_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If there is no timeout, this will always return false.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Requires(WPILib.Commands.Subsystem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L153">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Requires_" data-uid="WPILib.Commands.Command.Requires*"></a>
+              <h4 id="WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem_" data-uid="WPILib.Commands.Command.Requires(WPILib.Commands.Subsystem)">Requires(Subsystem)</h4>
+              <div class="markdown level1 summary"><p>This method specifies that the given <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a> is used by this command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void Requires(Subsystem subsystem)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></td>
+                    <td><span class="parametername">subsystem</span></td>
+                    <td><p>The <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a> required</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This method is crucial to the functioning of the Command System in general.
+<p> </p>
+Note that the recommended way to call this method is in the constructor.</p>
+</div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If subsystem is null</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
+                    <td><p>If this command has started before or if it has been given to a <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem__seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></div>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_SetTimeout_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.SetTimeout(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L116">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_SetTimeout_" data-uid="WPILib.Commands.Command.SetTimeout*"></a>
+              <h4 id="WPILib_Commands_Command_SetTimeout_System_Double_" data-uid="WPILib.Commands.Command.SetTimeout(System.Double)">SetTimeout(Double)</h4>
+              <div class="markdown level1 summary"><p>Sets the timeout of this command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void SetTimeout(double seconds)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">seconds</span></td>
+                    <td><p>the timeout (in seconds)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>If given a negative timeout</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_SetTimeout_System_Double__seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a></div>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_Start.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L379">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_Start_" data-uid="WPILib.Commands.Command.Start*"></a>
+              <h4 id="WPILib_Commands_Command_Start" data-uid="WPILib.Commands.Command.Start">Start()</h4>
+              <div class="markdown level1 summary"><p>Starts up the command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+              </div>
+              <h5 id="WPILib_Commands_Command_Start_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Gets the command ready to start.
+<p>Note that the command will eventually start, however it will not necessarily
+do so immediately, and may in fact be canceled before initialize is even called.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_TimeSinceInitialized.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.TimeSinceInitialized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L133">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_TimeSinceInitialized_" data-uid="WPILib.Commands.Command.TimeSinceInitialized*"></a>
+              <h4 id="WPILib_Commands_Command_TimeSinceInitialized" data-uid="WPILib.Commands.Command.TimeSinceInitialized">TimeSinceInitialized()</h4>
+              <div class="markdown level1 summary"><p>Returns the time since this command was initialized (in seconds).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double TimeSinceInitialized()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The time since this command was initialize (in seconds).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Commands_Command_TimeSinceInitialized_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This function will work even if there is no specified timeout</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_ToString.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L524">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_ToString_" data-uid="WPILib.Commands.Command.ToString*"></a>
+              <h4 id="WPILib_Commands_Command_ToString" data-uid="WPILib.Commands.Command.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>The string representation for a <a class="xref" href="WPILib.Commands.Command.html">Command</a> is by default its name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>A string that represents the current object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.ValueChanged(NetworkTables.Tables.ITable%2CSystem.String%2CNetworkTables.Value%2CNetworkTables.NotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L550">View Source</a>
+              </span>
+              <a id="WPILib_Commands_Command_ValueChanged_" data-uid="WPILib.Commands.Command.ValueChanged*"></a>
+              <h4 id="WPILib_Commands_Command_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_" data-uid="WPILib.Commands.Command.ValueChanged(NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ValueChanged(ITable source, string key, Value value, NotifyFlags flags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="parametername">source</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">key</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="NetworkTables.Tables.ITableListener.html#NetworkTables_Tables_ITableListener_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">ITableListener.ValueChanged(ITable, String, Value, NotifyFlags)</a></div>
+              <h3 id="seealso">See Also</h3>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></div>
+                  <div><a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></div>
+                  <div><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></div>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_Command.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Commands/Command.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

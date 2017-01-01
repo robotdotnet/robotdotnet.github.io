@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ADXL345_SPI
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ADXL345_SPI
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_ADXL345_SPI" data-uid="WPILib.ADXL345_SPI">Class ADXL345_SPI
+              </h1>
+              <div class="markdown level0 summary"><p>ADXL345 Accelerometer interfaced over I2C.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.ADXL345.html">ADXL345</a></div>
+                  <div class="level3"><span class="xref">ADXL345_SPI</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_PowerCtlRegister">ADXL345.PowerCtlRegister</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_DataFormatRegister">ADXL345.DataFormatRegister</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_DataRegister">ADXL345.DataRegister</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GsPerLSB">ADXL345.GsPerLSB</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_AccelerometerRange">ADXL345.AccelerometerRange</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GetX">ADXL345.GetX()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GetY">ADXL345.GetY()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GetZ">ADXL345.GetZ()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GetAllAxes">ADXL345.GetAllAxes()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_SmartDashboardType">ADXL345.SmartDashboardType</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_InitTable_NetworkTables_Tables_ITable_">ADXL345.InitTable(ITable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_UpdateTable">ADXL345.UpdateTable()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_Table">ADXL345.Table</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_StartLiveWindowMode">ADXL345.StartLiveWindowMode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_StopLiveWindowMode">ADXL345.StopLiveWindowMode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_ADXL345_SPI_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ADXL345_SPI : ADXL345, IDisposable, IAccelerometer, ILiveWindowSendable, ISendable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXL345_SPI__ctor_WPILib_SPI_Port_WPILib_Interfaces_AccelerometerRange_.md&amp;value=---%0Auid%3A%20WPILib.ADXL345_SPI.%23ctor(WPILib.SPI.Port%2CWPILib.Interfaces.AccelerometerRange)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXL345_SPI.cs/#L24">View Source</a>
+              </span>
+              <a id="WPILib_ADXL345_SPI__ctor_" data-uid="WPILib.ADXL345_SPI.#ctor*"></a>
+              <h4 id="WPILib_ADXL345_SPI__ctor_WPILib_SPI_Port_WPILib_Interfaces_AccelerometerRange_" data-uid="WPILib.ADXL345_SPI.#ctor(WPILib.SPI.Port,WPILib.Interfaces.AccelerometerRange)">ADXL345_SPI(SPI.Port, AccelerometerRange)</h4>
+              <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ADXL345_SPI(SPI.Port port, AccelerometerRange range)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.SPI.Port.html">SPI.Port</a></td>
+                    <td><span class="parametername">port</span></td>
+                    <td><p>The SPI port the accelerometer is attached to</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.AccelerometerRange.html">AccelerometerRange</a></td>
+                    <td><span class="parametername">range</span></td>
+                    <td><p>The range (+ or -) that the accelerometer will measure.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXL345_SPI_Dispose.md&amp;value=---%0Auid%3A%20WPILib.ADXL345_SPI.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXL345_SPI.cs/#L41">View Source</a>
+              </span>
+              <a id="WPILib_ADXL345_SPI_Dispose_" data-uid="WPILib.ADXL345_SPI.Dispose*"></a>
+              <h4 id="WPILib_ADXL345_SPI_Dispose" data-uid="WPILib.ADXL345_SPI.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXL345_SPI_GetAcceleration_WPILib_ADXL345_Axes_.md&amp;value=---%0Auid%3A%20WPILib.ADXL345_SPI.GetAcceleration(WPILib.ADXL345.Axes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXL345_SPI.cs/#L62">View Source</a>
+              </span>
+              <a id="WPILib_ADXL345_SPI_GetAcceleration_" data-uid="WPILib.ADXL345_SPI.GetAcceleration*"></a>
+              <h4 id="WPILib_ADXL345_SPI_GetAcceleration_WPILib_ADXL345_Axes_" data-uid="WPILib.ADXL345_SPI.GetAcceleration(WPILib.ADXL345.Axes)">GetAcceleration(ADXL345.Axes)</h4>
+              <div class="markdown level1 summary"><p>Get the acceleration of one axis in Gs.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetAcceleration(ADXL345.Axes axis)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.ADXL345.Axes.html">ADXL345.Axes</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td><p>The axis to read from.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>Acceleration of the ADXL345 in Gs.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GetAcceleration_WPILib_ADXL345_Axes_">ADXL345.GetAcceleration(ADXL345.Axes)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXL345_SPI_GetAccelerations.md&amp;value=---%0Auid%3A%20WPILib.ADXL345_SPI.GetAccelerations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXL345_SPI.cs/#L74">View Source</a>
+              </span>
+              <a id="WPILib_ADXL345_SPI_GetAccelerations_" data-uid="WPILib.ADXL345_SPI.GetAccelerations*"></a>
+              <h4 id="WPILib_ADXL345_SPI_GetAccelerations" data-uid="WPILib.ADXL345_SPI.GetAccelerations">GetAccelerations()</h4>
+              <div class="markdown level1 summary"><p>Get the acceleration of all axes in Gs.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override AllAxes GetAccelerations()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.AllAxes.html">AllAxes</a></td>
+                    <td><p>An object containing the acceleration measured on each side of the ADXL345 in Gs.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_GetAccelerations">ADXL345.GetAccelerations()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXL345_SPI_WriteRange_System_Byte_.md&amp;value=---%0Auid%3A%20WPILib.ADXL345_SPI.WriteRange(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXL345_SPI.cs/#L51">View Source</a>
+              </span>
+              <a id="WPILib_ADXL345_SPI_WriteRange_" data-uid="WPILib.ADXL345_SPI.WriteRange*"></a>
+              <h4 id="WPILib_ADXL345_SPI_WriteRange_System_Byte_" data-uid="WPILib.ADXL345_SPI.WriteRange(System.Byte)">WriteRange(Byte)</h4>
+              <div class="markdown level1 summary"><p>Writes the range to the specified interface.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void WriteRange(byte value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td><p>The Range to write.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.ADXL345.html#WPILib_ADXL345_WriteRange_System_Byte_">ADXL345.WriteRange(Byte)</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXL345_SPI.md&amp;value=---%0Auid%3A%20WPILib.ADXL345_SPI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXL345_SPI.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

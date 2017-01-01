@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JoystickButton
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JoystickButton
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_Buttons_JoystickButton" data-uid="WPILib.Buttons.JoystickButton">Class JoystickButton
+              </h1>
+              <div class="markdown level0 summary"><p>Creates a new command button that uses a joytick button.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="WPILib.Buttons.Trigger.html">Trigger</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Buttons.Button.html">Button</a></div>
+                  <div class="level3"><span class="xref">JoystickButton</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Button.html#WPILib_Buttons_Button_WhenPressed_WPILib_Commands_Command_">Button.WhenPressed(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Button.html#WPILib_Buttons_Button_WhileHeld_WPILib_Commands_Command_">Button.WhileHeld(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Button.html#WPILib_Buttons_Button_WhenReleased_WPILib_Commands_Command_">Button.WhenReleased(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Button.html#WPILib_Buttons_Button_ToggleWhenPressed_WPILib_Commands_Command_">Button.ToggleWhenPressed(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Button.html#WPILib_Buttons_Button_CancelWhenPressed_WPILib_Commands_Command_">Button.CancelWhenPressed(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_Grab">Trigger.Grab()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_WhenActive_WPILib_Commands_Command_">Trigger.WhenActive(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_WhileActive_WPILib_Commands_Command_">Trigger.WhileActive(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_WhenInactive_WPILib_Commands_Command_">Trigger.WhenInactive(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_ToggleWhenActive_WPILib_Commands_Command_">Trigger.ToggleWhenActive(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_CancelWhenActive_WPILib_Commands_Command_">Trigger.CancelWhenActive(Command)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_InitTable_NetworkTables_Tables_ITable_">Trigger.InitTable(ITable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_Table">Trigger.Table</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_SmartDashboardType">Trigger.SmartDashboardType</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib.Buttons</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_Buttons_JoystickButton_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class JoystickButton : Button, ISendable, IEquatable&lt;JoystickButton&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton__ctor_WPILib_GenericHID_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.%23ctor(WPILib.GenericHID%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L25">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton__ctor_" data-uid="WPILib.Buttons.JoystickButton.#ctor*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton__ctor_WPILib_GenericHID_System_Int32_" data-uid="WPILib.Buttons.JoystickButton.#ctor(WPILib.GenericHID,System.Int32)">JoystickButton(GenericHID, Int32)</h4>
+              <div class="markdown level1 summary"><p>Create a joystick button for triggering commands</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public JoystickButton(GenericHID joystick, int buttonNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.GenericHID.html">GenericHID</a></td>
+                    <td><span class="parametername">joystick</span></td>
+                    <td><p>The GenericHID object that has the button (e.g Joystick, KinectStick, etc)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">buttonNumber</span></td>
+                    <td><p>The button number (see <a class="xref" href="WPILib.GenericHID.html#WPILib_GenericHID_GetRawButton_System_Int32_">GetRawButton(Int32)</a>)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton_ButtonNumber.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.ButtonNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L18">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton_ButtonNumber_" data-uid="WPILib.Buttons.JoystickButton.ButtonNumber*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton_ButtonNumber" data-uid="WPILib.Buttons.JoystickButton.ButtonNumber">ButtonNumber</h4>
+              <div class="markdown level1 summary"><p>The button number on the joystick.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ButtonNumber { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton_Joystick.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.Joystick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L14">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton_Joystick_" data-uid="WPILib.Buttons.JoystickButton.Joystick*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton_Joystick" data-uid="WPILib.Buttons.JoystickButton.Joystick">Joystick</h4>
+              <div class="markdown level1 summary"><p>The joystick the bbutton is on.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GenericHID Joystick { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.GenericHID.html">GenericHID</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton_Equals_System_Object_.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L46">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton_Equals_" data-uid="WPILib.Buttons.JoystickButton.Equals*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton_Equals_System_Object_" data-uid="WPILib.Buttons.JoystickButton.Equals(System.Object)">Equals(Object)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">obj</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton_Equals_WPILib_Buttons_JoystickButton_.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.Equals(WPILib.Buttons.JoystickButton)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L41">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton_Equals_" data-uid="WPILib.Buttons.JoystickButton.Equals*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton_Equals_WPILib_Buttons_JoystickButton_" data-uid="WPILib.Buttons.JoystickButton.Equals(WPILib.Buttons.JoystickButton)">Equals(JoystickButton)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(JoystickButton other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Buttons.JoystickButton.html">JoystickButton</a></td>
+                    <td><span class="parametername">other</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IEquatable&lt;T&gt;.Equals(T)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton_Get.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L35">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton_Get_" data-uid="WPILib.Buttons.JoystickButton.Get*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton_Get" data-uid="WPILib.Buttons.JoystickButton.Get">Get()</h4>
+              <div class="markdown level1 summary"><p>Gets the value of the joystick button</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Get()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>The value of the joystick button</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.Buttons.Trigger.html#WPILib_Buttons_Trigger_Get">Trigger.Get()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton_GetHashCode.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L51">View Source</a>
+              </span>
+              <a id="WPILib_Buttons_JoystickButton_GetHashCode_" data-uid="WPILib.Buttons.JoystickButton.GetHashCode*"></a>
+              <h4 id="WPILib_Buttons_JoystickButton_GetHashCode" data-uid="WPILib.Buttons.JoystickButton.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.GetHashCode()</span></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Buttons_JoystickButton.md&amp;value=---%0Auid%3A%20WPILib.Buttons.JoystickButton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/Buttons/JoystickButton.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

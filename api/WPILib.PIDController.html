@@ -1,0 +1,1593 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PIDController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PIDController
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_PIDController" data-uid="WPILib.PIDController">Class PIDController
+              </h1>
+              <div class="markdown level0 summary"><p>Implements a PID loop to be used with mechanisms.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">PIDController</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_PIDController_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class PIDController : IPIDInterface, IController, ILiveWindowSendable, ISendable, ITableListener, IDisposable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController__ctor_System_Double_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.%23ctor(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CWPILib.Interfaces.IPIDSource%2CWPILib.Interfaces.IPIDOutput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L169">View Source</a>
+              </span>
+              <a id="WPILib_PIDController__ctor_" data-uid="WPILib.PIDController.#ctor*"></a>
+              <h4 id="WPILib_PIDController__ctor_System_Double_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_" data-uid="WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,System.Double,WPILib.Interfaces.IPIDSource,WPILib.Interfaces.IPIDOutput)">PIDController(Double, Double, Double, Double, IPIDSource, IPIDOutput)</h4>
+              <div class="markdown level1 summary"><p>Creates a new PID object with the given contants for P, I, D and F using a 50ms period</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PIDController(double kp, double ki, double kd, double kf, IPIDSource source, IPIDOutput output)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kp</span></td>
+                    <td><p>The proportional coefficient.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">ki</span></td>
+                    <td><p>The integral coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kd</span></td>
+                    <td><p>The derivative coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kf</span></td>
+                    <td><p>The feed forward term.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+                    <td><span class="parametername">source</span></td>
+                    <td><p>The PIDSource object that is used to get values.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDOutput.html">IPIDOutput</a></td>
+                    <td><span class="parametername">output</span></td>
+                    <td><p>The PIDOutput object that is set to the output percentage.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController__ctor_System_Double_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.%23ctor(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CWPILib.Interfaces.IPIDSource%2CWPILib.Interfaces.IPIDOutput%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L96">View Source</a>
+              </span>
+              <a id="WPILib_PIDController__ctor_" data-uid="WPILib.PIDController.#ctor*"></a>
+              <h4 id="WPILib_PIDController__ctor_System_Double_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_System_Double_" data-uid="WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,System.Double,WPILib.Interfaces.IPIDSource,WPILib.Interfaces.IPIDOutput,System.Double)">PIDController(Double, Double, Double, Double, IPIDSource, IPIDOutput, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates a new PID object with the given contants for P, I, D and F.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PIDController(double kp, double ki, double kd, double kf, IPIDSource source, IPIDOutput output, double period)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kp</span></td>
+                    <td><p>The proportional coefficient.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">ki</span></td>
+                    <td><p>The integral coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kd</span></td>
+                    <td><p>The derivative coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kf</span></td>
+                    <td><p>The feed forward term.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+                    <td><span class="parametername">source</span></td>
+                    <td><p>The PIDSource object that is used to get values.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDOutput.html">IPIDOutput</a></td>
+                    <td><span class="parametername">output</span></td>
+                    <td><p>The PIDOutput object that is set to the output percentage.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">period</span></td>
+                    <td><p>The loop time for doing calculations.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController__ctor_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.%23ctor(System.Double%2CSystem.Double%2CSystem.Double%2CWPILib.Interfaces.IPIDSource%2CWPILib.Interfaces.IPIDOutput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L153">View Source</a>
+              </span>
+              <a id="WPILib_PIDController__ctor_" data-uid="WPILib.PIDController.#ctor*"></a>
+              <h4 id="WPILib_PIDController__ctor_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_" data-uid="WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,WPILib.Interfaces.IPIDSource,WPILib.Interfaces.IPIDOutput)">PIDController(Double, Double, Double, IPIDSource, IPIDOutput)</h4>
+              <div class="markdown level1 summary"><p>Creates a new PID object with the given contants for P, I and D using a 50ms period.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PIDController(double kp, double ki, double kd, IPIDSource source, IPIDOutput output)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kp</span></td>
+                    <td><p>The proportional coefficient.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">ki</span></td>
+                    <td><p>The integral coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kd</span></td>
+                    <td><p>The derivative coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+                    <td><span class="parametername">source</span></td>
+                    <td><p>The PIDSource object that is used to get values.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDOutput.html">IPIDOutput</a></td>
+                    <td><span class="parametername">output</span></td>
+                    <td><p>The PIDOutput object that is set to the output percentage.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController__ctor_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.%23ctor(System.Double%2CSystem.Double%2CSystem.Double%2CWPILib.Interfaces.IPIDSource%2CWPILib.Interfaces.IPIDOutput%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L137">View Source</a>
+              </span>
+              <a id="WPILib_PIDController__ctor_" data-uid="WPILib.PIDController.#ctor*"></a>
+              <h4 id="WPILib_PIDController__ctor_System_Double_System_Double_System_Double_WPILib_Interfaces_IPIDSource_WPILib_Interfaces_IPIDOutput_System_Double_" data-uid="WPILib.PIDController.#ctor(System.Double,System.Double,System.Double,WPILib.Interfaces.IPIDSource,WPILib.Interfaces.IPIDOutput,System.Double)">PIDController(Double, Double, Double, IPIDSource, IPIDOutput, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates a new PID object with the given contants for P, I and D.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PIDController(double kp, double ki, double kd, IPIDSource source, IPIDOutput output, double period)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kp</span></td>
+                    <td><p>The proportional coefficient.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">ki</span></td>
+                    <td><p>The integral coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">kd</span></td>
+                    <td><p>The derivative coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+                    <td><span class="parametername">source</span></td>
+                    <td><p>The PIDSource object that is used to get values.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDOutput.html">IPIDOutput</a></td>
+                    <td><span class="parametername">output</span></td>
+                    <td><p>The PIDOutput object that is set to the output percentage.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">period</span></td>
+                    <td><p>The loop time for doing calculations.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_DefaultPeriod.md&amp;value=---%0Auid%3A%20WPILib.PIDController.DefaultPeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L41">View Source</a>
+              </span>
+              <h4 id="WPILib_PIDController_DefaultPeriod" data-uid="WPILib.PIDController.DefaultPeriod">DefaultPeriod</h4>
+              <div class="markdown level1 summary"><p>The default period to run the controller at.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public const double DefaultPeriod = 0.05</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_PIDInput.md&amp;value=---%0Auid%3A%20WPILib.PIDController.PIDInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L66">View Source</a>
+              </span>
+              <h4 id="WPILib_PIDController_PIDInput" data-uid="WPILib.PIDController.PIDInput">PIDInput</h4>
+              <div class="markdown level1 summary"><p>The PIDInput for this controller.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IPIDSource PIDInput</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_PIDOutput.md&amp;value=---%0Auid%3A%20WPILib.PIDController.PIDOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L70">View Source</a>
+              </span>
+              <h4 id="WPILib_PIDController_PIDOutput" data-uid="WPILib.PIDController.PIDOutput">PIDOutput</h4>
+              <div class="markdown level1 summary"><p>The PIDOutput for this controller.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IPIDOutput PIDOutput</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.Interfaces.IPIDOutput.html">IPIDOutput</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Continuous.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Continuous%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L452">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Continuous_" data-uid="WPILib.PIDController.Continuous*"></a>
+              <h4 id="WPILib_PIDController_Continuous" data-uid="WPILib.PIDController.Continuous">Continuous</h4>
+              <div class="markdown level1 summary"><p>Gets or Sets whether the PID controller input is continouous.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Continuous { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_Continuous_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Rather then using the max and min inputs as constraints, it considers them
+to be the same point and automatically calculates the shortest route to the
+setpoint.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_D.md&amp;value=---%0Auid%3A%20WPILib.PIDController.D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L404">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_D_" data-uid="WPILib.PIDController.D*"></a>
+              <h4 id="WPILib_PIDController_D" data-uid="WPILib.PIDController.D">D</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double D { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_D">IPIDInterface.D</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Enabled.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Enabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L700">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Enabled_" data-uid="WPILib.PIDController.Enabled*"></a>
+              <h4 id="WPILib_PIDController_Enabled" data-uid="WPILib.PIDController.Enabled">Enabled</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Enabled { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_Enabled">IPIDInterface.Enabled</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_F.md&amp;value=---%0Auid%3A%20WPILib.PIDController.F%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L418">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_F_" data-uid="WPILib.PIDController.F*"></a>
+              <h4 id="WPILib_PIDController_F" data-uid="WPILib.PIDController.F">F</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double F { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_I.md&amp;value=---%0Auid%3A%20WPILib.PIDController.I%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L390">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_I_" data-uid="WPILib.PIDController.I*"></a>
+              <h4 id="WPILib_PIDController_I" data-uid="WPILib.PIDController.I">I</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double I { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_I">IPIDInterface.I</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_P.md&amp;value=---%0Auid%3A%20WPILib.PIDController.P%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L376">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_P_" data-uid="WPILib.PIDController.P*"></a>
+              <h4 id="WPILib_PIDController_P" data-uid="WPILib.PIDController.P">P</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double P { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_P">IPIDInterface.P</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Setpoint.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Setpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L503">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Setpoint_" data-uid="WPILib.PIDController.Setpoint*"></a>
+              <h4 id="WPILib_PIDController_Setpoint" data-uid="WPILib.PIDController.Setpoint">Setpoint</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the setpoint for the PID Controller.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Setpoint { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_Setpoint">IPIDInterface.Setpoint</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L751">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SmartDashboardType_" data-uid="WPILib.PIDController.SmartDashboardType*"></a>
+              <h4 id="WPILib_PIDController_SmartDashboardType" data-uid="WPILib.PIDController.SmartDashboardType">SmartDashboardType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Table.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L749">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Table_" data-uid="WPILib.PIDController.Table*"></a>
+              <h4 id="WPILib_PIDController_Table" data-uid="WPILib.PIDController.Table">Table</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Calculate.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Calculate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L194">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Calculate_" data-uid="WPILib.PIDController.Calculate*"></a>
+              <h4 id="WPILib_PIDController_Calculate" data-uid="WPILib.PIDController.Calculate">Calculate()</h4>
+              <div class="markdown level1 summary"><p>Read the inpout, calculate the output accordinglyu, and write to the input.
+This should only be called by the Notifier timer and is created during initialization.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Calculate()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_CalculateFeedForward.md&amp;value=---%0Auid%3A%20WPILib.PIDController.CalculateFeedForward%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L331">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_CalculateFeedForward_" data-uid="WPILib.PIDController.CalculateFeedForward*"></a>
+              <h4 id="WPILib_PIDController_CalculateFeedForward" data-uid="WPILib.PIDController.CalculateFeedForward">CalculateFeedForward()</h4>
+              <div class="markdown level1 summary"><p>Calculate the feed forward term.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual double CalculateFeedForward()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The calculated Feed Forward Value</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_CalculateFeedForward_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Both of the provided feed forward calculations are velocity feed forwards.
+If a different feed forward calculation is desired, the user can override
+this function and provide his or her own.This function  does no
+synchronization because the PIDController class only calls it in
+synchronized code, so be careful if calling it oneself.
+<p>
+If a velocity PID controller is being used, the F term should be set to 1
+over the maximum setpoint for the output.If a position PID controller is
+being used, the F term should be set to 1 over the maximum speed for the
+output measured in setpoint units per this controller&#39;s update period (see
+the default period in this class&#39;s constructor).</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Disable.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Disable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L690">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Disable_" data-uid="WPILib.PIDController.Disable*"></a>
+              <h4 id="WPILib_PIDController_Disable" data-uid="WPILib.PIDController.Disable">Disable()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IController.html#WPILib_Interfaces_IController_Disable">IController.Disable()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Dispose.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L177">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Dispose_" data-uid="WPILib.PIDController.Dispose*"></a>
+              <h4 id="WPILib_PIDController_Dispose" data-uid="WPILib.PIDController.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Enable.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Enable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L684">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Enable_" data-uid="WPILib.PIDController.Enable*"></a>
+              <h4 id="WPILib_PIDController_Enable" data-uid="WPILib.PIDController.Enable">Enable()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Enable()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IController.html#WPILib_Interfaces_IController_Enable">IController.Enable()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Get.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L438">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Get_" data-uid="WPILib.PIDController.Get*"></a>
+              <h4 id="WPILib_PIDController_Get" data-uid="WPILib.PIDController.Get">Get()</h4>
+              <div class="markdown level1 summary"><p>Gets teh current PID result.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Get()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The latest calculated output.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_Get_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is always centered on zero and constrained by the max and min output values.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_GetAvgError.md&amp;value=---%0Auid%3A%20WPILib.PIDController.GetAvgError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L574">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_GetAvgError_" data-uid="WPILib.PIDController.GetAvgError*"></a>
+              <h4 id="WPILib_PIDController_GetAvgError" data-uid="WPILib.PIDController.GetAvgError">GetAvgError()</h4>
+              <div class="markdown level1 summary"><p>Returns the current difference of the error over the past few iterations.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetAvgError()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The current average of the error.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_GetAvgError_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>You can specify the number of iterations to average with <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_SetToleranceBuffer_System_Int32_">SetToleranceBuffer(Int32)</a> (defaults to 1).
+<a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_GetAvgError">GetAvgError()</a> is used for the <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_OnTarget">OnTarget()</a> method.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_GetDeltaSetpoint.md&amp;value=---%0Auid%3A%20WPILib.PIDController.GetDeltaSetpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L543">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_GetDeltaSetpoint_" data-uid="WPILib.PIDController.GetDeltaSetpoint*"></a>
+              <h4 id="WPILib_PIDController_GetDeltaSetpoint" data-uid="WPILib.PIDController.GetDeltaSetpoint">GetDeltaSetpoint()</h4>
+              <div class="markdown level1 summary"><p>Retunrs the change in setpoing over time of the PIDController.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetDeltaSetpoint()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The change in setpoint over time.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_GetError.md&amp;value=---%0Auid%3A%20WPILib.PIDController.GetError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L552">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_GetError_" data-uid="WPILib.PIDController.GetError*"></a>
+              <h4 id="WPILib_PIDController_GetError" data-uid="WPILib.PIDController.GetError">GetError()</h4>
+              <div class="markdown level1 summary"><p>Returns the current difference of the input from the setpoint.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetError()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The current error.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_GetError">IPIDInterface.GetError()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L733">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_InitTable_" data-uid="WPILib.PIDController.InitTable*"></a>
+              <h4 id="WPILib_PIDController_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.PIDController.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="parametername">subtable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_IsAvgErrorValid.md&amp;value=---%0Auid%3A%20WPILib.PIDController.IsAvgErrorValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L592">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_IsAvgErrorValid_" data-uid="WPILib.PIDController.IsAvgErrorValid*"></a>
+              <h4 id="WPILib_PIDController_IsAvgErrorValid" data-uid="WPILib.PIDController.IsAvgErrorValid">IsAvgErrorValid()</h4>
+              <div class="markdown level1 summary"><p>Returns whether or not any values have been collected.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsAvgErrorValid()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_GetAvgError">GetAvgError()</a> is currently valid.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_IsAvgErrorValid_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If no values have been collected, <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_GetAvgError">GetAvgError()</a> is 0, which
+is invalid.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_OnTarget.md&amp;value=---%0Auid%3A%20WPILib.PIDController.OnTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L668">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_OnTarget_" data-uid="WPILib.PIDController.OnTarget*"></a>
+              <h4 id="WPILib_PIDController_OnTarget" data-uid="WPILib.PIDController.OnTarget">OnTarget()</h4>
+              <div class="markdown level1 summary"><p>Gets if the PID system is on target.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool OnTarget()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the error is less then the tolerance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_OnTarget_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Returns true if the error is within the percentage of the total input range,
+determined by SetTolerance. This assumes theat the maximum and minimum input were
+set using <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_SetInputRange_System_Double_System_Double_">SetInputRange(Double, Double)</a>.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_Reset.md&amp;value=---%0Auid%3A%20WPILib.PIDController.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L709">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_Reset_" data-uid="WPILib.PIDController.Reset*"></a>
+              <h4 id="WPILib_PIDController_Reset" data-uid="WPILib.PIDController.Reset">Reset()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_Reset">IPIDInterface.Reset()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetAbsoluteTolerance_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetAbsoluteTolerance(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L634">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetAbsoluteTolerance_" data-uid="WPILib.PIDController.SetAbsoluteTolerance*"></a>
+              <h4 id="WPILib_PIDController_SetAbsoluteTolerance_System_Double_" data-uid="WPILib.PIDController.SetAbsoluteTolerance(System.Double)">SetAbsoluteTolerance(Double)</h4>
+              <div class="markdown level1 summary"><p>Sets the absolute error which is considered tolerable for use with <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_OnTarget">OnTarget()</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetAbsoluteTolerance(double absTolerance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">absTolerance</span></td>
+                    <td><p>The absolute tolerance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_SetAbsoluteTolerance_System_Double__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The value is in the same range as the PIDInput values.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetInputRange_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetInputRange(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L471">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetInputRange_" data-uid="WPILib.PIDController.SetInputRange*"></a>
+              <h4 id="WPILib_PIDController_SetInputRange_System_Double_System_Double_" data-uid="WPILib.PIDController.SetInputRange(System.Double,System.Double)">SetInputRange(Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Sets the minimum and maximum values expected from the input and setpoint.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetInputRange(double minimumInput, double maximumInput)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">minimumInput</span></td>
+                    <td><p>The minimum value expected from the input and setpoint.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">maximumInput</span></td>
+                    <td><p>The maximum value expected from the input and setpoint.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetOutputRange_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetOutputRange(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L488">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetOutputRange_" data-uid="WPILib.PIDController.SetOutputRange*"></a>
+              <h4 id="WPILib_PIDController_SetOutputRange_System_Double_System_Double_" data-uid="WPILib.PIDController.SetOutputRange(System.Double,System.Double)">SetOutputRange(Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Sets the maximum and minimum values to write.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetOutputRange(double minimumOutput, double maximumOutput)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">minimumOutput</span></td>
+                    <td><p>The minimum value to write to the output.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">maximumOutput</span></td>
+                    <td><p>The maximum value to write to the output.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetPercentTolerance_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetPercentTolerance(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L621">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetPercentTolerance_" data-uid="WPILib.PIDController.SetPercentTolerance*"></a>
+              <h4 id="WPILib_PIDController_SetPercentTolerance_System_Double_" data-uid="WPILib.PIDController.SetPercentTolerance(System.Double)">SetPercentTolerance(Double)</h4>
+              <div class="markdown level1 summary"><p>Set the percentage error which is considered tolerable for use with <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_OnTarget">OnTarget()</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetPercentTolerance(double percent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">percent</span></td>
+                    <td><p>The percent tolerance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetPID_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetPID(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L347">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetPID_" data-uid="WPILib.PIDController.SetPID*"></a>
+              <h4 id="WPILib_PIDController_SetPID_System_Double_System_Double_System_Double_" data-uid="WPILib.PIDController.SetPID(System.Double,System.Double,System.Double)">SetPID(Double, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetPID(double p, double i, double d)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">p</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">i</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">d</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IPIDInterface.html#WPILib_Interfaces_IPIDInterface_SetPID_System_Double_System_Double_System_Double_">IPIDInterface.SetPID(Double, Double, Double)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetPID_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetPID(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L364">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetPID_" data-uid="WPILib.PIDController.SetPID*"></a>
+              <h4 id="WPILib_PIDController_SetPID_System_Double_System_Double_System_Double_System_Double_" data-uid="WPILib.PIDController.SetPID(System.Double,System.Double,System.Double,System.Double)">SetPID(Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Sets the PID Controller Gain Parameters.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetPID(double p, double i, double d, double f)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">p</span></td>
+                    <td><p>The proportional coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">i</span></td>
+                    <td><p>The integral coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">d</span></td>
+                    <td><p>The derivative coefficient</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">f</span></td>
+                    <td><p>The feed forward coefficient</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetTolerance_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetTolerance(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L607">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetTolerance_" data-uid="WPILib.PIDController.SetTolerance*"></a>
+              <h4 id="WPILib_PIDController_SetTolerance_System_Double_" data-uid="WPILib.PIDController.SetTolerance(System.Double)">SetTolerance(Double)</h4>
+              <div class="markdown level1 summary"><p>Sets the percentage error which is considered tolerable for use
+with <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_OnTarget">OnTarget()</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SetPercentTolerance or SetAbsoluteTolerance instead.&quot;)]
+public void SetTolerance(double percent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">percent</span></td>
+                    <td><p>The percent error which is tolerable.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_PIDController_SetTolerance_System_Double__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Obsolete. Please use <a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_SetPercentTolerance_System_Double_">SetPercentTolerance(Double)</a> or 
+<a class="xref" href="WPILib.PIDController.html#WPILib_PIDController_SetAbsoluteTolerance_System_Double_">SetAbsoluteTolerance(Double)</a> instead.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_SetToleranceBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.SetToleranceBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L647">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_SetToleranceBuffer_" data-uid="WPILib.PIDController.SetToleranceBuffer*"></a>
+              <h4 id="WPILib_PIDController_SetToleranceBuffer_System_Int32_" data-uid="WPILib.PIDController.SetToleranceBuffer(System.Int32)">SetToleranceBuffer(Int32)</h4>
+              <div class="markdown level1 summary"><p>Sets the number of previous error samples to average for tolerancing.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetToleranceBuffer(int bufLength)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">bufLength</span></td>
+                    <td><p>The number of previous cycles to average.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.PIDController.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L724">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_StartLiveWindowMode_" data-uid="WPILib.PIDController.StartLiveWindowMode*"></a>
+              <h4 id="WPILib_PIDController_StartLiveWindowMode" data-uid="WPILib.PIDController.StartLiveWindowMode">StartLiveWindowMode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.PIDController.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L729">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_StopLiveWindowMode_" data-uid="WPILib.PIDController.StopLiveWindowMode*"></a>
+              <h4 id="WPILib_PIDController_StopLiveWindowMode" data-uid="WPILib.PIDController.StopLiveWindowMode">StopLiveWindowMode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.PIDController.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L720">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_UpdateTable_" data-uid="WPILib.PIDController.UpdateTable*"></a>
+              <h4 id="WPILib_PIDController_UpdateTable" data-uid="WPILib.PIDController.UpdateTable">UpdateTable()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.PIDController.ValueChanged(NetworkTables.Tables.ITable%2CSystem.String%2CNetworkTables.Value%2CNetworkTables.NotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L754">View Source</a>
+              </span>
+              <a id="WPILib_PIDController_ValueChanged_" data-uid="WPILib.PIDController.ValueChanged*"></a>
+              <h4 id="WPILib_PIDController_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_" data-uid="WPILib.PIDController.ValueChanged(NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ValueChanged(ITable source, string key, Value value, NotifyFlags flags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="parametername">source</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">key</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="NetworkTables.Tables.ITableListener.html#NetworkTables_Tables_ITableListener_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">ITableListener.ValueChanged(ITable, String, Value, NotifyFlags)</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_PIDController.md&amp;value=---%0Auid%3A%20WPILib.PIDController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/PIDController.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

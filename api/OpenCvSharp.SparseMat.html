@@ -1,0 +1,2869 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SparseMat
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SparseMat
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="OpenCvSharp_SparseMat" data-uid="OpenCvSharp.SparseMat">Class SparseMat
+              </h1>
+              <div class="markdown level0 summary"><p>Sparse matrix class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+                  <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+                  <div class="level3"><span class="xref">SparseMat</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
+              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
+              <h5 id="OpenCvSharp_SparseMat_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class SparseMat : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat__ctor.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L44">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat__ctor_" data-uid="OpenCvSharp.SparseMat.#ctor*"></a>
+              <h4 id="OpenCvSharp_SparseMat__ctor" data-uid="OpenCvSharp.SparseMat.#ctor">SparseMat()</h4>
+              <div class="markdown level1 summary"><p>Creates empty SparseMat</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat__ctor_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.%23ctor(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L85">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat__ctor_" data-uid="OpenCvSharp.SparseMat.#ctor*"></a>
+              <h4 id="OpenCvSharp_SparseMat__ctor_OpenCvSharp_Mat_" data-uid="OpenCvSharp.SparseMat.#ctor(OpenCvSharp.Mat)">SparseMat(Mat)</h4>
+              <div class="markdown level1 summary"><p>converts old-style CvMat to the new matrix; the data is not copied by default</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat(Mat m)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td><p>cv::Mat object</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat__ctor_System_Collections_Generic_IEnumerable_System_Int32__OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.%23ctor(System.Collections.Generic.IEnumerable%7BSystem.Int32%7D%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L65">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat__ctor_" data-uid="OpenCvSharp.SparseMat.#ctor*"></a>
+              <h4 id="OpenCvSharp_SparseMat__ctor_System_Collections_Generic_IEnumerable_System_Int32__OpenCvSharp_MatType_" data-uid="OpenCvSharp.SparseMat.#ctor(System.Collections.Generic.IEnumerable{System.Int32},OpenCvSharp.MatType)">SparseMat(IEnumerable&lt;Int32&gt;, MatType)</h4>
+              <div class="markdown level1 summary"><p>constructs n-dimensional sparse matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat(IEnumerable&lt;int&gt; sizes, MatType type)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td><span class="parametername">sizes</span></td>
+                    <td><p>Array of integers specifying an n-dimensional array shape.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.MatType.html">MatType</a></td>
+                    <td><span class="parametername">type</span></td>
+                    <td><p>Array type. Use MatType.CV_8UC1, ..., CV_64FC4 to create 1-4 channel matrices, 
+or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L28">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat__ctor_" data-uid="OpenCvSharp.SparseMat.#ctor*"></a>
+              <h4 id="OpenCvSharp_SparseMat__ctor_System_IntPtr_" data-uid="OpenCvSharp.SparseMat.#ctor(System.IntPtr)">SparseMat(IntPtr)</h4>
+              <div class="markdown level1 summary"><p>Creates from native cv::SparseMat* pointer</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat(IntPtr ptr)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IntPtr</span></td>
+                    <td><span class="parametername">ptr</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_SizeOf.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.SizeOf%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L174">View Source</a>
+              </span>
+              <h4 id="OpenCvSharp_SparseMat_SizeOf" data-uid="OpenCvSharp.SparseMat.SizeOf">SizeOf</h4>
+              <div class="markdown level1 summary"><p>sizeof(cv::Mat)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int SizeOf</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Addref.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Addref%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L304">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Addref_" data-uid="OpenCvSharp.SparseMat.Addref*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Addref" data-uid="OpenCvSharp.SparseMat.Addref">Addref()</h4>
+              <div class="markdown level1 summary"><p>manually increments the reference counter to the header.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Addref()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_AssignFrom_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.AssignFrom(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L199">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_AssignFrom_" data-uid="OpenCvSharp.SparseMat.AssignFrom*"></a>
+              <h4 id="OpenCvSharp_SparseMat_AssignFrom_OpenCvSharp_Mat_" data-uid="OpenCvSharp.SparseMat.AssignFrom(OpenCvSharp.Mat)">AssignFrom(Mat)</h4>
+              <div class="markdown level1 summary"><p>Assignment operator. equivalent to the corresponding constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat AssignFrom(Mat m)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_AssignFrom_OpenCvSharp_SparseMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.AssignFrom(OpenCvSharp.SparseMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L185">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_AssignFrom_" data-uid="OpenCvSharp.SparseMat.AssignFrom*"></a>
+              <h4 id="OpenCvSharp_SparseMat_AssignFrom_OpenCvSharp_SparseMat_" data-uid="OpenCvSharp.SparseMat.AssignFrom(OpenCvSharp.SparseMat)">AssignFrom(SparseMat)</h4>
+              <div class="markdown level1 summary"><p>Assignment operator. This is O(1) operation, i.e. no data is copied</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat AssignFrom(SparseMat m)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_AssignTo_OpenCvSharp_SparseMat_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.AssignTo(OpenCvSharp.SparseMat%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L268">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_AssignTo_" data-uid="OpenCvSharp.SparseMat.AssignTo*"></a>
+              <h4 id="OpenCvSharp_SparseMat_AssignTo_OpenCvSharp_SparseMat_System_Int32_" data-uid="OpenCvSharp.SparseMat.AssignTo(OpenCvSharp.SparseMat,System.Int32)">AssignTo(SparseMat, Int32)</h4>
+              <div class="markdown level1 summary"><p>not used now</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AssignTo(SparseMat m, int type = -1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">type</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Channels.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L365">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Channels_" data-uid="OpenCvSharp.SparseMat.Channels*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Channels" data-uid="OpenCvSharp.SparseMat.Channels">Channels()</h4>
+              <div class="markdown level1 summary"><p>Returns the number of sparse matrix channels.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int Channels()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Clear.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L295">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Clear_" data-uid="OpenCvSharp.SparseMat.Clear*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Clear" data-uid="OpenCvSharp.SparseMat.Clear">Clear()</h4>
+              <div class="markdown level1 summary"><p>sets all the sparse matrix elements to 0, which means clearing the hash table.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Clone.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L212">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Clone_" data-uid="OpenCvSharp.SparseMat.Clone*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Clone" data-uid="OpenCvSharp.SparseMat.Clone">Clone()</h4>
+              <div class="markdown level1 summary"><p>creates full copy of the matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat Clone()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_ConvertTo_OpenCvSharp_Mat_System_Int32_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.ConvertTo(OpenCvSharp.Mat%2CSystem.Int32%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L257">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_ConvertTo_" data-uid="OpenCvSharp.SparseMat.ConvertTo*"></a>
+              <h4 id="OpenCvSharp_SparseMat_ConvertTo_OpenCvSharp_Mat_System_Int32_System_Double_System_Double_" data-uid="OpenCvSharp.SparseMat.ConvertTo(OpenCvSharp.Mat,System.Int32,System.Double,System.Double)">ConvertTo(Mat, Int32, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>converts sparse matrix to dense n-dim matrix with optional type conversion and scaling.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ConvertTo(Mat m, int rtype, double alpha = 1, double beta = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">rtype</span></td>
+                    <td><p>The output matrix data type. When it is =-1, the output array will have the same data type as (*this)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">alpha</span></td>
+                    <td><p>The scale factor</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">beta</span></td>
+                    <td><p>The optional delta added to the scaled values before the conversion</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_ConvertTo_OpenCvSharp_SparseMat_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.ConvertTo(OpenCvSharp.SparseMat%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L244">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_ConvertTo_" data-uid="OpenCvSharp.SparseMat.ConvertTo*"></a>
+              <h4 id="OpenCvSharp_SparseMat_ConvertTo_OpenCvSharp_SparseMat_System_Int32_System_Double_" data-uid="OpenCvSharp.SparseMat.ConvertTo(OpenCvSharp.SparseMat,System.Int32,System.Double)">ConvertTo(SparseMat, Int32, Double)</h4>
+              <div class="markdown level1 summary"><p>multiplies all the matrix elements by the specified scale factor alpha and converts the results to the specified data type</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ConvertTo(SparseMat m, int rtype, double alpha = 1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">rtype</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">alpha</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_CopyTo_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.CopyTo(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L232">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_CopyTo_" data-uid="OpenCvSharp.SparseMat.CopyTo*"></a>
+              <h4 id="OpenCvSharp_SparseMat_CopyTo_OpenCvSharp_Mat_" data-uid="OpenCvSharp.SparseMat.CopyTo(OpenCvSharp.Mat)">CopyTo(Mat)</h4>
+              <div class="markdown level1 summary"><p>converts sparse matrix to dense matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void CopyTo(Mat m)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_CopyTo_OpenCvSharp_SparseMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.CopyTo(OpenCvSharp.SparseMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L223">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_CopyTo_" data-uid="OpenCvSharp.SparseMat.CopyTo*"></a>
+              <h4 id="OpenCvSharp_SparseMat_CopyTo_OpenCvSharp_SparseMat_" data-uid="OpenCvSharp.SparseMat.CopyTo(OpenCvSharp.SparseMat)">CopyTo(SparseMat)</h4>
+              <div class="markdown level1 summary"><p>copies all the data to the destination matrix. All the previous content of m is erased.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void CopyTo(SparseMat m)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td><span class="parametername">m</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Create_OpenCvSharp_MatType_System_Int32___.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Create(OpenCvSharp.MatType%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L282">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Create_" data-uid="OpenCvSharp.SparseMat.Create*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Create_OpenCvSharp_MatType_System_Int32___" data-uid="OpenCvSharp.SparseMat.Create(OpenCvSharp.MatType,System.Int32[])">Create(MatType, Int32[])</h4>
+              <div class="markdown level1 summary"><p>Reallocates sparse matrix.
+If the matrix already had the proper size and type,
+it is simply cleared with clear(), otherwise,
+the old matrix is released (using release()) and the new one is allocated.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Create(MatType type, params int[] sizes)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.MatType.html">MatType</a></td>
+                    <td><span class="parametername">type</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">sizes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Depth.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Depth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L346">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Depth_" data-uid="OpenCvSharp.SparseMat.Depth*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Depth" data-uid="OpenCvSharp.SparseMat.Depth">Depth()</h4>
+              <div class="markdown level1 summary"><p>Returns the depth of sparse matrix element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int Depth()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Dims.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Dims%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L355">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Dims_" data-uid="OpenCvSharp.SparseMat.Dims*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Dims" data-uid="OpenCvSharp.SparseMat.Dims">Dims()</h4>
+              <div class="markdown level1 summary"><p>Returns the matrix dimensionality</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int Dims()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L126">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Dispose_" data-uid="OpenCvSharp.SparseMat.Dispose*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Dispose_System_Boolean_" data-uid="OpenCvSharp.SparseMat.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Releases the resources</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">disposing</span></td>
+                    <td><p>If disposing equals true, the method has been called directly or indirectly by a user&#39;s code. Managed and unmanaged resources can be disposed.
+If false, the method has been called by the runtime from inside the finalizer and you should not reference other objects. Only unmanaged resources can be disposed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_ElemSize.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.ElemSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L314">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_ElemSize_" data-uid="OpenCvSharp.SparseMat.ElemSize*"></a>
+              <h4 id="OpenCvSharp_SparseMat_ElemSize" data-uid="OpenCvSharp.SparseMat.ElemSize">ElemSize()</h4>
+              <div class="markdown level1 summary"><p>returns the size of each element in bytes (not including the overhead - the space occupied by SparseMat::Node elements)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ElemSize()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_ElemSize1.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.ElemSize1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L325">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_ElemSize1_" data-uid="OpenCvSharp.SparseMat.ElemSize1*"></a>
+              <h4 id="OpenCvSharp_SparseMat_ElemSize1" data-uid="OpenCvSharp.SparseMat.ElemSize1">ElemSize1()</h4>
+              <div class="markdown level1 summary"><p>returns elemSize()/channels()</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ElemSize1()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Find__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Find%60%601(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L579">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Find_" data-uid="OpenCvSharp.SparseMat.Find*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Find__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Find``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int64})">Find&lt;T&gt;(Int32, Int32, Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, int i1, int i2, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i2</span></td>
+                    <td><p>Index along the dimension 2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Find__1_System_Int32_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Find%60%601(System.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L561">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Find_" data-uid="OpenCvSharp.SparseMat.Find*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Find__1_System_Int32_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Find``1(System.Int32,System.Int32,System.Nullable{System.Int64})">Find&lt;T&gt;(Int32, Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, int i1, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Find__1_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Find%60%601(System.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L544">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Find_" data-uid="OpenCvSharp.SparseMat.Find*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Find__1_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Find``1(System.Int32,System.Nullable{System.Int64})">Find&lt;T&gt;(Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Find__1_System_Int32___System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Find%60%601(System.Int32%5B%5D%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L595">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Find_" data-uid="OpenCvSharp.SparseMat.Find*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Find__1_System_Int32___System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Find``1(System.Int32[],System.Nullable{System.Int64})">Find&lt;T&gt;(Int32[], Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int[] idx, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">idx</span></td>
+                    <td><p>Array of Mat::dims indices.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_FromMat_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.FromMat(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L161">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_FromMat_" data-uid="OpenCvSharp.SparseMat.FromMat*"></a>
+              <h4 id="OpenCvSharp_SparseMat_FromMat_OpenCvSharp_Mat_" data-uid="OpenCvSharp.SparseMat.FromMat(OpenCvSharp.Mat)">FromMat(Mat)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static SparseMat FromMat(Mat mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Get__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Get%60%601(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L831">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Get_" data-uid="OpenCvSharp.SparseMat.Get*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Get__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Get``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int64})">Get&lt;T&gt;(Int32, Int32, Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Returns a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, int i1, int i2, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i2</span></td>
+                    <td><p>Index along the dimension 2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><p>A value to the specified array element.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Get__1_System_Int32_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Get%60%601(System.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L817">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Get_" data-uid="OpenCvSharp.SparseMat.Get*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Get__1_System_Int32_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Get``1(System.Int32,System.Int32,System.Nullable{System.Int64})">Get&lt;T&gt;(Int32, Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Returns a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, int i1, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><p>A value to the specified array element.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Get__1_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Get%60%601(System.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L804">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Get_" data-uid="OpenCvSharp.SparseMat.Get*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Get__1_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Get``1(System.Int32,System.Nullable{System.Int64})">Get&lt;T&gt;(Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Returns a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><p>A value to the specified array element.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Get__1_System_Int32___System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Get%60%601(System.Int32%5B%5D%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L843">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Get_" data-uid="OpenCvSharp.SparseMat.Get*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Get__1_System_Int32___System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Get``1(System.Int32[],System.Nullable{System.Int64})">Get&lt;T&gt;(Int32[], Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Returns a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int[] idx, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">idx</span></td>
+                    <td><p>Array of Mat::dims indices.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><p>A value to the specified array element.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_GetIndexer__1.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.GetIndexer%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L789">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_GetIndexer_" data-uid="OpenCvSharp.SparseMat.GetIndexer*"></a>
+              <h4 id="OpenCvSharp_SparseMat_GetIndexer__1" data-uid="OpenCvSharp.SparseMat.GetIndexer``1">GetIndexer&lt;T&gt;()</h4>
+              <div class="markdown level1 summary"><p>Gets a type-specific indexer. 
+The indexer has getters/setters to access each matrix element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat.Indexer&lt;T&gt; GetIndexer&lt;T&gt;()where T : struct</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.Indexer-1.html">SparseMat.Indexer</a>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Hash_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Hash(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L407">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Hash_" data-uid="OpenCvSharp.SparseMat.Hash*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Hash_System_Int32_" data-uid="OpenCvSharp.SparseMat.Hash(System.Int32)">Hash(Int32)</h4>
+              <div class="markdown level1 summary"><p>Computes the element hash value (1D case)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Hash(int i0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Hash_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Hash(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L419">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Hash_" data-uid="OpenCvSharp.SparseMat.Hash*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Hash_System_Int32_System_Int32_" data-uid="OpenCvSharp.SparseMat.Hash(System.Int32,System.Int32)">Hash(Int32, Int32)</h4>
+              <div class="markdown level1 summary"><p>Computes the element hash value (2D case)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Hash(int i0, int i1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Hash_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Hash(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L432">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Hash_" data-uid="OpenCvSharp.SparseMat.Hash*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Hash_System_Int32_System_Int32_System_Int32_" data-uid="OpenCvSharp.SparseMat.Hash(System.Int32,System.Int32,System.Int32)">Hash(Int32, Int32, Int32)</h4>
+              <div class="markdown level1 summary"><p>Computes the element hash value (3D case)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Hash(int i0, int i1, int i2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i2</span></td>
+                    <td><p>Index along the dimension 2</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Hash_System_Int32___.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Hash(System.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L443">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Hash_" data-uid="OpenCvSharp.SparseMat.Hash*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Hash_System_Int32___" data-uid="OpenCvSharp.SparseMat.Hash(System.Int32[])">Hash(Int32[])</h4>
+              <div class="markdown level1 summary"><p>Computes the element hash value (nD case)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Hash(params int[] idx)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">idx</span></td>
+                    <td><p>Array of Mat::dims indices.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Ptr_System_Int32_System_Boolean_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Ptr(System.Int32%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L459">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Ptr_" data-uid="OpenCvSharp.SparseMat.Ptr*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Ptr_System_Int32_System_Boolean_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Ptr(System.Int32,System.Boolean,System.Nullable{System.Int64})">Ptr(Int32, Boolean, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Low-level element-access function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, bool createMissing, long ? hashVal = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">createMissing</span></td>
+                    <td><p>Create new element with 0 value if it does not exist in SparseMat.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IntPtr</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Ptr_System_Int32_System_Int32_System_Boolean_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Ptr(System.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L480">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Ptr_" data-uid="OpenCvSharp.SparseMat.Ptr*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Ptr_System_Int32_System_Int32_System_Boolean_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Ptr(System.Int32,System.Int32,System.Boolean,System.Nullable{System.Int64})">Ptr(Int32, Int32, Boolean, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Low-level element-access function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, int i1, bool createMissing, long ? hashVal = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">createMissing</span></td>
+                    <td><p>Create new element with 0 value if it does not exist in SparseMat.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IntPtr</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Ptr_System_Int32_System_Int32_System_Int32_System_Boolean_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Ptr(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L502">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Ptr_" data-uid="OpenCvSharp.SparseMat.Ptr*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Ptr_System_Int32_System_Int32_System_Int32_System_Boolean_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Ptr(System.Int32,System.Int32,System.Int32,System.Boolean,System.Nullable{System.Int64})">Ptr(Int32, Int32, Int32, Boolean, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Low-level element-access function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, int i1, int i2, bool createMissing, long ? hashVal = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i2</span></td>
+                    <td><p>Index along the dimension 2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">createMissing</span></td>
+                    <td><p>Create new element with 0 value if it does not exist in SparseMat.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IntPtr</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Ptr_System_Int32___System_Boolean_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Ptr(System.Int32%5B%5D%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L522">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Ptr_" data-uid="OpenCvSharp.SparseMat.Ptr*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Ptr_System_Int32___System_Boolean_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Ptr(System.Int32[],System.Boolean,System.Nullable{System.Int64})">Ptr(Int32[], Boolean, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Low-level element-access function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPtr Ptr(int[] idx, bool createMissing, long ? hashVal = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">idx</span></td>
+                    <td><p>Array of Mat::dims indices.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">createMissing</span></td>
+                    <td><p>Create new element with 0 value if it does not exist in SparseMat.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IntPtr</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Ref__1.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Ref%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L779">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Ref_" data-uid="OpenCvSharp.SparseMat.Ref*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Ref__1" data-uid="OpenCvSharp.SparseMat.Ref``1">Ref&lt;T&gt;()</h4>
+              <div class="markdown level1 summary"><p>Gets a type-specific indexer. 
+The indexer has getters/setters to access each matrix element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SparseMat.Indexer&lt;T&gt; Ref&lt;T&gt;()where T : struct</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SparseMat.Indexer-1.html">SparseMat.Indexer</a>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Release.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Release%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L104">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Release_" data-uid="OpenCvSharp.SparseMat.Release*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Release" data-uid="OpenCvSharp.SparseMat.Release">Release()</h4>
+              <div class="markdown level1 summary"><p>Releases the resources</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Set__1_System_Int32___0_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Set%60%601(System.Int32%2C%60%600%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L855">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Set_" data-uid="OpenCvSharp.SparseMat.Set*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Set__1_System_Int32___0_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Set``1(System.Int32,``0,System.Nullable{System.Int64})">Set&lt;T&gt;(Int32, T, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Set a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, T value, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Set__1_System_Int32_System_Int32___0_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Set%60%601(System.Int32%2CSystem.Int32%2C%60%600%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L868">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Set_" data-uid="OpenCvSharp.SparseMat.Set*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Set__1_System_Int32_System_Int32___0_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Set``1(System.Int32,System.Int32,``0,System.Nullable{System.Int64})">Set&lt;T&gt;(Int32, Int32, T, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Set a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, int i1, T value, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Set__1_System_Int32_System_Int32_System_Int32___0_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Set%60%601(System.Int32%2CSystem.Int32%2CSystem.Int32%2C%60%600%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L882">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Set_" data-uid="OpenCvSharp.SparseMat.Set*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Set__1_System_Int32_System_Int32_System_Int32___0_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Set``1(System.Int32,System.Int32,System.Int32,``0,System.Nullable{System.Int64})">Set&lt;T&gt;(Int32, Int32, Int32, T, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Set a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, int i1, int i2, T value, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i2</span></td>
+                    <td><p>Index along the dimension 2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Set__1_System_Int32_____0_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Set%60%601(System.Int32%5B%5D%2C%60%600%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L894">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Set_" data-uid="OpenCvSharp.SparseMat.Set*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Set__1_System_Int32_____0_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Set``1(System.Int32[],``0,System.Nullable{System.Int64})">Set&lt;T&gt;(Int32[], T, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Set a value to the specified array element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int[] idx, T value, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">idx</span></td>
+                    <td><p>Array of Mat::dims indices.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Size.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L375">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Size_" data-uid="OpenCvSharp.SparseMat.Size*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Size" data-uid="OpenCvSharp.SparseMat.Size">Size()</h4>
+              <div class="markdown level1 summary"><p>Returns the array of sizes, or null if the matrix is not allocated</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int[] Size()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Size_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Size(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L394">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Size_" data-uid="OpenCvSharp.SparseMat.Size*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Size_System_Int32_" data-uid="OpenCvSharp.SparseMat.Size(System.Int32)">Size(Int32)</h4>
+              <div class="markdown level1 summary"><p>Returns the size of i-th matrix dimension (or 0)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int Size(int dim)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">dim</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_ToString.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L907">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_ToString_" data-uid="OpenCvSharp.SparseMat.ToString*"></a>
+              <h4 id="OpenCvSharp_SparseMat_ToString" data-uid="OpenCvSharp.SparseMat.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Returns a string that represents this Mat.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Type.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L336">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Type_" data-uid="OpenCvSharp.SparseMat.Type*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Type" data-uid="OpenCvSharp.SparseMat.Type">Type()</h4>
+              <div class="markdown level1 summary"><p>Returns the type of sparse matrix element.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MatType Type()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.MatType.html">MatType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Value__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Value%60%601(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L649">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Value_" data-uid="OpenCvSharp.SparseMat.Value*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Value__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Value``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int64})">Value&lt;T&gt;(Int32, Int32, Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, default(T).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, int i1, int i2, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i2</span></td>
+                    <td><p>Index along the dimension 2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Value__1_System_Int32_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Value%60%601(System.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L631">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Value_" data-uid="OpenCvSharp.SparseMat.Value*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Value__1_System_Int32_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Value``1(System.Int32,System.Int32,System.Nullable{System.Int64})">Value&lt;T&gt;(Int32, Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, default(T).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, int i1, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i1</span></td>
+                    <td><p>Index along the dimension 1</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Value__1_System_Int32_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Value%60%601(System.Int32%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L614">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Value_" data-uid="OpenCvSharp.SparseMat.Value*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Value__1_System_Int32_System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Value``1(System.Int32,System.Nullable{System.Int64})">Value&lt;T&gt;(Int32, Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, default(T).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">i0</span></td>
+                    <td><p>Index along the dimension 0</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat_Value__1_System_Int32___System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat.Value%60%601(System.Int32%5B%5D%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L665">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SparseMat_Value_" data-uid="OpenCvSharp.SparseMat.Value*"></a>
+              <h4 id="OpenCvSharp_SparseMat_Value__1_System_Int32___System_Nullable_System_Int64__" data-uid="OpenCvSharp.SparseMat.Value``1(System.Int32[],System.Nullable{System.Int64})">Value&lt;T&gt;(Int32[], Nullable&lt;Int64&gt;)</h4>
+              <div class="markdown level1 summary"><p>Return pthe specified sparse matrix element if it exists; otherwise, default(T).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int[] idx, long ? hashVal = null)where T : struct</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">idx</span></td>
+                    <td><p>Array of Mat::dims indices.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">hashVal</span></td>
+                    <td><p>If hashVal is not null, the element hash value is not computed but hashval is taken instead.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=OpenCvSharp_SparseMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.SparseMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/SparseMat.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

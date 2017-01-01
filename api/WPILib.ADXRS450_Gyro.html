@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ADXRS450_Gyro
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ADXRS450_Gyro
+   ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_ADXRS450_Gyro" data-uid="WPILib.ADXRS450_Gyro">Class ADXRS450_Gyro
+              </h1>
+              <div class="markdown level0 summary"><p>This class is for the digital ADXRS450 gyro sensor that connects via SPI</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.GyroBase.html">GyroBase</a></div>
+                  <div class="level3"><span class="xref">ADXRS450_Gyro</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_PIDSourceType">GyroBase.PIDSourceType</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_PidGet">GyroBase.PidGet()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_InitTable_NetworkTables_Tables_ITable_">GyroBase.InitTable(ITable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_Table">GyroBase.Table</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_SmartDashboardType">GyroBase.SmartDashboardType</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_UpdateTable">GyroBase.UpdateTable()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_StartLiveWindowMode">GyroBase.StartLiveWindowMode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_StopLiveWindowMode">GyroBase.StopLiveWindowMode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_ADXRS450_Gyro_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ADXRS450_Gyro : GyroBase, IGyro, IDisposable, IPIDSource, ILiveWindowSendable, ISendable</code></pre>
+              </div>
+              <h5 id="WPILib_ADXRS450_Gyro_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>Use a rate gyro to return the robots heading relative to a starting position.
+The Gyro class tracks the robots heading based on the starting position.As
+the robot rotates the new heading is computed by integrating the rate of
+rotation returned by the sensor.When the class is instantiated, it does a
+short calibration routine where it samples the gyro while at rest to
+determine the default offset.This is subtracted from each sample to
+determine the heading.</p>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro__ctor.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L45">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro__ctor_" data-uid="WPILib.ADXRS450_Gyro.#ctor*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro__ctor" data-uid="WPILib.ADXRS450_Gyro.#ctor">ADXRS450_Gyro()</h4>
+              <div class="markdown level1 summary"><p>Constructor. Uses the onboard CS0</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ADXRS450_Gyro()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro__ctor_WPILib_SPI_Port_.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.%23ctor(WPILib.SPI.Port)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L54">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro__ctor_" data-uid="WPILib.ADXRS450_Gyro.#ctor*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro__ctor_WPILib_SPI_Port_" data-uid="WPILib.ADXRS450_Gyro.#ctor(WPILib.SPI.Port)">ADXRS450_Gyro(SPI.Port)</h4>
+              <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ADXRS450_Gyro(SPI.Port port)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.SPI.Port.html">SPI.Port</a></td>
+                    <td><span class="parametername">port</span></td>
+                    <td><p>The <a class="xref" href="WPILib.SPI.Port.html">SPI.Port</a> that the gyro is connected to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro_Calibrate.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.Calibrate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L91">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro_Calibrate_" data-uid="WPILib.ADXRS450_Gyro.Calibrate*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro_Calibrate" data-uid="WPILib.ADXRS450_Gyro.Calibrate">Calibrate()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Calibrate()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_Calibrate">GyroBase.Calibrate()</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_Calibrate">IGyro.Calibrate()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro_Dispose.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L107">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro_Dispose_" data-uid="WPILib.ADXRS450_Gyro.Dispose*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro_Dispose" data-uid="WPILib.ADXRS450_Gyro.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro_GetAngle.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.GetAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L160">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro_GetAngle_" data-uid="WPILib.ADXRS450_Gyro.GetAngle*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro_GetAngle" data-uid="WPILib.ADXRS450_Gyro.GetAngle">GetAngle()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetAngle()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_GetAngle">GyroBase.GetAngle()</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_GetAngle">IGyro.GetAngle()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro_GetRate.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L171">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro_GetRate_" data-uid="WPILib.ADXRS450_Gyro.GetRate*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro_GetRate" data-uid="WPILib.ADXRS450_Gyro.GetRate">GetRate()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetRate()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_GetRate">GyroBase.GetRate()</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_GetRate">IGyro.GetRate()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro_Reset.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L157">View Source</a>
+              </span>
+              <a id="WPILib_ADXRS450_Gyro_Reset_" data-uid="WPILib.ADXRS450_Gyro.Reset*"></a>
+              <h4 id="WPILib_ADXRS450_Gyro_Reset" data-uid="WPILib.ADXRS450_Gyro.Reset">Reset()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_Reset">GyroBase.Reset()</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_Reset">IGyro.Reset()</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_ADXRS450_Gyro.md&amp;value=---%0Auid%3A%20WPILib.ADXRS450_Gyro%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib/blob/master/WPILib/ADXRS450_Gyro.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
