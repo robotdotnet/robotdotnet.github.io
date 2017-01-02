@@ -67,6 +67,43 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="creating-a-project-using-the-labview-style-base-class">Creating a project using the LabVIEW style base class</h1>
               
+<p>The LabVIEW Style Robot is designed to make it easier for teams to move from LabVIEW to text based programming.
+Instead of running autonomous and test modes in the main robot thread, it runs them in a seperate thread. In addition, the main methods have been renamed
+to match their equivalents in LabVIEW. Information on the methods contained in this base class can be found at <a class="xref" href="../api/WPILib.Extras.LabViewRobot.html">LabVIEW Robot.</a></p>
+<h2 id="creating-a-project-with-the-labview-template">Creating a project with the LabVIEW Template</h2>
+<ol>
+<li>Create a new robot project using the LabVIEW Robot template. You should see the following methods in the main robot class.<ul>
+<li><strong>Begin</strong><ul>
+<li>The method is equivalent to <em>Begin.vi</em>. This is where you should put your robot initialization code</li>
+</ul>
+</li>
+<li><strong>Disabled</strong><ul>
+<li>This method is equivalent to <em>Disabled.vi</em>. It runs in the main robot thread whenever the robot is Disabled. Use the 
+CallContext parameter to determine if it is the initialization run or the execute run on the method.</li>
+</ul>
+</li>
+<li><strong>Teleoperated</strong><ul>
+<li>This method is equivalent to <em>Teleop.vi</em>. It runs in the main robot thread whenever the robot is in Telop mode and Enabled.
+Use the CallContext parameter to determine if it is the initialization run or the execute run on the method.</li>
+</ul>
+</li>
+<li><strong>Autonomous</strong><ul>
+<li>This method is equivalent to Autonomous.vi. It runs in its own thread, and is called once only at the beginning of Autonomous Enabled.</li>
+</ul>
+</li>
+<li><strong>Test</strong><ul>
+<li>This method is equivalent to <em>Test.vi</em>. It runs in its own thread, and is called once only when the robot first enters test mode.
+Note that this includes Test Disabled, and its state will not switch when switching between enabled and disabled test modes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="properly-handling-threads">Properly handling threads</h3>
+<p>When dealing with threads, it is important to note that the threads will be aborted when switching modes. This means you should not use any functionality
+that requires cleanup, such as writing to a log file. If you must, you can try and catch the ThreadAbortedException, and run your cleanup code there.
+However, you have to make sure to not cancel the abort, as this will lock up the robot code. In addition, please do not start another thread,
+as the library will not be able to clean up that thread, and it will continue to run.</p>
 
             </article>
           </div>

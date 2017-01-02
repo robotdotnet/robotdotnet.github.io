@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>OpenCV and CameraServer </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="OpenCV and CameraServer ">
+    <meta name="generator" content="docfx 2.9.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="opencv-and-cameraserver">OpenCV and CameraServer</h1>
+              
+<p>One of the coolest new features for 2017 is the addition of OpenCV and the new CameraServer to WPILib. Unlike NiVision, which was never enabled in RobotDotNet, OpenCV and CameraServer have been fully enabled.</p>
+<h2 id="cameraserver">CameraServer</h2>
+<p>CameraServer is the new library for handling USB and Ethernet cameras, along with streaming video from these devices, along with OpenCV, to other devices. All code can be found in the <a class="xref" href="../api/CSCore.html">CSCore namespace</a>. 
+However in most instances, you should just be able to use <a class="xref" href="../api/WPILib.CameraServer.html">the WPILib CameraServer class</a>, which handles most of the configuration of these settings for you. </p>
+<h2 id="opencv">OpenCV</h2>
+<p>The OpenCV library we use is a fork of <a href="https://github.com/shimat/opencvsharp">OpenCvSharp</a>. It has been modified to work with the WPILib build system, but still handles all of the OpenCV operations you have come to expect.
+See the OpenCV API documentation for more information, and you should be able to look at most OpenCV documentation online for help as well.</p>
+<h2 id="creating-a-usb-camera-stream">Creating a USB Camera Stream</h2>
+<p>The <a class="xref" href="../api/WPILib.CameraServer.html">CameraServer</a> class can be used to easliy start streaming a USB Camera to either the LabVIEW dashboard, SmartDashboard, DotNetDash, or any web browser. </p>
+<pre><code class="lang-csharp" name="Simple">// Add to your existing RobotInit method
+public override void RobotInit()
+{
+  CameraServer.Instance.StartAutomaticCapture();
+}
+</code></pre><h2 id="performing-opencv-operations-on-a-usb-camera">Performing OpenCV operations on a USB Camera</h2>
+<p>OpenCV images can be grabbed directly from the USB Camera, and then the final output from OpenCV can be streamed back to the dashboard. The following example shows
+how to get an OpenCV image, draw an annotated rectangle on the image, and then send it back to the dashboard. Note that the sample runs this in a separate thread, as
+attempting to run this in a main robot loop would cause heavy control lag.</p>
+<pre><code class="lang-csharp" name="Advanced">// Add additional includes
+using CSCore;
+using OpenCvSharp;
+using System.Threading;
+
+// Add to your existing RobotInit method
+public override void RobotInit()
+{
+    Thread cameraThread = new Thread(() =&gt;
+    {
+        // Get the USB Camera from the camera server
+        UsbCamera camera = CameraServer.Instance.StartAutomaticCapture();
+        camera.SetResolution(640, 480);
+
+        // Get a CvSink. This will capture Mats from the Camera
+        CvSink cvSink = CameraServer.Instance.GetVideo();
+        // Setup a CvSource. This will send images back to the dashboard
+        CvSource outputStream = CameraServer.Instance.PutVideo(&quot;Rectangle&quot;, 640, 480);
+
+        // Mats are very expensive. Let&#39;s reuse this Mat.
+        Mat mat = new Mat();
+
+        while (true)
+        {
+            // Tell the CvSink to grab a frame from the camera and put it
+            // in the source mat.  If there is an error notify the output.
+            if (cvSink.GrabFrame(mat) == 0) {
+                // Send the output the error.
+                outputStream.NotifyError(cvSink.GetError());
+                // skip the rest of the current iteration
+                continue;
+            }
+            // Put a rectangle on the image
+            Cv2.Rectangle(mat, new Point(100, 100), new Point(400, 400),
+                    new Scalar(255, 255, 255), 5);
+            // Give the output stream a new image to display
+            outputStream.PutFrame(mat);
+        }
+    });
+    cameraThread.IsBackground = true;
+    cameraThread.Start();
+}
+</code></pre><p>Note the above example can also be used with an Axis ethernet camera, using the sample code below.</p>
+<pre><code class="lang-csharp" name="AdvancedAxis">// Add additional includes
+using CSCore;
+using OpenCvSharp;
+using System.Threading;
+
+// Add to your existing RobotInit method
+public override void RobotInit()
+{
+    Thread cameraThread = new Thread(() =&gt;
+    {
+        // Get the Axis Camera from the camera server
+        AxisCamera camera = CameraServer.Instance.AddAxisCamera(&quot;axis-camera.local&quot;);
+        camera.SetResolution(640, 480);
+
+        // Get a CvSink. This will capture Mats from the Camera
+        CvSink cvSink = CameraServer.Instance.GetVideo();
+        // Setup a CvSource. This will send images back to the dashboard
+        CvSource outputStream = CameraServer.Instance.PutVideo(&quot;Rectangle&quot;, 640, 480);
+
+        // Mats are very expensive. Let&#39;s reuse this Mat.
+        Mat mat = new Mat();
+
+        while (true)
+        {
+            // Tell the CvSink to grab a frame from the camera and put it
+            // in the source mat.  If there is an error notify the output.
+            if (cvSink.GrabFrame(mat) == 0) {
+                // Send the output the error.
+                outputStream.NotifyError(cvSink.GetError());
+                // skip the rest of the current iteration
+                continue;
+            }
+            // Put a rectangle on the image
+            Cv2.Rectangle(mat, new Point(100, 100), new Point(400, 400),
+                    new Scalar(255, 255, 255), 5);
+            // Give the output stream a new image to display
+            outputStream.PutFrame(mat);
+        }
+    });
+    cameraThread.IsBackground = true;
+    cameraThread.Start();
+}
+</code></pre>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/blob/master/tutorials/opencv.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
