@@ -76,12 +76,34 @@
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
-                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><a class="xref" href="CSCore.VideoSource.html">VideoSource</a></div>
-                  <div class="level2"><span class="xref">UsbCamera</span></div>
+                  <div class="level2"><a class="xref" href="CSCore.VideoCamera.html">VideoCamera</a></div>
+                  <div class="level3"><span class="xref">UsbCamera</span></div>
               </div>
               <div class="inheritedMembers">
                 <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_Brightness">VideoCamera.Brightness</a>
+                </div>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_SetWhiteBalanceAuto">VideoCamera.SetWhiteBalanceAuto()</a>
+                </div>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_SetWhiteBalanceHoldCurrent">VideoCamera.SetWhiteBalanceHoldCurrent()</a>
+                </div>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_SetWhiteBalanceManual_System_Int32_">VideoCamera.SetWhiteBalanceManual(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_SetExposureAuto">VideoCamera.SetExposureAuto()</a>
+                </div>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_SetExposureHoldCurrent">VideoCamera.SetExposureHoldCurrent()</a>
+                </div>
+                <div>
+                  <a class="xref" href="CSCore.VideoCamera.html#CSCore_VideoCamera_SetExposureManual_System_Int32_">VideoCamera.SetExposureManual(Int32)</a>
+                </div>
                 <div>
                   <a class="xref" href="CSCore.VideoSource.html#CSCore_VideoSource_Dispose">VideoSource.Dispose()</a>
                 </div>
@@ -146,26 +168,26 @@
                   <a class="xref" href="CSCore.VideoSource.html#CSCore_VideoSource_EnumerateSources">VideoSource.EnumerateSources()</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.ToString()</span>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.GetType()</span>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
                 </div>
               </div>
               <h6><strong>Namespace</strong>:CSCore</h6>
               <h6><strong>Assembly</strong>:FRC.CameraServer.dll</h6>
               <h5 id="CSCore_UsbCamera_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class UsbCamera : VideoSource, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public class UsbCamera : VideoCamera, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -174,7 +196,7 @@
                 <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera__ctor_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.%23ctor(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L57">View Source</a>
+                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L15">View Source</a>
               </span>
               <a id="CSCore_UsbCamera__ctor_" data-uid="CSCore.UsbCamera.#ctor*"></a>
               <h4 id="CSCore_UsbCamera__ctor_System_String_System_Int32_" data-uid="CSCore.UsbCamera.#ctor(System.String,System.Int32)">UsbCamera(String, Int32)</h4>
@@ -196,13 +218,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.String</span></td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">name</span></td>
                     <td><p>Source name (arbitrary unique identifier)</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Int32</span></td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
                     <td><span class="parametername">dev</span></td>
                     <td><p>Devices number (e.g. 0 for /dev/video0)</p>
 </td>
@@ -214,7 +236,7 @@
                 <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L67">View Source</a>
+                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L25">View Source</a>
               </span>
               <a id="CSCore_UsbCamera__ctor_" data-uid="CSCore.UsbCamera.#ctor*"></a>
               <h4 id="CSCore_UsbCamera__ctor_System_String_System_String_" data-uid="CSCore.UsbCamera.#ctor(System.String,System.String)">UsbCamera(String, String)</h4>
@@ -236,13 +258,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.String</span></td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">name</span></td>
                     <td><p>Source name (arbitrary device identifier)</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.String</span></td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">path</span></td>
                     <td><p>Path to device (e.g. &quot;/dev/video0&quot; on linux)</p>
 </td>
@@ -253,41 +275,10 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_Brightness.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.Brightness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L89">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_Brightness_" data-uid="CSCore.UsbCamera.Brightness*"></a>
-              <h4 id="CSCore_UsbCamera_Brightness" data-uid="CSCore.UsbCamera.Brightness">Brightness</h4>
-              <div class="markdown level1 summary"><p>Gets or sets the brightness as a percentage (0-100).</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int Brightness { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int32</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_Path.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L84">View Source</a>
+                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L42">View Source</a>
               </span>
               <a id="CSCore_UsbCamera_Path_" data-uid="CSCore.UsbCamera.Path*"></a>
               <h4 id="CSCore_UsbCamera_Path" data-uid="CSCore.UsbCamera.Path">Path</h4>
@@ -308,7 +299,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.String</span></td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -320,7 +311,7 @@
                 <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_EnumerateUsbCameras.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.EnumerateUsbCameras%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L76">View Source</a>
+                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L34">View Source</a>
               </span>
               <a id="CSCore_UsbCamera_EnumerateUsbCameras_" data-uid="CSCore.UsbCamera.EnumerateUsbCameras*"></a>
               <h4 id="CSCore_UsbCamera_EnumerateUsbCameras" data-uid="CSCore.UsbCamera.EnumerateUsbCameras">EnumerateUsbCameras()</h4>
@@ -341,139 +332,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="CSCore.UsbCameraInfo.html">UsbCameraInfo</a>&gt;</td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx">List</a>&lt;<a class="xref" href="CSCore.UsbCameraInfo.html">UsbCameraInfo</a>&gt;</td>
                     <td><p>List of USB Camera information (one for each camera)</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_SetExposureAuto.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.SetExposureAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L159">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_SetExposureAuto_" data-uid="CSCore.UsbCamera.SetExposureAuto*"></a>
-              <h4 id="CSCore_UsbCamera_SetExposureAuto" data-uid="CSCore.UsbCamera.SetExposureAuto">SetExposureAuto()</h4>
-              <div class="markdown level1 summary"><p>Set the exposure to auto aperature.</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetExposureAuto()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_SetExposureHoldCurrent.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.SetExposureHoldCurrent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L171">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_SetExposureHoldCurrent_" data-uid="CSCore.UsbCamera.SetExposureHoldCurrent*"></a>
-              <h4 id="CSCore_UsbCamera_SetExposureHoldCurrent" data-uid="CSCore.UsbCamera.SetExposureHoldCurrent">SetExposureHoldCurrent()</h4>
-              <div class="markdown level1 summary"><p>Set the exposure to hold current.</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetExposureHoldCurrent()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_SetExposureManual_System_Int32_.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.SetExposureManual(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L183">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_SetExposureManual_" data-uid="CSCore.UsbCamera.SetExposureManual*"></a>
-              <h4 id="CSCore_UsbCamera_SetExposureManual_System_Int32_" data-uid="CSCore.UsbCamera.SetExposureManual(System.Int32)">SetExposureManual(Int32)</h4>
-              <div class="markdown level1 summary"><p>Set the exposure to manual, as a percentage (0-100).</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetExposureManual(int value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">value</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_SetWhiteBalanceAuto.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.SetWhiteBalanceAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L120">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_SetWhiteBalanceAuto_" data-uid="CSCore.UsbCamera.SetWhiteBalanceAuto*"></a>
-              <h4 id="CSCore_UsbCamera_SetWhiteBalanceAuto" data-uid="CSCore.UsbCamera.SetWhiteBalanceAuto">SetWhiteBalanceAuto()</h4>
-              <div class="markdown level1 summary"><p>Set the white balance to auto</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetWhiteBalanceAuto()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_SetWhiteBalanceHoldCurrent.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.SetWhiteBalanceHoldCurrent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L132">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_SetWhiteBalanceHoldCurrent_" data-uid="CSCore.UsbCamera.SetWhiteBalanceHoldCurrent*"></a>
-              <h4 id="CSCore_UsbCamera_SetWhiteBalanceHoldCurrent" data-uid="CSCore.UsbCamera.SetWhiteBalanceHoldCurrent">SetWhiteBalanceHoldCurrent()</h4>
-              <div class="markdown level1 summary"><p>Set the white balance to hold current</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetWhiteBalanceHoldCurrent()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=CSCore_UsbCamera_SetWhiteBalanceManual_System_Int32_.md&amp;value=---%0Auid%3A%20CSCore.UsbCamera.SetWhiteBalanceManual(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/CameraServer/blob/master/src/FRC.CameraServer/USBCamera.cs/#L145">View Source</a>
-              </span>
-              <a id="CSCore_UsbCamera_SetWhiteBalanceManual_" data-uid="CSCore.UsbCamera.SetWhiteBalanceManual*"></a>
-              <h4 id="CSCore_UsbCamera_SetWhiteBalanceManual_System_Int32_" data-uid="CSCore.UsbCamera.SetWhiteBalanceManual(System.Int32)">SetWhiteBalanceManual(Int32)</h4>
-              <div class="markdown level1 summary"><p>Set the white balance to manual, with specified color temperature</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetWhiteBalanceManual(int value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">value</span></td>
-                    <td></td>
                   </tr>
                 </tbody>
               </table>
