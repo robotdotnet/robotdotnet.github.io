@@ -68,7 +68,7 @@
               <h1 id="troubleshooting">Troubleshooting</h1>
               
 <p>If you run into issues, try some of the following steps</p>
-<h2 id="deploy-fails-with-nullreferenceexception-after-the-creating-mono-deploy-directory-message">Deploy fails with NullReferenceException after the &quot;Creating Mono Deploy Directory&quot; message</h2>
+<h2 id="deploy-fails-with-nullreferenceexception-or-deploy-fails-telling-you-could-not-find-native-files">Deploy fails with NullReferenceException, or deploy fails telling you could not find native files</h2>
 <p>New to 2017, there is a content library that gets installed whenever a robot project is created. However, we have noticed that rarely, this package does not
 install correctly, and causes the deploy to break. We are working on a better error message, but the solution to fix this issue is to force a reinstall
 of the WPILibNativeLibraries package. To do this, in Visual Studi, go to Tools -&gt; Nuget Package Manager -&gt; Package Manager Console. Then in that console,

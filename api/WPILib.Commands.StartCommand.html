@@ -79,10 +79,14 @@ command when it is initialized and will finish immediately.</p>
                 <h5>Inheritance</h5>
                   <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><a class="xref" href="WPILib.Commands.Command.html">Command</a></div>
-                  <div class="level2"><span class="xref">StartCommand</span></div>
+                  <div class="level2"><a class="xref" href="WPILib.Commands.InstantCommand.html">InstantCommand</a></div>
+                  <div class="level3"><span class="xref">StartCommand</span></div>
               </div>
               <div class="inheritedMembers">
                 <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.Commands.InstantCommand.html#WPILib_Commands_InstantCommand_IsFinished">InstantCommand.IsFinished()</a>
+                </div>
                 <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Name">Command.Name</a>
                 </div>
@@ -99,7 +103,19 @@ command when it is initialized and will finish immediately.</p>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command__Initialize">Command._Initialize()</a>
                 </div>
                 <div>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Execute">Command.Execute()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command__IsFinished">Command._IsFinished()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">Command.End()</a>
+                </div>
+                <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command__End">Command._End()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Command.Interrupted()</a>
                 </div>
                 <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command__Interrupted">Command._Interrupted()</a>
@@ -124,6 +140,9 @@ command when it is initialized and will finish immediately.</p>
                 </div>
                 <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_DoesRequire_WPILib_Commands_Subsystem_">Command.DoesRequire(Subsystem)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ClearRequirements">Command.ClearRequirements()</a>
                 </div>
                 <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_GetGroup">Command.GetGroup()</a>
@@ -169,7 +188,7 @@ command when it is initialized and will finish immediately.</p>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_Commands_StartCommand_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class StartCommand : Command, INamedSendable, ISendable, ITableListener</code></pre>
+                <pre><code class="lang-csharp hljs">public class StartCommand : InstantCommand, INamedSendable, ISendable, ITableListener</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -182,7 +201,7 @@ command when it is initialized and will finish immediately.</p>
               </span>
               <a id="WPILib_Commands_StartCommand__ctor_" data-uid="WPILib.Commands.StartCommand.#ctor*"></a>
               <h4 id="WPILib_Commands_StartCommand__ctor_WPILib_Commands_Command_" data-uid="WPILib.Commands.StartCommand.#ctor(WPILib.Commands.Command)">StartCommand(Command)</h4>
-              <div class="markdown level1 summary"><p>Instantiates a <a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a> which will start the given command when its 
+              <div class="markdown level1 summary"><p>Instantiates a <a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a> which will start the given command when its
 <a class="xref" href="WPILib.Commands.StartCommand.html#WPILib_Commands_StartCommand_Initialize">Initialize()</a> is called.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -212,44 +231,10 @@ command when it is initialized and will finish immediately.</p>
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_StartCommand_End.md&amp;value=---%0Auid%3A%20WPILib.Commands.StartCommand.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/StartCommand.cs/#L31">View Source</a>
-              </span>
-              <a id="WPILib_Commands_StartCommand_End_" data-uid="WPILib.Commands.StartCommand.End*"></a>
-              <h4 id="WPILib_Commands_StartCommand_End" data-uid="WPILib.Commands.StartCommand.End">End()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected override void End()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">Command.End()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_StartCommand_Execute.md&amp;value=---%0Auid%3A%20WPILib.Commands.StartCommand.Execute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/StartCommand.cs/#L24">View Source</a>
-              </span>
-              <a id="WPILib_Commands_StartCommand_Execute_" data-uid="WPILib.Commands.StartCommand.Execute*"></a>
-              <h4 id="WPILib_Commands_StartCommand_Execute" data-uid="WPILib.Commands.StartCommand.Execute">Execute()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected override void Execute()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Execute">Command.Execute()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_StartCommand_Initialize.md&amp;value=---%0Auid%3A%20WPILib.Commands.StartCommand.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/StartCommand.cs/#L21">View Source</a>
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/StartCommand.cs/#L22">View Source</a>
               </span>
               <a id="WPILib_Commands_StartCommand_Initialize_" data-uid="WPILib.Commands.StartCommand.Initialize*"></a>
               <h4 id="WPILib_Commands_StartCommand_Initialize" data-uid="WPILib.Commands.StartCommand.Initialize">Initialize()</h4>
@@ -261,55 +246,6 @@ command when it is initialized and will finish immediately.</p>
               </div>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Initialize">Command.Initialize()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_StartCommand_Interrupted.md&amp;value=---%0Auid%3A%20WPILib.Commands.StartCommand.Interrupted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/StartCommand.cs/#L35">View Source</a>
-              </span>
-              <a id="WPILib_Commands_StartCommand_Interrupted_" data-uid="WPILib.Commands.StartCommand.Interrupted*"></a>
-              <h4 id="WPILib_Commands_StartCommand_Interrupted" data-uid="WPILib.Commands.StartCommand.Interrupted">Interrupted()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected override void Interrupted()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Command.Interrupted()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/WPILib-Docs/new/master/apispec/new?filename=WPILib_Commands_StartCommand_IsFinished.md&amp;value=---%0Auid%3A%20WPILib.Commands.StartCommand.IsFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/StartCommand.cs/#L28">View Source</a>
-              </span>
-              <a id="WPILib_Commands_StartCommand_IsFinished_" data-uid="WPILib.Commands.StartCommand.IsFinished*"></a>
-              <h4 id="WPILib_Commands_StartCommand_IsFinished" data-uid="WPILib.Commands.StartCommand.IsFinished">IsFinished()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected override bool IsFinished()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsFinished">Command.IsFinished()</a></div>
             </article>
           </div>
           
