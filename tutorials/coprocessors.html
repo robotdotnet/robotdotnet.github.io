@@ -8,7 +8,7 @@
     <title>OpenCV and Arm Coprocessors | RobotDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="OpenCV and Arm Coprocessors | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.0.0">
+    <meta name="generator" content="docfx 2.11.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -84,8 +84,30 @@ This has the advantages of being off the USB bus, so you don&#39;t have to worry
 </code></pre><p>You can follow the instructions <a href="http://www.richardmudhar.com/blog/2015/02/raspberry-pi-camera-and-motion-out-of-the-box-sparrowcam/">here</a> to see how to enable
 that setting on startup.</p>
 <h2 id="installing-mono">Installing Mono</h2>
-<p>On these coprocessors, Mono is what we will use to run our processing. To install </p>
-<h2 id="setting-up-a-build">Setting up a build</h2>
+<p>On these coprocessors, Mono is what we will use to run our processing. To install Mono on these plaforms, follow the instructions found on 
+<a href="http://www.mono-project.com/docs/getting-started/install/linux/">the mono website</a>. When choosing the package to install, make sure to install
+<code>mono-complete</code> in order to make sure you have all the necessary runtime dependencies.</p>
+<h2 id="setting-up-a-project">Setting up a project</h2>
+<p>A project for your coprocessor can either be set up using Visual Studio, or use can build locally on the coprocessor using Mono. We 
+recommend Visual Studio on Windows for the easiest support. See the note at the bottom of this page for information on using .NET Core.</p>
+<p>To set up a project in Visual Studio, create a new Console Application, and make sure that the target framework is set to at least 4.6. Once you
+have that, install the following packages from NuGet:</p>
+<ul>
+<li><a href="https://www.nuget.org/packages/FRC.CameraServer/">FRC.CameraServer</a></li>
+<li><a href="https://www.nuget.org/packages/FRC.NetworkTables/">FRC.NetworkTables</a></li>
+<li><a href="https://www.nuget.org/packages/FRC.OpenCvSharp/">FRC.OpenCvSharp</a></li>
+<li><a href="https://www.nuget.org/packages/FRC.OpenCvSharp.DesktopLibraries/">FRC.OpenCvSharp.DesktopLibraries</a></li>
+</ul>
+<p>This will get you all the dependencies you will need to set up a coprocessor project. </p>
+<h2 id="deploying-to-the-coprocessor">Deploying to the Coprocessor</h2>
+<p>Once you have your project created, you need to get the code onto the coprocessor. To do this, run a build. The output will be placed into either <code>bin/Release</code> or <code>bin/Debug</code>
+in your project folder. You need to copy all files from this directory to a folder on your coprocessor.</p>
+<p>Once you do this, from the terminal on the coprocessor, run <code>mono YourExecutableNameHere.exe</code>. This will run your vision project.</p>
+<h2 id="using-net-core">Using .NET Core</h2>
+<p>If your choses platform has .NET Core support, all of our libraries support .NET Core Standard 1.5 or above. So if you want to compile for
+.NET Core, you can. However note that no arm devices at the time of this writing have released .NET Core support, so our instructions are
+currently only for running on the full framework. You can however use the .NET Core SDK and target .NET 4.6 in order to run on mono, 
+but we do not currently have instructions for doing this.</p>
 
             </article>
           </div>
