@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class IndependentNetworkTable
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -235,7 +235,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_IsServer_" data-uid="NetworkTables.Independent.IndependentNetworkTable.IsServer*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_IsServer" data-uid="NetworkTables.Independent.IndependentNetworkTable.IsServer">IsServer</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets if the object is a server.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -269,7 +270,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddConnectionListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddConnectionListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddConnectionListener_NetworkTables_Tables_IRemoteConnectionListener_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddConnectionListener(NetworkTables.Tables.IRemoteConnectionListener,System.Boolean)">AddConnectionListener(IRemoteConnectionListener, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Register an object to listen for connection and disconnection events.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -288,12 +290,15 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.IRemoteConnectionListener.html">IRemoteConnectionListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to be registered</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">immediateNotify</span></td>
-                    <td></td>
+                    <td><p>True if the listener object should be notified of the current
+connection state immediately.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -308,7 +313,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddConnectionListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddConnectionListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddConnectionListener_System_Action_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_System_Boolean__System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddConnectionListener(System.Action{NetworkTables.Tables.IRemote,NetworkTables.ConnectionInfo,System.Boolean},System.Boolean)">AddConnectionListener(Action&lt;IRemote, ConnectionInfo, Boolean&gt;, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Register a delegate to listen for connection and disconnection events.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -327,17 +333,25 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549392(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a>, <a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to be registered.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">immediateNotify</span></td>
-                    <td></td>
+                    <td><p>True if the listener object should be notified of the current
+connection state immediately.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.IRemote.html#NetworkTables_Tables_IRemote_AddConnectionListener_System_Action_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_System_Boolean__System_Boolean_">IRemote.AddConnectionListener(Action&lt;IRemote, ConnectionInfo, Boolean&gt;, Boolean)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_AddConnectionListener_System_Action_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_System_Boolean__System_Boolean__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> of the action is the current table, the <a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a>
+is the info of the connected or disconnected target, and the bool is true if the event is
+a connect, otherwise false.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_NetworkTables_Tables_ITableListener_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener(NetworkTables.Tables.ITableListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -347,7 +361,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_NetworkTables_Tables_ITableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener(NetworkTables.Tables.ITableListener)">AddSubTableListener(ITableListener)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Adds a SubTable Listener with the default flags, and without local notify.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -366,7 +381,8 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The <a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a> to add.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -381,7 +397,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_NetworkTables_Tables_ITableListener_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener(NetworkTables.Tables.ITableListener,System.Boolean)">AddSubTableListener(ITableListener, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Adds a SubTable Listener.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -400,12 +417,15 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The <a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a> to add.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">localNotify</span></td>
-                    <td></td>
+                    <td><p>True if we want to notify local and remote listeners,
+otherwise just notify remote listeners.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -420,7 +440,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener(System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags})">AddSubTableListener(Action&lt;ITable, String, Value, NotifyFlags&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Adds a SubTable Listener with the default flags, and without local notify.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -439,7 +460,8 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to add.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -454,7 +476,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddSubTableListener_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddSubTableListener(System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags},System.Boolean)">AddSubTableListener(Action&lt;ITable, String, Value, NotifyFlags&gt;, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Adds a SubTable Listener.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -473,12 +496,15 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to add.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">localNotify</span></td>
-                    <td></td>
+                    <td><p>True if we want to notify local and remote listeners,
+otherwise just notify remote listeners.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -493,7 +519,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_NetworkTables_Tables_ITableListener_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener(NetworkTables.Tables.ITableListener,System.Boolean)">AddTableListener(ITableListener, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener to changes to the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -512,12 +539,14 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to add</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">immediateNotify</span></td>
-                    <td></td>
+                    <td><p>If true then this listener will be notified of all current entries (marked as new)</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -532,7 +561,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener(System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags},System.Boolean)">AddTableListener(Action&lt;ITable, String, Value, NotifyFlags&gt;, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener to changes to the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -551,12 +581,14 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to add.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">immediateNotify</span></td>
-                    <td></td>
+                    <td><p>If true then this listener will be notified of all current entries (marked as new)</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -571,7 +603,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_System_String_NetworkTables_Tables_ITableListener_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener(System.String,NetworkTables.Tables.ITableListener,System.Boolean)">AddTableListener(String, ITableListener, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener for changes to a specific key in the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -590,17 +623,20 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to listen for</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to add</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">immediateNotify</span></td>
-                    <td></td>
+                    <td><p>If true then this listener will be notified of all current entries (marked as new)</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -615,7 +651,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListener_System_String_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListener(System.String,System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags},System.Boolean)">AddTableListener(String, Action&lt;ITable, String, Value, NotifyFlags&gt;, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener for changes to a specific key in the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -634,17 +671,20 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to listen for</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to add.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">immediateNotify</span></td>
-                    <td></td>
+                    <td><p>If true then this listener will be notified of all current entries (marked as new)</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -659,7 +699,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_NetworkTables_Tables_ITableListener_NetworkTables_NotifyFlags_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx(NetworkTables.Tables.ITableListener,NetworkTables.NotifyFlags)">AddTableListenerEx(ITableListener, NotifyFlags)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener to changes to the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -678,12 +719,14 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to add</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
                     <td><span class="parametername">flags</span></td>
-                    <td></td>
+                    <td><p>The <a class="xref" href="NetworkTables.EntryFlags.html">EntryFlags</a> flags to use for the listener</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -698,7 +741,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__NetworkTables_NotifyFlags_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx(System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags},NetworkTables.NotifyFlags)">AddTableListenerEx(Action&lt;ITable, String, Value, NotifyFlags&gt;, NotifyFlags)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener to changes to the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -717,12 +761,14 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to add.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
                     <td><span class="parametername">flags</span></td>
-                    <td></td>
+                    <td><p>The <a class="xref" href="NetworkTables.EntryFlags.html">EntryFlags</a> flags to use for the listener</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -737,7 +783,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_System_String_NetworkTables_Tables_ITableListener_NetworkTables_NotifyFlags_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx(System.String,NetworkTables.Tables.ITableListener,NetworkTables.NotifyFlags)">AddTableListenerEx(String, ITableListener, NotifyFlags)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener for changes to a specific key in the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -756,17 +803,20 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to listen for</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to add</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
                     <td><span class="parametername">flags</span></td>
-                    <td></td>
+                    <td><p>The <a class="xref" href="NetworkTables.EntryFlags.html">EntryFlags</a> flags to use for the listener</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -781,7 +831,8 @@ not supported by NetworkTables.Core.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_AddTableListenerEx_System_String_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__NetworkTables_NotifyFlags_" data-uid="NetworkTables.Independent.IndependentNetworkTable.AddTableListenerEx(System.String,System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags},NetworkTables.NotifyFlags)">AddTableListenerEx(String, Action&lt;ITable, String, Value, NotifyFlags&gt;, NotifyFlags)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Add a listener for changes to a specific key in the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -800,17 +851,20 @@ not supported by NetworkTables.Core.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to listen for</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to add.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
                     <td><span class="parametername">flags</span></td>
-                    <td></td>
+                    <td><p>The <a class="xref" href="NetworkTables.EntryFlags.html">EntryFlags</a> flags to use for the listener</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1063,7 +1117,8 @@ This is primarily useful for synchronizing network updates with user code.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetBoolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBoolean*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetBoolean_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBoolean(System.String)">GetBoolean(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1083,7 +1138,8 @@ public bool GetBoolean(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1098,12 +1154,36 @@ public bool GetBoolean(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>The requested value.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetBoolean_System_String_">ITable.GetBoolean(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetBoolean_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetBoolean(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1113,7 +1193,8 @@ public bool GetBoolean(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetBoolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBoolean*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetBoolean_System_String_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBoolean(System.String,System.Boolean)">GetBoolean(String, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1132,12 +1213,14 @@ public bool GetBoolean(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1152,7 +1235,8 @@ public bool GetBoolean(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>The value requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1167,7 +1251,8 @@ public bool GetBoolean(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetBooleanArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBooleanArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetBooleanArray_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBooleanArray(System.String)">GetBooleanArray(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1187,7 +1272,8 @@ public bool[] GetBooleanArray(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1202,12 +1288,36 @@ public bool[] GetBooleanArray(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>[]</td>
-                    <td></td>
+                    <td><p>The requested value array.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetBooleanArray_System_String_">ITable.GetBooleanArray(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetBooleanArray_System_String_System_Boolean___.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetBooleanArray(System.String%2CSystem.Boolean%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1217,7 +1327,8 @@ public bool[] GetBooleanArray(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetBooleanArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBooleanArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetBooleanArray_System_String_System_Boolean___" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetBooleanArray(System.String,System.Boolean[])">GetBooleanArray(String, Boolean[])</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1236,12 +1347,14 @@ public bool[] GetBooleanArray(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>[]</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1256,7 +1369,8 @@ public bool[] GetBooleanArray(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>[]</td>
-                    <td></td>
+                    <td><p>The value array requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1409,7 +1523,8 @@ public bool[] GetBooleanArray(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetNumber_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumber*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetNumber_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumber(System.String)">GetNumber(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1429,7 +1544,8 @@ public double GetNumber(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1444,12 +1560,36 @@ public double GetNumber(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The requested value.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetNumber_System_String_">ITable.GetNumber(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetNumber_System_String_System_Double_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetNumber(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1459,7 +1599,8 @@ public double GetNumber(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetNumber_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumber*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetNumber_System_String_System_Double_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumber(System.String,System.Double)">GetNumber(String, Double)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1478,12 +1619,14 @@ public double GetNumber(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1498,7 +1641,8 @@ public double GetNumber(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The value requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1513,7 +1657,8 @@ public double GetNumber(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetNumberArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumberArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetNumberArray_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumberArray(System.String)">GetNumberArray(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1533,7 +1678,8 @@ public double[] GetNumberArray(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1548,12 +1694,36 @@ public double[] GetNumberArray(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
-                    <td></td>
+                    <td><p>The requested value array.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetNumberArray_System_String_">ITable.GetNumberArray(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetNumberArray_System_String_System_Double___.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetNumberArray(System.String%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1563,7 +1733,8 @@ public double[] GetNumberArray(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetNumberArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumberArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetNumberArray_System_String_System_Double___" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetNumberArray(System.String,System.Double[])">GetNumberArray(String, Double[])</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1582,12 +1753,14 @@ public double[] GetNumberArray(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1602,7 +1775,8 @@ public double[] GetNumberArray(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
-                    <td></td>
+                    <td><p>The value array requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1617,7 +1791,8 @@ public double[] GetNumberArray(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetRaw_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetRaw*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetRaw_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetRaw(System.String)">GetRaw(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1637,7 +1812,8 @@ public byte[] GetRaw(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1652,12 +1828,36 @@ public byte[] GetRaw(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
-                    <td></td>
+                    <td><p>The requested value array.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetRaw_System_String_">ITable.GetRaw(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetRaw_System_String_System_Byte___.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetRaw(System.String%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1667,7 +1867,8 @@ public byte[] GetRaw(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetRaw_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetRaw*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetRaw_System_String_System_Byte___" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetRaw(System.String,System.Byte[])">GetRaw(String, Byte[])</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1686,12 +1887,14 @@ public byte[] GetRaw(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1706,7 +1909,8 @@ public byte[] GetRaw(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
-                    <td></td>
+                    <td><p>The value array requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1721,7 +1925,8 @@ public byte[] GetRaw(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetString_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetString*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetString_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetString(System.String)">GetString(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1741,7 +1946,8 @@ public string GetString(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1756,12 +1962,36 @@ public string GetString(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The requested value.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetString_System_String_">ITable.GetString(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetString_System_String_System_String_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1771,7 +2001,8 @@ public string GetString(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetString_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetString*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetString_System_String_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetString(System.String,System.String)">GetString(String, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1790,12 +2021,14 @@ public string GetString(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1810,7 +2043,8 @@ public string GetString(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The value requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1825,7 +2059,8 @@ public string GetString(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetStringArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetStringArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetStringArray_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetStringArray(System.String)">GetStringArray(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1845,7 +2080,8 @@ public string[] GetStringArray(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1860,12 +2096,36 @@ public string[] GetStringArray(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>[]</td>
-                    <td></td>
+                    <td><p>The requested value array.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetStringArray_System_String_">ITable.GetStringArray(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetStringArray_System_String_System_String___.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetStringArray(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1875,7 +2135,8 @@ public string[] GetStringArray(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetStringArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetStringArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetStringArray_System_String_System_String___" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetStringArray(System.String,System.String[])">GetStringArray(String, String[])</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value array that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1894,12 +2155,14 @@ public string[] GetStringArray(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>[]</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1914,7 +2177,8 @@ public string[] GetStringArray(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>[]</td>
-                    <td></td>
+                    <td><p>The value array requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2016,7 +2280,8 @@ table at the specified key, it will create a new table.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetValue_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetValue*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetValue_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetValue(System.String)">GetValue(String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2036,7 +2301,8 @@ public Value GetValue(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2051,12 +2317,36 @@ public Value GetValue(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
-                    <td></td>
+                    <td><p>The requested value.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetValue_System_String_">ITable.GetValue(String)</a></div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyNotDefinedException.html">TableKeyNotDefinedException</a></td>
+                    <td><p>Thrown if the key does not 
+exist in the table, or if the key is null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="NetworkTables.Exceptions.TableKeyDifferentTypeException.html">TableKeyDifferentTypeException</a></td>
+                    <td><p>Thrown if the key exists
+as a different type in the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_GetValue_System_String_NetworkTables_Value_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.GetValue(System.String%2CNetworkTables.Value)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2066,7 +2356,8 @@ public Value GetValue(string key)</code></pre>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_GetValue_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetValue*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_GetValue_System_String_NetworkTables_Value_" data-uid="NetworkTables.Independent.IndependentNetworkTable.GetValue(System.String,NetworkTables.Value)">GetValue(String, Value)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the value that the key maps to.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2085,12 +2376,14 @@ public Value GetValue(string key)</code></pre>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key name.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The default value if the key does not exist or is null</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2105,7 +2398,8 @@ public Value GetValue(string key)</code></pre>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
-                    <td></td>
+                    <td><p>The value requested, or defaultValue if the key does not exist or is null.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2239,7 +2533,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutBoolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutBoolean*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutBoolean_System_String_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutBoolean(System.String,System.Boolean)">PutBoolean(String, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified value in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2258,12 +2553,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2278,12 +2575,17 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutBoolean_System_String_System_Boolean_">ITable.PutBoolean(String, Boolean)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutBoolean_System_String_System_Boolean__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_PutBooleanArray_System_String_System_Collections_Generic_IList_System_Boolean__.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.PutBooleanArray(System.String%2CSystem.Collections.Generic.IList%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2293,7 +2595,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutBooleanArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutBooleanArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutBooleanArray_System_String_System_Collections_Generic_IList_System_Boolean__" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutBooleanArray(System.String,System.Collections.Generic.IList{System.Boolean})">PutBooleanArray(String, IList&lt;Boolean&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified array of values in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2312,12 +2615,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2332,12 +2637,17 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutBooleanArray_System_String_System_Collections_Generic_IList_System_Boolean__">ITable.PutBooleanArray(String, IList&lt;Boolean&gt;)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutBooleanArray_System_String_System_Collections_Generic_IList_System_Boolean___remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_PutNumber_System_String_System_Double_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.PutNumber(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2347,7 +2657,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutNumber_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutNumber*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutNumber_System_String_System_Double_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutNumber(System.String,System.Double)">PutNumber(String, Double)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified value in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2366,12 +2677,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2386,12 +2699,17 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutNumber_System_String_System_Double_">ITable.PutNumber(String, Double)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutNumber_System_String_System_Double__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_PutNumberArray_System_String_System_Collections_Generic_IList_System_Double__.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.PutNumberArray(System.String%2CSystem.Collections.Generic.IList%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2401,7 +2719,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutNumberArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutNumberArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutNumberArray_System_String_System_Collections_Generic_IList_System_Double__" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutNumberArray(System.String,System.Collections.Generic.IList{System.Double})">PutNumberArray(String, IList&lt;Double&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified array of values in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2420,12 +2739,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>&gt;</td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2440,12 +2761,17 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutNumberArray_System_String_System_Collections_Generic_IList_System_Double__">ITable.PutNumberArray(String, IList&lt;Double&gt;)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutNumberArray_System_String_System_Collections_Generic_IList_System_Double___remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_PutRaw_System_String_System_Collections_Generic_IList_System_Byte__.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.PutRaw(System.String%2CSystem.Collections.Generic.IList%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2455,7 +2781,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutRaw_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutRaw*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutRaw_System_String_System_Collections_Generic_IList_System_Byte__" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutRaw(System.String,System.Collections.Generic.IList{System.Byte})">PutRaw(String, IList&lt;Byte&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Put a raw value (byte array) in the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2474,12 +2801,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to be assigned to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>&gt;</td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value that will be assigned.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2494,7 +2823,8 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the table key already exists with a different type.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2509,7 +2839,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutString_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutString*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutString_System_String_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutString(System.String,System.String)">PutString(String, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified value in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2528,12 +2859,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2548,12 +2881,17 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutString_System_String_System_String_">ITable.PutString(String, String)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutString_System_String_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_PutStringArray_System_String_System_Collections_Generic_IList_System_String__.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.PutStringArray(System.String%2CSystem.Collections.Generic.IList%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2563,7 +2901,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutStringArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutStringArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutStringArray_System_String_System_Collections_Generic_IList_System_String__" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutStringArray(System.String,System.Collections.Generic.IList{System.String})">PutStringArray(String, IList&lt;String&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified array of values in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2582,12 +2921,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2602,12 +2943,17 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutStringArray_System_String_System_Collections_Generic_IList_System_String__">ITable.PutStringArray(String, IList&lt;String&gt;)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutStringArray_System_String_System_Collections_Generic_IList_System_String___remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_PutValue_System_String_NetworkTables_Value_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.PutValue(System.String%2CNetworkTables.Value)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2617,7 +2963,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_PutValue_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutValue*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_PutValue_System_String_NetworkTables_Value_" data-uid="NetworkTables.Independent.IndependentNetworkTable.PutValue(System.String,NetworkTables.Value)">PutValue(String, Value)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Maps the specified key to the specified value in the table. </p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2636,12 +2983,14 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to map the value to.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The value to set.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2656,12 +3005,34 @@ loading the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the key was set properly, otherwise false</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutValue_System_String_NetworkTables_Value_">ITable.PutValue(String, Value)</a></div>
+              <h5 id="NetworkTables_Independent_IndependentNetworkTable_PutValue_System_String_NetworkTables_Value__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The key cannot be null. The value can be retreived by calling the Get method with
+the key used to Put the number in.</p>
+</div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentexception(v=vs.110).aspx">ArgumentException</a></td>
+                    <td><p>Thrown if the value is not a type supported
+by the table.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Independent_IndependentNetworkTable_RemoveConnectionListener_NetworkTables_Tables_IRemoteConnectionListener_.md&amp;value=---%0Auid%3A%20NetworkTables.Independent.IndependentNetworkTable.RemoveConnectionListener(NetworkTables.Tables.IRemoteConnectionListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2671,7 +3042,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_RemoveConnectionListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveConnectionListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_RemoveConnectionListener_NetworkTables_Tables_IRemoteConnectionListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveConnectionListener(NetworkTables.Tables.IRemoteConnectionListener)">RemoveConnectionListener(IRemoteConnectionListener)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Unregister a listener from connection events.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2690,7 +3062,8 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.IRemoteConnectionListener.html">IRemoteConnectionListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to be unregistered.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2705,7 +3078,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_RemoveConnectionListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveConnectionListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_RemoveConnectionListener_System_Action_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_System_Boolean__" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveConnectionListener(System.Action{NetworkTables.Tables.IRemote,NetworkTables.ConnectionInfo,System.Boolean})">RemoveConnectionListener(Action&lt;IRemote, ConnectionInfo, Boolean&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Unregister a listener delegate from connection events.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2724,7 +3098,8 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549392(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a>, <a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to be unregistered.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2739,7 +3114,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_RemoveTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_RemoveTableListener_NetworkTables_Tables_ITableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveTableListener(NetworkTables.Tables.ITableListener)">RemoveTableListener(ITableListener)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Remove a listener from receiving table events.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2758,7 +3134,8 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITableListener.html">ITableListener</a></td>
                     <td><span class="parametername">listener</span></td>
-                    <td></td>
+                    <td><p>The listener to be removed.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2773,7 +3150,8 @@ loading the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_RemoveTableListener_" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveTableListener*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_RemoveTableListener_System_Action_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags__" data-uid="NetworkTables.Independent.IndependentNetworkTable.RemoveTableListener(System.Action{NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags})">RemoveTableListener(Action&lt;ITable, String, Value, NotifyFlags&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Remove a listener from receiving table events.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2792,7 +3170,8 @@ loading the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="NetworkTables.Value.html">Value</a>, <a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a>&gt;</td>
                     <td><span class="parametername">listenerDelegate</span></td>
-                    <td></td>
+                    <td><p>The Table Listener Delegate to remove.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2858,7 +3237,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultBoolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultBoolean*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultBoolean_System_String_System_Boolean_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultBoolean(System.String,System.Boolean)">SetDefaultBoolean(String, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2877,12 +3257,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2897,7 +3279,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2912,7 +3295,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultBooleanArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultBooleanArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultBooleanArray_System_String_System_Collections_Generic_IList_System_Boolean__" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultBooleanArray(System.String,System.Collections.Generic.IList{System.Boolean})">SetDefaultBooleanArray(String, IList&lt;Boolean&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2931,12 +3315,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2951,7 +3337,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -2966,7 +3353,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultNumber_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultNumber*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultNumber_System_String_System_Double_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultNumber(System.String,System.Double)">SetDefaultNumber(String, Double)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2985,12 +3373,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3005,7 +3395,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3020,7 +3411,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultNumberArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultNumberArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultNumberArray_System_String_System_Collections_Generic_IList_System_Double__" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultNumberArray(System.String,System.Collections.Generic.IList{System.Double})">SetDefaultNumberArray(String, IList&lt;Double&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -3039,12 +3431,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>&gt;</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3059,7 +3453,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3074,7 +3469,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultRaw_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultRaw*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultRaw_System_String_System_Collections_Generic_IList_System_Byte__" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultRaw(System.String,System.Collections.Generic.IList{System.Byte})">SetDefaultRaw(String, IList&lt;Byte&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -3093,12 +3489,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>&gt;</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3113,7 +3511,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3128,7 +3527,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultString_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultString*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultString_System_String_System_String_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultString(System.String,System.String)">SetDefaultString(String, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -3147,12 +3547,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3167,7 +3569,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3182,7 +3585,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultStringArray_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultStringArray*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultStringArray_System_String_System_Collections_Generic_IList_System_String__" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultStringArray(System.String,System.Collections.Generic.IList{System.String})">SetDefaultStringArray(String, IList&lt;String&gt;)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -3201,12 +3605,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3221,7 +3627,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3236,7 +3643,8 @@ saving the file.</p>
               </span>
               <a id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultValue_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultValue*"></a>
               <h4 id="NetworkTables_Independent_IndependentNetworkTable_SetDefaultValue_System_String_NetworkTables_Value_" data-uid="NetworkTables.Independent.IndependentNetworkTable.SetDefaultValue(System.String,NetworkTables.Value)">SetDefaultValue(String, Value)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the value in the table at the specified key if it does not exist.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -3255,12 +3663,14 @@ saving the file.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td></td>
+                    <td><p>The key to set</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
                     <td><span class="parametername">defaultValue</span></td>
-                    <td></td>
+                    <td><p>The value to set if the key does not exits</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -3275,7 +3685,8 @@ saving the file.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>False if the key exists with a different type, otherwise true</p>
+</td>
                   </tr>
                 </tbody>
               </table>

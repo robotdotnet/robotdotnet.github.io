@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ActionCommand
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -266,7 +266,8 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </span>
               <a id="WPILib_Extras_ActionCommand_End_" data-uid="WPILib.Extras.ActionCommand.End*"></a>
               <h4 id="WPILib_Extras_ActionCommand_End" data-uid="WPILib.Extras.ActionCommand.End">End()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Called when the command ended peacefully</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -274,6 +275,10 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </div>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">Command.End()</a></div>
+              <h5 id="WPILib_Extras_ActionCommand_End_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is where you may want to wrap up loose ends,
+like shutting off a motor that was being used in the command.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_ActionCommand_Execute.md&amp;value=---%0Auid%3A%20WPILib.Extras.ActionCommand.Execute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -283,7 +288,9 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </span>
               <a id="WPILib_Extras_ActionCommand_Execute_" data-uid="WPILib.Extras.ActionCommand.Execute*"></a>
               <h4 id="WPILib_Extras_ActionCommand_Execute" data-uid="WPILib.Extras.ActionCommand.Execute">Execute()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>The execute method is called repeatedly until this <a class="xref" href="WPILib.Commands.Command.html">Command</a>
+either finishes or is canceled.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -300,7 +307,9 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </span>
               <a id="WPILib_Extras_ActionCommand_Initialize_" data-uid="WPILib.Extras.ActionCommand.Initialize*"></a>
               <h4 id="WPILib_Extras_ActionCommand_Initialize" data-uid="WPILib.Extras.ActionCommand.Initialize">Initialize()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>The initialize method is called the first time this Command is run after
+being started.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -317,7 +326,9 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </span>
               <a id="WPILib_Extras_ActionCommand_Interrupted_" data-uid="WPILib.Extras.ActionCommand.Interrupted*"></a>
               <h4 id="WPILib_Extras_ActionCommand_Interrupted" data-uid="WPILib.Extras.ActionCommand.Interrupted">Interrupted()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Called when the command ends because somebody called <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Cancel">Cancel()</a> or another command
+shared the same requirements as this one, and booted it out.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -325,6 +336,12 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </div>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Command.Interrupted()</a></div>
+              <h5 id="WPILib_Extras_ActionCommand_Interrupted_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is where you may want to wrap up loose ends,
+like shutting off a motor that was being used in the command.
+Generally, it is useful to call the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> method
+within this method.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_ActionCommand_IsFinished.md&amp;value=---%0Auid%3A%20WPILib.Extras.ActionCommand.IsFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -334,7 +351,8 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
               </span>
               <a id="WPILib_Extras_ActionCommand_IsFinished_" data-uid="WPILib.Extras.ActionCommand.IsFinished*"></a>
               <h4 id="WPILib_Extras_ActionCommand_IsFinished" data-uid="WPILib.Extras.ActionCommand.IsFinished">IsFinished()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns whether this command is finished.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -351,12 +369,23 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>Whether this command is finished</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsFinished">Command.IsFinished()</a></div>
+              <h5 id="WPILib_Extras_ActionCommand_IsFinished_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If it is, then the command will be removed and
+<a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> will be called.
+<p>It may be useful for a team to reference the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a>
+method for time-sensitive commands.</p>
+</div>
+              <h5 id="WPILib_Extras_ActionCommand_IsFinished_seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut</a>()</div>
+              </div>
                         </article>
           </div>
           

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Encoder
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -713,7 +713,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_MaxPeriod_" data-uid="WPILib.Encoder.MaxPeriod*"></a>
               <h4 id="WPILib_Encoder_MaxPeriod" data-uid="WPILib.Encoder.MaxPeriod">MaxPeriod</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the maximum period for stopped detection, in seconds.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -736,6 +737,12 @@ in gearing reductions following the encoder shaft.</p>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_MaxPeriod">ICounterBase.MaxPeriod</a></div>
+              <h5 id="WPILib_Encoder_MaxPeriod_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Sets the value that represents the maximum period of the Encoder before 
+it will assume that the attached device is stopped. This timeout allows users to 
+determine if the wheels or of ther shaft has stopped rotating. This method 
+compensates for the decoding type.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Encoder_MinRate.md&amp;value=---%0Auid%3A%20WPILib.Encoder.MinRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -776,7 +783,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_PIDSourceType_" data-uid="WPILib.Encoder.PIDSourceType*"></a>
               <h4 id="WPILib_Encoder_PIDSourceType" data-uid="WPILib.Encoder.PIDSourceType">PIDSourceType</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets or sets the Source type for this <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a>.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -839,7 +847,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_SmartDashboardType_" data-uid="WPILib.Encoder.SmartDashboardType*"></a>
               <h4 id="WPILib_Encoder_SmartDashboardType" data-uid="WPILib.Encoder.SmartDashboardType">SmartDashboardType</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -871,7 +880,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_Table_" data-uid="WPILib.Encoder.Table*"></a>
               <h4 id="WPILib_Encoder_Table" data-uid="WPILib.Encoder.Table">Table</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -922,7 +932,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_Get_" data-uid="WPILib.Encoder.Get*"></a>
               <h4 id="WPILib_Encoder_Get" data-uid="WPILib.Encoder.Get">Get()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets the current count from the encoder.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -939,12 +950,16 @@ in gearing reductions following the encoder shaft.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
+                    <td><p>The current count from the encoder.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_Get">ICounterBase.Get()</a></div>
+              <h5 id="WPILib_Encoder_Get_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The value is scaled by the scale factor to compensate for the decoding type.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Encoder_GetDirection.md&amp;value=---%0Auid%3A%20WPILib.Encoder.GetDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -954,7 +969,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_GetDirection_" data-uid="WPILib.Encoder.GetDirection*"></a>
               <h4 id="WPILib_Encoder_GetDirection" data-uid="WPILib.Encoder.GetDirection">GetDirection()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>The last direction the encoder value changed.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -971,7 +987,8 @@ in gearing reductions following the encoder shaft.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if forward, otherwise false.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1018,7 +1035,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_GetPeriod_" data-uid="WPILib.Encoder.GetPeriod*"></a>
               <h4 id="WPILib_Encoder_GetPeriod" data-uid="WPILib.Encoder.GetPeriod">GetPeriod()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the period of the most recent pulse in seconds.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1035,12 +1053,16 @@ in gearing reductions following the encoder shaft.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>Period in seconds of the most recent pulse.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_GetPeriod">ICounterBase.GetPeriod()</a></div>
+              <h5 id="WPILib_Encoder_GetPeriod_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This method compensates for the decoding type.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Encoder_GetRate.md&amp;value=---%0Auid%3A%20WPILib.Encoder.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1117,7 +1139,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_GetStopped_" data-uid="WPILib.Encoder.GetStopped*"></a>
               <h4 id="WPILib_Encoder_GetStopped" data-uid="WPILib.Encoder.GetStopped">GetStopped()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets if the encoder is stopped.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1134,12 +1157,16 @@ in gearing reductions following the encoder shaft.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the encoder is stopped, otherwise false.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_GetStopped">ICounterBase.GetStopped()</a></div>
+              <h5 id="WPILib_Encoder_GetStopped_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Using the <a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_MaxPeriod">MaxPeriod</a> value, returns true if the most recent pulse width exceeded the Max Period.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Encoder_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Encoder.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1149,7 +1176,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_InitTable_" data-uid="WPILib.Encoder.InitTable*"></a>
               <h4 id="WPILib_Encoder_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Encoder.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1168,7 +1196,8 @@ in gearing reductions following the encoder shaft.</p>
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
                     <td><span class="parametername">subtable</span></td>
-                    <td></td>
+                    <td><p>The table to put the values in.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1183,7 +1212,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_PidGet_" data-uid="WPILib.Encoder.PidGet*"></a>
               <h4 id="WPILib_Encoder_PidGet" data-uid="WPILib.Encoder.PidGet">PidGet()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Get the result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1200,7 +1230,8 @@ in gearing reductions following the encoder shaft.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1215,7 +1246,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_Reset_" data-uid="WPILib.Encoder.Reset*"></a>
               <h4 id="WPILib_Encoder_Reset" data-uid="WPILib.Encoder.Reset">Reset()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Resets the encoder count to 0.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1346,7 +1378,9 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_StartLiveWindowMode_" data-uid="WPILib.Encoder.StartLiveWindowMode*"></a>
               <h4 id="WPILib_Encoder_StartLiveWindowMode" data-uid="WPILib.Encoder.StartLiveWindowMode">StartLiveWindowMode()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
+value changes reflect the value on the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1363,7 +1397,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_StopLiveWindowMode_" data-uid="WPILib.Encoder.StopLiveWindowMode*"></a>
               <h4 id="WPILib_Encoder_StopLiveWindowMode" data-uid="WPILib.Encoder.StopLiveWindowMode">StopLiveWindowMode()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1380,7 +1415,9 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Encoder_UpdateTable_" data-uid="WPILib.Encoder.UpdateTable*"></a>
               <h4 id="WPILib_Encoder_UpdateTable" data-uid="WPILib.Encoder.UpdateTable">UpdateTable()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
+values.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AnalogGyro
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -412,7 +412,8 @@ determine the heading.</p>
               </span>
               <a id="WPILib_AnalogGyro_Calibrate_" data-uid="WPILib.AnalogGyro.Calibrate*"></a>
               <h4 id="WPILib_AnalogGyro_Calibrate" data-uid="WPILib.AnalogGyro.Calibrate">Calibrate()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initialize the gyro.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -420,6 +421,14 @@ determine the heading.</p>
               </div>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_Calibrate">GyroBase.Calibrate()</a></div>
+              <h5 id="WPILib_AnalogGyro_Calibrate_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Calibrate the gyro by running for a number of samples and
+computing the center value. Then use the center value as the
+Accumulator center value for subsequent measurements. It&#39;s important to
+make sure that the robot is not moving while the centering calulations are
+in progress, this is typically done when the robot is first turned on while
+it&#39;s sitting at rest before the competition starts.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogGyro_Dispose.md&amp;value=---%0Auid%3A%20WPILib.AnalogGyro.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -446,7 +455,8 @@ determine the heading.</p>
               </span>
               <a id="WPILib_AnalogGyro_GetAngle_" data-uid="WPILib.AnalogGyro.GetAngle*"></a>
               <h4 id="WPILib_AnalogGyro_GetAngle" data-uid="WPILib.AnalogGyro.GetAngle">GetAngle()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Return the actual angle in degrees that the robot is currently facing.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -463,12 +473,21 @@ determine the heading.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The current heading of the robot in degrees. This heading is
+based on integration of the returned rate of the gyro.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_GetAngle">GyroBase.GetAngle()</a></div>
+              <h5 id="WPILib_AnalogGyro_GetAngle_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The angle is based on the current accumulator value corrected by the
+oversampling rate, the gyro type and the A/D calibration values. The angle
+is continouus, that is it will continue from 360 to 361 degrees. This
+allows algorithms that wouldn&#39;t want to see a discontinuity in the gyro
+output as it sweeps past from 360 to 0 on the second time around.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogGyro_GetRate.md&amp;value=---%0Auid%3A%20WPILib.AnalogGyro.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -478,7 +497,8 @@ determine the heading.</p>
               </span>
               <a id="WPILib_AnalogGyro_GetRate_" data-uid="WPILib.AnalogGyro.GetRate*"></a>
               <h4 id="WPILib_AnalogGyro_GetRate" data-uid="WPILib.AnalogGyro.GetRate">GetRate()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the rate of rotation of the gyro.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -495,12 +515,16 @@ determine the heading.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The current rate in degrees per second.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_GetRate">GyroBase.GetRate()</a></div>
+              <h5 id="WPILib_AnalogGyro_GetRate_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The rate is based on the most recent reading of the gyro analog value.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogGyro_InitGyro.md&amp;value=---%0Auid%3A%20WPILib.AnalogGyro.InitGyro%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -526,7 +550,8 @@ determine the heading.</p>
               </span>
               <a id="WPILib_AnalogGyro_Reset_" data-uid="WPILib.AnalogGyro.Reset*"></a>
               <h4 id="WPILib_AnalogGyro_Reset" data-uid="WPILib.AnalogGyro.Reset">Reset()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Reset the gyro.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -534,6 +559,10 @@ determine the heading.</p>
               </div>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.GyroBase.html#WPILib_GyroBase_Reset">GyroBase.Reset()</a></div>
+              <h5 id="WPILib_AnalogGyro_Reset_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Resets the gyro to a heading of zero. This can be used if there is significant
+drift in the gyro and it needs to be recalibrated after it has been running.</p>
+</div>
                         </article>
           </div>
           

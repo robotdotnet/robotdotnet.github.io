@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Counter
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -450,7 +450,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Counter_MaxPeriod_" data-uid="WPILib.Counter.MaxPeriod*"></a>
               <h4 id="WPILib_Counter_MaxPeriod" data-uid="WPILib.Counter.MaxPeriod">MaxPeriod</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Sets the maximum period for stopped detection, in seconds.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -473,6 +474,12 @@ in gearing reductions following the encoder shaft.</p>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_MaxPeriod">ICounterBase.MaxPeriod</a></div>
+              <h5 id="WPILib_Counter_MaxPeriod_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Sets the value that represents the maximum period of the Encoder before 
+it will assume that the attached device is stopped. This timeout allows users to 
+determine if the wheels or of ther shaft has stopped rotating. This method 
+compensates for the decoding type.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_PIDSourceType.md&amp;value=---%0Auid%3A%20WPILib.Counter.PIDSourceType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -482,7 +489,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Counter_PIDSourceType_" data-uid="WPILib.Counter.PIDSourceType*"></a>
               <h4 id="WPILib_Counter_PIDSourceType" data-uid="WPILib.Counter.PIDSourceType">PIDSourceType</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets or sets the Source type for this <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a>.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -545,7 +553,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Counter_SmartDashboardType_" data-uid="WPILib.Counter.SmartDashboardType*"></a>
               <h4 id="WPILib_Counter_SmartDashboardType" data-uid="WPILib.Counter.SmartDashboardType">SmartDashboardType</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -577,7 +586,8 @@ in gearing reductions following the encoder shaft.</p>
               </span>
               <a id="WPILib_Counter_Table_" data-uid="WPILib.Counter.Table*"></a>
               <h4 id="WPILib_Counter_Table" data-uid="WPILib.Counter.Table">Table</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -703,7 +713,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_Get_" data-uid="WPILib.Counter.Get*"></a>
               <h4 id="WPILib_Counter_Get" data-uid="WPILib.Counter.Get">Get()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets the current count from the encoder.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -720,12 +731,16 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
+                    <td><p>The current count from the encoder.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_Get">ICounterBase.Get()</a></div>
+              <h5 id="WPILib_Counter_Get_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The value is scaled by the scale factor to compensate for the decoding type.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_GetDirection.md&amp;value=---%0Auid%3A%20WPILib.Counter.GetDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -735,7 +750,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_GetDirection_" data-uid="WPILib.Counter.GetDirection*"></a>
               <h4 id="WPILib_Counter_GetDirection" data-uid="WPILib.Counter.GetDirection">GetDirection()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>The last direction the encoder value changed.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -752,7 +768,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if forward, otherwise false.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -799,7 +816,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_GetPeriod_" data-uid="WPILib.Counter.GetPeriod*"></a>
               <h4 id="WPILib_Counter_GetPeriod" data-uid="WPILib.Counter.GetPeriod">GetPeriod()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the period of the most recent pulse in seconds.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -816,12 +834,16 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>Period in seconds of the most recent pulse.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_GetPeriod">ICounterBase.GetPeriod()</a></div>
+              <h5 id="WPILib_Counter_GetPeriod_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This method compensates for the decoding type.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_GetRate.md&amp;value=---%0Auid%3A%20WPILib.Counter.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -863,7 +885,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_GetStopped_" data-uid="WPILib.Counter.GetStopped*"></a>
               <h4 id="WPILib_Counter_GetStopped" data-uid="WPILib.Counter.GetStopped">GetStopped()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets if the encoder is stopped.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -880,12 +903,16 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>True if the encoder is stopped, otherwise false.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_GetStopped">ICounterBase.GetStopped()</a></div>
+              <h5 id="WPILib_Counter_GetStopped_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Using the <a class="xref" href="WPILib.Interfaces.ICounterBase.html#WPILib_Interfaces_ICounterBase_MaxPeriod">MaxPeriod</a> value, returns true if the most recent pulse width exceeded the Max Period.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Counter.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -895,7 +922,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_InitTable_" data-uid="WPILib.Counter.InitTable*"></a>
               <h4 id="WPILib_Counter_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Counter.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -914,7 +942,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
                     <td><span class="parametername">subtable</span></td>
-                    <td></td>
+                    <td><p>The table to put the values in.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -929,7 +958,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_PidGet_" data-uid="WPILib.Counter.PidGet*"></a>
               <h4 id="WPILib_Counter_PidGet" data-uid="WPILib.Counter.PidGet">PidGet()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Get the result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -946,7 +976,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -961,7 +992,8 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
               </span>
               <a id="WPILib_Counter_Reset_" data-uid="WPILib.Counter.Reset*"></a>
               <h4 id="WPILib_Counter_Reset" data-uid="WPILib.Counter.Reset">Reset()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Resets the encoder count to 0.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1421,7 +1453,9 @@ The down counter input represents the direction to count.</p>
               </span>
               <a id="WPILib_Counter_StartLiveWindowMode_" data-uid="WPILib.Counter.StartLiveWindowMode*"></a>
               <h4 id="WPILib_Counter_StartLiveWindowMode" data-uid="WPILib.Counter.StartLiveWindowMode">StartLiveWindowMode()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
+value changes reflect the value on the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1438,7 +1472,8 @@ The down counter input represents the direction to count.</p>
               </span>
               <a id="WPILib_Counter_StopLiveWindowMode_" data-uid="WPILib.Counter.StopLiveWindowMode*"></a>
               <h4 id="WPILib_Counter_StopLiveWindowMode" data-uid="WPILib.Counter.StopLiveWindowMode">StopLiveWindowMode()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1455,7 +1490,9 @@ The down counter input represents the direction to count.</p>
               </span>
               <a id="WPILib_Counter_UpdateTable_" data-uid="WPILib.Counter.UpdateTable*"></a>
               <h4 id="WPILib_Counter_UpdateTable" data-uid="WPILib.Counter.UpdateTable">UpdateTable()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
+values.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">

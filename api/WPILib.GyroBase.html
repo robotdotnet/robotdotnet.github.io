@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GyroBase
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -223,7 +223,8 @@
               </span>
               <a id="WPILib_GyroBase_SmartDashboardType_" data-uid="WPILib.GyroBase.SmartDashboardType*"></a>
               <h4 id="WPILib_GyroBase_SmartDashboardType" data-uid="WPILib.GyroBase.SmartDashboardType">SmartDashboardType</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -255,7 +256,8 @@
               </span>
               <a id="WPILib_GyroBase_Table_" data-uid="WPILib.GyroBase.Table*"></a>
               <h4 id="WPILib_GyroBase_Table" data-uid="WPILib.GyroBase.Table">Table</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -289,7 +291,8 @@
               </span>
               <a id="WPILib_GyroBase_Calibrate_" data-uid="WPILib.GyroBase.Calibrate*"></a>
               <h4 id="WPILib_GyroBase_Calibrate" data-uid="WPILib.GyroBase.Calibrate">Calibrate()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initialize the gyro.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -297,6 +300,14 @@
               </div>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_Calibrate">IGyro.Calibrate()</a></div>
+              <h5 id="WPILib_GyroBase_Calibrate_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Calibrate the gyro by running for a number of samples and
+computing the center value. Then use the center value as the
+Accumulator center value for subsequent measurements. It&#39;s important to
+make sure that the robot is not moving while the centering calulations are
+in progress, this is typically done when the robot is first turned on while
+it&#39;s sitting at rest before the competition starts.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_GyroBase_GetAngle.md&amp;value=---%0Auid%3A%20WPILib.GyroBase.GetAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -306,7 +317,8 @@
               </span>
               <a id="WPILib_GyroBase_GetAngle_" data-uid="WPILib.GyroBase.GetAngle*"></a>
               <h4 id="WPILib_GyroBase_GetAngle" data-uid="WPILib.GyroBase.GetAngle">GetAngle()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Return the actual angle in degrees that the robot is currently facing.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -323,12 +335,21 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The current heading of the robot in degrees. This heading is
+based on integration of the returned rate of the gyro.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_GetAngle">IGyro.GetAngle()</a></div>
+              <h5 id="WPILib_GyroBase_GetAngle_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The angle is based on the current accumulator value corrected by the
+oversampling rate, the gyro type and the A/D calibration values. The angle
+is continouus, that is it will continue from 360 to 361 degrees. This
+allows algorithms that wouldn&#39;t want to see a discontinuity in the gyro
+output as it sweeps past from 360 to 0 on the second time around.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_GyroBase_GetRate.md&amp;value=---%0Auid%3A%20WPILib.GyroBase.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -338,7 +359,8 @@
               </span>
               <a id="WPILib_GyroBase_GetRate_" data-uid="WPILib.GyroBase.GetRate*"></a>
               <h4 id="WPILib_GyroBase_GetRate" data-uid="WPILib.GyroBase.GetRate">GetRate()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns the rate of rotation of the gyro.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -355,12 +377,16 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
+                    <td><p>The current rate in degrees per second.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_GetRate">IGyro.GetRate()</a></div>
+              <h5 id="WPILib_GyroBase_GetRate_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The rate is based on the most recent reading of the gyro analog value.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_GyroBase_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.GyroBase.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -370,7 +396,8 @@
               </span>
               <a id="WPILib_GyroBase_InitTable_" data-uid="WPILib.GyroBase.InitTable*"></a>
               <h4 id="WPILib_GyroBase_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.GyroBase.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -389,7 +416,8 @@
                   <tr>
                     <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
                     <td><span class="parametername">subtable</span></td>
-                    <td></td>
+                    <td><p>The table to put the values in.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -439,7 +467,8 @@ May be the angle or rate depending on the set <a class="xref" href="WPILib.GyroB
               </span>
               <a id="WPILib_GyroBase_Reset_" data-uid="WPILib.GyroBase.Reset*"></a>
               <h4 id="WPILib_GyroBase_Reset" data-uid="WPILib.GyroBase.Reset">Reset()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Reset the gyro.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -447,6 +476,10 @@ May be the angle or rate depending on the set <a class="xref" href="WPILib.GyroB
               </div>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_Reset">IGyro.Reset()</a></div>
+              <h5 id="WPILib_GyroBase_Reset_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Resets the gyro to a heading of zero. This can be used if there is significant
+drift in the gyro and it needs to be recalibrated after it has been running.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_GyroBase_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.GyroBase.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -456,7 +489,9 @@ May be the angle or rate depending on the set <a class="xref" href="WPILib.GyroB
               </span>
               <a id="WPILib_GyroBase_StartLiveWindowMode_" data-uid="WPILib.GyroBase.StartLiveWindowMode*"></a>
               <h4 id="WPILib_GyroBase_StartLiveWindowMode" data-uid="WPILib.GyroBase.StartLiveWindowMode">StartLiveWindowMode()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
+value changes reflect the value on the table.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -473,7 +508,8 @@ May be the angle or rate depending on the set <a class="xref" href="WPILib.GyroB
               </span>
               <a id="WPILib_GyroBase_StopLiveWindowMode_" data-uid="WPILib.GyroBase.StopLiveWindowMode*"></a>
               <h4 id="WPILib_GyroBase_StopLiveWindowMode" data-uid="WPILib.GyroBase.StopLiveWindowMode">StopLiveWindowMode()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -490,7 +526,9 @@ May be the angle or rate depending on the set <a class="xref" href="WPILib.GyroB
               </span>
               <a id="WPILib_GyroBase_UpdateTable_" data-uid="WPILib.GyroBase.UpdateTable*"></a>
               <h4 id="WPILib_GyroBase_UpdateTable" data-uid="WPILib.GyroBase.UpdateTable">UpdateTable()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
+values.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">

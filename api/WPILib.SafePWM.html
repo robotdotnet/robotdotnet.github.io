@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SafePWM
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -287,7 +287,8 @@ not updated within a certain period, it will be stopped.</p>
               </span>
               <a id="WPILib_SafePWM_Alive_" data-uid="WPILib.SafePWM.Alive*"></a>
               <h4 id="WPILib_SafePWM_Alive" data-uid="WPILib.SafePWM.Alive">Alive</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets whether the motor is alive.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -319,7 +320,8 @@ not updated within a certain period, it will be stopped.</p>
               </span>
               <a id="WPILib_SafePWM_Description_" data-uid="WPILib.SafePWM.Description*"></a>
               <h4 id="WPILib_SafePWM_Description" data-uid="WPILib.SafePWM.Description">Description</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets a description for the Safe Motor Object.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -351,7 +353,8 @@ not updated within a certain period, it will be stopped.</p>
               </span>
               <a id="WPILib_SafePWM_Expiration_" data-uid="WPILib.SafePWM.Expiration*"></a>
               <h4 id="WPILib_SafePWM_Expiration" data-uid="WPILib.SafePWM.Expiration">Expiration</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets or Sets the expiration time of the motor in seconds.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -383,7 +386,8 @@ not updated within a certain period, it will be stopped.</p>
               </span>
               <a id="WPILib_SafePWM_SafetyEnabled_" data-uid="WPILib.SafePWM.SafetyEnabled*"></a>
               <h4 id="WPILib_SafePWM_SafetyEnabled" data-uid="WPILib.SafePWM.SafetyEnabled">SafetyEnabled</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets or Sets whether safety is enabled.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -453,7 +457,8 @@ setpoint gets updated, in order to feed the watchdog.</p>
               </span>
               <a id="WPILib_SafePWM_StopMotor_" data-uid="WPILib.SafePWM.StopMotor*"></a>
               <h4 id="WPILib_SafePWM_StopMotor" data-uid="WPILib.SafePWM.StopMotor">StopMotor()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Stop the motor associated with this PWM object.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -461,6 +466,10 @@ setpoint gets updated, in order to feed the watchdog.</p>
               </div>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_StopMotor">IMotorSafety.StopMotor()</a></div>
+              <h5 id="WPILib_SafePWM_StopMotor_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is called by the MotorSafetyHelper object
+when it has timed out and need to stop the motor.</p>
+</div>
                         </article>
           </div>
           

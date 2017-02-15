@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InstantCommand
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -252,7 +252,8 @@
               </span>
               <a id="WPILib_Commands_InstantCommand_IsFinished_" data-uid="WPILib.Commands.InstantCommand.IsFinished*"></a>
               <h4 id="WPILib_Commands_InstantCommand_IsFinished" data-uid="WPILib.Commands.InstantCommand.IsFinished">IsFinished()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Returns whether this command is finished.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -269,12 +270,23 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
+                    <td><p>Whether this command is finished</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsFinished">Command.IsFinished()</a></div>
+              <h5 id="WPILib_Commands_InstantCommand_IsFinished_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If it is, then the command will be removed and
+<a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> will be called.
+<p>It may be useful for a team to reference the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a>
+method for time-sensitive commands.</p>
+</div>
+              <h5 id="WPILib_Commands_InstantCommand_IsFinished_seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut</a>()</div>
+              </div>
                         </article>
           </div>
           
