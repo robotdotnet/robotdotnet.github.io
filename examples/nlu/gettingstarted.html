@@ -93,7 +93,7 @@ To make it so this class cannot be instanciated, add a private constructor.</p>
 }
 </code></pre><p>Note however that this is not complete. Nowhere in our declaration have we provided a library name to look at, and in fact our delegate instance is null right now.
 There are a few ways this can be done, however we are going to go over doing the initialization code in the static constructor for the class. To create a static
-constructor, add the following to your class. This adds a <a class="xref" href="../../api/NativeLibraryUtilities.NativeLibraryLoader.html">NativeLibraryLoader</a> object to the class, and initializes
+constructor, add the following to your class. This adds a <a href="xref:NativeLibraryUtilities.NativeLibraryLoader">NativeLibraryLoader</a> object to the class, and initializes
 it. This is what we will eventually use to load our delegates.</p>
 <pre><code class="lang-csharp" name="Simple">internal static NativeLibraryLoader NativeLoader { get; }
 static NativeFunctions()
@@ -110,7 +110,7 @@ the native libraries, and don&#39;t want to require those assemblies to all be r
 all RobotDotNet projects use. </li>
 </ul>
 <p>Programmatically, we support 9 different OS platforms, with 2 more (Linux aarch64 and Windows Arm) possibly on the way. The list of these platforms can be found at the
-<a class="xref" href="../../api/NativeLibraryUtilities.OsType.html">OsType</a> enum documentation page. Before we can load any library, we have to specify where to load the libraries from for each specific OS.
+<a href="xref:NativeLibraryUtilities.OsType">OsType</a> enum documentation page. Before we can load any library, we have to specify where to load the libraries from for each specific OS.
 To do this, use the <a href="xref:NativeLibraryUtilities.NativeLibraryLoader.AddLibraryLocation">AddLibraryLocation</a> method. For example, to add a 64 bit Windows library and a
 32 bit linux library to the loader, use the following declaration, inside of the static constructor below the NativeLoader initialization.</p>
 <pre><code class="lang-csharp" name="Simple">NativeLoader.AddLibraryLocation(OsType.Windows64, &quot;myLibrary.dll&quot;);
@@ -124,15 +124,15 @@ To load the files from on disk, use the following function. This will cause the 
 </code></pre><p>To load from the embedded resource, the parameter to the function just needs to be false, or the the default. So the following will load from an embedded resource:</p>
 <pre><code class="lang-csharp" name="Simple">NativeLoader.LoadNativeLibrary&lt;NativeFunctions&gt;();
 </code></pre><p>Once we have the library loaded, all that is left to do is load our native symbols into the delegate we created earlier. This can be done manually for every delegate
-with a call to <a class="xref" href="../../api/NativeLibraryUtilities.NativeDelegateInitializer.html#NativeLibraryUtilities_NativeDelegateInitializer_SetupNativeDelegate_NativeLibraryUtilities_ILibraryInformation_System_String_System_Type_">NativeDelegateInitializer.SetupNativeDelegate</a>. This works for a small amount
-of delegates, however for a large number of delegates this is not sustainable. To solve this, we can use the <a class="xref" href="../../api/NativeLibraryUtilities.NativeDelegateAttribute.html">NativeDelegate</a> attribute
+with a call to <a href="xref:NativeLibraryUtilities.NativeDelegateInitializer.SetupNativeDelegate(NativeLibraryUtilities.ILibraryInformation,System.String,System.Type)">NativeDelegateInitializer.SetupNativeDelegate</a>. This works for a small amount
+of delegates, however for a large number of delegates this is not sustainable. To solve this, we can use the <a href="xref:NativeLibraryUtilities.NativeDelegateAttribute">NativeDelegate</a> attribute
 to all of our delegate instances. This delegate is either parameterless, or takes in a string parameter. If no parameter is passed in, the name of the delegate instance
 is used for the native function name. If the parameter is used, that string is used for the name of the native function.
 For instance, the following 2 calls will connect to the same native library function:</p>
 <pre><code class="lang-csharp" name="Simple">[NativeDelegate(&quot;Add2Numbers&quot;)] internal static Add2NumbersDelegate Foo;
 [NativeDelegate] internal static Add2NumbersDelegate Add2Numbers;
 </code></pre><p>To load all delegates with the attribute placed on them, use the 
-<a class="xref" href="../../api/NativeLibraryUtilities.NativeDelegateInitializer.html#NativeLibraryUtilities_NativeDelegateInitializer_SetupNativeDelegates__1_NativeLibraryUtilities_ILibraryInformation_">NativeDelegateInitializer.SetupNativeDelegates</a>
+<a href="xref:NativeLibraryUtilities.NativeDelegateInitializer.SetupNativeDelegates``1(NativeLibraryUtilities.ILibraryInformation)">NativeDelegateInitializer.SetupNativeDelegates</a>
 method. This will load all the native delegates with attributes from the passed in generic type. </p>
 <p>Putting this all together, the following code is enough to get our libraries and symbols loaded. </p>
 <pre><code class="lang-csharp" name="Simple">internal class NativeFunctions

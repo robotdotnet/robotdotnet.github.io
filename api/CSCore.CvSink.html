@@ -171,7 +171,7 @@
                 </tbody>
               </table>
               <h5 id="CSCore_CvSink__ctor_System_String__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p><a class="xref" href="CSCore.CvSink.html#CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_">GrabFrame(Mat)</a> must be called on the created sink to get
+              <div class="markdown level1 remarks"><p>GrabFrame must be called on the created sink to get
 each new frame</p>
 </div>
               <h3 id="properties">Properties
@@ -214,7 +214,7 @@ each new frame</p>
                 <a href="https://github.com/robotdotnet/cameraserver/new/master/apiSpec/new?filename=CSCore_CvSink_Enabled.md&amp;value=---%0Auid%3A%20CSCore.CvSink.Enabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/cameraserver/blob/master/src/FRC.CameraServer/CvSink.cs/#L67">View Source</a>
+                <a href="https://github.com/robotdotnet/cameraserver/blob/master/src/FRC.CameraServer/CvSink.cs/#L97">View Source</a>
               </span>
               <a id="CSCore_CvSink_Enabled_" data-uid="CSCore.CvSink.Enabled*"></a>
               <h4 id="CSCore_CvSink_Enabled" data-uid="CSCore.CvSink.Enabled">Enabled</h4>
@@ -241,7 +241,7 @@ each new frame</p>
                 </tbody>
               </table>
               <h5 id="CSCore_CvSink_Enabled_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Disabling will cause <a class="xref" href="CSCore.CvSink.html#CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_">GrabFrame(Mat)</a> to not return. This can
+              <div class="markdown level1 remarks"><p>Disabling will cause GrabFrame to not return. This can
 be used to save processor resources when frames are not needed</p>
 </div>
               <h3 id="methods">Methods
@@ -251,7 +251,7 @@ be used to save processor resources when frames are not needed</p>
                 <a href="https://github.com/robotdotnet/cameraserver/new/master/apiSpec/new?filename=CSCore_CvSink_GetError.md&amp;value=---%0Auid%3A%20CSCore.CvSink.GetError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/cameraserver/blob/master/src/FRC.CameraServer/CvSink.cs/#L55">View Source</a>
+                <a href="https://github.com/robotdotnet/cameraserver/blob/master/src/FRC.CameraServer/CvSink.cs/#L85">View Source</a>
               </span>
               <a id="CSCore_CvSink_GetError_" data-uid="CSCore.CvSink.GetError*"></a>
               <h4 id="CSCore_CvSink_GetError" data-uid="CSCore.CvSink.GetError">GetError()</h4>
@@ -278,7 +278,7 @@ be used to save processor resources when frames are not needed</p>
                 </tbody>
               </table>
               <h5 id="CSCore_CvSink_GetError_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Call if <a class="xref" href="CSCore.CvSink.html#CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_">GrabFrame(Mat)</a> returns 0 to determine what the error is</p>
+              <div class="markdown level1 remarks"><p>Call if GrabFrame returns 0 to determine what the error is</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -289,7 +289,7 @@ be used to save processor resources when frames are not needed</p>
               </span>
               <a id="CSCore_CvSink_GrabFrame_" data-uid="CSCore.CvSink.GrabFrame*"></a>
               <h4 id="CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_" data-uid="CSCore.CvSink.GrabFrame(OpenCvSharp.Mat)">GrabFrame(Mat)</h4>
-              <div class="markdown level1 summary"><p>Wait for the next frame and get the image</p>
+              <div class="markdown level1 summary"><p>Wait for the next frame and get the image, timing out after 0.225 seconds, returning 0</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -332,6 +332,121 @@ the error message</p>
                 </tbody>
               </table>
               <h5 id="CSCore_CvSink_GrabFrame_OpenCvSharp_Mat__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The provided image will have three 3-bit channels stored in BGR order</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/cameraserver/new/master/apiSpec/new?filename=CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_System_Double_.md&amp;value=---%0Auid%3A%20CSCore.CvSink.GrabFrame(OpenCvSharp.Mat%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/cameraserver/blob/master/src/FRC.CameraServer/CvSink.cs/#L59">View Source</a>
+              </span>
+              <a id="CSCore_CvSink_GrabFrame_" data-uid="CSCore.CvSink.GrabFrame*"></a>
+              <h4 id="CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_System_Double_" data-uid="CSCore.CvSink.GrabFrame(OpenCvSharp.Mat,System.Double)">GrabFrame(Mat, Double)</h4>
+              <div class="markdown level1 summary"><p>Wait for the next frame and get the image, timing out after specified seconds</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long GrabFrame(Mat image, double timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">image</span></td>
+                    <td><p>The <a class="xref" href="OpenCvSharp.Mat.html">Mat</a> to store the image in</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><span class="parametername">timeout</span></td>
+                    <td><p>Timeout in seconds</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+                    <td><p>Frame time, or 0 on error (call <a class="xref" href="CSCore.CvSink.html#CSCore_CvSink_GetError">GetError()</a> to obtain 
+the error message</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="CSCore_CvSink_GrabFrame_OpenCvSharp_Mat_System_Double__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The provided image will have three 3-bit channels stored in BGR order. 
+Upon a timeout, returns 0.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/cameraserver/new/master/apiSpec/new?filename=CSCore_CvSink_GrabFrameNoTimeout_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20CSCore.CvSink.GrabFrameNoTimeout(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/cameraserver/blob/master/src/FRC.CameraServer/CvSink.cs/#L73">View Source</a>
+              </span>
+              <a id="CSCore_CvSink_GrabFrameNoTimeout_" data-uid="CSCore.CvSink.GrabFrameNoTimeout*"></a>
+              <h4 id="CSCore_CvSink_GrabFrameNoTimeout_OpenCvSharp_Mat_" data-uid="CSCore.CvSink.GrabFrameNoTimeout(OpenCvSharp.Mat)">GrabFrameNoTimeout(Mat)</h4>
+              <div class="markdown level1 summary"><p>Wait for the next frame and get the image.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long GrabFrameNoTimeout(Mat image)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td><span class="parametername">image</span></td>
+                    <td><p>The <a class="xref" href="OpenCvSharp.Mat.html">Mat</a> to store the image in</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+                    <td><p>Frame time, or 0 on error (call <a class="xref" href="CSCore.CvSink.html#CSCore_CvSink_GetError">GetError()</a> to obtain 
+the error message</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="CSCore_CvSink_GrabFrameNoTimeout_OpenCvSharp_Mat__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>The provided image will have three 3-bit channels stored in BGR order</p>
 </div>
                         </article>
