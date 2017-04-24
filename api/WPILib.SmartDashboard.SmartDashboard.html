@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SmartDashboard
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -79,35 +80,11 @@
                   <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><span class="xref">SmartDashboard</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:WPILib.SmartDashboard</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_SmartDashboard_SmartDashboard_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class SmartDashboard</code></pre>
+                <pre><code class="lang-csharp hljs">public class SmartDashboard : object</code></pre>
               </div>
               <h5 id="WPILib_SmartDashboard_SmartDashboard_remarks"><strong>Remarks</strong></h5>
               <div class="markdown level0 remarks"><p>When a value is put into the SmartDashboard here, it pops up on the SmartDashboard on the laptop.
@@ -128,8 +105,7 @@ Users can put values into and get values from the SmartDashboard</p>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use the Default Value Get... Method instead.&quot;)]
-public static bool GetBoolean(string key)</code></pre>
+                <pre><code class="lang-csharp hljs">public static bool GetBoolean(string key)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -228,8 +204,7 @@ public static bool GetBoolean(string key)</code></pre>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use the Default Value Get... Method instead.&quot;)]
-public static bool[] GetBooleanArray(string key)</code></pre>
+                <pre><code class="lang-csharp hljs">public static bool[] GetBooleanArray(string key)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -365,22 +340,6 @@ public static bool[] GetBooleanArray(string key)</code></pre>
                   </tr>
                 </tbody>
               </table>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
-                    <td><p>Thrown if there is no value mapped to the key.</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SmartDashboard_SmartDashboard_GetNumber_System_String_.md&amp;value=---%0Auid%3A%20WPILib.SmartDashboard.SmartDashboard.GetNumber(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -394,8 +353,7 @@ public static bool[] GetBooleanArray(string key)</code></pre>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use the Default Value Get... Method instead.&quot;)]
-public static double GetNumber(string key)</code></pre>
+                <pre><code class="lang-csharp hljs">public static double GetNumber(string key)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -494,8 +452,7 @@ public static double GetNumber(string key)</code></pre>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use the Default Value Get... Method instead.&quot;)]
-public static double[] GetNumberArray(string key)</code></pre>
+                <pre><code class="lang-csharp hljs">public static double[] GetNumberArray(string key)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -594,8 +551,7 @@ public static double[] GetNumberArray(string key)</code></pre>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use the Default Value Get... Method instead.&quot;)]
-public static string GetString(string key)</code></pre>
+                <pre><code class="lang-csharp hljs">public static string GetString(string key)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -694,8 +650,7 @@ public static string GetString(string key)</code></pre>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use the Default Value Get... Method instead.&quot;)]
-public static string[] GetStringArray(string key)</code></pre>
+                <pre><code class="lang-csharp hljs">public static string[] GetStringArray(string key)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">

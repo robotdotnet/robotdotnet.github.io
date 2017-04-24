@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AHRS
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -142,27 +143,6 @@
                 <div>
                   <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
                 </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
               </div>
               <h6><strong>Namespace</strong>:WPILib.Extras.NavX</h6>
               <h6><strong>Assembly</strong>:WPILib.Extras.dll</h6>
@@ -200,7 +180,7 @@ temperature.
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public AHRS(I2C.Port i2CPortId, byte updateRateHz = 50)</code></pre>
+                <pre><code class="lang-csharp hljs">public AHRS(I2C.Port i2CPortId, byte updateRateHz = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -248,7 +228,7 @@ Note that increasing the update rate may increase the CPU utilization.</p>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public AHRS(SerialPort.Port serialPortId, AHRS.SerialDataType dataType = AHRS.SerialDataType.KProcessedData, byte updateRateHz = 50)</code></pre>
+                <pre><code class="lang-csharp hljs">public AHRS(SerialPort.Port serialPortId, AHRS.SerialDataType dataType = AHRS.SerialDataType.KProcessedData, byte updateRateHz = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -306,7 +286,7 @@ rate may increase the CPU utilization.</p>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public AHRS(SPI.Port spiPortId, byte updateRateHz = 50)</code></pre>
+                <pre><code class="lang-csharp hljs">public AHRS(SPI.Port spiPortId, byte updateRateHz = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -354,7 +334,7 @@ Note that increasing the update rate may increase the CPU utilization.</p>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public AHRS(SPI.Port spiPortId, int spiBitrate, byte updateRateHz = 50)</code></pre>
+                <pre><code class="lang-csharp hljs">public AHRS(SPI.Port spiPortId, int spiBitrate, byte updateRateHz = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -471,8 +451,7 @@ Note that increasing the update rate may increase the CPU utilization.</p>
               </span>
               <a id="WPILib_Extras_NavX_AHRS_Table_" data-uid="WPILib.Extras.NavX.AHRS.Table*"></a>
               <h4 id="WPILib_Extras_NavX_AHRS_Table" data-uid="WPILib.Extras.NavX.AHRS.Table">Table</h4>
-              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
-</div>
+              <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -488,13 +467,11 @@ Note that increasing the update rate may increase the CPU utilization.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
               <h3 id="methods">Methods
               </h3>
               <span class="small pull-right mobile-hide">
@@ -517,13 +494,13 @@ Note that increasing the update rate may increase the CPU utilization.</p>
                   <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_Calibrate">IGyro.Calibrate()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_DeregisterCallback_System_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.DeregisterCallback(System.Action%7BSystem.Int64%2CSystem.Int64%2CWPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_DeregisterCallback_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.DeregisterCallback(Action%7BSystem.Int64%2CSystem.Int64%2CWPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/NavX/AHRS.cs/#L844">View Source</a>
               </span>
               <a id="WPILib_Extras_NavX_AHRS_DeregisterCallback_" data-uid="WPILib.Extras.NavX.AHRS.DeregisterCallback*"></a>
-              <h4 id="WPILib_Extras_NavX_AHRS_DeregisterCallback_System_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__" data-uid="WPILib.Extras.NavX.AHRS.DeregisterCallback(System.Action{System.Int64,System.Int64,WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase,System.Object})">DeregisterCallback(Action&lt;Int64, Int64, AHRSProtocol.AHRSUpdateBase, Object&gt;)</h4>
+              <h4 id="WPILib_Extras_NavX_AHRS_DeregisterCallback_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__" data-uid="WPILib.Extras.NavX.AHRS.DeregisterCallback(Action{System.Int64,System.Int64,WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase,System.Object})">DeregisterCallback(Action&lt;Int64, Int64, AHRSProtocol.AHRSUpdateBase, Object&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -541,7 +518,7 @@ Note that increasing the update rate may increase the CPU utilization.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase.html">AHRSProtocol.AHRSUpdateBase</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase.html">AHRSProtocol.AHRSUpdateBase</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
                     <td><span class="parametername">callback</span></td>
                     <td></td>
                   </tr>
@@ -579,8 +556,6 @@ Note that increasing the update rate may increase the CPU utilization.</p>
               </div>
               <h5 class="overrides">Overrides</h5>
               <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/es4s3w1d(v=vs.110).aspx">IDisposable.Dispose()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_GetActualUpdateRate.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.GetActualUpdateRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -646,10 +621,11 @@ Note that increasing the update rate may increase the CPU utilization.</p>
               <h5 id="WPILib_Extras_NavX_AHRS_GetAltitude_remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>This value is based upon calibrated reading from a
 barometric pressure sensor, and the currently configured
-sea-level barometric pressure [NavX Aero only].</p>
+sea-level barometric pressure [NavX Aero only].
 <p>Note: This value is only valid in sensors including a pressure
 sensor. To determine whether this value is valid, see <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_IsAltitudeValid">IsAltitudeValid()</a>.
-</p></div>
+</p></p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_GetAngle.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.GetAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -760,9 +736,9 @@ from the Z-axis (yaw) gyro.</p>
               </table>
               <h5 id="WPILib_Extras_NavX_AHRS_GetBarometricPressure_remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>This value is based upon calibrated reading from the onboard
-pressure sensor.</p>
+pressure sensor.
 <p>NOTE: This value is only valid for a NavX Aero. To determine
-whether this value is valid, see <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_IsAltitudeValid">IsAltitudeValid()</a>.</p>
+whether this value is valid, see <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_IsAltitudeValid">IsAltitudeValid()</a>.</p></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -801,8 +777,8 @@ whether this value is valid, see <a class="xref" href="WPILib.Extras.NavX.AHRS.h
               <div class="markdown level1 remarks"><p>If the board firmware configuration supports Omnimount, the board yaw
 axis/direction are configurable.
 <p>
-For more information on Omnimount, please see: </p>
-<see cref="!:http://navx-mxp.kauailabs.com/installation/omnimount/&gt;Omnimount"></see>
+For more information on Omnimount, please see: 
+<see cref="!:http://navx-mxp.kauailabs.com/installation/omnimount/&gt;Omnimount"></see></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -837,9 +813,10 @@ For more information on Omnimount, please see: </p>
                 </tbody>
               </table>
               <h5 id="WPILib_Extras_NavX_AHRS_GetByteCount_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>This could be useful for diagnosing connectivity issues.</p>
+              <div class="markdown level1 remarks"><p>This could be useful for diagnosing connectivity issues.
 <p>If the byte count is increasing but the update count (see <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_GetUpdateCount">GetUpdateCount()</a>)
-is not, this indicates a software misconfiguration.</p></div>
+is not, this indicates a software misconfiguration.</p></p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_GetCompassHeading.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.GetCompassHeading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1032,8 +1009,8 @@ increases quickly as time progresses.</p>
                 </tbody>
               </table>
               <h5 id="WPILib_Extras_NavX_AHRS_GetFirmwareVersion_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>To update the firmware to the latest version, please see:</p>
-<see cref="!:http://navx-mxp.kauailabs.com/navx-mxp/support/updating-firmware/"></see>
+              <div class="markdown level1 remarks"><p>To update the firmware to the latest version, please see:
+<see cref="!:http://navx-mxp.kauailabs.com/navx-mxp/support/updating-firmware/"></see></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -1786,7 +1763,7 @@ via the <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AH
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -2133,15 +2110,14 @@ the <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_Z
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/NavX/AHRS.cs/#L1485">View Source</a>
               </span>
               <a id="WPILib_Extras_NavX_AHRS_InitTable_" data-uid="WPILib.Extras.NavX.AHRS.InitTable*"></a>
-              <h4 id="WPILib_Extras_NavX_AHRS_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Extras.NavX.AHRS.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
-</div>
+              <h4 id="WPILib_Extras_NavX_AHRS_InitTable_ITable_" data-uid="WPILib.Extras.NavX.AHRS.InitTable(ITable)">InitTable(ITable)</h4>
+              <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2158,14 +2134,12 @@ the <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_Z
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">itable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_IsAltitudeValid.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.IsAltitudeValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2200,9 +2174,10 @@ the <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_Z
               </table>
               <h5 id="WPILib_Extras_NavX_AHRS_IsAltitudeValid_remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>This value will only be true for a sensor with an onboard
-pressure sensor installed.</p>
+pressure sensor installed.
 <p>If this value is false for a board with an installed pressure sensor,
-this indicates a malfunction of the onboard pressure sensor.</p></div>
+this indicates a malfunction of the onboard pressure sensor.</p></p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_IsCalibrating.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.IsCalibrating%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2240,11 +2215,11 @@ and accelerometer sensors.</p>
               <h5 id="WPILib_Extras_NavX_AHRS_IsCalibrating_remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>Automatic calibration occurs when the sensor is initially powered on,
 during which time the sensor should be held still, with the Z-axis
-pointing up (perpendicular to the earth).</p>
+pointing up (perpendicular to the earth).
 <p>NOTE: During this automatic callication, the yaw, pitch and roll
 values returned may not be accurate</p>
 <p>Once calibration is complete, the sensor will automatically remove 
-an internal yaw offset value from all reported values.</p>
+an internal yaw offset value from all reported values.</p></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -2430,11 +2405,12 @@ exceed a &quot;motion threshold&quot;, the motion state is indicated.</p>
               </table>
               <h5 id="WPILib_Extras_NavX_AHRS_IsRotating_remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>The detection is based upon whether the change in yaw over
-the last second exceeds the &quot;Rotation Threshold.&quot;</p>
+the last second exceeds the &quot;Rotation Threshold.&quot;
 <p>Yaw Rotation can occur either when the sensor is rotation, or
 when the sensor is not rotating AND the current gyro calibration
 is insufficiently calibrated to yield the standard yaw drift rate.
-</p></div>
+</p></p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_PidGet.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.PidGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2477,13 +2453,13 @@ returns the rate of rotation in degrees per second. <a class="xref" href="WPILib
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_RegisterCallback_System_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__System_Object_.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.RegisterCallback(System.Action%7BSystem.Int64%2CSystem.Int64%2CWPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase%2CSystem.Object%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_NavX_AHRS_RegisterCallback_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__System_Object_.md&amp;value=---%0Auid%3A%20WPILib.Extras.NavX.AHRS.RegisterCallback(Action%7BSystem.Int64%2CSystem.Int64%2CWPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase%2CSystem.Object%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/NavX/AHRS.cs/#L828">View Source</a>
               </span>
               <a id="WPILib_Extras_NavX_AHRS_RegisterCallback_" data-uid="WPILib.Extras.NavX.AHRS.RegisterCallback*"></a>
-              <h4 id="WPILib_Extras_NavX_AHRS_RegisterCallback_System_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__System_Object_" data-uid="WPILib.Extras.NavX.AHRS.RegisterCallback(System.Action{System.Int64,System.Int64,WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase,System.Object},System.Object)">RegisterCallback(Action&lt;Int64, Int64, AHRSProtocol.AHRSUpdateBase, Object&gt;, Object)</h4>
+              <h4 id="WPILib_Extras_NavX_AHRS_RegisterCallback_Action_System_Int64_System_Int64_WPILib_Extras_NavX_Protocols_AHRSProtocol_AHRSUpdateBase_System_Object__System_Object_" data-uid="WPILib.Extras.NavX.AHRS.RegisterCallback(Action{System.Int64,System.Int64,WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase,System.Object},System.Object)">RegisterCallback(Action&lt;Int64, Int64, AHRSProtocol.AHRSUpdateBase, Object&gt;, Object)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -2501,7 +2477,7 @@ returns the rate of rotation in degrees per second. <a class="xref" href="WPILib
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb548654(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase.html">AHRSProtocol.AHRSUpdateBase</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>, <a class="xref" href="WPILib.Extras.NavX.Protocols.AHRSProtocol.AHRSUpdateBase.html">AHRSProtocol.AHRSUpdateBase</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
                     <td><span class="parametername">callback</span></td>
                     <td></td>
                   </tr>

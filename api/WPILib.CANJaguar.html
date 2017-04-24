@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CANJaguar
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -79,35 +80,11 @@
                   <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><span class="xref">CANJaguar</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:WPILib</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_CANJaguar_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class CANJaguar : IMotorSafety, ICANSpeedController, ISpeedController, IPIDOutput, IPIDInterface, IController, ITableListener, ILiveWindowSendable, ISendable, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public class CANJaguar : object, IMotorSafety, ICANSpeedController, ISpeedController, IPIDOutput, IPIDInterface, IController, ITableListener, ILiveWindowSendable, ISendable, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -160,7 +137,7 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const double ApproxBusVoltage = 12</code></pre>
+                <pre><code class="lang-csharp hljs">public const double ApproxBusVoltage = null</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -190,7 +167,7 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const int ControllerRate = 1000</code></pre>
+                <pre><code class="lang-csharp hljs">public const int ControllerRate = null</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -220,7 +197,7 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const int MaxMessageDataSize = 8</code></pre>
+                <pre><code class="lang-csharp hljs">public const int MaxMessageDataSize = null</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1051,7 +1028,7 @@ Only integer numbers of turns are supported.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -1217,8 +1194,6 @@ this will be called if the controller does not get updated within the safety per
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/es4s3w1d(v=vs.110).aspx">IDisposable.Dispose()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_Enable.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.Enable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1876,13 +1851,13 @@ scaling the value from the FPGA.</p>
                   <div><a class="xref" href="WPILib.Interfaces.ICANSpeedController.html#WPILib_Interfaces_ICANSpeedController_GetTemperature">ICANSpeedController.GetTemperature()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/CANJaguar.cs/#L1334">View Source</a>
               </span>
               <a id="WPILib_CANJaguar_InitTable_" data-uid="WPILib.CANJaguar.InitTable*"></a>
-              <h4 id="WPILib_CANJaguar_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.CANJaguar.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <h4 id="WPILib_CANJaguar_InitTable_ITable_" data-uid="WPILib.CANJaguar.InitTable(ITable)">InitTable(ITable)</h4>
               <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -1901,7 +1876,7 @@ scaling the value from the FPGA.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">subtable</span></td>
                     <td><p>The table to put the values in.</p>
 </td>
@@ -1909,7 +1884,7 @@ scaling the value from the FPGA.</p>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_PidWrite_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.PidWrite(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2630,15 +2605,14 @@ values.</p>
                   <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.ValueChanged(NetworkTables.Tables.ITable%2CSystem.String%2CNetworkTables.Value%2CNetworkTables.NotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_ValueChanged_ITable_System_String_Value_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.ValueChanged(ITable%2CSystem.String%2CValue%2CNotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/CANJaguar.cs/#L1375">View Source</a>
               </span>
               <a id="WPILib_CANJaguar_ValueChanged_" data-uid="WPILib.CANJaguar.ValueChanged*"></a>
-              <h4 id="WPILib_CANJaguar_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_" data-uid="WPILib.CANJaguar.ValueChanged(NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
-              <div class="markdown level1 summary"><p>Called when a key-value pair is changed in an <a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>.</p>
-</div>
+              <h4 id="WPILib_CANJaguar_ValueChanged_ITable_System_String_Value_NotifyFlags_" data-uid="WPILib.CANJaguar.ValueChanged(ITable,System.String,Value,NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
+              <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2655,33 +2629,27 @@ values.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">source</span></td>
-                    <td><p>The table the key-value pair exist in.</p>
-</td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td><p>The key associated with the value that changed.</p>
-</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
+                    <td><span class="xref">Value</span></td>
                     <td><span class="parametername">value</span></td>
-                    <td><p>The new value.</p>
-</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
+                    <td><span class="xref">NotifyFlags</span></td>
                     <td><span class="parametername">flags</span></td>
-                    <td><p>The update flags.</p>
-</td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="NetworkTables.Tables.ITableListener.html#NetworkTables_Tables_ITableListener_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">ITableListener.ValueChanged(ITable, String, Value, NotifyFlags)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_CANJaguar_Verify.md&amp;value=---%0Auid%3A%20WPILib.CANJaguar.Verify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>

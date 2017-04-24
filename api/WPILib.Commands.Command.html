@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Command
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -87,39 +88,19 @@
                   <div class="level2"><a class="xref" href="WPILib.Commands.WaitForChildren.html">WaitForChildren</a></div>
                   <div class="level2"><a class="xref" href="WPILib.Commands.WaitUntilCommand.html">WaitUntilCommand</a></div>
                   <div class="level2"><a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
+                  <div class="level2"><a class="xref" href="WPILib.Extras.SubsystemCommand.html">SubsystemCommand</a></div>
               </div>
               <h6><strong>Namespace</strong>:WPILib.Commands</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_Commands_Command_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class Command : INamedSendable, ISendable, ITableListener</code></pre>
+                <pre><code class="lang-csharp hljs">public abstract class Command : object, INamedSendable, ISendable, ITableListener</code></pre>
               </div>
               <h5 id="WPILib_Commands_Command_remarks"><strong>Remarks</strong></h5>
               <div class="markdown level0 remarks"><p>Every command can be started with a call to <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Start">Start()</a>.
 Once a command is started it will call <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Initialize">Initialize()</a>, and then
 will repeatedly call <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Execute">Execute()</a> until the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsFinished">IsFinished()</a>
-returns true.  Once it does, <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> will be called.</p>
+returns true.  Once it does, <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_End">End()</a> will be called.
 <p>However, if at any point while it is running <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Cancel">Cancel()</a> is called, then
 the command will be stopped and <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Interrupted">Interrupted()</a> will be called.</p>
 <p>If a command uses a <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a>, then it should specify that it does so by
@@ -131,7 +112,7 @@ called for each one.</p>
 then one of two things will happen.  If the active command is interruptible,
 then <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Cancel">Cancel()</a> will be called and the command will be removed
 to make way for the new one.  If the active command is not interruptible, the
-other one will not even be started, and the active one will continue functioning.</p>
+other one will not even be started, and the active one will continue functioning.</p></p>
 </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -191,22 +172,6 @@ other one will not even be started, and the active one will continue functioning
               <h5 id="WPILib_Commands_Command__ctor_System_Double__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>The default name is the name of the class.</p>
 </div>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
-                    <td><p>If given a negative timeout</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
               <h5 id="WPILib_Commands_Command__ctor_System_Double__seealso">See Also</h5>
               <div class="seealso">
                   <div><a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsTimedOut">IsTimedOut()</a></div>
@@ -241,22 +206,6 @@ other one will not even be started, and the active one will continue functioning
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">name</span></td>
                     <td><p>The name for this command</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If name is null</p>
 </td>
                   </tr>
                 </tbody>
@@ -297,22 +246,6 @@ other one will not even be started, and the active one will continue functioning
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">timeout</span></td>
                     <td><p>The time (in seconds) before this command &quot;times out&quot;</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
-                    <td><p>If given a negative timeout</p>
 </td>
                   </tr>
                 </tbody>
@@ -515,7 +448,7 @@ then the default is the name of the class.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -782,13 +715,13 @@ being started.</p>
               </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Command_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Command_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Command.cs/#L546">View Source</a>
               </span>
               <a id="WPILib_Commands_Command_InitTable_" data-uid="WPILib.Commands.Command.InitTable*"></a>
-              <h4 id="WPILib_Commands_Command_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Commands.Command.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <h4 id="WPILib_Commands_Command_InitTable_ITable_" data-uid="WPILib.Commands.Command.InitTable(ITable)">InitTable(ITable)</h4>
               <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -807,7 +740,7 @@ being started.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">subtable</span></td>
                     <td><p>The table to put the values in.</p>
 </td>
@@ -815,7 +748,7 @@ being started.</p>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Command_Interrupted.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.Interrupted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1002,11 +935,6 @@ Note that the recommended way to call this method is in the constructor.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If subsystem is null</p>
-</td>
-                  </tr>
-                  <tr>
                     <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
                     <td><p>If this command has started before or if it has been given to a <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></p>
 </td>
@@ -1047,22 +975,6 @@ Note that the recommended way to call this method is in the constructor.</p>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">seconds</span></td>
                     <td><p>the timeout (in seconds)</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
-                    <td><p>If given a negative timeout</p>
 </td>
                   </tr>
                 </tbody>
@@ -1159,19 +1071,16 @@ do so immediately, and may in fact be canceled before initialize is even called.
                   </tr>
                 </tbody>
               </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Command_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.ValueChanged(NetworkTables.Tables.ITable%2CSystem.String%2CNetworkTables.Value%2CNetworkTables.NotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Command_ValueChanged_ITable_System_String_Value_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Command.ValueChanged(ITable%2CSystem.String%2CValue%2CNotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Command.cs/#L566">View Source</a>
               </span>
               <a id="WPILib_Commands_Command_ValueChanged_" data-uid="WPILib.Commands.Command.ValueChanged*"></a>
-              <h4 id="WPILib_Commands_Command_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_" data-uid="WPILib.Commands.Command.ValueChanged(NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
-              <div class="markdown level1 summary"><p>Called when a key-value pair is changed in an <a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>.</p>
-</div>
+              <h4 id="WPILib_Commands_Command_ValueChanged_ITable_System_String_Value_NotifyFlags_" data-uid="WPILib.Commands.Command.ValueChanged(ITable,System.String,Value,NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
+              <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1188,33 +1097,27 @@ do so immediately, and may in fact be canceled before initialize is even called.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">source</span></td>
-                    <td><p>The table the key-value pair exist in.</p>
-</td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">key</span></td>
-                    <td><p>The key associated with the value that changed.</p>
-</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
+                    <td><span class="xref">Value</span></td>
                     <td><span class="parametername">value</span></td>
-                    <td><p>The new value.</p>
-</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
+                    <td><span class="xref">NotifyFlags</span></td>
                     <td><span class="parametername">flags</span></td>
-                    <td><p>The update flags.</p>
-</td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="NetworkTables.Tables.ITableListener.html#NetworkTables_Tables_ITableListener_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">ITableListener.ValueChanged(ITable, String, Value, NotifyFlags)</a></div>
               <h3 id="seealso">See Also</h3>
               <div class="seealso">
                   <div><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CommandGroup
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -128,7 +129,7 @@
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ToString">Command.ToString()</a>
                 </div>
                 <div>
-                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_InitTable_NetworkTables_Tables_ITable_">Command.InitTable(ITable)</a>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_InitTable_ITable_">Command.InitTable(ITable)</a>
                 </div>
                 <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Table">Command.Table</a>
@@ -137,25 +138,7 @@
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_SmartDashboardType">Command.SmartDashboardType</a>
                 </div>
                 <div>
-                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">Command.ValueChanged(ITable, String, Value, NotifyFlags)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ValueChanged_ITable_System_String_Value_NotifyFlags_">Command.ValueChanged(ITable, String, Value, NotifyFlags)</a>
                 </div>
               </div>
               <h6><strong>Namespace</strong>:WPILib.Commands</h6>
@@ -166,7 +149,7 @@
               </div>
               <h5 id="WPILib_Commands_CommandGroup_remarks"><strong>Remarks</strong></h5>
               <div class="markdown level0 remarks"><p>Commands in a <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> are added using the <a class="xref" href="WPILib.Commands.CommandGroup.html#WPILib_Commands_CommandGroup_AddSequential_WPILib_Commands_Command_">AddSequential(Command)</a> method
-and are called sequentially. <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> are themselves <a class="xref" href="WPILib.Commands.Command.html">Command</a> and can be given to other <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></p>
+and are called sequentially. <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> are themselves <a class="xref" href="WPILib.Commands.Command.html">Command</a> and can be given to other <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a>
 <p>
 <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> will carry all of the requirements of their <a class="xref" href="WPILib.Commands.Command.html">Command</a> Additional requirements can be specified by calling <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Requires_WPILib_Commands_Subsystem_">Requires(Subsystem)</a>
 normally in the constructor.
@@ -174,7 +157,7 @@ normally in the constructor.
 <p>
 Command Groups can also execute commands in parallel, simply by adding them using
 <a class="xref" href="WPILib.Commands.CommandGroup.html#WPILib_Commands_CommandGroup_AddParallel_WPILib_Commands_Command_">AddParallel(Command)</a>.
-</p>
+</p></p>
 </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -225,22 +208,6 @@ will be set to its class name.</p>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">name</span></td>
                     <td><p>The name for this command group.</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If name is null</p>
 </td>
                   </tr>
                 </tbody>
@@ -373,7 +340,7 @@ it is currently running an uninterruptible <a class="xref" href="WPILib.Commands
                 </tbody>
               </table>
               <h5 id="WPILib_Commands_CommandGroup_AddParallel_WPILib_Commands_Command__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The <a class="xref" href="WPILib.Commands.Command.html">Command</a> will be started after all the previously added <a class="xref" href="WPILib.Commands.Command.html">Command</a>.</p>
+              <div class="markdown level1 remarks"><p>The <a class="xref" href="WPILib.Commands.Command.html">Command</a> will be started after all the previously added <a class="xref" href="WPILib.Commands.Command.html">Command</a>.
 <p>
 Instead of waiting for the child to finish, a <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> will have it run
 at the same time as the subsequent <a class="xref" href="WPILib.Commands.Command.html">Command</a>. The child wil run
@@ -387,7 +354,7 @@ Note that any requirements thee given <a class="xref" href="WPILib.Commands.Comm
 </p>
 <p>
 It is recommended that this method be called in the constructor.
-</p>
+</p></p>
 </div>
               <h5 class="exceptions">Exceptions</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -401,11 +368,6 @@ It is recommended that this method be called in the constructor.
                   <tr>
                     <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
                     <td><p>If the command has been started before or been given to another group.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If the given <a class="xref" href="WPILib.Commands.Command.html">Command</a> is null</p>
 </td>
                   </tr>
                 </tbody>
@@ -455,7 +417,7 @@ It is recommended that this method be called in the constructor.
 /// <p>
 Once the <a class="xref" href="WPILib.Commands.Command.html">Command</a> is started, it will be run until it finishes or the time expires, whichever is sooner.
 Note that the give <a class="xref" href="WPILib.Commands.Command.html">Command</a> will have no knowledge that it is on a timer.
-</p></p>
+</p>
 <p>
 Instead of waiting for the child to finish, a <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> will have it run
 at the same time as the subsequent <a class="xref" href="WPILib.Commands.Command.html">Command</a>. The child wil run
@@ -469,7 +431,7 @@ Note that any requirements thee given <a class="xref" href="WPILib.Commands.Comm
 </p>
 <p>
 It is recommended that this method be called in the constructor.
-</p>
+</p></p>
 </div>
               <h5 class="exceptions">Exceptions</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -483,16 +445,6 @@ It is recommended that this method be called in the constructor.
                   <tr>
                     <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
                     <td><p>If the command has been started before or been given to another group.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If the given <a class="xref" href="WPILib.Commands.Command.html">Command</a> is null</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
-                    <td><p>If the given timeout is negative.</p>
 </td>
                   </tr>
                 </tbody>
@@ -532,14 +484,14 @@ It is recommended that this method be called in the constructor.
                 </tbody>
               </table>
               <h5 id="WPILib_Commands_CommandGroup_AddSequential_WPILib_Commands_Command__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The <a class="xref" href="WPILib.Commands.Command.html">Command</a> will be started after all the previously added <a class="xref" href="WPILib.Commands.Command.html">Command</a>.</p>
+              <div class="markdown level1 remarks"><p>The <a class="xref" href="WPILib.Commands.Command.html">Command</a> will be started after all the previously added <a class="xref" href="WPILib.Commands.Command.html">Command</a>.
 <p>
 Note that any requirements thee given <a class="xref" href="WPILib.Commands.Command.html">Command</a> has will be added to the group. For this reason, a 
 <a class="xref" href="WPILib.Commands.Command.html">Command</a> requirements cannot be changed after being added to a group.
 </p>
 <p>
 It is recommended that this method be called in the constructor.
-</p>
+</p></p>
 </div>
               <h5 class="exceptions">Exceptions</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -553,11 +505,6 @@ It is recommended that this method be called in the constructor.
                   <tr>
                     <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
                     <td><p>If the command has been started before or been given to another group.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If the given <a class="xref" href="WPILib.Commands.Command.html">Command</a> is null</p>
 </td>
                   </tr>
                 </tbody>
@@ -603,7 +550,7 @@ It is recommended that this method be called in the constructor.
                 </tbody>
               </table>
               <h5 id="WPILib_Commands_CommandGroup_AddSequential_WPILib_Commands_Command_System_Double__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The <a class="xref" href="WPILib.Commands.Command.html">Command</a> will be started after all the previously added <a class="xref" href="WPILib.Commands.Command.html">Command</a>.</p>
+              <div class="markdown level1 remarks"><p>The <a class="xref" href="WPILib.Commands.Command.html">Command</a> will be started after all the previously added <a class="xref" href="WPILib.Commands.Command.html">Command</a>.
 <p>
 Once the <a class="xref" href="WPILib.Commands.Command.html">Command</a> is started, it will be run until it finishes or the time expires, whichever is sooner.
 Note that the give <a class="xref" href="WPILib.Commands.Command.html">Command</a> will have no knowledge that it is on a timer.
@@ -614,7 +561,7 @@ Note that any requirements thee given <a class="xref" href="WPILib.Commands.Comm
 </p>
 <p>
 It is recommended that this method be called in the constructor.
-</p>
+</p></p>
 </div>
               <h5 class="exceptions">Exceptions</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -628,16 +575,6 @@ It is recommended that this method be called in the constructor.
                   <tr>
                     <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
                     <td><p>If the group has been started before or been given to another group.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
-                    <td><p>If the given <a class="xref" href="WPILib.Commands.Command.html">Command</a> is null</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
-                    <td><p>If the given timeout is negative.</p>
 </td>
                   </tr>
                 </tbody>

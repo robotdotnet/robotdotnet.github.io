@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Scheduler
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -79,35 +80,11 @@
                   <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><span class="xref">Scheduler</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:WPILib.Commands</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_Commands_Scheduler_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class Scheduler : INamedSendable, ISendable</code></pre>
+                <pre><code class="lang-csharp hljs">public class Scheduler : object, INamedSendable, ISendable</code></pre>
               </div>
               <h5 id="WPILib_Commands_Scheduler_remarks"><strong>Remarks</strong></h5>
               <div class="markdown level0 remarks"><p>It is in charge of both calling the command&#39;s <span class="xref">WPILib.Commands.Command.Run</span> method
@@ -243,7 +220,7 @@ already done for you if you use the CommandBased Robot Template. </p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -354,13 +331,13 @@ already done for you if you use the CommandBased Robot Template. </p>
               </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Scheduler_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Scheduler.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Scheduler_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Scheduler.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Scheduler.cs/#L259">View Source</a>
               </span>
               <a id="WPILib_Commands_Scheduler_InitTable_" data-uid="WPILib.Commands.Scheduler.InitTable*"></a>
-              <h4 id="WPILib_Commands_Scheduler_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Commands.Scheduler.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <h4 id="WPILib_Commands_Scheduler_InitTable_ITable_" data-uid="WPILib.Commands.Scheduler.InitTable(ITable)">InitTable(ITable)</h4>
               <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -379,7 +356,7 @@ already done for you if you use the CommandBased Robot Template. </p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">subtable</span></td>
                     <td><p>The table to put the values in.</p>
 </td>
@@ -387,7 +364,7 @@ already done for you if you use the CommandBased Robot Template. </p>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Scheduler_RemoveAll.md&amp;value=---%0Auid%3A%20WPILib.Commands.Scheduler.RemoveAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>

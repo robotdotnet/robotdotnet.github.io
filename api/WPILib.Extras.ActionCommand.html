@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ActionCommand
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -71,7 +72,7 @@
               
               <h1 id="WPILib_Extras_ActionCommand" data-uid="WPILib.Extras.ActionCommand">Class ActionCommand
               </h1>
-              <div class="markdown level0 summary"><p>A <a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a> will run an <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a> when it is
+              <div class="markdown level0 summary"><p>A <a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a> will run an <see cref="!:Action"></see> when it is
 initialized and will finish immediately.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
@@ -141,7 +142,7 @@ initialized and will finish immediately.</p>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ToString">Command.ToString()</a>
                 </div>
                 <div>
-                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_InitTable_NetworkTables_Tables_ITable_">Command.InitTable(ITable)</a>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_InitTable_ITable_">Command.InitTable(ITable)</a>
                 </div>
                 <div>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Table">Command.Table</a>
@@ -150,25 +151,7 @@ initialized and will finish immediately.</p>
                   <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_SmartDashboardType">Command.SmartDashboardType</a>
                 </div>
                 <div>
-                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">Command.ValueChanged(ITable, String, Value, NotifyFlags)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+                  <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_ValueChanged_ITable_System_String_Value_NotifyFlags_">Command.ValueChanged(ITable, String, Value, NotifyFlags)</a>
                 </div>
               </div>
               <h6><strong>Namespace</strong>:WPILib.Extras</h6>
@@ -181,14 +164,14 @@ initialized and will finish immediately.</p>
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_ActionCommand__ctor_System_Action_.md&amp;value=---%0Auid%3A%20WPILib.Extras.ActionCommand.%23ctor(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_ActionCommand__ctor_Action_.md&amp;value=---%0Auid%3A%20WPILib.Extras.ActionCommand.%23ctor(Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/ActionCommand.cs/#L19">View Source</a>
               </span>
               <a id="WPILib_Extras_ActionCommand__ctor_" data-uid="WPILib.Extras.ActionCommand.#ctor*"></a>
-              <h4 id="WPILib_Extras_ActionCommand__ctor_System_Action_" data-uid="WPILib.Extras.ActionCommand.#ctor(System.Action)">ActionCommand(Action)</h4>
-              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a> which will start the given <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a>
+              <h4 id="WPILib_Extras_ActionCommand__ctor_Action_" data-uid="WPILib.Extras.ActionCommand.#ctor(Action)">ActionCommand(Action)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a> which will start the given <see cref="!:Action"></see>
 when its <a class="xref" href="WPILib.Extras.ActionCommand.html#WPILib_Extras_ActionCommand_Initialize">Initialize()</a> is called.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -207,24 +190,24 @@ when its <a class="xref" href="WPILib.Extras.ActionCommand.html#WPILib_Extras_Ac
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a></td>
+                    <td><span class="xref">Action</span></td>
                     <td><span class="parametername">action</span></td>
-                    <td><p>The <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a> to run.</p>
+                    <td><p>The <see cref="!:Action"></see> to run.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_ActionCommand__ctor_System_Action_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Extras.ActionCommand.%23ctor(System.Action%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_ActionCommand__ctor_Action_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Extras.ActionCommand.%23ctor(Action%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/ActionCommand.cs/#L30">View Source</a>
               </span>
               <a id="WPILib_Extras_ActionCommand__ctor_" data-uid="WPILib.Extras.ActionCommand.#ctor*"></a>
-              <h4 id="WPILib_Extras_ActionCommand__ctor_System_Action_System_String_" data-uid="WPILib.Extras.ActionCommand.#ctor(System.Action,System.String)">ActionCommand(Action, String)</h4>
+              <h4 id="WPILib_Extras_ActionCommand__ctor_Action_System_String_" data-uid="WPILib.Extras.ActionCommand.#ctor(Action,System.String)">ActionCommand(Action, String)</h4>
               <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.Extras.ActionCommand.html">ActionCommand</a> with a specific name, 
-which will start the given <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a> when its <a class="xref" href="WPILib.Extras.ActionCommand.html#WPILib_Extras_ActionCommand_Initialize">Initialize()</a> is called.</p>
+which will start the given <see cref="!:Action"></see> when its <a class="xref" href="WPILib.Extras.ActionCommand.html#WPILib_Extras_ActionCommand_Initialize">Initialize()</a> is called.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -242,9 +225,9 @@ which will start the given <a class="xref" href="https://msdn.microsoft.com/en-u
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a></td>
+                    <td><span class="xref">Action</span></td>
                     <td><span class="parametername">action</span></td>
-                    <td><p>The <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a> to run.</p>
+                    <td><p>The <see cref="!:Action"></see> to run.</p>
 </td>
                   </tr>
                   <tr>

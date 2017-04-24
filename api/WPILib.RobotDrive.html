@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RobotDrive
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -79,35 +80,11 @@
                   <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><span class="xref">RobotDrive</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:WPILib</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_RobotDrive_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class RobotDrive : IMotorSafety, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public class RobotDrive : object, IMotorSafety, IDisposable</code></pre>
               </div>
               <h5 id="WPILib_RobotDrive_remarks"><strong>Remarks</strong></h5>
               <div class="markdown level0 remarks"><p>The robot drive class handles basic driving for a robot. Currently, 2 and 4 motor tank
@@ -419,7 +396,7 @@ RobotDrive classes with subclasses of the <a class="xref" href="WPILib.Interface
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const double DefaultExpirationTime = 0.1</code></pre>
+                <pre><code class="lang-csharp hljs">public const double DefaultExpirationTime = null</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -448,7 +425,7 @@ RobotDrive classes with subclasses of the <a class="xref" href="WPILib.Interface
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const double DefaultMaxOutput = 1</code></pre>
+                <pre><code class="lang-csharp hljs">public const double DefaultMaxOutput = null</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -477,7 +454,7 @@ RobotDrive classes with subclasses of the <a class="xref" href="WPILib.Interface
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const double DefaultSensitivity = 0.5</code></pre>
+                <pre><code class="lang-csharp hljs">public const double DefaultSensitivity = null</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1214,8 +1191,6 @@ axis for the rotate value.</p>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/es4s3w1d(v=vs.110).aspx">IDisposable.Dispose()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_RobotDrive_Drive_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.RobotDrive.Drive(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1326,7 +1301,7 @@ turn radius for differing speeds.
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void MecanumDrive_Cartesian(double x, double y, double rotation, double gyroAngle = 0)</code></pre>
+                <pre><code class="lang-csharp hljs">public void MecanumDrive_Cartesian(double x, double y, double rotation, double gyroAngle = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1426,13 +1401,13 @@ form an X across the robot.
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_RobotDrive_Normalize_System_Collections_Generic_IList_System_Double__.md&amp;value=---%0Auid%3A%20WPILib.RobotDrive.Normalize(System.Collections.Generic.IList%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_RobotDrive_Normalize_IList_System_Double__.md&amp;value=---%0Auid%3A%20WPILib.RobotDrive.Normalize(IList%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/RobotDrive.cs/#L535">View Source</a>
               </span>
               <a id="WPILib_RobotDrive_Normalize_" data-uid="WPILib.RobotDrive.Normalize*"></a>
-              <h4 id="WPILib_RobotDrive_Normalize_System_Collections_Generic_IList_System_Double__" data-uid="WPILib.RobotDrive.Normalize(System.Collections.Generic.IList{System.Double})">Normalize(IList&lt;Double&gt;)</h4>
+              <h4 id="WPILib_RobotDrive_Normalize_IList_System_Double__" data-uid="WPILib.RobotDrive.Normalize(IList{System.Double})">Normalize(IList&lt;Double&gt;)</h4>
               <div class="markdown level1 summary"><p>Normalized all wheel speeds if the magnitude of any wheel is greater the 1.0.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -1451,7 +1426,7 @@ form an X across the robot.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>&gt;</td>
+                    <td><span class="xref">IList</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>&gt;</td>
                     <td><span class="parametername">wheelSpeeds</span></td>
                     <td><p>The wheel speeds to normalize</p>
 </td>

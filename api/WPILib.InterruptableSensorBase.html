@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InterruptableSensorBase
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -143,33 +144,12 @@
                 <div>
                   <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
                 </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
               </div>
               <h6><strong>Namespace</strong>:WPILib</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_InterruptableSensorBase_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class InterruptableSensorBase : SensorBase, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public abstract class InterruptableSensorBase : SensorBase</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -552,13 +532,13 @@ The default is interrupt on rising edges only.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_System_Action_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_Action_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L70">View Source</a>
               </span>
               <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
-              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_System_Action_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(System.Action)">RequestInterrupts(Action)</h4>
+              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(Action)">RequestInterrupts(Action)</h4>
               <div class="markdown level1 summary"><p>Requests one of the 8 interrupts asynchronously on this input.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -577,7 +557,7 @@ The default is interrupt on rising edges only.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx">Action</a></td>
+                    <td><span class="xref">Action</span></td>
                     <td><span class="parametername">handler</span></td>
                     <td><p>The callback that will be called whenever 
 there is an interrupt on this device.</p>
@@ -585,19 +565,19 @@ there is an interrupt on this device.</p>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_System_Action__remarks">Remarks</h5>
+              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>Request interrupts in asynchronous mode where the user program interrupt handler will be 
 called when an interrupt occurs. The default is interrupt on rising edges only.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_System_Action_System_UInt32_System_Object__System_Object_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(System.Action%7BSystem.UInt32%2CSystem.Object%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(Action%7BSystem.UInt32%2CSystem.Object%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L97">View Source</a>
               </span>
               <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
-              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_System_Action_System_UInt32_System_Object__System_Object_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(System.Action{System.UInt32,System.Object},System.Object)">RequestInterrupts(Action&lt;UInt32, Object&gt;, Object)</h4>
+              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(Action{System.UInt32,System.Object},System.Object)">RequestInterrupts(Action&lt;UInt32, Object&gt;, Object)</h4>
               <div class="markdown level1 summary"><p>Requests one of the 8 interrupts asynchronously on this input.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -616,7 +596,7 @@ called when an interrupt occurs. The default is interrupt on rising edges only.<
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.uint32(v=vs.110).aspx">UInt32</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.uint32(v=vs.110).aspx">UInt32</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
                     <td><span class="parametername">handler</span></td>
                     <td><p>The callback that will be called whenever 
 there is an interrupt on this device.</p>
@@ -630,7 +610,7 @@ there is an interrupt on this device.</p>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_System_Action_System_UInt32_System_Object__System_Object__remarks">Remarks</h5>
+              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>Request interrupts in asynchronous mode where the user program interrupt handler will be 
 called when an interrupt occurs. The default is interrupt on rising edges only.</p>
 </div>

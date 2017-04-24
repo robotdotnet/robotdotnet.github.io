@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Counter
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -143,41 +144,21 @@
                 <div>
                   <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
                 </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
               </div>
               <h6><strong>Namespace</strong>:WPILib</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
               <h5 id="WPILib_Counter_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class Counter : SensorBase, IDisposable, ICounterBase, IPIDSource, ILiveWindowSendable, ISendable</code></pre>
+                <pre><code class="lang-csharp hljs">public class Counter : SensorBase, ICounterBase, IPIDSource, ILiveWindowSendable, ISendable</code></pre>
               </div>
               <h5 id="WPILib_Counter_remarks"><strong>Remarks</strong></h5>
               <div class="markdown level0 remarks"><p>This is a general purpose class for counting repetitive events.
 It can return the number of counts, the period of the most recent cycle,
 and detect when the signal being counted has stopped by supplying a 
-maximum cycle time.</p>
+maximum cycle time.
 <p>All counters will immediately start counting - <a class="xref" href="WPILib.Counter.html#WPILib_Counter_Reset">Reset()</a> them if you need
-them to be zeroes before use.</p></div>
+them to be zeroes before use.</p></p>
+</div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
@@ -198,8 +179,8 @@ them to be zeroes before use.</p></div>
               </div>
               <h5 id="WPILib_Counter__ctor_remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>If this constructor is used, all sources must then be specified by calling
-functions to specify the upsource, and the downsource independently.</p>
-<p>The counter will start counting immediately.</p>
+functions to specify the upsource, and the downsource independently.
+<p>The counter will start counting immediately.</p></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -273,8 +254,8 @@ functions to specify the upsource, and the downsource independently.</p>
                 </tbody>
               </table>
               <h5 id="WPILib_Counter__ctor_WPILib_AnalogTrigger__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Uses the trigger state output from the analog trigger.</p>
-<p>The counter will start counting immediately.</p>
+              <div class="markdown level1 remarks"><p>Uses the trigger state output from the analog trigger.
+<p>The counter will start counting immediately.</p></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -313,8 +294,8 @@ functions to specify the upsource, and the downsource independently.</p>
               <h5 id="WPILib_Counter__ctor_WPILib_DigitalSource__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>This constructor should be used if an existing <a class="xref" href="WPILib.DigitalSource.html">DigitalSource</a> is to
 be shared by multiple other objects such as <a class="xref" href="WPILib.Encoder.html">Encoder</a> or if
-the <a class="xref" href="WPILib.DigitalSource.html">DigitalSource</a> is not a DIO Channel (for instance a <a class="xref" href="WPILib.AnalogTrigger.html">AnalogTrigger</a>.</p>
-<p>The counter will start couting immediately.</p>
+the <a class="xref" href="WPILib.DigitalSource.html">DigitalSource</a> is not a DIO Channel (for instance a <a class="xref" href="WPILib.AnalogTrigger.html">AnalogTrigger</a>.
+<p>The counter will start couting immediately.</p></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
@@ -603,7 +584,7 @@ compensates for the decoding type.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -915,13 +896,13 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Counter.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Counter.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Counter.cs/#L547">View Source</a>
               </span>
               <a id="WPILib_Counter_InitTable_" data-uid="WPILib.Counter.InitTable*"></a>
-              <h4 id="WPILib_Counter_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Counter.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+              <h4 id="WPILib_Counter_InitTable_ITable_" data-uid="WPILib.Counter.InitTable(ITable)">InitTable(ITable)</h4>
               <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -940,7 +921,7 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+                    <td><span class="xref">ITable</span></td>
                     <td><span class="parametername">subtable</span></td>
                     <td><p>The table to put the values in.</p>
 </td>
@@ -948,7 +929,7 @@ events since an FPGA reset) and you will likely not se the stopped bit become tr
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Counter_PidGet.md&amp;value=---%0Auid%3A%20WPILib.Counter.PidGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>

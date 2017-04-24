@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LinearDigitalFilter
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -88,27 +89,6 @@
                 <div>
                   <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PIDSourceType">Filter.PIDSourceType</a>
                 </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
               </div>
               <h6><strong>Namespace</strong>:WPILib.Filters</h6>
               <h6><strong>Assembly</strong>:WPILib.dll</h6>
@@ -120,21 +100,27 @@
               <div class="markdown level0 remarks"><p>All types of FIR and IIR filters are supported.Static factory methods are provided to create commonly used types of filters.<br><p>
 Filters are of the form:<br> y[n] = (b0<em>x[n] + b1</em>x[n-1] + ... + bP<em>x[n-P) - (a0</em>y[n-1] + a2<em>y[n-2] + ... + aQ</em>y[n-Q])
 <p>
-Where:<br> y[n] is the output at time &quot;n&quot;<br> x[n] is the input at time &quot;n&quot;<br> y[n - 1] is the output from the LAST time step (&quot;n-1&quot;)<br>x[n - 1] is the input from the LAST time step(&quot;n-1&quot;) 
+Where:<br> y[n] is the output at time &quot;n&quot; 
+ x[n] is the input at time &quot;n&quot;<br> y[n - 1] is the output from the LAST time step (&quot;n-1&quot;)<br>x[n - 1] is the input from the LAST time step(&quot;n-1&quot;) 
 b0...bP are the &quot;feedforward&quot; (FIR) gains<br>a0...aQ are the &quot;feedback&quot; (IIR) gains<br>IMPORTANT! Note the &quot;-&quot; sign in front of the feedback term! This is a common 
 convention in signal processing.<br><p>
 What can linear filters do? Basically, they can filter, or diminish, the 
-effects of undesirable input frequencies.High frequencies, or rapid changes,<br>can be indicative of sensor noise or be otherwise undesirable. A &quot;low pass&quot;<br>filter smooths out the signal, reducing the impact of these high frequency<br>components.Likewise, a &quot;high pass&quot; filter gets rid of slow-moving signal<br>components, letting you detect large changes more easily.<br>3<p>
+effects of undesirable input frequencies.High frequencies, or rapid changes,<br>can be indicative of sensor noise or be otherwise undesirable. A &quot;low pass&quot; 
+filter smooths out the signal, reducing the impact of these high frequency<br>components.Likewise, a &quot;high pass&quot; filter gets rid of slow-moving signal<br>components, letting you detect large changes more easily.<br>3<p>
 Example FRC applications of filters:    </p>
 <ul>
 <li>Getting rid of noise from an analog sensor input (note: the roboRIO&#39;s FPGA<br>can do this faster in hardware)   </li>
 <li>Smoothing out joystick input to prevent the wheels from slipping or the<br>robot from tipping    </li>
-<li>Smoothing motor commands so that unnecessary strain isn&#39;t put on<br>electrical or mechanical components    </li>
+<li>Smoothing motor commands so that unnecessary strain isn&#39;t put on 
+electrical or mechanical components </li>
 <li>If you use clever gains, you can make a PID controller out of this class!<br><p>
-For more on filters, I highly recommend the following articles:<br><a href="http://en.wikipedia.org/wiki/Linear_filter">http://en.wikipedia.org/wiki/Linear_filter</a><br><a href="http://en.wikipedia.org/wiki/Iir_filter">http://en.wikipedia.org/wiki/Iir_filter</a><br><a href="http://en.wikipedia.org/wiki/Fir_filter">http://en.wikipedia.org/wiki/Fir_filter</a> 
+For more on filters, I highly recommend the following articles: 
+<a href="http://en.wikipedia.org/wiki/Linear_filter">http://en.wikipedia.org/wiki/Linear_filter</a><br><a href="http://en.wikipedia.org/wiki/Iir_filter">http://en.wikipedia.org/wiki/Iir_filter</a> 
+<a href="http://en.wikipedia.org/wiki/Fir_filter">http://en.wikipedia.org/wiki/Fir_filter</a> 
 <p>
 Note 1: PIDGet() should be called by the user on a known, regular period.<br>You can set up a Notifier to do this (look at the WPILib PIDController<br>class), or do it &quot;inline&quot; with code in a periodic function.<br><p>
-Note 2: For ALL filters, gains are necessarily a function of frequency.If<br>you make a filter that works well for you at, say, 100Hz, you will most<br>definitely need to adjust the gains if you then want to run it at 200Hz!<br>Combining this with Note 1 - the impetus is on YOU as a developer to make<br>sure PIDGet() gets called at the desired, constant frequency!</li>
+Note 2: For ALL filters, gains are necessarily a function of frequency.If<br>you make a filter that works well for you at, say, 100Hz, you will most 
+definitely need to adjust the gains if you then want to run it at 200Hz!<br>Combining this with Note 1 - the impetus is on YOU as a developer to make<br>sure PIDGet() gets called at the desired, constant frequency!</li>
 </ul>
 </div>
               <h3 id="constructors">Constructors
@@ -286,8 +272,8 @@ would do.</p>
               <h5 id="WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>The filter is in the form
 y[n] = gain<em>x[n] + (-gain)</em>x[n-1] + gain*y[n-1]
-where gain = e^(-dt / T), T is the time constant in seconds.</p>
-<p>This filter is stable for time constants greater then zero.</p>
+where gain = e^(-dt / T), T is the time constant in seconds.
+<p>This filter is stable for time constants greater then zero.</p></p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
