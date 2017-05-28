@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AnalogAccelerometer
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,506 +67,506 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_AnalogAccelerometer" data-uid="WPILib.AnalogAccelerometer">Class AnalogAccelerometer
-              </h1>
-              <div class="markdown level0 summary"><p>Handle operation of an analog accelerometer</p>
+            <article class="content wrap" id="_content" data-uid="WPILib.AnalogAccelerometer">
+  
+  
+  <h1 id="WPILib_AnalogAccelerometer" data-uid="WPILib.AnalogAccelerometer">Class AnalogAccelerometer
+  </h1>
+  <div class="markdown level0 summary"><p>Handle operation of an analog accelerometer</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
-                  <div class="level2"><span class="xref">AnalogAccelerometer</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_AnalogAccelerometer_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class AnalogAccelerometer : SensorBase, IPIDSource, ILiveWindowSendable, ISendable</code></pre>
-              </div>
-              <h5 id="WPILib_AnalogAccelerometer_remarks"><strong>Remarks</strong></h5>
-              <div class="markdown level0 remarks"><p>The accelerometer reads acceleration directly through the sensor. Many sensors have
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+    <div class="level2"><span class="xref">AnalogAccelerometer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>:WPILib</h6>
+  <h6><strong>Assembly</strong>:WPILib.dll</h6>
+  <h5 id="WPILib_AnalogAccelerometer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AnalogAccelerometer : SensorBase, IPIDSource, ILiveWindowSendable, ISendable</code></pre>
+  </div>
+  <h5 id="WPILib_AnalogAccelerometer_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The accelerometer reads acceleration directly through the sensor. Many sensors have
 <p>multiple axis and can be treated as multiple devices.Each is calibrated by finding
 <p>the center value over a period of time.</p>
 </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L34">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer__ctor_" data-uid="WPILib.AnalogAccelerometer.#ctor*"></a>
-              <h4 id="WPILib_AnalogAccelerometer__ctor_System_Int32_" data-uid="WPILib.AnalogAccelerometer.#ctor(System.Int32)">AnalogAccelerometer(Int32)</h4>
-              <div class="markdown level1 summary"><p>Create a new instance of an accelerometer, declaring a new analog channel.</p>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L34">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer__ctor_" data-uid="WPILib.AnalogAccelerometer.#ctor*"></a>
+  <h4 id="WPILib_AnalogAccelerometer__ctor_System_Int32_" data-uid="WPILib.AnalogAccelerometer.#ctor(System.Int32)">AnalogAccelerometer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a new instance of an accelerometer, declaring a new analog channel.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public AnalogAccelerometer(int channel)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">channel</span></td>
-                    <td><p>The channel the accelerometer is connected to. [0..3] on RIO, [4..7] on MXP</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnalogAccelerometer(int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>The channel the accelerometer is connected to. [0..3] on RIO, [4..7] on MXP</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer__ctor_WPILib_AnalogInput_.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.%23ctor(WPILib.AnalogInput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L45">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer__ctor_" data-uid="WPILib.AnalogAccelerometer.#ctor*"></a>
-              <h4 id="WPILib_AnalogAccelerometer__ctor_WPILib_AnalogInput_" data-uid="WPILib.AnalogAccelerometer.#ctor(WPILib.AnalogInput)">AnalogAccelerometer(AnalogInput)</h4>
-              <div class="markdown level1 summary"><p>Creates a new instance of the Accelerometer from an existing <a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a></p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer__ctor_WPILib_AnalogInput_.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.%23ctor(WPILib.AnalogInput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L45">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer__ctor_" data-uid="WPILib.AnalogAccelerometer.#ctor*"></a>
+  <h4 id="WPILib_AnalogAccelerometer__ctor_WPILib_AnalogInput_" data-uid="WPILib.AnalogAccelerometer.#ctor(WPILib.AnalogInput)">AnalogAccelerometer(AnalogInput)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the Accelerometer from an existing <a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a></p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public AnalogAccelerometer(AnalogInput channel)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a></td>
-                    <td><span class="parametername">channel</span></td>
-                    <td><p>The existing <a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a> the accelerometer is connected to.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnalogAccelerometer(AnalogInput channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>The existing <a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a> the accelerometer is connected to.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_PIDSourceType.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.PIDSourceType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L22">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_PIDSourceType_" data-uid="WPILib.AnalogAccelerometer.PIDSourceType*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_PIDSourceType" data-uid="WPILib.AnalogAccelerometer.PIDSourceType">PIDSourceType</h4>
-              <div class="markdown level1 summary"><p>Gets or sets the Source type for this <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a>.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_PIDSourceType.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.PIDSourceType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L22">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_PIDSourceType_" data-uid="WPILib.AnalogAccelerometer.PIDSourceType*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_PIDSourceType" data-uid="WPILib.AnalogAccelerometer.PIDSourceType">PIDSourceType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Source type for this <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a>.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public PIDSourceType PIDSourceType { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Interfaces.PIDSourceType.html">PIDSourceType</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IPIDSource.html#WPILib_Interfaces_IPIDSource_PIDSourceType">IPIDSource.PIDSourceType</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Sensitivity.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Sensitivity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L75">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_Sensitivity_" data-uid="WPILib.AnalogAccelerometer.Sensitivity*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_Sensitivity" data-uid="WPILib.AnalogAccelerometer.Sensitivity">Sensitivity</h4>
-              <div class="markdown level1 summary"><p>Sets the accelerometer sensitivity.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PIDSourceType PIDSourceType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Interfaces.PIDSourceType.html">PIDSourceType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IPIDSource.html#WPILib_Interfaces_IPIDSource_PIDSourceType">IPIDSource.PIDSourceType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Sensitivity.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Sensitivity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L75">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_Sensitivity_" data-uid="WPILib.AnalogAccelerometer.Sensitivity*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_Sensitivity" data-uid="WPILib.AnalogAccelerometer.Sensitivity">Sensitivity</h4>
+  <div class="markdown level1 summary"><p>Sets the accelerometer sensitivity.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double Sensitivity { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L106">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_SmartDashboardType_" data-uid="WPILib.AnalogAccelerometer.SmartDashboardType*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_SmartDashboardType" data-uid="WPILib.AnalogAccelerometer.SmartDashboardType">SmartDashboardType</h4>
-              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Sensitivity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L106">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_SmartDashboardType_" data-uid="WPILib.AnalogAccelerometer.SmartDashboardType*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_SmartDashboardType" data-uid="WPILib.AnalogAccelerometer.SmartDashboardType">SmartDashboardType</h4>
+  <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Table.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L101">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_Table_" data-uid="WPILib.AnalogAccelerometer.Table*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_Table" data-uid="WPILib.AnalogAccelerometer.Table">Table</h4>
-              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Table.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L101">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_Table_" data-uid="WPILib.AnalogAccelerometer.Table*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_Table" data-uid="WPILib.AnalogAccelerometer.Table">Table</h4>
+  <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Zero.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Zero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L80">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_Zero_" data-uid="WPILib.AnalogAccelerometer.Zero*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_Zero" data-uid="WPILib.AnalogAccelerometer.Zero">Zero</h4>
-              <div class="markdown level1 summary"><p>Sets the voltage that corresponds to 0G.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ITable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Zero.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Zero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L80">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_Zero_" data-uid="WPILib.AnalogAccelerometer.Zero*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_Zero" data-uid="WPILib.AnalogAccelerometer.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>Sets the voltage that corresponds to 0G.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double Zero { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Dispose.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L57">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_Dispose_" data-uid="WPILib.AnalogAccelerometer.Dispose*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_Dispose" data-uid="WPILib.AnalogAccelerometer.Dispose">Dispose()</h4>
-              <div class="markdown level1 summary"><p>Delete the analog components used for the accelerometer.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Zero { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_Dispose.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L57">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_Dispose_" data-uid="WPILib.AnalogAccelerometer.Dispose*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_Dispose" data-uid="WPILib.AnalogAccelerometer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Delete the analog components used for the accelerometer.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_GetAcceleration.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.GetAcceleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L70">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_GetAcceleration_" data-uid="WPILib.AnalogAccelerometer.GetAcceleration*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_GetAcceleration" data-uid="WPILib.AnalogAccelerometer.GetAcceleration">GetAcceleration()</h4>
-              <div class="markdown level1 summary"><p>Returns the acceleration in Gs.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_GetAcceleration.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.GetAcceleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L70">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_GetAcceleration_" data-uid="WPILib.AnalogAccelerometer.GetAcceleration*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_GetAcceleration" data-uid="WPILib.AnalogAccelerometer.GetAcceleration">GetAcceleration()</h4>
+  <div class="markdown level1 summary"><p>Returns the acceleration in Gs.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual double GetAcceleration()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The acceleration in Gs.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetAcceleration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The acceleration in Gs.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L92">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_InitTable_" data-uid="WPILib.AnalogAccelerometer.InitTable*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_InitTable_ITable_" data-uid="WPILib.AnalogAccelerometer.InitTable(ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L92">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_InitTable_" data-uid="WPILib.AnalogAccelerometer.InitTable*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_InitTable_ITable_" data-uid="WPILib.AnalogAccelerometer.InitTable(ITable)">InitTable(ITable)</h4>
+  <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td><span class="parametername">subtable</span></td>
-                    <td><p>The table to put the values in.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ITable</span></td>
+        <td><span class="parametername">subtable</span></td>
+        <td><p>The table to put the values in.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_PidGet.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.PidGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L86">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_PidGet_" data-uid="WPILib.AnalogAccelerometer.PidGet*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_PidGet" data-uid="WPILib.AnalogAccelerometer.PidGet">PidGet()</h4>
-              <div class="markdown level1 summary"><p>Get the result to use in PIDController</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_PidGet.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.PidGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L86">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_PidGet_" data-uid="WPILib.AnalogAccelerometer.PidGet*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_PidGet" data-uid="WPILib.AnalogAccelerometer.PidGet">PidGet()</h4>
+  <div class="markdown level1 summary"><p>Get the result to use in PIDController</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual double PidGet()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The result to use in PIDController</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double PidGet()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The result to use in PIDController</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IPIDSource.html#WPILib_Interfaces_IPIDSource_PidGet">IPIDSource.PidGet()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L121">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_StartLiveWindowMode_" data-uid="WPILib.AnalogAccelerometer.StartLiveWindowMode*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_StartLiveWindowMode" data-uid="WPILib.AnalogAccelerometer.StartLiveWindowMode">StartLiveWindowMode()</h4>
-              <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IPIDSource.html#WPILib_Interfaces_IPIDSource_PidGet">IPIDSource.PidGet()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L121">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_StartLiveWindowMode_" data-uid="WPILib.AnalogAccelerometer.StartLiveWindowMode*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_StartLiveWindowMode" data-uid="WPILib.AnalogAccelerometer.StartLiveWindowMode">StartLiveWindowMode()</h4>
+  <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
 value changes reflect the value on the table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L126">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_StopLiveWindowMode_" data-uid="WPILib.AnalogAccelerometer.StopLiveWindowMode*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_StopLiveWindowMode" data-uid="WPILib.AnalogAccelerometer.StopLiveWindowMode">StopLiveWindowMode()</h4>
-              <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L126">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_StopLiveWindowMode_" data-uid="WPILib.AnalogAccelerometer.StopLiveWindowMode*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_StopLiveWindowMode" data-uid="WPILib.AnalogAccelerometer.StopLiveWindowMode">StopLiveWindowMode()</h4>
+  <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L112">View Source</a>
-              </span>
-              <a id="WPILib_AnalogAccelerometer_UpdateTable_" data-uid="WPILib.AnalogAccelerometer.UpdateTable*"></a>
-              <h4 id="WPILib_AnalogAccelerometer_UpdateTable" data-uid="WPILib.AnalogAccelerometer.UpdateTable">UpdateTable()</h4>
-              <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_AnalogAccelerometer_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.AnalogAccelerometer.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/AnalogAccelerometer.cs/#L112">View Source</a>
+  </span>
+  <a id="WPILib_AnalogAccelerometer_UpdateTable_" data-uid="WPILib.AnalogAccelerometer.UpdateTable*"></a>
+  <h4 id="WPILib_AnalogAccelerometer_UpdateTable" data-uid="WPILib.AnalogAccelerometer.UpdateTable">UpdateTable()</h4>
+  <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
 values.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
-                        </article>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

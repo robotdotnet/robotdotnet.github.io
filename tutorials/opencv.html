@@ -8,7 +8,7 @@
     <title>OpenCV and CameraServer | RobotDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="OpenCV and CameraServer | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -66,11 +66,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="opencv-and-cameraserver">OpenCV and CameraServer</h1>
-              
+<h1 id="opencv-and-cameraserver">OpenCV and CameraServer</h1>
+
 <p>One of the coolest new features for 2017 is the addition of OpenCV and the new CameraServer to WPILib. Unlike NiVision, which was never enabled in RobotDotNet, OpenCV and CameraServer have been fully enabled.</p>
 <h2 id="cameraserver">CameraServer</h2>
-<p>CameraServer is the new library for handling USB and Ethernet cameras, along with streaming video from these devices, along with OpenCV, to other devices. All code can be found in the <a class="xref" href="../api/CSCore.html">CSCore namespace</a>. 
+<p>CameraServer is the new library for handling USB and Ethernet cameras, along with streaming video from these devices, along with OpenCV, to other devices. All code can be found in the <a href="xref:CSCore">CSCore namespace</a>. 
 However in most instances, you should just be able to use <a class="xref" href="../api/WPILib.CameraServer.html">the WPILib CameraServer class</a>, which handles most of the configuration of these settings for you. </p>
 <h2 id="opencv">OpenCV</h2>
 <p>The OpenCV library we use is a fork of <a href="https://github.com/shimat/opencvsharp">OpenCvSharp</a>. It has been modified to work with the WPILib build system, but still handles all of the OpenCV operations you have come to expect.
@@ -171,8 +171,7 @@ public override void RobotInit()
     cameraThread.IsBackground = true;
     cameraThread.Start();
 }
-</code></pre>
-            </article>
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

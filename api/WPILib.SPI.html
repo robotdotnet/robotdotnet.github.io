@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SPI
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,853 +67,853 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_SPI" data-uid="WPILib.SPI">Class SPI
-              </h1>
-              <div class="markdown level0 summary"><p>This class is used to interface with the SPI ports on the RoboRIO</p>
+            <article class="content wrap" id="_content" data-uid="WPILib.SPI">
+  
+  
+  <h1 id="WPILib_SPI" data-uid="WPILib.SPI">Class SPI
+  </h1>
+  <div class="markdown level0 summary"><p>This class is used to interface with the SPI ports on the RoboRIO</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
-                  <div class="level2"><span class="xref">SPI</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_SPI_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class SPI : SensorBase</code></pre>
-              </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI__ctor_WPILib_SPI_Port_.md&amp;value=---%0Auid%3A%20WPILib.SPI.%23ctor(WPILib.SPI.Port)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L42">View Source</a>
-              </span>
-              <a id="WPILib_SPI__ctor_" data-uid="WPILib.SPI.#ctor*"></a>
-              <h4 id="WPILib_SPI__ctor_WPILib_SPI_Port_" data-uid="WPILib.SPI.#ctor(WPILib.SPI.Port)">SPI(SPI.Port)</h4>
-              <div class="markdown level1 summary"><p>Creates a new SPI class.</p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+    <div class="level2"><span class="xref">SPI</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>:WPILib</h6>
+  <h6><strong>Assembly</strong>:WPILib.dll</h6>
+  <h5 id="WPILib_SPI_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SPI : SensorBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI__ctor_WPILib_SPI_Port_.md&amp;value=---%0Auid%3A%20WPILib.SPI.%23ctor(WPILib.SPI.Port)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L42">View Source</a>
+  </span>
+  <a id="WPILib_SPI__ctor_" data-uid="WPILib.SPI.#ctor*"></a>
+  <h4 id="WPILib_SPI__ctor_WPILib_SPI_Port_" data-uid="WPILib.SPI.#ctor(WPILib.SPI.Port)">SPI(SPI.Port)</h4>
+  <div class="markdown level1 summary"><p>Creates a new SPI class.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public SPI(SPI.Port port)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.SPI.Port.html">SPI.Port</a></td>
-                    <td><span class="parametername">port</span></td>
-                    <td><p>The physical SPI Port</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SPI(SPI.Port port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.SPI.Port.html">SPI.Port</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The physical SPI Port</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Dispose.md&amp;value=---%0Auid%3A%20WPILib.SPI.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L53">View Source</a>
-              </span>
-              <a id="WPILib_SPI_Dispose_" data-uid="WPILib.SPI.Dispose*"></a>
-              <h4 id="WPILib_SPI_Dispose" data-uid="WPILib.SPI.Dispose">Dispose()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_FreeAccumulator.md&amp;value=---%0Auid%3A%20WPILib.SPI.FreeAccumulator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L228">View Source</a>
-              </span>
-              <a id="WPILib_SPI_FreeAccumulator_" data-uid="WPILib.SPI.FreeAccumulator*"></a>
-              <h4 id="WPILib_SPI_FreeAccumulator" data-uid="WPILib.SPI.FreeAccumulator">FreeAccumulator()</h4>
-              <div class="markdown level1 summary"><p>Frees the accumulator.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Dispose.md&amp;value=---%0Auid%3A%20WPILib.SPI.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L53">View Source</a>
+  </span>
+  <a id="WPILib_SPI_Dispose_" data-uid="WPILib.SPI.Dispose*"></a>
+  <h4 id="WPILib_SPI_Dispose" data-uid="WPILib.SPI.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_FreeAccumulator.md&amp;value=---%0Auid%3A%20WPILib.SPI.FreeAccumulator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L228">View Source</a>
+  </span>
+  <a id="WPILib_SPI_FreeAccumulator_" data-uid="WPILib.SPI.FreeAccumulator*"></a>
+  <h4 id="WPILib_SPI_FreeAccumulator" data-uid="WPILib.SPI.FreeAccumulator">FreeAccumulator()</h4>
+  <div class="markdown level1 summary"><p>Frees the accumulator.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void FreeAccumulator()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorAverage.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorAverage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L313">View Source</a>
-              </span>
-              <a id="WPILib_SPI_GetAccumulatorAverage_" data-uid="WPILib.SPI.GetAccumulatorAverage*"></a>
-              <h4 id="WPILib_SPI_GetAccumulatorAverage" data-uid="WPILib.SPI.GetAccumulatorAverage">GetAccumulatorAverage()</h4>
-              <div class="markdown level1 summary"><p>Read the average of the accumulated value.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeAccumulator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorAverage.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorAverage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L313">View Source</a>
+  </span>
+  <a id="WPILib_SPI_GetAccumulatorAverage_" data-uid="WPILib.SPI.GetAccumulatorAverage*"></a>
+  <h4 id="WPILib_SPI_GetAccumulatorAverage" data-uid="WPILib.SPI.GetAccumulatorAverage">GetAccumulatorAverage()</h4>
+  <div class="markdown level1 summary"><p>Read the average of the accumulated value.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetAccumulatorAverage()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The accumulated average value (value / count)</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetAccumulatorAverage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The accumulated average value (value / count)</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorCount.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L301">View Source</a>
-              </span>
-              <a id="WPILib_SPI_GetAccumulatorCount_" data-uid="WPILib.SPI.GetAccumulatorCount*"></a>
-              <h4 id="WPILib_SPI_GetAccumulatorCount" data-uid="WPILib.SPI.GetAccumulatorCount">GetAccumulatorCount()</h4>
-              <div class="markdown level1 summary"><p>Read the number of accumulated values.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorCount.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L301">View Source</a>
+  </span>
+  <a id="WPILib_SPI_GetAccumulatorCount_" data-uid="WPILib.SPI.GetAccumulatorCount*"></a>
+  <h4 id="WPILib_SPI_GetAccumulatorCount" data-uid="WPILib.SPI.GetAccumulatorCount">GetAccumulatorCount()</h4>
+  <div class="markdown level1 summary"><p>Read the number of accumulated values.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public long GetAccumulatorCount()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><p>The number of times samples from the channel were accumulated.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetAccumulatorCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><p>The number of times samples from the channel were accumulated.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorLastValue.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorLastValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L277">View Source</a>
-              </span>
-              <a id="WPILib_SPI_GetAccumulatorLastValue_" data-uid="WPILib.SPI.GetAccumulatorLastValue*"></a>
-              <h4 id="WPILib_SPI_GetAccumulatorLastValue" data-uid="WPILib.SPI.GetAccumulatorLastValue">GetAccumulatorLastValue()</h4>
-              <div class="markdown level1 summary"><p>Read the last value read by the accumulator engine.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorLastValue.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorLastValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L277">View Source</a>
+  </span>
+  <a id="WPILib_SPI_GetAccumulatorLastValue_" data-uid="WPILib.SPI.GetAccumulatorLastValue*"></a>
+  <h4 id="WPILib_SPI_GetAccumulatorLastValue" data-uid="WPILib.SPI.GetAccumulatorLastValue">GetAccumulatorLastValue()</h4>
+  <div class="markdown level1 summary"><p>Read the last value read by the accumulator engine.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int GetAccumulatorLastValue()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><p>The last value from the accumulator</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAccumulatorLastValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><p>The last value from the accumulator</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorOutput_System_Int64__System_Int64__.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorOutput(System.Int64%40%2CSystem.Int64%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L326">View Source</a>
-              </span>
-              <a id="WPILib_SPI_GetAccumulatorOutput_" data-uid="WPILib.SPI.GetAccumulatorOutput*"></a>
-              <h4 id="WPILib_SPI_GetAccumulatorOutput_System_Int64__System_Int64__" data-uid="WPILib.SPI.GetAccumulatorOutput(System.Int64@,System.Int64@)">GetAccumulatorOutput(ref Int64, ref Int64)</h4>
-              <div class="markdown level1 summary"><p>Read the accumulated value and the number of accumulated values atomically</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorOutput_System_Int64__System_Int64__.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorOutput(System.Int64%40%2CSystem.Int64%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L326">View Source</a>
+  </span>
+  <a id="WPILib_SPI_GetAccumulatorOutput_" data-uid="WPILib.SPI.GetAccumulatorOutput*"></a>
+  <h4 id="WPILib_SPI_GetAccumulatorOutput_System_Int64__System_Int64__" data-uid="WPILib.SPI.GetAccumulatorOutput(System.Int64@,System.Int64@)">GetAccumulatorOutput(ref Int64, ref Int64)</h4>
+  <div class="markdown level1 summary"><p>Read the accumulated value and the number of accumulated values atomically</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void GetAccumulatorOutput(ref long value, ref long count)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The 64 bit accumulated output</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAccumulatorOutput(ref long value, ref long count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The 64 bit accumulated output</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><span class="parametername">count</span></td>
-                    <td><p>The number of accumulation cycles</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of accumulation cycles</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorValue.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L289">View Source</a>
-              </span>
-              <a id="WPILib_SPI_GetAccumulatorValue_" data-uid="WPILib.SPI.GetAccumulatorValue*"></a>
-              <h4 id="WPILib_SPI_GetAccumulatorValue" data-uid="WPILib.SPI.GetAccumulatorValue">GetAccumulatorValue()</h4>
-              <div class="markdown level1 summary"><p>Read the accumulated value.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_GetAccumulatorValue.md&amp;value=---%0Auid%3A%20WPILib.SPI.GetAccumulatorValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L289">View Source</a>
+  </span>
+  <a id="WPILib_SPI_GetAccumulatorValue_" data-uid="WPILib.SPI.GetAccumulatorValue*"></a>
+  <h4 id="WPILib_SPI_GetAccumulatorValue" data-uid="WPILib.SPI.GetAccumulatorValue">GetAccumulatorValue()</h4>
+  <div class="markdown level1 summary"><p>Read the accumulated value.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public long GetAccumulatorValue()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><p>The 64-bit value accumulated since the last Reset().</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetAccumulatorValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><p>The 64-bit value accumulated since the last Reset().</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_InitAccumulator_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.SPI.InitAccumulator(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L216">View Source</a>
-              </span>
-              <a id="WPILib_SPI_InitAccumulator_" data-uid="WPILib.SPI.InitAccumulator*"></a>
-              <h4 id="WPILib_SPI_InitAccumulator_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="WPILib.SPI.InitAccumulator(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">InitAccumulator(Double, Int32, Int32, Int32, Int32, Int32, Int32, Boolean, Boolean)</h4>
-              <div class="markdown level1 summary"><p>Initialize the accumulator.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_InitAccumulator_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.SPI.InitAccumulator(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L216">View Source</a>
+  </span>
+  <a id="WPILib_SPI_InitAccumulator_" data-uid="WPILib.SPI.InitAccumulator*"></a>
+  <h4 id="WPILib_SPI_InitAccumulator_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="WPILib.SPI.InitAccumulator(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">InitAccumulator(Double, Int32, Int32, Int32, Int32, Int32, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initialize the accumulator.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void InitAccumulator(double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">period</span></td>
-                    <td><p>Time between reads.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitAccumulator(double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">period</span></td>
+        <td><p>Time between reads.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">cmd</span></td>
-                    <td><p>SPI command to send to request data</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">cmd</span></td>
+        <td><p>SPI command to send to request data</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">xferSize</span></td>
-                    <td><p>SPI transfer size, in bytes</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">xferSize</span></td>
+        <td><p>SPI transfer size, in bytes</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">validMask</span></td>
-                    <td><p>Mask to apply to received data for validity checking.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">validMask</span></td>
+        <td><p>Mask to apply to received data for validity checking.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">validValue</span></td>
-                    <td><p>After validMask is applied, required matching value for
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">validValue</span></td>
+        <td><p>After validMask is applied, required matching value for
 validity checking.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">dataShift</span></td>
-                    <td><p>Bit shift to apply to received data to get actual data value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">dataShift</span></td>
+        <td><p>Bit shift to apply to received data to get actual data value</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">dataSize</span></td>
-                    <td><p>Size (int bits) of data field</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">dataSize</span></td>
+        <td><p>Size (int bits) of data field</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">isSigned</span></td>
-                    <td><p>Is data field signed?</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">isSigned</span></td>
+        <td><p>Is data field signed?</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">bigEndian</span></td>
-                    <td><p>Is device big endian?</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">bigEndian</span></td>
+        <td><p>Is device big endian?</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Read_System_Boolean_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.Read(System.Boolean%2CSystem.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L175">View Source</a>
-              </span>
-              <a id="WPILib_SPI_Read_" data-uid="WPILib.SPI.Read*"></a>
-              <h4 id="WPILib_SPI_Read_System_Boolean_System_Byte___System_Int32_" data-uid="WPILib.SPI.Read(System.Boolean,System.Byte[],System.Int32)">Read(Boolean, Byte[], Int32)</h4>
-              <div class="markdown level1 summary"><p>Reads a word from the receive FIFO.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Read_System_Boolean_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.Read(System.Boolean%2CSystem.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L175">View Source</a>
+  </span>
+  <a id="WPILib_SPI_Read_" data-uid="WPILib.SPI.Read*"></a>
+  <h4 id="WPILib_SPI_Read_System_Boolean_System_Byte___System_Int32_" data-uid="WPILib.SPI.Read(System.Boolean,System.Byte[],System.Int32)">Read(Boolean, Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads a word from the receive FIFO.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int Read(bool initiate, byte[] dataReceived, int size)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">initiate</span></td>
-                    <td><p>If true, this method pushes &quot;0&quot; into the transmit buffer and 
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(bool initiate, byte[] dataReceived, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">initiate</span></td>
+        <td><p>If true, this method pushes &quot;0&quot; into the transmit buffer and 
 initiates a transfer.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
-                    <td><span class="parametername">dataReceived</span></td>
-                    <td><p>An array to hold the data received.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+        <td><span class="parametername">dataReceived</span></td>
+        <td><p>An array to hold the data received.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">size</span></td>
-                    <td><p>The size of data to receive.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of data to receive.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_SPI_Read_System_Boolean_System_Byte___System_Int32__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Waits for the current transfer to complete if the FIFO array is empty.
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_SPI_Read_System_Boolean_System_Byte___System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Waits for the current transfer to complete if the FIFO array is empty.
 If the receive FIFO is empty, there is no active transfer, and initiate is false, errors.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_ResetAccumulator.md&amp;value=---%0Auid%3A%20WPILib.SPI.ResetAccumulator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L238">View Source</a>
-              </span>
-              <a id="WPILib_SPI_ResetAccumulator_" data-uid="WPILib.SPI.ResetAccumulator*"></a>
-              <h4 id="WPILib_SPI_ResetAccumulator" data-uid="WPILib.SPI.ResetAccumulator">ResetAccumulator()</h4>
-              <div class="markdown level1 summary"><p>Resets the accumulator to zero.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_ResetAccumulator.md&amp;value=---%0Auid%3A%20WPILib.SPI.ResetAccumulator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L238">View Source</a>
+  </span>
+  <a id="WPILib_SPI_ResetAccumulator_" data-uid="WPILib.SPI.ResetAccumulator*"></a>
+  <h4 id="WPILib_SPI_ResetAccumulator" data-uid="WPILib.SPI.ResetAccumulator">ResetAccumulator()</h4>
+  <div class="markdown level1 summary"><p>Resets the accumulator to zero.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ResetAccumulator()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetAccumulatorCenter_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetAccumulatorCenter(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L255">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetAccumulatorCenter_" data-uid="WPILib.SPI.SetAccumulatorCenter*"></a>
-              <h4 id="WPILib_SPI_SetAccumulatorCenter_System_Int32_" data-uid="WPILib.SPI.SetAccumulatorCenter(System.Int32)">SetAccumulatorCenter(Int32)</h4>
-              <div class="markdown level1 summary"><p>Sets the center value of the accumulator.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetAccumulator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetAccumulatorCenter_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetAccumulatorCenter(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L255">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetAccumulatorCenter_" data-uid="WPILib.SPI.SetAccumulatorCenter*"></a>
+  <h4 id="WPILib_SPI_SetAccumulatorCenter_System_Int32_" data-uid="WPILib.SPI.SetAccumulatorCenter(System.Int32)">SetAccumulatorCenter(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the center value of the accumulator.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetAccumulatorCenter(int center)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">center</span></td>
-                    <td><p>The center value to set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccumulatorCenter(int center)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center value to set.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_SPI_SetAccumulatorCenter_System_Int32__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The center value is subtracted from each value before it is added to the 
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_SPI_SetAccumulatorCenter_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The center value is subtracted from each value before it is added to the 
 accumulator. This is used for the center value of devices like gyros and
 accelerometers to make integration work and to take the device offset
 into account when integrating.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetAccumulatorDeadband_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetAccumulatorDeadband(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L266">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetAccumulatorDeadband_" data-uid="WPILib.SPI.SetAccumulatorDeadband*"></a>
-              <h4 id="WPILib_SPI_SetAccumulatorDeadband_System_Int32_" data-uid="WPILib.SPI.SetAccumulatorDeadband(System.Int32)">SetAccumulatorDeadband(Int32)</h4>
-              <div class="markdown level1 summary"><p>Sets the accumulator&#39;s deadband.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetAccumulatorDeadband_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetAccumulatorDeadband(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L266">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetAccumulatorDeadband_" data-uid="WPILib.SPI.SetAccumulatorDeadband*"></a>
+  <h4 id="WPILib_SPI_SetAccumulatorDeadband_System_Int32_" data-uid="WPILib.SPI.SetAccumulatorDeadband(System.Int32)">SetAccumulatorDeadband(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the accumulator&#39;s deadband.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetAccumulatorDeadband(int deadband)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">deadband</span></td>
-                    <td><p>The deadband to set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccumulatorDeadband(int deadband)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">deadband</span></td>
+        <td><p>The deadband to set.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetChipSelectActiveHigh.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetChipSelectActiveHigh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L131">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetChipSelectActiveHigh_" data-uid="WPILib.SPI.SetChipSelectActiveHigh*"></a>
-              <h4 id="WPILib_SPI_SetChipSelectActiveHigh" data-uid="WPILib.SPI.SetChipSelectActiveHigh">SetChipSelectActiveHigh()</h4>
-              <div class="markdown level1 summary"><p>Configure the chip select line to be active high.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetChipSelectActiveHigh.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetChipSelectActiveHigh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L131">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetChipSelectActiveHigh_" data-uid="WPILib.SPI.SetChipSelectActiveHigh*"></a>
+  <h4 id="WPILib_SPI_SetChipSelectActiveHigh" data-uid="WPILib.SPI.SetChipSelectActiveHigh">SetChipSelectActiveHigh()</h4>
+  <div class="markdown level1 summary"><p>Configure the chip select line to be active high.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetChipSelectActiveHigh()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetChipSelectActiveLow.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetChipSelectActiveLow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L141">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetChipSelectActiveLow_" data-uid="WPILib.SPI.SetChipSelectActiveLow*"></a>
-              <h4 id="WPILib_SPI_SetChipSelectActiveLow" data-uid="WPILib.SPI.SetChipSelectActiveLow">SetChipSelectActiveLow()</h4>
-              <div class="markdown level1 summary"><p>Configure the chip select line to be active low.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChipSelectActiveHigh()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetChipSelectActiveLow.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetChipSelectActiveLow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L141">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetChipSelectActiveLow_" data-uid="WPILib.SPI.SetChipSelectActiveLow*"></a>
+  <h4 id="WPILib_SPI_SetChipSelectActiveLow" data-uid="WPILib.SPI.SetChipSelectActiveLow">SetChipSelectActiveLow()</h4>
+  <div class="markdown level1 summary"><p>Configure the chip select line to be active low.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetChipSelectActiveLow()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetClockActiveHigh.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetClockActiveHigh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L104">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetClockActiveHigh_" data-uid="WPILib.SPI.SetClockActiveHigh*"></a>
-              <h4 id="WPILib_SPI_SetClockActiveHigh" data-uid="WPILib.SPI.SetClockActiveHigh">SetClockActiveHigh()</h4>
-              <div class="markdown level1 summary"><p>Configure the clock line to be active low.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChipSelectActiveLow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetClockActiveHigh.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetClockActiveHigh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L104">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetClockActiveHigh_" data-uid="WPILib.SPI.SetClockActiveHigh*"></a>
+  <h4 id="WPILib_SPI_SetClockActiveHigh" data-uid="WPILib.SPI.SetClockActiveHigh">SetClockActiveHigh()</h4>
+  <div class="markdown level1 summary"><p>Configure the clock line to be active low.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetClockActiveHigh()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetClockActiveLow.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetClockActiveLow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L95">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetClockActiveLow_" data-uid="WPILib.SPI.SetClockActiveLow*"></a>
-              <h4 id="WPILib_SPI_SetClockActiveLow" data-uid="WPILib.SPI.SetClockActiveLow">SetClockActiveLow()</h4>
-              <div class="markdown level1 summary"><p>Configure the clock line to be active low.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClockActiveHigh()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetClockActiveLow.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetClockActiveLow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L95">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetClockActiveLow_" data-uid="WPILib.SPI.SetClockActiveLow*"></a>
+  <h4 id="WPILib_SPI_SetClockActiveLow" data-uid="WPILib.SPI.SetClockActiveLow">SetClockActiveLow()</h4>
+  <div class="markdown level1 summary"><p>Configure the clock line to be active low.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetClockActiveLow()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetClockRate_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetClockRate(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L64">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetClockRate_" data-uid="WPILib.SPI.SetClockRate*"></a>
-              <h4 id="WPILib_SPI_SetClockRate_System_Int32_" data-uid="WPILib.SPI.SetClockRate(System.Int32)">SetClockRate(Int32)</h4>
-              <div class="markdown level1 summary"><p>Sets the Generated SPI Clock Rate</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClockActiveLow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetClockRate_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetClockRate(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L64">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetClockRate_" data-uid="WPILib.SPI.SetClockRate*"></a>
+  <h4 id="WPILib_SPI_SetClockRate_System_Int32_" data-uid="WPILib.SPI.SetClockRate(System.Int32)">SetClockRate(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the Generated SPI Clock Rate</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetClockRate(int hz)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">hz</span></td>
-                    <td><p>Rate in Hz.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClockRate(int hz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">hz</span></td>
+        <td><p>Rate in Hz.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_SPI_SetClockRate_System_Int32__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The default value is 500,000 Hz. The maximum value is 4,000,000 Hz.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_SPI_SetClockRate_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is 500,000 Hz. The maximum value is 4,000,000 Hz.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetLSBFirst.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetLSBFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L86">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetLSBFirst_" data-uid="WPILib.SPI.SetLSBFirst*"></a>
-              <h4 id="WPILib_SPI_SetLSBFirst" data-uid="WPILib.SPI.SetLSBFirst">SetLSBFirst()</h4>
-              <div class="markdown level1 summary"><p>Set the port to send and receive the LSB First.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetLSBFirst.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetLSBFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L86">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetLSBFirst_" data-uid="WPILib.SPI.SetLSBFirst*"></a>
+  <h4 id="WPILib_SPI_SetLSBFirst" data-uid="WPILib.SPI.SetLSBFirst">SetLSBFirst()</h4>
+  <div class="markdown level1 summary"><p>Set the port to send and receive the LSB First.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetLSBFirst()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetMSBFirst.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetMSBFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L77">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetMSBFirst_" data-uid="WPILib.SPI.SetMSBFirst*"></a>
-              <h4 id="WPILib_SPI_SetMSBFirst" data-uid="WPILib.SPI.SetMSBFirst">SetMSBFirst()</h4>
-              <div class="markdown level1 summary"><p>Set the port to send and receive the MSB First.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLSBFirst()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetMSBFirst.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetMSBFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L77">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetMSBFirst_" data-uid="WPILib.SPI.SetMSBFirst*"></a>
+  <h4 id="WPILib_SPI_SetMSBFirst" data-uid="WPILib.SPI.SetMSBFirst">SetMSBFirst()</h4>
+  <div class="markdown level1 summary"><p>Set the port to send and receive the MSB First.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetMSBFirst()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetSampleDataOnFalling.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetSampleDataOnFalling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L113">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetSampleDataOnFalling_" data-uid="WPILib.SPI.SetSampleDataOnFalling*"></a>
-              <h4 id="WPILib_SPI_SetSampleDataOnFalling" data-uid="WPILib.SPI.SetSampleDataOnFalling">SetSampleDataOnFalling()</h4>
-              <div class="markdown level1 summary"><p>Configure the data to be stable on the falling edge and changing on the rising edge.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMSBFirst()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetSampleDataOnFalling.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetSampleDataOnFalling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L113">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetSampleDataOnFalling_" data-uid="WPILib.SPI.SetSampleDataOnFalling*"></a>
+  <h4 id="WPILib_SPI_SetSampleDataOnFalling" data-uid="WPILib.SPI.SetSampleDataOnFalling">SetSampleDataOnFalling()</h4>
+  <div class="markdown level1 summary"><p>Configure the data to be stable on the falling edge and changing on the rising edge.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetSampleDataOnFalling()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetSampleDataOnRising.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetSampleDataOnRising%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L122">View Source</a>
-              </span>
-              <a id="WPILib_SPI_SetSampleDataOnRising_" data-uid="WPILib.SPI.SetSampleDataOnRising*"></a>
-              <h4 id="WPILib_SPI_SetSampleDataOnRising" data-uid="WPILib.SPI.SetSampleDataOnRising">SetSampleDataOnRising()</h4>
-              <div class="markdown level1 summary"><p>Configure the data to be stable on the rising edge and changing on the falling edge.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSampleDataOnFalling()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_SetSampleDataOnRising.md&amp;value=---%0Auid%3A%20WPILib.SPI.SetSampleDataOnRising%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L122">View Source</a>
+  </span>
+  <a id="WPILib_SPI_SetSampleDataOnRising_" data-uid="WPILib.SPI.SetSampleDataOnRising*"></a>
+  <h4 id="WPILib_SPI_SetSampleDataOnRising" data-uid="WPILib.SPI.SetSampleDataOnRising">SetSampleDataOnRising()</h4>
+  <div class="markdown level1 summary"><p>Configure the data to be stable on the rising edge and changing on the falling edge.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetSampleDataOnRising()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Transaction_System_Byte___System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.Transaction(System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L192">View Source</a>
-              </span>
-              <a id="WPILib_SPI_Transaction_" data-uid="WPILib.SPI.Transaction*"></a>
-              <h4 id="WPILib_SPI_Transaction_System_Byte___System_Byte___System_Int32_" data-uid="WPILib.SPI.Transaction(System.Byte[],System.Byte[],System.Int32)">Transaction(Byte[], Byte[], Int32)</h4>
-              <div class="markdown level1 summary"><p>Perform a simultaneous read/write transaction with the device.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSampleDataOnRising()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Transaction_System_Byte___System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.Transaction(System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L192">View Source</a>
+  </span>
+  <a id="WPILib_SPI_Transaction_" data-uid="WPILib.SPI.Transaction*"></a>
+  <h4 id="WPILib_SPI_Transaction_System_Byte___System_Byte___System_Int32_" data-uid="WPILib.SPI.Transaction(System.Byte[],System.Byte[],System.Int32)">Transaction(Byte[], Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Perform a simultaneous read/write transaction with the device.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int Transaction(byte[] dataToSend, byte[] dataReceived, int size)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
-                    <td><span class="parametername">dataToSend</span></td>
-                    <td><p>The data to be written out to the device.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Transaction(byte[] dataToSend, byte[] dataReceived, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+        <td><span class="parametername">dataToSend</span></td>
+        <td><p>The data to be written out to the device.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
-                    <td><span class="parametername">dataReceived</span></td>
-                    <td><p>Buffer to receive data from the device.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+        <td><span class="parametername">dataReceived</span></td>
+        <td><p>Buffer to receive data from the device.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">size</span></td>
-                    <td><p>The length of the transaction, in bytes.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The length of the transaction, in bytes.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Write_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.Write(System.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L156">View Source</a>
-              </span>
-              <a id="WPILib_SPI_Write_" data-uid="WPILib.SPI.Write*"></a>
-              <h4 id="WPILib_SPI_Write_System_Byte___System_Int32_" data-uid="WPILib.SPI.Write(System.Byte[],System.Int32)">Write(Byte[], Int32)</h4>
-              <div class="markdown level1 summary"><p>Writes the data to the slave device.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SPI_Write_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SPI.Write(System.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SPI.cs/#L156">View Source</a>
+  </span>
+  <a id="WPILib_SPI_Write_" data-uid="WPILib.SPI.Write*"></a>
+  <h4 id="WPILib_SPI_Write_System_Byte___System_Int32_" data-uid="WPILib.SPI.Write(System.Byte[],System.Int32)">Write(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes the data to the slave device.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int Write(byte[] dataToSend, int size)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
-                    <td><span class="parametername">dataToSend</span></td>
-                    <td><p>The byte array to send.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Write(byte[] dataToSend, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+        <td><span class="parametername">dataToSend</span></td>
+        <td><p>The byte array to send.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">size</span></td>
-                    <td><p>The size of the byte array.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the byte array.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_SPI_Write_System_Byte___System_Int32__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Note that this will block until there is space in the output
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_SPI_Write_System_Byte___System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this will block until there is space in the output
 buffer.</p>
 </div>
-                        </article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

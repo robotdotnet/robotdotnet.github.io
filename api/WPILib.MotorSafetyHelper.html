@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MotorSafetyHelper
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,269 +67,269 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_MotorSafetyHelper" data-uid="WPILib.MotorSafetyHelper">Class MotorSafetyHelper
-              </h1>
-              <div class="markdown level0 summary"><p>The <a class="xref" href="WPILib.MotorSafetyHelper.html">MotorSafetyHelper</a> object is constructed for every object that wants to implement the Motor
+            <article class="content wrap" id="_content" data-uid="WPILib.MotorSafetyHelper">
+  
+  
+  <h1 id="WPILib_MotorSafetyHelper" data-uid="WPILib.MotorSafetyHelper">Class MotorSafetyHelper
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="WPILib.MotorSafetyHelper.html">MotorSafetyHelper</a> object is constructed for every object that wants to implement the Motor
 Safety protocol. </p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><span class="xref">MotorSafetyHelper</span></div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_MotorSafetyHelper_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class MotorSafetyHelper : object</code></pre>
-              </div>
-              <h5 id="WPILib_MotorSafetyHelper_remarks"><strong>Remarks</strong></h5>
-              <div class="markdown level0 remarks"><p>The helper object has the code to actually do the timing and call the
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">MotorSafetyHelper</span></div>
+  </div>
+  <h6><strong>Namespace</strong>:WPILib</h6>
+  <h6><strong>Assembly</strong>:WPILib.dll</h6>
+  <h5 id="WPILib_MotorSafetyHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MotorSafetyHelper : object</code></pre>
+  </div>
+  <h5 id="WPILib_MotorSafetyHelper_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The helper object has the code to actually do the timing and call the
 motors Stop() method when the timeout expires. The motor object is expected to call the
 Feed() method whenever the motors value is updated.</p>
 </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper__ctor_WPILib_Interfaces_IMotorSafety_.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.%23ctor(WPILib.Interfaces.IMotorSafety)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L38">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper__ctor_" data-uid="WPILib.MotorSafetyHelper.#ctor*"></a>
-              <h4 id="WPILib_MotorSafetyHelper__ctor_WPILib_Interfaces_IMotorSafety_" data-uid="WPILib.MotorSafetyHelper.#ctor(WPILib.Interfaces.IMotorSafety)">MotorSafetyHelper(IMotorSafety)</h4>
-              <div class="markdown level1 summary"><p>The constructor for a <a class="xref" href="WPILib.MotorSafetyHelper.html">MotorSafetyHelper</a> object</p>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper__ctor_WPILib_Interfaces_IMotorSafety_.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.%23ctor(WPILib.Interfaces.IMotorSafety)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L38">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper__ctor_" data-uid="WPILib.MotorSafetyHelper.#ctor*"></a>
+  <h4 id="WPILib_MotorSafetyHelper__ctor_WPILib_Interfaces_IMotorSafety_" data-uid="WPILib.MotorSafetyHelper.#ctor(WPILib.Interfaces.IMotorSafety)">MotorSafetyHelper(IMotorSafety)</h4>
+  <div class="markdown level1 summary"><p>The constructor for a <a class="xref" href="WPILib.MotorSafetyHelper.html">MotorSafetyHelper</a> object</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public MotorSafetyHelper(IMotorSafety safeObject)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Interfaces.IMotorSafety.html">IMotorSafety</a></td>
-                    <td><span class="parametername">safeObject</span></td>
-                    <td><p>A pointer to the motor object implementing <a class="xref" href="WPILib.Interfaces.IMotorSafety.html">IMotorSafety</a>. This is used
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MotorSafetyHelper(IMotorSafety safeObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Interfaces.IMotorSafety.html">IMotorSafety</a></td>
+        <td><span class="parametername">safeObject</span></td>
+        <td><p>A pointer to the motor object implementing <a class="xref" href="WPILib.Interfaces.IMotorSafety.html">IMotorSafety</a>. This is used
 to call the Stop() method on the motor</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_MotorSafetyHelper__ctor_WPILib_Interfaces_IMotorSafety__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The helper object is constructed for every object that wants to implement the Motor
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_MotorSafetyHelper__ctor_WPILib_Interfaces_IMotorSafety__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The helper object is constructed for every object that wants to implement the Motor
 Safety protocol. The helper object has the code to actually do the timing and call the
 motors Stop() method when the timeout expires. The motor object is expected to call the
 Feed() method whenever the motors value is updated.</p>
 </div>
-              <h3 id="fields">Fields
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_DefaultSafetyExpiration.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.DefaultSafetyExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L20">View Source</a>
-              </span>
-              <h4 id="WPILib_MotorSafetyHelper_DefaultSafetyExpiration" data-uid="WPILib.MotorSafetyHelper.DefaultSafetyExpiration">DefaultSafetyExpiration</h4>
-              <div class="markdown level1 summary"><p>The default safety expiration time.</p>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_DefaultSafetyExpiration.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.DefaultSafetyExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L20">View Source</a>
+  </span>
+  <h4 id="WPILib_MotorSafetyHelper_DefaultSafetyExpiration" data-uid="WPILib.MotorSafetyHelper.DefaultSafetyExpiration">DefaultSafetyExpiration</h4>
+  <div class="markdown level1 summary"><p>The default safety expiration time.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public const double DefaultSafetyExpiration = null</code></pre>
-              </div>
-              <h5 class="fieldValue">Field Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Alive.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Alive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L70">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper_Alive_" data-uid="WPILib.MotorSafetyHelper.Alive*"></a>
-              <h4 id="WPILib_MotorSafetyHelper_Alive" data-uid="WPILib.MotorSafetyHelper.Alive">Alive</h4>
-              <div class="markdown level1 summary"><p>Determine if the motor is still operating or has timed out.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultSafetyExpiration = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Alive.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Alive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L70">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper_Alive_" data-uid="WPILib.MotorSafetyHelper.Alive*"></a>
+  <h4 id="WPILib_MotorSafetyHelper_Alive" data-uid="WPILib.MotorSafetyHelper.Alive">Alive</h4>
+  <div class="markdown level1 summary"><p>Determine if the motor is still operating or has timed out.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool Alive { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><p>A true value if the motor is still operating normally and hasn&#39;t timed out.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Alive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><p>A true value if the motor is still operating normally and hasn&#39;t timed out.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Expiration.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Expiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L64">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper_Expiration_" data-uid="WPILib.MotorSafetyHelper.Expiration*"></a>
-              <h4 id="WPILib_MotorSafetyHelper_Expiration" data-uid="WPILib.MotorSafetyHelper.Expiration">Expiration</h4>
-              <div class="markdown level1 summary"><p>Set the expiration time for the corresponding motor safety object.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Expiration.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Expiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L64">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper_Expiration_" data-uid="WPILib.MotorSafetyHelper.Expiration*"></a>
+  <h4 id="WPILib_MotorSafetyHelper_Expiration" data-uid="WPILib.MotorSafetyHelper.Expiration">Expiration</h4>
+  <div class="markdown level1 summary"><p>Set the expiration time for the corresponding motor safety object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double Expiration { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The timeout value in seconds.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Expiration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The timeout value in seconds.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_SafetyEnabled.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.SafetyEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L95">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper_SafetyEnabled_" data-uid="WPILib.MotorSafetyHelper.SafetyEnabled*"></a>
-              <h4 id="WPILib_MotorSafetyHelper_SafetyEnabled" data-uid="WPILib.MotorSafetyHelper.SafetyEnabled">SafetyEnabled</h4>
-              <div class="markdown level1 summary"><p>Enable/disable motor safety for this device. </p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_SafetyEnabled.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.SafetyEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L95">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper_SafetyEnabled_" data-uid="WPILib.MotorSafetyHelper.SafetyEnabled*"></a>
+  <h4 id="WPILib_MotorSafetyHelper_SafetyEnabled" data-uid="WPILib.MotorSafetyHelper.SafetyEnabled">SafetyEnabled</h4>
+  <div class="markdown level1 summary"><p>Enable/disable motor safety for this device. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool SafetyEnabled { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><p>True if motor safety is enforced for this object</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SafetyEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><p>True if motor safety is enforced for this object</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_MotorSafetyHelper_SafetyEnabled_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Turn on and off the motor safety option for this PWM device.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_MotorSafetyHelper_SafetyEnabled_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Turn on and off the motor safety option for this PWM device.</p>
 </div>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Check.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Check%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L78">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper_Check_" data-uid="WPILib.MotorSafetyHelper.Check*"></a>
-              <h4 id="WPILib_MotorSafetyHelper_Check" data-uid="WPILib.MotorSafetyHelper.Check">Check()</h4>
-              <div class="markdown level1 summary"><p>Check if this motor has exceeded its timeout. </p>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Check.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Check%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L78">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper_Check_" data-uid="WPILib.MotorSafetyHelper.Check*"></a>
+  <h4 id="WPILib_MotorSafetyHelper_Check" data-uid="WPILib.MotorSafetyHelper.Check">Check()</h4>
+  <div class="markdown level1 summary"><p>Check if this motor has exceeded its timeout. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Check()</code></pre>
-              </div>
-              <h5 id="WPILib_MotorSafetyHelper_Check_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>This method is called periodically to determine if this motor has exceeded its timeout value.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Check()</code></pre>
+  </div>
+  <h5 id="WPILib_MotorSafetyHelper_Check_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called periodically to determine if this motor has exceeded its timeout value.
 If it has, the stop method is called, and the motor is shut down until its value is
 updated again.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_CheckMotors.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.CheckMotors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L101">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper_CheckMotors_" data-uid="WPILib.MotorSafetyHelper.CheckMotors*"></a>
-              <h4 id="WPILib_MotorSafetyHelper_CheckMotors" data-uid="WPILib.MotorSafetyHelper.CheckMotors">CheckMotors()</h4>
-              <div class="markdown level1 summary"><p>Check the motors to see if any have timed out. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_CheckMotors.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.CheckMotors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L101">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper_CheckMotors_" data-uid="WPILib.MotorSafetyHelper.CheckMotors*"></a>
+  <h4 id="WPILib_MotorSafetyHelper_CheckMotors" data-uid="WPILib.MotorSafetyHelper.CheckMotors">CheckMotors()</h4>
+  <div class="markdown level1 summary"><p>Check the motors to see if any have timed out. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static void CheckMotors()</code></pre>
-              </div>
-              <h5 id="WPILib_MotorSafetyHelper_CheckMotors_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>This static method is called periodically to poll all motors and stop any that have timed out.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckMotors()</code></pre>
+  </div>
+  <h5 id="WPILib_MotorSafetyHelper_CheckMotors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This static method is called periodically to poll all motors and stop any that have timed out.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Feed.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Feed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L55">View Source</a>
-              </span>
-              <a id="WPILib_MotorSafetyHelper_Feed_" data-uid="WPILib.MotorSafetyHelper.Feed*"></a>
-              <h4 id="WPILib_MotorSafetyHelper_Feed" data-uid="WPILib.MotorSafetyHelper.Feed">Feed()</h4>
-              <div class="markdown level1 summary"><p>Feed the motor safety object. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_MotorSafetyHelper_Feed.md&amp;value=---%0Auid%3A%20WPILib.MotorSafetyHelper.Feed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/MotorSafetyHelper.cs/#L55">View Source</a>
+  </span>
+  <a id="WPILib_MotorSafetyHelper_Feed_" data-uid="WPILib.MotorSafetyHelper.Feed*"></a>
+  <h4 id="WPILib_MotorSafetyHelper_Feed" data-uid="WPILib.MotorSafetyHelper.Feed">Feed()</h4>
+  <div class="markdown level1 summary"><p>Feed the motor safety object. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Feed()</code></pre>
-              </div>
-              <h5 id="WPILib_MotorSafetyHelper_Feed_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Resets the timer on this object that is used to do the timeouts.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Feed()</code></pre>
+  </div>
+  <h5 id="WPILib_MotorSafetyHelper_Feed_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Resets the timer on this object that is used to do the timeouts.</p>
 </div>
-                        </article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

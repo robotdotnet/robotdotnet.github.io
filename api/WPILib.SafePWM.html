@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SafePWM
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,390 +67,390 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_SafePWM" data-uid="WPILib.SafePWM">Class SafePWM
-              </h1>
-              <div class="markdown level0 summary"><p>This class is used to create PWM devices that implement <a class="xref" href="WPILib.Interfaces.IMotorSafety.html">IMotorSafety</a>.
+            <article class="content wrap" id="_content" data-uid="WPILib.SafePWM">
+  
+  
+  <h1 id="WPILib_SafePWM" data-uid="WPILib.SafePWM">Class SafePWM
+  </h1>
+  <div class="markdown level0 summary"><p>This class is used to create PWM devices that implement <a class="xref" href="WPILib.Interfaces.IMotorSafety.html">IMotorSafety</a>.
 This will cause a watchdog to be created for the object, and if it is
 not updated within a certain period, it will be stopped.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
-                  <div class="level2"><a class="xref" href="WPILib.PWM.html">PWM</a></div>
-                  <div class="level3"><span class="xref">SafePWM</span></div>
-                  <div class="level4"><a class="xref" href="WPILib.PWMSpeedController.html">PWMSpeedController</a></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Dispose">PWM.Dispose()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_DeadbandElimination">PWM.DeadbandElimination</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetRawBounds_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">PWM.SetRawBounds(Int32, Int32, Int32, Int32, Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetBounds_System_Double_System_Double_System_Double_System_Double_System_Double_">PWM.SetBounds(Double, Double, Double, Double, Double)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetRawBounds_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__">PWM.GetRawBounds(Int32, Int32, Int32, Int32, Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Channel">PWM.Channel</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetPosition_System_Double_">PWM.SetPosition(Double)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetPosition">PWM.GetPosition()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetSpeed_System_Double_">PWM.SetSpeed(Double)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetSpeed">PWM.GetSpeed()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetRaw_System_Int32_">PWM.SetRaw(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetRaw">PWM.GetRaw()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_PeriodMultiplier">PWM.PeriodMultiplier</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetZeroLatch">PWM.SetZeroLatch()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetDisabled">PWM.SetDisabled()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SmartDashboardType">PWM.SmartDashboardType</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_InitTable_ITable_">PWM.InitTable(ITable)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_UpdateTable">PWM.UpdateTable()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Table">PWM.Table</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_StartLiveWindowMode">PWM.StartLiveWindowMode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_ValueChanged_ITable_System_String_Value_NotifyFlags_">PWM.ValueChanged(ITable, String, Value, NotifyFlags)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.PWM.html#WPILib_PWM_StopLiveWindowMode">PWM.StopLiveWindowMode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_SafePWM_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class SafePWM : PWM, ILiveWindowSendable, ISendable, ITableListener, IMotorSafety</code></pre>
-              </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L27">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM__ctor_" data-uid="WPILib.SafePWM.#ctor*"></a>
-              <h4 id="WPILib_SafePWM__ctor_System_Int32_" data-uid="WPILib.SafePWM.#ctor(System.Int32)">SafePWM(Int32)</h4>
-              <div class="markdown level1 summary"><p>Creates a new SafePWM object.</p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+    <div class="level2"><a class="xref" href="WPILib.PWM.html">PWM</a></div>
+    <div class="level3"><span class="xref">SafePWM</span></div>
+  </div>
+      <div class="level4"><a class="xref" href="WPILib.PWMSpeedController.html">PWMSpeedController</a></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Dispose">PWM.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_DeadbandElimination">PWM.DeadbandElimination</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetRawBounds_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">PWM.SetRawBounds(Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetBounds_System_Double_System_Double_System_Double_System_Double_System_Double_">PWM.SetBounds(Double, Double, Double, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetRawBounds_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__">PWM.GetRawBounds(Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Channel">PWM.Channel</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetPosition_System_Double_">PWM.SetPosition(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetPosition">PWM.GetPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetSpeed_System_Double_">PWM.SetSpeed(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetSpeed">PWM.GetSpeed()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetRaw_System_Int32_">PWM.SetRaw(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_GetRaw">PWM.GetRaw()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_PeriodMultiplier">PWM.PeriodMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetZeroLatch">PWM.SetZeroLatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SetDisabled">PWM.SetDisabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_SmartDashboardType">PWM.SmartDashboardType</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_InitTable_ITable_">PWM.InitTable(ITable)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_UpdateTable">PWM.UpdateTable()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_Table">PWM.Table</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_StartLiveWindowMode">PWM.StartLiveWindowMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_ValueChanged_ITable_System_String_Value_NotifyFlags_">PWM.ValueChanged(ITable, String, Value, NotifyFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.PWM.html#WPILib_PWM_StopLiveWindowMode">PWM.StopLiveWindowMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>:WPILib</h6>
+  <h6><strong>Assembly</strong>:WPILib.dll</h6>
+  <h5 id="WPILib_SafePWM_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SafePWM : PWM, ILiveWindowSendable, ISendable, ITableListener, IMotorSafety</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L27">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM__ctor_" data-uid="WPILib.SafePWM.#ctor*"></a>
+  <h4 id="WPILib_SafePWM__ctor_System_Int32_" data-uid="WPILib.SafePWM.#ctor(System.Int32)">SafePWM(Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a new SafePWM object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public SafePWM(int channel)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">channel</span></td>
-                    <td><p>The PWM Channel that the Object is attached to. 0-9 are on-board, 10-19 are on the MXP port</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SafePWM(int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>The PWM Channel that the Object is attached to. 0-9 are on-board, 10-19 are on the MXP port</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Alive.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Alive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L39">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_Alive_" data-uid="WPILib.SafePWM.Alive*"></a>
-              <h4 id="WPILib_SafePWM_Alive" data-uid="WPILib.SafePWM.Alive">Alive</h4>
-              <div class="markdown level1 summary"><p>Gets whether the motor is alive.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Alive.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Alive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L39">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_Alive_" data-uid="WPILib.SafePWM.Alive*"></a>
+  <h4 id="WPILib_SafePWM_Alive" data-uid="WPILib.SafePWM.Alive">Alive</h4>
+  <div class="markdown level1 summary"><p>Gets whether the motor is alive.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool Alive { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_Alive">IMotorSafety.Alive</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Description.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L50">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_Description_" data-uid="WPILib.SafePWM.Description*"></a>
-              <h4 id="WPILib_SafePWM_Description" data-uid="WPILib.SafePWM.Description">Description</h4>
-              <div class="markdown level1 summary"><p>Gets a description for the Safe Motor Object.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Alive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_Alive">IMotorSafety.Alive</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Description.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L50">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_Description_" data-uid="WPILib.SafePWM.Description*"></a>
+  <h4 id="WPILib_SafePWM_Description" data-uid="WPILib.SafePWM.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets a description for the Safe Motor Object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_Description">IMotorSafety.Description</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Expiration.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Expiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L33">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_Expiration_" data-uid="WPILib.SafePWM.Expiration*"></a>
-              <h4 id="WPILib_SafePWM_Expiration" data-uid="WPILib.SafePWM.Expiration">Expiration</h4>
-              <div class="markdown level1 summary"><p>Gets or Sets the expiration time of the motor in seconds.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_Description">IMotorSafety.Description</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Expiration.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Expiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L33">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_Expiration_" data-uid="WPILib.SafePWM.Expiration*"></a>
+  <h4 id="WPILib_SafePWM_Expiration" data-uid="WPILib.SafePWM.Expiration">Expiration</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets the expiration time of the motor in seconds.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double Expiration { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_Expiration">IMotorSafety.Expiration</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_SafetyEnabled.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.SafetyEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L43">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_SafetyEnabled_" data-uid="WPILib.SafePWM.SafetyEnabled*"></a>
-              <h4 id="WPILib_SafePWM_SafetyEnabled" data-uid="WPILib.SafePWM.SafetyEnabled">SafetyEnabled</h4>
-              <div class="markdown level1 summary"><p>Gets or Sets whether safety is enabled.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Expiration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_Expiration">IMotorSafety.Expiration</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_SafetyEnabled.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.SafetyEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L43">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_SafetyEnabled_" data-uid="WPILib.SafePWM.SafetyEnabled*"></a>
+  <h4 id="WPILib_SafePWM_SafetyEnabled" data-uid="WPILib.SafePWM.SafetyEnabled">SafetyEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets whether safety is enabled.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool SafetyEnabled { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_SafetyEnabled">IMotorSafety.SafetyEnabled</a></div>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Disable.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Disable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L62">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_Disable_" data-uid="WPILib.SafePWM.Disable*"></a>
-              <h4 id="WPILib_SafePWM_Disable" data-uid="WPILib.SafePWM.Disable">Disable()</h4>
-              <div class="markdown level1 summary"><p>Disables the PWM output.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SafetyEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_SafetyEnabled">IMotorSafety.SafetyEnabled</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Disable.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Disable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L62">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_Disable_" data-uid="WPILib.SafePWM.Disable*"></a>
+  <h4 id="WPILib_SafePWM_Disable" data-uid="WPILib.SafePWM.Disable">Disable()</h4>
+  <div class="markdown level1 summary"><p>Disables the PWM output.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Feed.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Feed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L57">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_Feed_" data-uid="WPILib.SafePWM.Feed*"></a>
-              <h4 id="WPILib_SafePWM_Feed" data-uid="WPILib.SafePWM.Feed">Feed()</h4>
-              <div class="markdown level1 summary"><p>Feeds the Motor Safety Timer</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_Feed.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.Feed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L57">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_Feed_" data-uid="WPILib.SafePWM.Feed*"></a>
+  <h4 id="WPILib_SafePWM_Feed" data-uid="WPILib.SafePWM.Feed">Feed()</h4>
+  <div class="markdown level1 summary"><p>Feeds the Motor Safety Timer</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Feed()</code></pre>
-              </div>
-              <h5 id="WPILib_SafePWM_Feed_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>This method should be called by the derived class whenever its
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Feed()</code></pre>
+  </div>
+  <h5 id="WPILib_SafePWM_Feed_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method should be called by the derived class whenever its
 setpoint gets updated, in order to feed the watchdog.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_StopMotor.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.StopMotor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L41">View Source</a>
-              </span>
-              <a id="WPILib_SafePWM_StopMotor_" data-uid="WPILib.SafePWM.StopMotor*"></a>
-              <h4 id="WPILib_SafePWM_StopMotor" data-uid="WPILib.SafePWM.StopMotor">StopMotor()</h4>
-              <div class="markdown level1 summary"><p>Stop the motor associated with this PWM object.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SafePWM_StopMotor.md&amp;value=---%0Auid%3A%20WPILib.SafePWM.StopMotor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SafePWM.cs/#L41">View Source</a>
+  </span>
+  <a id="WPILib_SafePWM_StopMotor_" data-uid="WPILib.SafePWM.StopMotor*"></a>
+  <h4 id="WPILib_SafePWM_StopMotor" data-uid="WPILib.SafePWM.StopMotor">StopMotor()</h4>
+  <div class="markdown level1 summary"><p>Stop the motor associated with this PWM object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void StopMotor()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_StopMotor">IMotorSafety.StopMotor()</a></div>
-              <h5 id="WPILib_SafePWM_StopMotor_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>This is called by the MotorSafetyHelper object
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopMotor()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.IMotorSafety.html#WPILib_Interfaces_IMotorSafety_StopMotor">IMotorSafety.StopMotor()</a></div>
+  <h5 id="WPILib_SafePWM_StopMotor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is called by the MotorSafetyHelper object
 when it has timed out and need to stop the motor.</p>
 </div>
-                        </article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LinearDigitalFilter
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,37 +67,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_Filters_LinearDigitalFilter" data-uid="WPILib.Filters.LinearDigitalFilter">Class LinearDigitalFilter
-              </h1>
-              <div class="markdown level0 summary"><p>This class implements a linear, digital filter.</p>
+            <article class="content wrap" id="_content" data-uid="WPILib.Filters.LinearDigitalFilter">
+  
+  
+  <h1 id="WPILib_Filters_LinearDigitalFilter" data-uid="WPILib.Filters.LinearDigitalFilter">Class LinearDigitalFilter
+  </h1>
+  <div class="markdown level0 summary"><p>This class implements a linear, digital filter.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="WPILib.Filters.Filter.html">Filter</a></div>
-                  <div class="level2"><span class="xref">LinearDigitalFilter</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PidGetSource">Filter.PidGetSource()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PIDSourceType">Filter.PIDSourceType</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib.Filters</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_Filters_LinearDigitalFilter_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class LinearDigitalFilter : Filter, IPIDSource</code></pre>
-              </div>
-              <h5 id="WPILib_Filters_LinearDigitalFilter_remarks"><strong>Remarks</strong></h5>
-              <div class="markdown level0 remarks"><p>All types of FIR and IIR filters are supported.Static factory methods are provided to create commonly used types of filters.<br><p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.Filters.Filter.html">Filter</a></div>
+    <div class="level2"><span class="xref">LinearDigitalFilter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PidGetSource">Filter.PidGetSource()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PIDSourceType">Filter.PIDSourceType</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>:WPILib.Filters</h6>
+  <h6><strong>Assembly</strong>:WPILib.dll</h6>
+  <h5 id="WPILib_Filters_LinearDigitalFilter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LinearDigitalFilter : Filter, IPIDSource</code></pre>
+  </div>
+  <h5 id="WPILib_Filters_LinearDigitalFilter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>All types of FIR and IIR filters are supported.Static factory methods are provided to create commonly used types of filters.<br><p>
 Filters are of the form:<br> y[n] = (b0<em>x[n] + b1</em>x[n-1] + ... + bP<em>x[n-P) - (a0</em>y[n-1] + a2<em>y[n-2] + ... + aQ</em>y[n-Q])
 <p>
 Where:<br> y[n] is the output at time &quot;n&quot; 
@@ -123,340 +123,340 @@ Note 2: For ALL filters, gains are necessarily a function of frequency.If<br>you
 definitely need to adjust the gains if you then want to run it at 200Hz!<br>Combining this with Note 1 - the impetus is on YOU as a developer to make<br>sure PIDGet() gets called at the desired, constant frequency!</li>
 </ul>
 </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter__ctor_WPILib_Interfaces_IPIDSource_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.%23ctor(WPILib.Interfaces.IPIDSource%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L69">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter__ctor_" data-uid="WPILib.Filters.LinearDigitalFilter.#ctor*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter__ctor_WPILib_Interfaces_IPIDSource_System_Double___System_Double___" data-uid="WPILib.Filters.LinearDigitalFilter.#ctor(WPILib.Interfaces.IPIDSource,System.Double[],System.Double[])">LinearDigitalFilter(IPIDSource, Double[], Double[])</h4>
-              <div class="markdown level1 summary"><p>Creates a linear FIR or IIR filter.</p>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter__ctor_WPILib_Interfaces_IPIDSource_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.%23ctor(WPILib.Interfaces.IPIDSource%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L69">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter__ctor_" data-uid="WPILib.Filters.LinearDigitalFilter.#ctor*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter__ctor_WPILib_Interfaces_IPIDSource_System_Double___System_Double___" data-uid="WPILib.Filters.LinearDigitalFilter.#ctor(WPILib.Interfaces.IPIDSource,System.Double[],System.Double[])">LinearDigitalFilter(IPIDSource, Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Creates a linear FIR or IIR filter.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public LinearDigitalFilter(IPIDSource source, double[] ffGains, double[] fbGains)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
-                    <td><span class="parametername">source</span></td>
-                    <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearDigitalFilter(IPIDSource source, double[] ffGains, double[] fbGains)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
-                    <td><span class="parametername">ffGains</span></td>
-                    <td><p>The &quot;feed forward&quot; or FIR gains.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
+        <td><span class="parametername">ffGains</span></td>
+        <td><p>The &quot;feed forward&quot; or FIR gains.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
-                    <td><span class="parametername">fbGains</span></td>
-                    <td><p>The &quot;feed back&quot; or IIR gains.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
+        <td><span class="parametername">fbGains</span></td>
+        <td><p>The &quot;feed back&quot; or IIR gains.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_Get.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L156">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter_Get_" data-uid="WPILib.Filters.LinearDigitalFilter.Get*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter_Get" data-uid="WPILib.Filters.LinearDigitalFilter.Get">Get()</h4>
-              <div class="markdown level1 summary"><p>Returns the current filter estimate without inserting new data as <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PidGet">PidGet()</a>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_Get.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L156">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter_Get_" data-uid="WPILib.Filters.LinearDigitalFilter.Get*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter_Get" data-uid="WPILib.Filters.LinearDigitalFilter.Get">Get()</h4>
+  <div class="markdown level1 summary"><p>Returns the current filter estimate without inserting new data as <a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PidGet">PidGet()</a>
 would do.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override double Get()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The current filter estimate</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double Get()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The current filter estimate</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_Get">Filter.Get()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.HighPass(WPILib.Interfaces.IPIDSource%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L114">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter_HighPass_" data-uid="WPILib.Filters.LinearDigitalFilter.HighPass*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double_" data-uid="WPILib.Filters.LinearDigitalFilter.HighPass(WPILib.Interfaces.IPIDSource,System.Double,System.Double)">HighPass(IPIDSource, Double, Double)</h4>
-              <div class="markdown level1 summary"><p>Creates a first-order high-pass filter.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_Get">Filter.Get()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.HighPass(WPILib.Interfaces.IPIDSource%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L114">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter_HighPass_" data-uid="WPILib.Filters.LinearDigitalFilter.HighPass*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double_" data-uid="WPILib.Filters.LinearDigitalFilter.HighPass(WPILib.Interfaces.IPIDSource,System.Double,System.Double)">HighPass(IPIDSource, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a first-order high-pass filter.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static LinearDigitalFilter HighPass(IPIDSource source, double timeConstant, double period)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
-                    <td><span class="parametername">source</span></td>
-                    <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearDigitalFilter HighPass(IPIDSource source, double timeConstant, double period)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">timeConstant</span></td>
-                    <td><p>The discrete-time time constant in seconds.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">timeConstant</span></td>
+        <td><p>The discrete-time time constant in seconds.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">period</span></td>
-                    <td><p>The period in seconds between samples taken by the user.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">period</span></td>
+        <td><p>The period in seconds between samples taken by the user.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The filter is in the form
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Filters_LinearDigitalFilter_HighPass_WPILib_Interfaces_IPIDSource_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The filter is in the form
 y[n] = gain<em>x[n] + (-gain)</em>x[n-1] + gain*y[n-1]
 where gain = e^(-dt / T), T is the time constant in seconds.
 <p>This filter is stable for time constants greater then zero.</p></p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_MovingAverage_WPILib_Interfaces_IPIDSource_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.MovingAverage(WPILib.Interfaces.IPIDSource%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L137">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter_MovingAverage_" data-uid="WPILib.Filters.LinearDigitalFilter.MovingAverage*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter_MovingAverage_WPILib_Interfaces_IPIDSource_System_Int32_" data-uid="WPILib.Filters.LinearDigitalFilter.MovingAverage(WPILib.Interfaces.IPIDSource,System.Int32)">MovingAverage(IPIDSource, Int32)</h4>
-              <div class="markdown level1 summary"><p>Creates a K-tap FIR moving average filter.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_MovingAverage_WPILib_Interfaces_IPIDSource_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.MovingAverage(WPILib.Interfaces.IPIDSource%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L137">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter_MovingAverage_" data-uid="WPILib.Filters.LinearDigitalFilter.MovingAverage*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter_MovingAverage_WPILib_Interfaces_IPIDSource_System_Int32_" data-uid="WPILib.Filters.LinearDigitalFilter.MovingAverage(WPILib.Interfaces.IPIDSource,System.Int32)">MovingAverage(IPIDSource, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a K-tap FIR moving average filter.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static LinearDigitalFilter MovingAverage(IPIDSource source, int taps)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
-                    <td><span class="parametername">source</span></td>
-                    <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearDigitalFilter MovingAverage(IPIDSource source, int taps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">taps</span></td>
-                    <td><p>The number of samples to average over. Higher = smoother but slower</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">taps</span></td>
+        <td><p>The number of samples to average over. Higher = smoother but slower</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></td>
-                    <td><p>A new Moving Average <a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></td>
+        <td><p>A new Moving Average <a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Filters_LinearDigitalFilter_MovingAverage_WPILib_Interfaces_IPIDSource_System_Int32__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The filter is in the form 
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Filters_LinearDigitalFilter_MovingAverage_WPILib_Interfaces_IPIDSource_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The filter is in the form 
 y[n] = 1/k * (x[k] + x[k-1] + ... + x[0]).
 <p>
 This filter is always stable</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_PidGet.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.PidGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L177">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter_PidGet_" data-uid="WPILib.Filters.LinearDigitalFilter.PidGet*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter_PidGet" data-uid="WPILib.Filters.LinearDigitalFilter.PidGet">PidGet()</h4>
-              <div class="markdown level1 summary"><p>Get the result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_PidGet.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.PidGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L177">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter_PidGet_" data-uid="WPILib.Filters.LinearDigitalFilter.PidGet*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter_PidGet" data-uid="WPILib.Filters.LinearDigitalFilter.PidGet">PidGet()</h4>
+  <div class="markdown level1 summary"><p>Get the result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override double PidGet()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double PidGet()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The result to use in <a class="xref" href="WPILib.PIDController.html">PIDController</a></p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PidGet">Filter.PidGet()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_Reset.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L171">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter_Reset_" data-uid="WPILib.Filters.LinearDigitalFilter.Reset*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter_Reset" data-uid="WPILib.Filters.LinearDigitalFilter.Reset">Reset()</h4>
-              <div class="markdown level1 summary"><p>Resets the filter state.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_PidGet">Filter.PidGet()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_Reset.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L171">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter_Reset_" data-uid="WPILib.Filters.LinearDigitalFilter.Reset*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter_Reset" data-uid="WPILib.Filters.LinearDigitalFilter.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p>Resets the filter state.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_Reset">Filter.Reset()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_WPILib_Interfaces_IPIDSource_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.SinglePoleIIR(WPILib.Interfaces.IPIDSource%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L91">View Source</a>
-              </span>
-              <a id="WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_" data-uid="WPILib.Filters.LinearDigitalFilter.SinglePoleIIR*"></a>
-              <h4 id="WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_WPILib_Interfaces_IPIDSource_System_Double_System_Double_" data-uid="WPILib.Filters.LinearDigitalFilter.SinglePoleIIR(WPILib.Interfaces.IPIDSource,System.Double,System.Double)">SinglePoleIIR(IPIDSource, Double, Double)</h4>
-              <div class="markdown level1 summary"><p>Ceates a one-pole IIR low-passs filter.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.Filters.Filter.html#WPILib_Filters_Filter_Reset">Filter.Reset()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_WPILib_Interfaces_IPIDSource_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Filters.LinearDigitalFilter.SinglePoleIIR(WPILib.Interfaces.IPIDSource%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Filters/LinearDigitalFilter.cs/#L91">View Source</a>
+  </span>
+  <a id="WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_" data-uid="WPILib.Filters.LinearDigitalFilter.SinglePoleIIR*"></a>
+  <h4 id="WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_WPILib_Interfaces_IPIDSource_System_Double_System_Double_" data-uid="WPILib.Filters.LinearDigitalFilter.SinglePoleIIR(WPILib.Interfaces.IPIDSource,System.Double,System.Double)">SinglePoleIIR(IPIDSource, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Ceates a one-pole IIR low-passs filter.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static LinearDigitalFilter SinglePoleIIR(IPIDSource source, double timeConstant, double period)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
-                    <td><span class="parametername">source</span></td>
-                    <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearDigitalFilter SinglePoleIIR(IPIDSource source, double timeConstant, double period)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The <a class="xref" href="WPILib.Interfaces.IPIDSource.html">IPIDSource</a> object that is used to get values.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">timeConstant</span></td>
-                    <td><p>The filter&#39;s feedforward gain factor (lower = smoother but slower).</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">timeConstant</span></td>
+        <td><p>The filter&#39;s feedforward gain factor (lower = smoother but slower).</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">period</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></td>
-                    <td><p>A new Single Pole IIR <a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">period</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></td>
+        <td><p>A new Single Pole IIR <a class="xref" href="WPILib.Filters.LinearDigitalFilter.html">LinearDigitalFilter</a></p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_WPILib_Interfaces_IPIDSource_System_Double_System_Double__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The filter is in the form 
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Filters_LinearDigitalFilter_SinglePoleIIR_WPILib_Interfaces_IPIDSource_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The filter is in the form 
 y[n] = gain<em>x[n] + (1-gain)</em>y[n-1].
 <p>
 This filter is stable for gains in the range [0, 1]</p>
 </div>
-                        </article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
