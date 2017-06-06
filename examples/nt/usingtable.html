@@ -8,7 +8,7 @@
     <title>Using an ITable object | RobotDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Using an ITable object | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -66,9 +66,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="using-an-itable-object">Using an ITable object</h1>
-
-<p>NetworkTables works using the <a href="xref:NetworkTables.Tables.ITable">ITable</a> interface. See the <a href="xref:NetworkTables.Tables.ITable">ITable API Docs</a>
+              <h1 id="using-an-itable-object">Using an ITable object</h1>
+              
+<p>NetworkTables works using the <a class="xref" href="../../api/NetworkTables.Tables.ITable.html">ITable</a> interface. See the <a class="xref" href="../../api/NetworkTables.Tables.ITable.html">ITable API Docs</a>
 for all functionality, but here are some higher level examples on how to use them. See <a href="gettingtable.html">getting a table</a> for instructions on actually getting a table.</p>
 <h2 id="accessing-a-value">Accessing a value</h2>
 <p>NetworkTables can store the following types of data:</p>
@@ -82,18 +82,18 @@ for all functionality, but here are some higher level examples on how to use the
 <li><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>&gt; (Use for Raw Values)</li>
 </ul>
 <p>For any of these, use either the Put### functions to put the data, or the Get### functions to get the data. 
-You can also use the <a href="xref:NetworkTables.Tables.ITable.PutValue(System.String,NetworkTables.Value)">PutValue</a> and 
-<a href="xref:NetworkTables.Tables.ITable.GetValue(System.String)">GetValue</a> methods to directly get the <a href="xref:NetworkTables.Value">Value</a> 
+You can also use the <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_PutValue_System_String_NetworkTables_Value_">PutValue</a> and 
+<a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetValue_System_String_">GetValue</a> methods to directly get the <a class="xref" href="../../api/NetworkTables.Value.html">Value</a> 
 representation of the object.</p>
 <h2 id="persisting-a-key-between-restarts">Persisting a key between restarts</h2>
 <p>NetworkTables supports making any key persistent between boots. This operation can be performed either on the server, or
-on any client. To set a key to persistent, call the <a href="xref:NetworkTables.Tables.ITable.SetPersistent(System.String)">SetPersistent</a> method
-for the specific key. To stop a key from being persistent, call <a href="xref:NetworkTables.Tables.ITable.ClearPersistent(System.String)">ClearPersistent</a>.
-To check if a key is persistent, call <a href="xref:NetworkTables.Tables.ITable.IsPersistent(System.String)">IsPersistent</a>.</p>
+on any client. To set a key to persistent, call the <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_SetPersistent_System_String_">SetPersistent</a> method
+for the specific key. To stop a key from being persistent, call <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_ClearPersistent_System_String_">ClearPersistent</a>.
+To check if a key is persistent, call <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_IsPersistent_System_String_">IsPersistent</a>.</p>
 <h2 id="deleting-a-key">Deleting a key</h2>
 <p>Key deletion is also supported. However note that this feature only works when all clients and the server are based on the NT 3.0 protocol.
 All versions of NetworkTables after and including the 2016 season support this feature, so most likely this will work for your purpose.
-To delete a key, call <a href="xref:NetworkTables.Tables.ITable.Delete(System.String)">Delete</a>.</p>
+To delete a key, call <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_Delete_System_String_">Delete</a>.</p>
 <h2 id="ensuring-a-key-exists-in-the-table">Ensuring a key exists in the table</h2>
 <p>Often times, for configuration values you want the value to be persistent, but also want to ensure a safe default value is used if
 the persistent values fail to load. In addition, you might want to ensure the values are in the table just to ensure that they can be modified
@@ -102,16 +102,17 @@ If the key already exists in the table, nothing happens, so no data is overwritt
 entered into the table. </p>
 <h2 id="working-with-subtables">Working with SubTables</h2>
 <p>As mentioned in the <a href="gettingtable.html">getting a table</a> doc, subtables can exist in the table. To get a list of all subtables, you can call
-<a href="xref:NetworkTables.Tables.ITable.GetSubTables">GetSubTables</a>. You can also check for the existance of an individual subtable with a call to
-<a href="xref:NetworkTables.Tables.ITable.ContainsSubTable(System.String)">ContainsSubTable</a>. Using <a href="xref:NetworkTables.Tables.ITable.GetSubTable(System.String)">GetSubTable</a>
-you can get an <a href="xref:NetworkTables.Tables.ITable">ITable</a> object to the specified subtable, after which all the other operations in this doc can be performed.</p>
+<a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetSubTables">GetSubTables</a>. You can also check for the existance of an individual subtable with a call to
+<a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_ContainsSubTable_System_String_">ContainsSubTable</a>. Using <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetSubTable_System_String_">GetSubTable</a>
+you can get an <a class="xref" href="../../api/NetworkTables.Tables.ITable.html">ITable</a> object to the specified subtable, after which all the other operations in this doc can be performed.</p>
 <h2 id="listing-all-keys">Listing all keys</h2>
-<p>A call to <a href="xref:NetworkTables.Tables.ITable.GetKeys">GetKeys</a> will get a list of all keys that exist either in the current table, or in any subtables of the
-current table. If you want to filter the keys by type in the table, call <a href="xref:NetworkTables.Tables.ITable.GetKeys(NetworkTables.NtType)">GetKeys(NtType)</a> with
+<p>A call to <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetKeys">GetKeys</a> will get a list of all keys that exist either in the current table, or in any subtables of the
+current table. If you want to filter the keys by type in the table, call <a class="xref" href="../../api/NetworkTables.Tables.ITable.html#NetworkTables_Tables_ITable_GetKeys_NetworkTables_NtType_">GetKeys(NtType)</a> with
 the types as a bitmask of the types you want to get from the query. </p>
 <h2 id="working-with-table-listeners">Working with Table Listeners</h2>
 <p>Table listeners are an advanced subject, and can be found on their own <a href="tablelisteners.html">TableListner</a> documentation page.</p>
-</article>
+
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

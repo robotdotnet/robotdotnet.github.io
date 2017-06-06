@@ -8,7 +8,7 @@
     <title>Creating a project with the Attributed Robot Model | RobotDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Creating a project with the Attributed Robot Model | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -66,8 +66,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="creating-a-project-with-the-attributed-robot-model">Creating a project with the Attributed Robot Model</h1>
-
+              <h1 id="creating-a-project-with-the-attributed-robot-model">Creating a project with the Attributed Robot Model</h1>
+              
 <p>The Attributed Robot Model is a new way of creating a Command-Based Robot that removes nearly all of the boilerplate code (aka hookup code, like the usual OI class) usually required. This model uses a process called &quot;reflection&quot; to find the subsystems and commands and hook them up correctly. Consequently, the robot will take a little longer (read: a second or two) to initialize upon startup, but the difference is not noticable in most situations.</p>
 <h2 id="creating-a-basic-project">Creating a basic project</h2>
 <ol>
@@ -109,7 +109,8 @@
 <li>To add a new command, right click on your project and click Add &gt; New Item. Create a Command. This is the same template as used for a Command-Based Robot. To set it up to auto-load, there are a few different ways: default command, phase command, and button command. The default command is configured on the respective subsystem as seen above. If your command is a default command, it MUST have a constructor that takes ONLY an instance of the subsystem it is the default command for, or your project will fail to run. To set it up as a phase command, add the <em>RunCommandAtPhaseStart</em> attribute to the commmand class. You will have to specify which phase to start the command on with the <em>MatchPhase</em> enumeration. If your command acts on a button, you will have to pick the correct attribute. There is one attribute for each of the different button classes. Use the correct method (and pass in the required parameters), and the library will automatically set up the command to execute when you want it to.</li>
 </ol>
 <p>For more information, see the docs for the <a class="xref" href="../api/WPILib.Extras.AttributedCommandModel.html">Attributed Command Model</a></p>
-</article>
+
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

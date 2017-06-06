@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ListOfPointArray
+   | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ListOfPointArray
+   | RobotDotNet ">
+    <meta name="generator" content="docfx 2.16.2.2">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="OpenCvSharp_FRC_ListOfPointArray" data-uid="OpenCvSharp.FRC.ListOfPointArray">Class ListOfPointArray
+              </h1>
+              <div class="markdown level0 summary"><p>The class contains a List of Point Arrays to be used for finding objects in OpenCV</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">ListOfPointArray</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:OpenCvSharp.FRC</h6>
+              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
+              <h5 id="OpenCvSharp_FRC_ListOfPointArray_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ListOfPointArray : IList&lt;Point[]&gt;, ICollection&lt;Point[]&gt;, IEnumerable&lt;Point[]&gt;, IEnumerable, IDisposable</code></pre>
+              </div>
+              <h5 id="OpenCvSharp_FRC_ListOfPointArray_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>This class should be stored outside your main loop, and created only once. Reuse this for every image created</p>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray__ctor.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L47">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray__ctor_" data-uid="OpenCvSharp.FRC.ListOfPointArray.#ctor*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray__ctor" data-uid="OpenCvSharp.FRC.ListOfPointArray.#ctor">ListOfPointArray()</h4>
+              <div class="markdown level1 summary"><p>Creates a new ListOfPointArray</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ListOfPointArray()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L59">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray__ctor_" data-uid="OpenCvSharp.FRC.ListOfPointArray.#ctor*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray__ctor_System_Int32_" data-uid="OpenCvSharp.FRC.ListOfPointArray.#ctor(System.Int32)">ListOfPointArray(Int32)</h4>
+              <div class="markdown level1 summary"><p>Creates a new ListOfPointArray with the specified starting capacity</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ListOfPointArray(int capacity)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">capacity</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Count.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L150">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Count_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Count*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Count" data-uid="OpenCvSharp.FRC.ListOfPointArray.Count">Count</h4>
+              <div class="markdown level1 summary"><p>Gets the number of items in the list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/5s3kzhec(v=vs.110).aspx">ICollection&lt;T&gt;.Count</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_IsReadOnly.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L162">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_IsReadOnly_" data-uid="OpenCvSharp.FRC.ListOfPointArray.IsReadOnly*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_IsReadOnly" data-uid="OpenCvSharp.FRC.ListOfPointArray.IsReadOnly">IsReadOnly</h4>
+              <div class="markdown level1 summary"><p>Return true</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/0cfatk9t(v=vs.110).aspx">ICollection&lt;T&gt;.IsReadOnly</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Item_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L200">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Item_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Item*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Item_System_Int32_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Item(System.Int32)">Item[Int32]</h4>
+              <div class="markdown level1 summary"><p>Gets the Point[] at the specified index</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Point[] this[int index] { get; set; }</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">index</span></td>
+                    <td><p>The index to get from</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[]</td>
+                    <td><p>The item at the index</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/ewthkb10(v=vs.110).aspx">IList&lt;T&gt;.Item[Int32]</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Add_OpenCvSharp_Point___.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Add(OpenCvSharp.Point%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L101">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Add_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Add*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Add_OpenCvSharp_Point___" data-uid="OpenCvSharp.FRC.ListOfPointArray.Add(OpenCvSharp.Point[])">Add(Point[])</h4>
+              <div class="markdown level1 summary"><p>Adds a new item to this list (Not supported, throws an InvalidOperationException)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Add(Point[] item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[]</td>
+                    <td><span class="parametername">item</span></td>
+                    <td><p>The item to add</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/63ywd54z(v=vs.110).aspx">ICollection&lt;T&gt;.Add(T)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Clear.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L109">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Clear_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Clear*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Clear" data-uid="OpenCvSharp.FRC.ListOfPointArray.Clear">Clear()</h4>
+              <div class="markdown level1 summary"><p>Clears all items from the list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/5axy4fbh(v=vs.110).aspx">ICollection&lt;T&gt;.Clear()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Contains_OpenCvSharp_Point___.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Contains(OpenCvSharp.Point%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L121">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Contains_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Contains*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Contains_OpenCvSharp_Point___" data-uid="OpenCvSharp.FRC.ListOfPointArray.Contains(OpenCvSharp.Point[])">Contains(Point[])</h4>
+              <div class="markdown level1 summary"><p>Gets if the list contains a specific item</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Contains(Point[] item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[]</td>
+                    <td><span class="parametername">item</span></td>
+                    <td><p>The item to check</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if the item exists</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/k5cf1d56(v=vs.110).aspx">ICollection&lt;T&gt;.Contains(T)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_CopyTo_OpenCvSharp_Point_____System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.CopyTo(OpenCvSharp.Point%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L132">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_CopyTo_" data-uid="OpenCvSharp.FRC.ListOfPointArray.CopyTo*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_CopyTo_OpenCvSharp_Point_____System_Int32_" data-uid="OpenCvSharp.FRC.ListOfPointArray.CopyTo(OpenCvSharp.Point[][],System.Int32)">CopyTo(Point[][], Int32)</h4>
+              <div class="markdown level1 summary"><p>Copies all data to the specified array</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void CopyTo(Point[][] array, int arrayIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[][]</td>
+                    <td><span class="parametername">array</span></td>
+                    <td><p>The array to copy to</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">arrayIndex</span></td>
+                    <td><p>The array index to start at</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/0efx51xw(v=vs.110).aspx">ICollection&lt;T&gt;.CopyTo(T[], Int32)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Dispose.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L39">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Dispose_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Dispose*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Dispose" data-uid="OpenCvSharp.FRC.ListOfPointArray.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>Disposes of this object. After calling this, it cannot be used again</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/es4s3w1d(v=vs.110).aspx">IDisposable.Dispose()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_GetEnumerator.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L71">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_GetEnumerator_" data-uid="OpenCvSharp.FRC.ListOfPointArray.GetEnumerator*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_GetEnumerator" data-uid="OpenCvSharp.FRC.ListOfPointArray.GetEnumerator">GetEnumerator()</h4>
+              <div class="markdown level1 summary"><p>Gets an enumerator for this list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;Point[]&gt;.Enumerator GetEnumerator()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/x854yt9s(v=vs.110).aspx">List.Enumerator</a>&lt;&gt;</td>
+                    <td><p>The enumerator</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_IndexOf_OpenCvSharp_Point___.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.IndexOf(OpenCvSharp.Point%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L169">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_IndexOf_" data-uid="OpenCvSharp.FRC.ListOfPointArray.IndexOf*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_IndexOf_OpenCvSharp_Point___" data-uid="OpenCvSharp.FRC.ListOfPointArray.IndexOf(OpenCvSharp.Point[])">IndexOf(Point[])</h4>
+              <div class="markdown level1 summary"><p>Gets the index of the requested item</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int IndexOf(Point[] item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[]</td>
+                    <td><span class="parametername">item</span></td>
+                    <td><p>The item to look for</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>Its index in the array</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/3w0148af(v=vs.110).aspx">IList&lt;T&gt;.IndexOf(T)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Insert_System_Int32_OpenCvSharp_Point___.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Insert(System.Int32%2COpenCvSharp.Point%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L181">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Insert_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Insert*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Insert_System_Int32_OpenCvSharp_Point___" data-uid="OpenCvSharp.FRC.ListOfPointArray.Insert(System.Int32,OpenCvSharp.Point[])">Insert(Int32, Point[])</h4>
+              <div class="markdown level1 summary"><p>Inserts a new item to this list (Not supported, throws an InvalidOperationException)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Insert(int index, Point[] item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">index</span></td>
+                    <td><p>The index to add at</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[]</td>
+                    <td><span class="parametername">item</span></td>
+                    <td><p>The item to add</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/8zsfbxz8(v=vs.110).aspx">IList&lt;T&gt;.Insert(Int32, T)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_Remove_OpenCvSharp_Point___.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.Remove(OpenCvSharp.Point%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L142">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_Remove_" data-uid="OpenCvSharp.FRC.ListOfPointArray.Remove*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_Remove_OpenCvSharp_Point___" data-uid="OpenCvSharp.FRC.ListOfPointArray.Remove(OpenCvSharp.Point[])">Remove(Point[])</h4>
+              <div class="markdown level1 summary"><p>Removes an item from this list (Not supported, throws an InvalidOperationException)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Remove(Point[] item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Point.html">Point</a>[]</td>
+                    <td><span class="parametername">item</span></td>
+                    <td><p>The item to remove</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/bye7h94w(v=vs.110).aspx">ICollection&lt;T&gt;.Remove(T)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L190">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_RemoveAt_" data-uid="OpenCvSharp.FRC.ListOfPointArray.RemoveAt*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_RemoveAt_System_Int32_" data-uid="OpenCvSharp.FRC.ListOfPointArray.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+              <div class="markdown level1 summary"><p>Removes an item from this list (Not supported, throws an InvalidOperationException)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">index</span></td>
+                    <td><p>The index to add at</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/c93ab5c9(v=vs.110).aspx">IList&lt;T&gt;.RemoveAt(Int32)</a></div>
+              <h3 id="eii">Explicit Interface Implementations
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_System_Collections_Generic_IEnumerable_OpenCvSharp_Point____GetEnumerator.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.System%23Collections%23Generic%23IEnumerable%7BOpenCvSharp%23Point%5B%5D%7D%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L81">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_System_Collections_Generic_IEnumerable_OpenCvSharp_Point____GetEnumerator_" data-uid="OpenCvSharp.FRC.ListOfPointArray.System#Collections#Generic#IEnumerable{OpenCvSharp#Point[]}#GetEnumerator*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_System_Collections_Generic_IEnumerable_OpenCvSharp_Point____GetEnumerator" data-uid="OpenCvSharp.FRC.ListOfPointArray.System#Collections#Generic#IEnumerable{OpenCvSharp#Point[]}#GetEnumerator">IEnumerable&lt;Point[]&gt;.GetEnumerator()</h4>
+              <div class="markdown level1 summary"><p>Gets an enumerator for this list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerator&lt;Point[]&gt; IEnumerable&lt;Point[]&gt;.GetEnumerator()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/78dfe2yb(v=vs.110).aspx">IEnumerator</a>&lt;<a class="xref" href="OpenCvSharp.Point.html">Point</a>[]&gt;</td>
+                    <td><p>The enumerator</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/s793z9y2(v=vs.110).aspx">IEnumerable&lt;T&gt;.GetEnumerator()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L91">View Source</a>
+              </span>
+              <a id="OpenCvSharp_FRC_ListOfPointArray_System_Collections_IEnumerable_GetEnumerator_" data-uid="OpenCvSharp.FRC.ListOfPointArray.System#Collections#IEnumerable#GetEnumerator*"></a>
+              <h4 id="OpenCvSharp_FRC_ListOfPointArray_System_Collections_IEnumerable_GetEnumerator" data-uid="OpenCvSharp.FRC.ListOfPointArray.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+              <div class="markdown level1 summary"><p>Gets an enumerator for this list</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.collections.ienumerator(v=vs.110).aspx">IEnumerator</a></td>
+                    <td><p>The enumerator</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/5zae5365(v=vs.110).aspx">IEnumerable.GetEnumerator()</a></div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FRC_ListOfPointArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.FRC.ListOfPointArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/FRC/ListOfPointArray.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Solenoid
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,518 +67,518 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WPILib.Solenoid">
-  
-  
-  <h1 id="WPILib_Solenoid" data-uid="WPILib.Solenoid">Class Solenoid
-  </h1>
-  <div class="markdown level0 summary"><p>Solenoid class for running high voltage digital output.</p>
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_Solenoid" data-uid="WPILib.Solenoid">Class Solenoid
+              </h1>
+              <div class="markdown level0 summary"><p>Solenoid class for running high voltage digital output.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-    <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
-    <div class="level2"><a class="xref" href="WPILib.SolenoidBase.html">SolenoidBase</a></div>
-    <div class="level3"><span class="xref">Solenoid</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_ModuleNumber">SolenoidBase.ModuleNumber</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetAll">SolenoidBase.GetAll()</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetPCMSolenoidBlackList">SolenoidBase.GetPCMSolenoidBlackList()</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetPCMSolenoidVoltageStickyFault">SolenoidBase.GetPCMSolenoidVoltageStickyFault()</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetPCMSolenoidVoltageFault">SolenoidBase.GetPCMSolenoidVoltageFault()</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_ClearAllPCMStickyFaults">SolenoidBase.ClearAllPCMStickyFaults()</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>:WPILib</h6>
-  <h6><strong>Assembly</strong>:WPILib.dll</h6>
-  <h5 id="WPILib_Solenoid_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Solenoid : SolenoidBase, ILiveWindowSendable, ISendable, ITableListener</code></pre>
-  </div>
-  <h5 id="WPILib_Solenoid_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The Solenoid class is typically used for pneumatics solenoids, but could be used
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.SolenoidBase.html">SolenoidBase</a></div>
+                  <div class="level3"><span class="xref">Solenoid</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_ModuleNumber">SolenoidBase.ModuleNumber</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetAll">SolenoidBase.GetAll()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetPCMSolenoidBlackList">SolenoidBase.GetPCMSolenoidBlackList()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetPCMSolenoidVoltageStickyFault">SolenoidBase.GetPCMSolenoidVoltageStickyFault()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_GetPCMSolenoidVoltageFault">SolenoidBase.GetPCMSolenoidVoltageFault()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_ClearAllPCMStickyFaults">SolenoidBase.ClearAllPCMStickyFaults()</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_Solenoid_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class Solenoid : SolenoidBase, ILiveWindowSendable, ISendable, ITableListener</code></pre>
+              </div>
+              <h5 id="WPILib_Solenoid_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>The Solenoid class is typically used for pneumatics solenoids, but could be used
 for any device within the current spec of the PCM. </p>
 </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L29">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid__ctor_" data-uid="WPILib.Solenoid.#ctor*"></a>
-  <h4 id="WPILib_Solenoid__ctor_System_Int32_" data-uid="WPILib.Solenoid.#ctor(System.Int32)">Solenoid(Int32)</h4>
-  <div class="markdown level1 summary"><p>Constructor using the default PCM ID (0)</p>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L29">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid__ctor_" data-uid="WPILib.Solenoid.#ctor*"></a>
+              <h4 id="WPILib_Solenoid__ctor_System_Int32_" data-uid="WPILib.Solenoid.#ctor(System.Int32)">Solenoid(Int32)</h4>
+              <div class="markdown level1 summary"><p>Constructor using the default PCM ID (0)</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Solenoid(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel on the PCM to control (0..7).</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Solenoid(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel on the PCM to control (0..7).</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid__ctor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.%23ctor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L39">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid__ctor_" data-uid="WPILib.Solenoid.#ctor*"></a>
-  <h4 id="WPILib_Solenoid__ctor_System_Int32_System_Int32_" data-uid="WPILib.Solenoid.#ctor(System.Int32,System.Int32)">Solenoid(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Constructor.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid__ctor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.%23ctor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L39">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid__ctor_" data-uid="WPILib.Solenoid.#ctor*"></a>
+              <h4 id="WPILib_Solenoid__ctor_System_Int32_System_Int32_" data-uid="WPILib.Solenoid.#ctor(System.Int32,System.Int32)">Solenoid(Int32, Int32)</h4>
+              <div class="markdown level1 summary"><p>Constructor.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Solenoid(int moduleNumber, int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">moduleNumber</span></td>
-        <td><p>The CAN ID of the PCM the solenoid is attached to.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Solenoid(int moduleNumber, int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">moduleNumber</span></td>
+                    <td><p>The CAN ID of the PCM the solenoid is attached to.</p>
 </td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel on the PCM to control (0..7).</p>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel on the PCM to control (0..7).</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L103">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_SmartDashboardType_" data-uid="WPILib.Solenoid.SmartDashboardType*"></a>
-  <h4 id="WPILib_Solenoid_SmartDashboardType" data-uid="WPILib.Solenoid.SmartDashboardType">SmartDashboardType</h4>
-  <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L103">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_SmartDashboardType_" data-uid="WPILib.Solenoid.SmartDashboardType*"></a>
+              <h4 id="WPILib_Solenoid_SmartDashboardType" data-uid="WPILib.Solenoid.SmartDashboardType">SmartDashboardType</h4>
+              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Table.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L113">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_Table_" data-uid="WPILib.Solenoid.Table*"></a>
-  <h4 id="WPILib_Solenoid_Table" data-uid="WPILib.Solenoid.Table">Table</h4>
-  <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Table.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L113">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_Table_" data-uid="WPILib.Solenoid.Table*"></a>
+              <h4 id="WPILib_Solenoid_Table" data-uid="WPILib.Solenoid.Table">Table</h4>
+              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ITable</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Dispose.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L57">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_Dispose_" data-uid="WPILib.Solenoid.Dispose*"></a>
-  <h4 id="WPILib_Solenoid_Dispose" data-uid="WPILib.Solenoid.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Get.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L80">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_Get_" data-uid="WPILib.Solenoid.Get*"></a>
-  <h4 id="WPILib_Solenoid_Get" data-uid="WPILib.Solenoid.Get">Get()</h4>
-  <div class="markdown level1 summary"><p>Read the current value of the solenoid.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ITable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Dispose.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L57">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_Dispose_" data-uid="WPILib.Solenoid.Dispose*"></a>
+              <h4 id="WPILib_Solenoid_Dispose" data-uid="WPILib.Solenoid.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Get.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L80">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_Get_" data-uid="WPILib.Solenoid.Get*"></a>
+              <h4 id="WPILib_Solenoid_Get" data-uid="WPILib.Solenoid.Get">Get()</h4>
+              <div class="markdown level1 summary"><p>Read the current value of the solenoid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool Get()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><p>The current value of the solenoid.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool Get()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>The current value of the solenoid.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L106">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_InitTable_" data-uid="WPILib.Solenoid.InitTable*"></a>
-  <h4 id="WPILib_Solenoid_InitTable_ITable_" data-uid="WPILib.Solenoid.InitTable(ITable)">InitTable(ITable)</h4>
-  <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L106">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_InitTable_" data-uid="WPILib.Solenoid.InitTable*"></a>
+              <h4 id="WPILib_Solenoid_InitTable_ITable_" data-uid="WPILib.Solenoid.InitTable(ITable)">InitTable(ITable)</h4>
+              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ITable</span></td>
-        <td><span class="parametername">subtable</span></td>
-        <td><p>The table to put the values in.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ITable</span></td>
+                    <td><span class="parametername">subtable</span></td>
+                    <td><p>The table to put the values in.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_IsBlackListed.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.IsBlackListed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L96">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_IsBlackListed_" data-uid="WPILib.Solenoid.IsBlackListed*"></a>
-  <h4 id="WPILib_Solenoid_IsBlackListed" data-uid="WPILib.Solenoid.IsBlackListed">IsBlackListed()</h4>
-  <div class="markdown level1 summary"><p>Check if solenoid is blacklisted.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_IsBlackListed.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.IsBlackListed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L96">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_IsBlackListed_" data-uid="WPILib.Solenoid.IsBlackListed*"></a>
+              <h4 id="WPILib_Solenoid_IsBlackListed" data-uid="WPILib.Solenoid.IsBlackListed">IsBlackListed()</h4>
+              <div class="markdown level1 summary"><p>Check if solenoid is blacklisted.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsBlackListed()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><p>If solenoid is disabled due to short.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsBlackListed()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>If solenoid is disabled due to short.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_Solenoid_IsBlackListed_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If a solenoid is shorted, it is added to the blacklist and
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Solenoid_IsBlackListed_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If a solenoid is shorted, it is added to the blacklist and
 disabled until power cycle, or until faults are cleared.
 See <a class="xref" href="WPILib.SolenoidBase.html#WPILib_SolenoidBase_ClearAllPCMStickyFaults">ClearAllPCMStickyFaults()</a></p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Set_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Set(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L69">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_Set_" data-uid="WPILib.Solenoid.Set*"></a>
-  <h4 id="WPILib_Solenoid_Set_System_Boolean_" data-uid="WPILib.Solenoid.Set(System.Boolean)">Set(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Set the value of a solenoid</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_Set_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.Set(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L69">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_Set_" data-uid="WPILib.Solenoid.Set*"></a>
+              <h4 id="WPILib_Solenoid_Set_System_Boolean_" data-uid="WPILib.Solenoid.Set(System.Boolean)">Set(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Set the value of a solenoid</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Set(bool on)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><span class="parametername">on</span></td>
-        <td><p>Turn the solenoid output off or on.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Set(bool on)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">on</span></td>
+                    <td><p>Turn the solenoid output off or on.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L122">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_StartLiveWindowMode_" data-uid="WPILib.Solenoid.StartLiveWindowMode*"></a>
-  <h4 id="WPILib_Solenoid_StartLiveWindowMode" data-uid="WPILib.Solenoid.StartLiveWindowMode">StartLiveWindowMode()</h4>
-  <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L122">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_StartLiveWindowMode_" data-uid="WPILib.Solenoid.StartLiveWindowMode*"></a>
+              <h4 id="WPILib_Solenoid_StartLiveWindowMode" data-uid="WPILib.Solenoid.StartLiveWindowMode">StartLiveWindowMode()</h4>
+              <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
 value changes reflect the value on the table.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
-  </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L129">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_StopLiveWindowMode_" data-uid="WPILib.Solenoid.StopLiveWindowMode*"></a>
-  <h4 id="WPILib_Solenoid_StopLiveWindowMode" data-uid="WPILib.Solenoid.StopLiveWindowMode">StopLiveWindowMode()</h4>
-  <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L129">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_StopLiveWindowMode_" data-uid="WPILib.Solenoid.StopLiveWindowMode*"></a>
+              <h4 id="WPILib_Solenoid_StopLiveWindowMode" data-uid="WPILib.Solenoid.StopLiveWindowMode">StopLiveWindowMode()</h4>
+              <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
-  </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L116">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_UpdateTable_" data-uid="WPILib.Solenoid.UpdateTable*"></a>
-  <h4 id="WPILib_Solenoid_UpdateTable" data-uid="WPILib.Solenoid.UpdateTable">UpdateTable()</h4>
-  <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L116">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_UpdateTable_" data-uid="WPILib.Solenoid.UpdateTable*"></a>
+              <h4 id="WPILib_Solenoid_UpdateTable" data-uid="WPILib.Solenoid.UpdateTable">UpdateTable()</h4>
+              <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
 values.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
-  </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_ValueChanged_ITable_System_String_Value_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.ValueChanged(ITable%2CSystem.String%2CValue%2CNotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L136">View Source</a>
-  </span>
-  <a id="WPILib_Solenoid_ValueChanged_" data-uid="WPILib.Solenoid.ValueChanged*"></a>
-  <h4 id="WPILib_Solenoid_ValueChanged_ITable_System_String_Value_NotifyFlags_" data-uid="WPILib.Solenoid.ValueChanged(ITable,System.String,Value,NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ValueChanged(ITable source, string key, Value value, NotifyFlags flags)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ITable</span></td>
-        <td><span class="parametername">source</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Value</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">NotifyFlags</span></td>
-        <td><span class="parametername">flags</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Solenoid_ValueChanged_ITable_System_String_Value_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Solenoid.ValueChanged(ITable%2CSystem.String%2CValue%2CNotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Solenoid.cs/#L136">View Source</a>
+              </span>
+              <a id="WPILib_Solenoid_ValueChanged_" data-uid="WPILib.Solenoid.ValueChanged*"></a>
+              <h4 id="WPILib_Solenoid_ValueChanged_ITable_System_String_Value_NotifyFlags_" data-uid="WPILib.Solenoid.ValueChanged(ITable,System.String,Value,NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ValueChanged(ITable source, string key, Value value, NotifyFlags flags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ITable</span></td>
+                    <td><span class="parametername">source</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><span class="parametername">key</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Value</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">NotifyFlags</span></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IGyro
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,142 +67,142 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WPILib.Interfaces.IGyro">
-  
-  
-  <h1 id="WPILib_Interfaces_IGyro" data-uid="WPILib.Interfaces.IGyro">Interface IGyro
-  </h1>
-  <div class="markdown level0 summary"><p>Interface for yaw rate gyros</p>
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_Interfaces_IGyro" data-uid="WPILib.Interfaces.IGyro">Interface IGyro
+              </h1>
+              <div class="markdown level0 summary"><p>Interface for yaw rate gyros</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>:WPILib.Interfaces</h6>
-  <h6><strong>Assembly</strong>:WPILib.dll</h6>
-  <h5 id="WPILib_Interfaces_IGyro_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IGyro : IDisposable</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_Calibrate.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.Calibrate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L21">View Source</a>
-  </span>
-  <a id="WPILib_Interfaces_IGyro_Calibrate_" data-uid="WPILib.Interfaces.IGyro.Calibrate*"></a>
-  <h4 id="WPILib_Interfaces_IGyro_Calibrate" data-uid="WPILib.Interfaces.IGyro.Calibrate">Calibrate()</h4>
-  <div class="markdown level1 summary"><p>Initialize the gyro.</p>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:WPILib.Interfaces</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_Interfaces_IGyro_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IGyro : IDisposable</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_Calibrate.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.Calibrate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L21">View Source</a>
+              </span>
+              <a id="WPILib_Interfaces_IGyro_Calibrate_" data-uid="WPILib.Interfaces.IGyro.Calibrate*"></a>
+              <h4 id="WPILib_Interfaces_IGyro_Calibrate" data-uid="WPILib.Interfaces.IGyro.Calibrate">Calibrate()</h4>
+              <div class="markdown level1 summary"><p>Initialize the gyro.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Calibrate()</code></pre>
-  </div>
-  <h5 id="WPILib_Interfaces_IGyro_Calibrate_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Calibrate the gyro by running for a number of samples and
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void Calibrate()</code></pre>
+              </div>
+              <h5 id="WPILib_Interfaces_IGyro_Calibrate_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Calibrate the gyro by running for a number of samples and
 computing the center value. Then use the center value as the
 Accumulator center value for subsequent measurements. It&#39;s important to
 make sure that the robot is not moving while the centering calulations are
 in progress, this is typically done when the robot is first turned on while
 it&#39;s sitting at rest before the competition starts.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_GetAngle.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.GetAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L44">View Source</a>
-  </span>
-  <a id="WPILib_Interfaces_IGyro_GetAngle_" data-uid="WPILib.Interfaces.IGyro.GetAngle*"></a>
-  <h4 id="WPILib_Interfaces_IGyro_GetAngle" data-uid="WPILib.Interfaces.IGyro.GetAngle">GetAngle()</h4>
-  <div class="markdown level1 summary"><p>Return the actual angle in degrees that the robot is currently facing.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_GetAngle.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.GetAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L44">View Source</a>
+              </span>
+              <a id="WPILib_Interfaces_IGyro_GetAngle_" data-uid="WPILib.Interfaces.IGyro.GetAngle*"></a>
+              <h4 id="WPILib_Interfaces_IGyro_GetAngle" data-uid="WPILib.Interfaces.IGyro.GetAngle">GetAngle()</h4>
+              <div class="markdown level1 summary"><p>Return the actual angle in degrees that the robot is currently facing.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">double GetAngle()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-        <td><p>The current heading of the robot in degrees. This heading is
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">double GetAngle()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><p>The current heading of the robot in degrees. This heading is
 based on integration of the returned rate of the gyro.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_Interfaces_IGyro_GetAngle_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The angle is based on the current accumulator value corrected by the
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Interfaces_IGyro_GetAngle_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The angle is based on the current accumulator value corrected by the
 oversampling rate, the gyro type and the A/D calibration values. The angle
 is continouus, that is it will continue from 360 to 361 degrees. This
 allows algorithms that wouldn&#39;t want to see a discontinuity in the gyro
 output as it sweeps past from 360 to 0 on the second time around.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_GetRate.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L53">View Source</a>
-  </span>
-  <a id="WPILib_Interfaces_IGyro_GetRate_" data-uid="WPILib.Interfaces.IGyro.GetRate*"></a>
-  <h4 id="WPILib_Interfaces_IGyro_GetRate" data-uid="WPILib.Interfaces.IGyro.GetRate">GetRate()</h4>
-  <div class="markdown level1 summary"><p>Returns the rate of rotation of the gyro.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_GetRate.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.GetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L53">View Source</a>
+              </span>
+              <a id="WPILib_Interfaces_IGyro_GetRate_" data-uid="WPILib.Interfaces.IGyro.GetRate*"></a>
+              <h4 id="WPILib_Interfaces_IGyro_GetRate" data-uid="WPILib.Interfaces.IGyro.GetRate">GetRate()</h4>
+              <div class="markdown level1 summary"><p>Returns the rate of rotation of the gyro.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">double GetRate()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-        <td><p>The current rate in degrees per second.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">double GetRate()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><p>The current rate in degrees per second.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_Interfaces_IGyro_GetRate_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The rate is based on the most recent reading of the gyro analog value.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_Interfaces_IGyro_GetRate_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The rate is based on the most recent reading of the gyro analog value.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_Reset.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L30">View Source</a>
-  </span>
-  <a id="WPILib_Interfaces_IGyro_Reset_" data-uid="WPILib.Interfaces.IGyro.Reset*"></a>
-  <h4 id="WPILib_Interfaces_IGyro_Reset" data-uid="WPILib.Interfaces.IGyro.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Reset the gyro.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Interfaces_IGyro_Reset.md&amp;value=---%0Auid%3A%20WPILib.Interfaces.IGyro.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Interfaces/IGyro.cs/#L30">View Source</a>
+              </span>
+              <a id="WPILib_Interfaces_IGyro_Reset_" data-uid="WPILib.Interfaces.IGyro.Reset*"></a>
+              <h4 id="WPILib_Interfaces_IGyro_Reset" data-uid="WPILib.Interfaces.IGyro.Reset">Reset()</h4>
+              <div class="markdown level1 summary"><p>Reset the gyro.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Reset()</code></pre>
-  </div>
-  <h5 id="WPILib_Interfaces_IGyro_Reset_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Resets the gyro to a heading of zero. This can be used if there is significant
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void Reset()</code></pre>
+              </div>
+              <h5 id="WPILib_Interfaces_IGyro_Reset_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Resets the gyro to a heading of zero. This can be used if there is significant
 drift in the gyro and it needs to be recalibrated after it has been running.</p>
 </div>
-</article>
+                        </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

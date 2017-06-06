@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SensorBase
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,721 +67,721 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WPILib.SensorBase">
-  
-  
-  <h1 id="WPILib_SensorBase" data-uid="WPILib.SensorBase">Class SensorBase
-  </h1>
-  <div class="markdown level0 summary"><p>This class is the base for all sensors.</p>
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_SensorBase" data-uid="WPILib.SensorBase">Class SensorBase
+              </h1>
+              <div class="markdown level0 summary"><p>This class is the base for all sensors.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-    <div class="level1"><span class="xref">SensorBase</span></div>
-  </div>
-      <div class="level2"><a class="xref" href="WPILib.ADXL345.html">ADXL345</a></div>
-      <div class="level2"><a class="xref" href="WPILib.ADXL362.html">ADXL362</a></div>
-      <div class="level2"><a class="xref" href="WPILib.AnalogAccelerometer.html">AnalogAccelerometer</a></div>
-      <div class="level2"><a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a></div>
-      <div class="level2"><a class="xref" href="WPILib.AnalogOutput.html">AnalogOutput</a></div>
-      <div class="level2"><a class="xref" href="WPILib.Compressor.html">Compressor</a></div>
-      <div class="level2"><a class="xref" href="WPILib.Counter.html">Counter</a></div>
-      <div class="level2"><a class="xref" href="WPILib.DigitalGlitchFilter.html">DigitalGlitchFilter</a></div>
-      <div class="level2"><a class="xref" href="WPILib.Encoder.html">Encoder</a></div>
-      <div class="level2"><a class="xref" href="WPILib.Extras.NavX.AHRS.html">AHRS</a></div>
-      <div class="level2"><a class="xref" href="WPILib.GyroBase.html">GyroBase</a></div>
-      <div class="level2"><a class="xref" href="WPILib.I2C.html">I2C</a></div>
-      <div class="level2"><a class="xref" href="WPILib.InterruptableSensorBase.html">InterruptableSensorBase</a></div>
-      <div class="level2"><a class="xref" href="WPILib.PowerDistributionPanel.html">PowerDistributionPanel</a></div>
-      <div class="level2"><a class="xref" href="WPILib.PWM.html">PWM</a></div>
-      <div class="level2"><a class="xref" href="WPILib.Relay.html">Relay</a></div>
-      <div class="level2"><a class="xref" href="WPILib.SolenoidBase.html">SolenoidBase</a></div>
-      <div class="level2"><a class="xref" href="WPILib.SPI.html">SPI</a></div>
-      <div class="level2"><a class="xref" href="WPILib.Ultrasonic.html">Ultrasonic</a></div>
-  <h6><strong>Namespace</strong>:WPILib</h6>
-  <h6><strong>Assembly</strong>:WPILib.dll</h6>
-  <h5 id="WPILib_SensorBase_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SensorBase : IDisposable</code></pre>
-  </div>
-  <h5 id="WPILib_SensorBase_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This scores status information for sensors, as well as containing
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">SensorBase</span></div>
+                  <div class="level2"><a class="xref" href="WPILib.ADXL345.html">ADXL345</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.ADXL362.html">ADXL362</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.AnalogAccelerometer.html">AnalogAccelerometer</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.AnalogInput.html">AnalogInput</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.AnalogOutput.html">AnalogOutput</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Compressor.html">Compressor</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Counter.html">Counter</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.DigitalGlitchFilter.html">DigitalGlitchFilter</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Encoder.html">Encoder</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Extras.NavX.AHRS.html">AHRS</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.GyroBase.html">GyroBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.I2C.html">I2C</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.InterruptableSensorBase.html">InterruptableSensorBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.PowerDistributionPanel.html">PowerDistributionPanel</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.PWM.html">PWM</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Relay.html">Relay</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.SolenoidBase.html">SolenoidBase</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.SPI.html">SPI</a></div>
+                  <div class="level2"><a class="xref" href="WPILib.Ultrasonic.html">Ultrasonic</a></div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_SensorBase_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class SensorBase : IDisposable</code></pre>
+              </div>
+              <h5 id="WPILib_SensorBase_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>This scores status information for sensors, as well as containing
 utility functions for checking channels and error processing.</p>
 </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_AnalogInputChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.AnalogInputChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L20">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_AnalogInputChannels" data-uid="WPILib.SensorBase.AnalogInputChannels">AnalogInputChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int AnalogInputChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_AnalogOutputChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.AnalogOutputChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L22">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_AnalogOutputChannels" data-uid="WPILib.SensorBase.AnalogOutputChannels">AnalogOutputChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int AnalogOutputChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_DigitalChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.DigitalChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L18">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_DigitalChannels" data-uid="WPILib.SensorBase.DigitalChannels">DigitalChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int DigitalChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PCMModules.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PCMModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L26">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_PCMModules" data-uid="WPILib.SensorBase.PCMModules">PCMModules</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int PCMModules</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PDPChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PDPChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L32">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_PDPChannels" data-uid="WPILib.SensorBase.PDPChannels">PDPChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int PDPChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PDPModules.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PDPModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L34">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_PDPModules" data-uid="WPILib.SensorBase.PDPModules">PDPModules</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int PDPModules</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PwmChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PwmChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L28">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_PwmChannels" data-uid="WPILib.SensorBase.PwmChannels">PwmChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int PwmChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_RelayChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.RelayChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L30">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_RelayChannels" data-uid="WPILib.SensorBase.RelayChannels">RelayChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int RelayChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_SolenoidChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.SolenoidChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L24">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_SolenoidChannels" data-uid="WPILib.SensorBase.SolenoidChannels">SolenoidChannels</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int SolenoidChannels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_SystemClockTicksPerMicrosecond.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.SystemClockTicksPerMicrosecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L15">View Source</a>
-  </span>
-  <h4 id="WPILib_SensorBase_SystemClockTicksPerMicrosecond" data-uid="WPILib.SensorBase.SystemClockTicksPerMicrosecond">SystemClockTicksPerMicrosecond</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int SystemClockTicksPerMicrosecond</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_DefaultSolenoidModule.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.DefaultSolenoidModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L203">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_DefaultSolenoidModule_" data-uid="WPILib.SensorBase.DefaultSolenoidModule*"></a>
-  <h4 id="WPILib_SensorBase_DefaultSolenoidModule" data-uid="WPILib.SensorBase.DefaultSolenoidModule">DefaultSolenoidModule</h4>
-  <div class="markdown level1 summary"><p>Gets or Sets the default solenoid module number;</p>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_AnalogInputChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.AnalogInputChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L20">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_AnalogInputChannels" data-uid="WPILib.SensorBase.AnalogInputChannels">AnalogInputChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int AnalogInputChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_AnalogOutputChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.AnalogOutputChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L22">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_AnalogOutputChannels" data-uid="WPILib.SensorBase.AnalogOutputChannels">AnalogOutputChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int AnalogOutputChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_DigitalChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.DigitalChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L18">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_DigitalChannels" data-uid="WPILib.SensorBase.DigitalChannels">DigitalChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int DigitalChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PCMModules.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PCMModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L26">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_PCMModules" data-uid="WPILib.SensorBase.PCMModules">PCMModules</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int PCMModules</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PDPChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PDPChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L32">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_PDPChannels" data-uid="WPILib.SensorBase.PDPChannels">PDPChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int PDPChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PDPModules.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PDPModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L34">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_PDPModules" data-uid="WPILib.SensorBase.PDPModules">PDPModules</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int PDPModules</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_PwmChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.PwmChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L28">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_PwmChannels" data-uid="WPILib.SensorBase.PwmChannels">PwmChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int PwmChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_RelayChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.RelayChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L30">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_RelayChannels" data-uid="WPILib.SensorBase.RelayChannels">RelayChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int RelayChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_SolenoidChannels.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.SolenoidChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L24">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_SolenoidChannels" data-uid="WPILib.SensorBase.SolenoidChannels">SolenoidChannels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int SolenoidChannels</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_SystemClockTicksPerMicrosecond.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.SystemClockTicksPerMicrosecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L15">View Source</a>
+              </span>
+              <h4 id="WPILib_SensorBase_SystemClockTicksPerMicrosecond" data-uid="WPILib.SensorBase.SystemClockTicksPerMicrosecond">SystemClockTicksPerMicrosecond</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int SystemClockTicksPerMicrosecond</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_DefaultSolenoidModule.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.DefaultSolenoidModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L203">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_DefaultSolenoidModule_" data-uid="WPILib.SensorBase.DefaultSolenoidModule*"></a>
+              <h4 id="WPILib_SensorBase_DefaultSolenoidModule" data-uid="WPILib.SensorBase.DefaultSolenoidModule">DefaultSolenoidModule</h4>
+              <div class="markdown level1 summary"><p>Gets or Sets the default solenoid module number;</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int DefaultSolenoidModule { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckAnalogInputChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L114">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckAnalogInputChannel_" data-uid="WPILib.SensorBase.CheckAnalogInputChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckAnalogInputChannel(System.Int32)">CheckAnalogInputChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the analog channel number is valid.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int DefaultSolenoidModule { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckAnalogInputChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L114">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckAnalogInputChannel_" data-uid="WPILib.SensorBase.CheckAnalogInputChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckAnalogInputChannel(System.Int32)">CheckAnalogInputChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the analog channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckAnalogInputChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckAnalogInputChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckAnalogInputChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckAnalogInputChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckAnalogOutputChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L132">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckAnalogOutputChannel_" data-uid="WPILib.SensorBase.CheckAnalogOutputChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckAnalogOutputChannel(System.Int32)">CheckAnalogOutputChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the analog output channel number is valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckAnalogOutputChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L132">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckAnalogOutputChannel_" data-uid="WPILib.SensorBase.CheckAnalogOutputChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckAnalogOutputChannel(System.Int32)">CheckAnalogOutputChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the analog output channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckAnalogOutputChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckAnalogOutputChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckDigitalChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckDigitalChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L60">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckDigitalChannel_" data-uid="WPILib.SensorBase.CheckDigitalChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckDigitalChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckDigitalChannel(System.Int32)">CheckDigitalChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the digital channel number is valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckDigitalChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckDigitalChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L60">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckDigitalChannel_" data-uid="WPILib.SensorBase.CheckDigitalChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckDigitalChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckDigitalChannel(System.Int32)">CheckDigitalChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the digital channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckDigitalChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckDigitalChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckDigitalChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckDigitalChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckPDPChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckPDPChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L168">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckPDPChannel_" data-uid="WPILib.SensorBase.CheckPDPChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckPDPChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckPDPChannel(System.Int32)">CheckPDPChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the power distribution channel number is valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckPDPChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckPDPChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L168">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckPDPChannel_" data-uid="WPILib.SensorBase.CheckPDPChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckPDPChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckPDPChannel(System.Int32)">CheckPDPChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the power distribution channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckPDPChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckPDPChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckPDPChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the PDP.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckPDPChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the PDP.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckPDPModule_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckPDPModule(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L186">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckPDPModule_" data-uid="WPILib.SensorBase.CheckPDPModule*"></a>
-  <h4 id="WPILib_SensorBase_CheckPDPModule_System_Int32_" data-uid="WPILib.SensorBase.CheckPDPModule(System.Int32)">CheckPDPModule(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the PDP CAN ID is in valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckPDPModule_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckPDPModule(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L186">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckPDPModule_" data-uid="WPILib.SensorBase.CheckPDPModule*"></a>
+              <h4 id="WPILib_SensorBase_CheckPDPModule_System_Int32_" data-uid="WPILib.SensorBase.CheckPDPModule(System.Int32)">CheckPDPModule(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the PDP CAN ID is in valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckPDPModule(int module)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">module</span></td>
-        <td><p>The CAN ID to check</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckPDPModule(int module)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">module</span></td>
+                    <td><p>The CAN ID to check</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckPDPModule_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The default is 0, and this should be used by most teams.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckPDPModule_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The default is 0, and this should be used by most teams.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckPwmChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckPwmChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L96">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckPwmChannel_" data-uid="WPILib.SensorBase.CheckPwmChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckPwmChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckPwmChannel(System.Int32)">CheckPwmChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the PWM channel number is valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckPwmChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckPwmChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L96">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckPwmChannel_" data-uid="WPILib.SensorBase.CheckPwmChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckPwmChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckPwmChannel(System.Int32)">CheckPwmChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the PWM channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckPwmChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckPwmChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckPwmChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckPwmChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckRelayChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckRelayChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L78">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckRelayChannel_" data-uid="WPILib.SensorBase.CheckRelayChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckRelayChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckRelayChannel(System.Int32)">CheckRelayChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the relay channel number is valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckRelayChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckRelayChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L78">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckRelayChannel_" data-uid="WPILib.SensorBase.CheckRelayChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckRelayChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckRelayChannel(System.Int32)">CheckRelayChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the relay channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckRelayChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckRelayChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckRelayChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckRelayChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the RoboRIO.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckSolenoidChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckSolenoidChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L150">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckSolenoidChannel_" data-uid="WPILib.SensorBase.CheckSolenoidChannel*"></a>
-  <h4 id="WPILib_SensorBase_CheckSolenoidChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckSolenoidChannel(System.Int32)">CheckSolenoidChannel(Int32)</h4>
-  <div class="markdown level1 summary"><p>Check that the solenoid channel number is valid.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckSolenoidChannel_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckSolenoidChannel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L150">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckSolenoidChannel_" data-uid="WPILib.SensorBase.CheckSolenoidChannel*"></a>
+              <h4 id="WPILib_SensorBase_CheckSolenoidChannel_System_Int32_" data-uid="WPILib.SensorBase.CheckSolenoidChannel(System.Int32)">CheckSolenoidChannel(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check that the solenoid channel number is valid.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckSolenoidChannel(int channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckSolenoidChannel(int channel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">channel</span></td>
+                    <td><p>The channel number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_SensorBase_CheckSolenoidChannel_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the PCM.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_SensorBase_CheckSolenoidChannel_System_Int32__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Channel numbers are 0 based on the PCM.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckSolenoidModule_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckSolenoidModule(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L42">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_CheckSolenoidModule_" data-uid="WPILib.SensorBase.CheckSolenoidModule*"></a>
-  <h4 id="WPILib_SensorBase_CheckSolenoidModule_System_Int32_" data-uid="WPILib.SensorBase.CheckSolenoidModule(System.Int32)">CheckSolenoidModule(Int32)</h4>
-  <div class="markdown level1 summary"><p>Verify that the solenoid module is correct</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_CheckSolenoidModule_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.CheckSolenoidModule(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L42">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_CheckSolenoidModule_" data-uid="WPILib.SensorBase.CheckSolenoidModule*"></a>
+              <h4 id="WPILib_SensorBase_CheckSolenoidModule_System_Int32_" data-uid="WPILib.SensorBase.CheckSolenoidModule(System.Int32)">CheckSolenoidModule(Int32)</h4>
+              <div class="markdown level1 summary"><p>Verify that the solenoid module is correct</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckSolenoidModule(int moduleNumber)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td><span class="parametername">moduleNumber</span></td>
-        <td><p>The module number to check.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static void CheckSolenoidModule(int moduleNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><span class="parametername">moduleNumber</span></td>
+                    <td><p>The module number to check.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_Dispose.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L214">View Source</a>
-  </span>
-  <a id="WPILib_SensorBase_Dispose_" data-uid="WPILib.SensorBase.Dispose*"></a>
-  <h4 id="WPILib_SensorBase_Dispose" data-uid="WPILib.SensorBase.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
-  </div>
-</article>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_SensorBase_Dispose.md&amp;value=---%0Auid%3A%20WPILib.SensorBase.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/SensorBase.cs/#L214">View Source</a>
+              </span>
+              <a id="WPILib_SensorBase_Dispose_" data-uid="WPILib.SensorBase.Dispose*"></a>
+              <h4 id="WPILib_SensorBase_Dispose" data-uid="WPILib.SensorBase.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+              </div>
+                        </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

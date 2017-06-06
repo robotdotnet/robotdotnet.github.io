@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace WPILib.Commands
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,65 +67,65 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WPILib.Commands">
-  
-  <h1 id="WPILib_Commands" data-uid="WPILib.Commands">Namespace WPILib.Commands
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="WPILib.Commands.Command.html">Command</a></h4>
-      <section><p>The Command class is at the very core of the entire command framework.</p>
+            <article class="content wrap" id="_content">
+              
+              <h1 id="WPILib_Commands" data-uid="WPILib.Commands">Namespace WPILib.Commands
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes
+              </h3>
+                  <h4><a class="xref" href="WPILib.Commands.Command.html">Command</a></h4>
+                  <section><p>The Command class is at the very core of the entire command framework.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></h4>
-      <section><p>A <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> is a list of commands which are executed in sequence.</p>
+                  <h4><a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a></h4>
+                  <section><p>A <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a> is a list of commands which are executed in sequence.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.ConditionalCommand.html">ConditionalCommand</a></h4>
-      <section><p>This class defines a <a class="xref" href="WPILib.Commands.Command.html">Command</a> which interacts heavily with a PID loop.</p>
+                  <h4><a class="xref" href="WPILib.Commands.ConditionalCommand.html">ConditionalCommand</a></h4>
+                  <section><p>This class defines a <a class="xref" href="WPILib.Commands.Command.html">Command</a> which interacts heavily with a PID loop.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></h4>
-      <section><p>This exception will be thrown if a command is used illegally.</p>
+                  <h4><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></h4>
+                  <section><p>This exception will be thrown if a command is used illegally.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.InstantCommand.html">InstantCommand</a></h4>
-      <section><p>This command will execute once, then finish immediately afterward.</p>
+                  <h4><a class="xref" href="WPILib.Commands.InstantCommand.html">InstantCommand</a></h4>
+                  <section><p>This command will execute once, then finish immediately afterward.</p>
 <p>Subclassing <a class="xref" href="WPILib.Commands.InstantCommand.html">InstantCommand</a> is shorthand for returning true from <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_IsFinished">IsFinished()</a>.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.PIDCommand.html">PIDCommand</a></h4>
-      <section><p>This class defines a <a class="xref" href="WPILib.Commands.Command.html">Command</a> which interacts heavily with a PID loop.</p>
+                  <h4><a class="xref" href="WPILib.Commands.PIDCommand.html">PIDCommand</a></h4>
+                  <section><p>This class defines a <a class="xref" href="WPILib.Commands.Command.html">Command</a> which interacts heavily with a PID loop.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.PIDSubsystem.html">PIDSubsystem</a></h4>
-      <section><p>This class is designed to handle the case where there is a <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a>
+                  <h4><a class="xref" href="WPILib.Commands.PIDSubsystem.html">PIDSubsystem</a></h4>
+                  <section><p>This class is designed to handle the case where there is a <a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a>
 which uses a single <a class="xref" href="WPILib.PIDController.html">PIDController</a> almost constantly.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.PrintCommand.html">PrintCommand</a></h4>
-      <section><p>A <a class="xref" href="WPILib.Commands.PrintCommand.html">PrintCommand</a> is a command which prints out a string when it is initialized, and then immediately finishes.</p>
+                  <h4><a class="xref" href="WPILib.Commands.PrintCommand.html">PrintCommand</a></h4>
+                  <section><p>A <a class="xref" href="WPILib.Commands.PrintCommand.html">PrintCommand</a> is a command which prints out a string when it is initialized, and then immediately finishes.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.Scheduler.html">Scheduler</a></h4>
-      <section><p>The <a class="xref" href="WPILib.Commands.Scheduler.html">Scheduler</a> is a singleton which holds the top-level running m_commands.</p>
+                  <h4><a class="xref" href="WPILib.Commands.Scheduler.html">Scheduler</a></h4>
+                  <section><p>The <a class="xref" href="WPILib.Commands.Scheduler.html">Scheduler</a> is a singleton which holds the top-level running m_commands.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a></h4>
-      <section><p>A <a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a> will call the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Start">Start()</a> method of another
+                  <h4><a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a></h4>
+                  <section><p>A <a class="xref" href="WPILib.Commands.StartCommand.html">StartCommand</a> will call the <a class="xref" href="WPILib.Commands.Command.html#WPILib_Commands_Command_Start">Start()</a> method of another
 command when it is initialized and will finish immediately.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></h4>
-      <section><p>This class defines a major component of the robot.</p>
+                  <h4><a class="xref" href="WPILib.Commands.Subsystem.html">Subsystem</a></h4>
+                  <section><p>This class defines a major component of the robot.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.TimedCommand.html">TimedCommand</a></h4>
-      <section><p>This command will wait for a timeout before finishing</p>
+                  <h4><a class="xref" href="WPILib.Commands.TimedCommand.html">TimedCommand</a></h4>
+                  <section><p>This command will wait for a timeout before finishing</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.WaitCommand.html">WaitCommand</a></h4>
-      <section><p>A <a class="xref" href="WPILib.Commands.WaitCommand.html">WaitCommand</a> will wait for a certain amount of time before finishing.</p>
+                  <h4><a class="xref" href="WPILib.Commands.WaitCommand.html">WaitCommand</a></h4>
+                  <section><p>A <a class="xref" href="WPILib.Commands.WaitCommand.html">WaitCommand</a> will wait for a certain amount of time before finishing.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.WaitForChildren.html">WaitForChildren</a></h4>
-      <section><p>This command will only finish if whatever <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a>
+                  <h4><a class="xref" href="WPILib.Commands.WaitForChildren.html">WaitForChildren</a></h4>
+                  <section><p>This command will only finish if whatever <a class="xref" href="WPILib.Commands.CommandGroup.html">CommandGroup</a>
 it is in has no active children.</p>
 </section>
-      <h4><a class="xref" href="WPILib.Commands.WaitUntilCommand.html">WaitUntilCommand</a></h4>
-      <section><p>This command waits until an absolute game time.</p>
+                  <h4><a class="xref" href="WPILib.Commands.WaitUntilCommand.html">WaitUntilCommand</a></h4>
+                  <section><p>This command waits until an absolute game time.</p>
 </section>
-</article>
+                        </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

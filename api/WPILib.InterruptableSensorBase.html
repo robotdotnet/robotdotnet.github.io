@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InterruptableSensorBase
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.17.7.15">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,701 +67,701 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WPILib.InterruptableSensorBase">
-  
-  
-  <h1 id="WPILib_InterruptableSensorBase" data-uid="WPILib.InterruptableSensorBase">Class InterruptableSensorBase
-  </h1>
-  <div class="markdown level0 summary"><p>Base for sensors to be used with interrupts.</p>
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="WPILib_InterruptableSensorBase" data-uid="WPILib.InterruptableSensorBase">Class InterruptableSensorBase
+              </h1>
+              <div class="markdown level0 summary"><p>Base for sensors to be used with interrupts.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-    <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
-    <div class="level2"><span class="xref">InterruptableSensorBase</span></div>
-  </div>
-      <div class="level3"><a class="xref" href="WPILib.DigitalSource.html">DigitalSource</a></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>:WPILib</h6>
-  <h6><strong>Assembly</strong>:WPILib.dll</h6>
-  <h5 id="WPILib_InterruptableSensorBase_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class InterruptableSensorBase : SensorBase</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase__ctor.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L41">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase__ctor_" data-uid="WPILib.InterruptableSensorBase.#ctor*"></a>
-  <h4 id="WPILib_InterruptableSensorBase__ctor" data-uid="WPILib.InterruptableSensorBase.#ctor">InterruptableSensorBase()</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.InterruptableSensorBase.html">InterruptableSensorBase</a>.</p>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+                  <div class="level2"><span class="xref">InterruptableSensorBase</span></div>
+                  <div class="level3"><a class="xref" href="WPILib.DigitalSource.html">DigitalSource</a></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:WPILib</h6>
+              <h6><strong>Assembly</strong>:WPILib.dll</h6>
+              <h5 id="WPILib_InterruptableSensorBase_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class InterruptableSensorBase : SensorBase</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase__ctor.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L41">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase__ctor_" data-uid="WPILib.InterruptableSensorBase.#ctor*"></a>
+              <h4 id="WPILib_InterruptableSensorBase__ctor" data-uid="WPILib.InterruptableSensorBase.#ctor">InterruptableSensorBase()</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.InterruptableSensorBase.html">InterruptableSensorBase</a>.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected InterruptableSensorBase()</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_Interrupt.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.Interrupt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L31">View Source</a>
-  </span>
-  <h4 id="WPILib_InterruptableSensorBase_Interrupt" data-uid="WPILib.InterruptableSensorBase.Interrupt">Interrupt</h4>
-  <div class="markdown level1 summary"><p>The interrupt resource.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected InterruptableSensorBase()</code></pre>
+              </div>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_Interrupt.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.Interrupt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L31">View Source</a>
+              </span>
+              <h4 id="WPILib_InterruptableSensorBase_Interrupt" data-uid="WPILib.InterruptableSensorBase.Interrupt">Interrupt</h4>
+              <div class="markdown level1 summary"><p>The interrupt resource.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int Interrupt</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_IsSynchronousInterrupt.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.IsSynchronousInterrupt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L36">View Source</a>
-  </span>
-  <h4 id="WPILib_InterruptableSensorBase_IsSynchronousInterrupt" data-uid="WPILib.InterruptableSensorBase.IsSynchronousInterrupt">IsSynchronousInterrupt</h4>
-  <div class="markdown level1 summary"><p>Flags if the interrupt being allocated is synchronous.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected int Interrupt</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_IsSynchronousInterrupt.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.IsSynchronousInterrupt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L36">View Source</a>
+              </span>
+              <h4 id="WPILib_InterruptableSensorBase_IsSynchronousInterrupt" data-uid="WPILib.InterruptableSensorBase.IsSynchronousInterrupt">IsSynchronousInterrupt</h4>
+              <div class="markdown level1 summary"><p>Flags if the interrupt being allocated is synchronous.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool IsSynchronousInterrupt</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_AnalogTriggerTypeForRouting.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.AnalogTriggerTypeForRouting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L56">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_AnalogTriggerTypeForRouting_" data-uid="WPILib.InterruptableSensorBase.AnalogTriggerTypeForRouting*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_AnalogTriggerTypeForRouting" data-uid="WPILib.InterruptableSensorBase.AnalogTriggerTypeForRouting">AnalogTriggerTypeForRouting</h4>
-  <div class="markdown level1 summary"><p>Get the analog trigger type.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected bool IsSynchronousInterrupt</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_AnalogTriggerTypeForRouting.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.AnalogTriggerTypeForRouting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L56">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_AnalogTriggerTypeForRouting_" data-uid="WPILib.InterruptableSensorBase.AnalogTriggerTypeForRouting*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_AnalogTriggerTypeForRouting" data-uid="WPILib.InterruptableSensorBase.AnalogTriggerTypeForRouting">AnalogTriggerTypeForRouting</h4>
+              <div class="markdown level1 summary"><p>Get the analog trigger type.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract AnalogTriggerType AnalogTriggerTypeForRouting { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WPILib.AnalogTriggerType.html">AnalogTriggerType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_InterruptIndex.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.InterruptIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L61">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_InterruptIndex_" data-uid="WPILib.InterruptableSensorBase.InterruptIndex*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_InterruptIndex" data-uid="WPILib.InterruptableSensorBase.InterruptIndex">InterruptIndex</h4>
-  <div class="markdown level1 summary"><p>Gets the index of the Interrupt</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract AnalogTriggerType AnalogTriggerTypeForRouting { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.AnalogTriggerType.html">AnalogTriggerType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_InterruptIndex.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.InterruptIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L61">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_InterruptIndex_" data-uid="WPILib.InterruptableSensorBase.InterruptIndex*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_InterruptIndex" data-uid="WPILib.InterruptableSensorBase.InterruptIndex">InterruptIndex</h4>
+              <div class="markdown level1 summary"><p>Gets the index of the Interrupt</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int InterruptIndex { get; protected set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_PortHandleForRouting.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.PortHandleForRouting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L52">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_PortHandleForRouting_" data-uid="WPILib.InterruptableSensorBase.PortHandleForRouting*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_PortHandleForRouting" data-uid="WPILib.InterruptableSensorBase.PortHandleForRouting">PortHandleForRouting</h4>
-  <div class="markdown level1 summary"><p>Get the port handle for routing.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int InterruptIndex { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_PortHandleForRouting.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.PortHandleForRouting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L52">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_PortHandleForRouting_" data-uid="WPILib.InterruptableSensorBase.PortHandleForRouting*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_PortHandleForRouting" data-uid="WPILib.InterruptableSensorBase.PortHandleForRouting">PortHandleForRouting</h4>
+              <div class="markdown level1 summary"><p>Get the port handle for routing.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract int PortHandleForRouting { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_AllocateInterrupts_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.AllocateInterrupts(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L143">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_AllocateInterrupts_" data-uid="WPILib.InterruptableSensorBase.AllocateInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_AllocateInterrupts_System_Boolean_" data-uid="WPILib.InterruptableSensorBase.AllocateInterrupts(System.Boolean)">AllocateInterrupts(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Allocate the interrupt.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract int PortHandleForRouting { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_AllocateInterrupts_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.AllocateInterrupts(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L143">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_AllocateInterrupts_" data-uid="WPILib.InterruptableSensorBase.AllocateInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_AllocateInterrupts_System_Boolean_" data-uid="WPILib.InterruptableSensorBase.AllocateInterrupts(System.Boolean)">AllocateInterrupts(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Allocate the interrupt.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void AllocateInterrupts(bool watcher)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><span class="parametername">watcher</span></td>
-        <td><p>True if the interrupt should be called in synchronous mode
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void AllocateInterrupts(bool watcher)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">watcher</span></td>
+                    <td><p>True if the interrupt should be called in synchronous mode
 where the user program will have to explicitly wait for the interrupt
 to occur.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_CancelInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.CancelInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L162">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_CancelInterrupts_" data-uid="WPILib.InterruptableSensorBase.CancelInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_CancelInterrupts" data-uid="WPILib.InterruptableSensorBase.CancelInterrupts">CancelInterrupts()</h4>
-  <div class="markdown level1 summary"><p>Cancel interrupts on this device.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_CancelInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.CancelInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L162">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_CancelInterrupts_" data-uid="WPILib.InterruptableSensorBase.CancelInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_CancelInterrupts" data-uid="WPILib.InterruptableSensorBase.CancelInterrupts">CancelInterrupts()</h4>
+              <div class="markdown level1 summary"><p>Cancel interrupts on this device.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CancelInterrupts()</code></pre>
-  </div>
-  <h5 id="WPILib_InterruptableSensorBase_CancelInterrupts_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This deallocates all the structures and disables any interrupts.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void CancelInterrupts()</code></pre>
+              </div>
+              <h5 id="WPILib_InterruptableSensorBase_CancelInterrupts_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This deallocates all the structures and disables any interrupts.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_DisableInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.DisableInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L228">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_DisableInterrupts_" data-uid="WPILib.InterruptableSensorBase.DisableInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_DisableInterrupts" data-uid="WPILib.InterruptableSensorBase.DisableInterrupts">DisableInterrupts()</h4>
-  <div class="markdown level1 summary"><p>Disable Interrupts without deallocating structures.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_DisableInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.DisableInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L228">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_DisableInterrupts_" data-uid="WPILib.InterruptableSensorBase.DisableInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_DisableInterrupts" data-uid="WPILib.InterruptableSensorBase.DisableInterrupts">DisableInterrupts()</h4>
+              <div class="markdown level1 summary"><p>Disable Interrupts without deallocating structures.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DisableInterrupts()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_Dispose.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L299">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_Dispose_" data-uid="WPILib.InterruptableSensorBase.Dispose*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_Dispose" data-uid="WPILib.InterruptableSensorBase.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_EnableInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.EnableInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L210">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_EnableInterrupts_" data-uid="WPILib.InterruptableSensorBase.EnableInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_EnableInterrupts" data-uid="WPILib.InterruptableSensorBase.EnableInterrupts">EnableInterrupts()</h4>
-  <div class="markdown level1 summary"><p>Enable interrupts to occur on this input.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void DisableInterrupts()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_Dispose.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L299">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_Dispose_" data-uid="WPILib.InterruptableSensorBase.Dispose*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_Dispose" data-uid="WPILib.InterruptableSensorBase.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_EnableInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.EnableInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L210">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_EnableInterrupts_" data-uid="WPILib.InterruptableSensorBase.EnableInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_EnableInterrupts" data-uid="WPILib.InterruptableSensorBase.EnableInterrupts">EnableInterrupts()</h4>
+              <div class="markdown level1 summary"><p>Enable interrupts to occur on this input.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnableInterrupts()</code></pre>
-  </div>
-  <h5 id="WPILib_InterruptableSensorBase_EnableInterrupts_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Interrupts are disabled when the RequestInterrup call is made.
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void EnableInterrupts()</code></pre>
+              </div>
+              <h5 id="WPILib_InterruptableSensorBase_EnableInterrupts_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Interrupts are disabled when the RequestInterrup call is made.
 This gives time to do the setup of the other options before starting
 the field interrupts.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_ReadFallingTimestanp.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.ReadFallingTimestanp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L267">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_ReadFallingTimestanp_" data-uid="WPILib.InterruptableSensorBase.ReadFallingTimestanp*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_ReadFallingTimestanp" data-uid="WPILib.InterruptableSensorBase.ReadFallingTimestanp">ReadFallingTimestanp()</h4>
-  <div class="markdown level1 summary"><p>Return the timestamp for the falling interrupt that occurred most recently.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_ReadFallingTimestanp.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.ReadFallingTimestanp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L267">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_ReadFallingTimestanp_" data-uid="WPILib.InterruptableSensorBase.ReadFallingTimestanp*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_ReadFallingTimestanp" data-uid="WPILib.InterruptableSensorBase.ReadFallingTimestanp">ReadFallingTimestanp()</h4>
+              <div class="markdown level1 summary"><p>Return the timestamp for the falling interrupt that occurred most recently.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double ReadFallingTimestanp()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-        <td><p>Timestamp in seconds since boot.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double ReadFallingTimestanp()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><p>Timestamp in seconds since boot.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_InterruptableSensorBase_ReadFallingTimestanp_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This is in the same time domain as GetClock(). The rising edge interrupt
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_InterruptableSensorBase_ReadFallingTimestanp_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is in the same time domain as GetClock(). The rising edge interrupt
 should be enabled with <a class="xref" href="WPILib.InterruptableSensorBase.html#WPILib_InterruptableSensorBase_SetUpSourceEdge_System_Boolean_System_Boolean_">SetUpSourceEdge(Boolean, Boolean)</a></p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_ReadRisingTimestanp.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.ReadRisingTimestanp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L249">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_ReadRisingTimestanp_" data-uid="WPILib.InterruptableSensorBase.ReadRisingTimestanp*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_ReadRisingTimestanp" data-uid="WPILib.InterruptableSensorBase.ReadRisingTimestanp">ReadRisingTimestanp()</h4>
-  <div class="markdown level1 summary"><p>Return the timestamp for the rising interrupt that occurred most recently.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_ReadRisingTimestanp.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.ReadRisingTimestanp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L249">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_ReadRisingTimestanp_" data-uid="WPILib.InterruptableSensorBase.ReadRisingTimestanp*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_ReadRisingTimestanp" data-uid="WPILib.InterruptableSensorBase.ReadRisingTimestanp">ReadRisingTimestanp()</h4>
+              <div class="markdown level1 summary"><p>Return the timestamp for the rising interrupt that occurred most recently.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double ReadRisingTimestanp()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-        <td><p>Timestamp in seconds since boot.</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double ReadRisingTimestanp()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><p>Timestamp in seconds since boot.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_InterruptableSensorBase_ReadRisingTimestanp_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This is in the same time domain as GetClock(). The rising edge interrupt
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_InterruptableSensorBase_ReadRisingTimestanp_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is in the same time domain as GetClock(). The rising edge interrupt
 should be enabled with <a class="xref" href="WPILib.InterruptableSensorBase.html#WPILib_InterruptableSensorBase_SetUpSourceEdge_System_Boolean_System_Boolean_">SetUpSourceEdge(Boolean, Boolean)</a></p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L122">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts">RequestInterrupts()</h4>
-  <div class="markdown level1 summary"><p>Requests one of the 8 interrupts synchronously on this input.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L122">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts">RequestInterrupts()</h4>
+              <div class="markdown level1 summary"><p>Requests one of the 8 interrupts synchronously on this input.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RequestInterrupts()</code></pre>
-  </div>
-  <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Request interrupts in synchronous mode where the user program will have to explicitly 
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RequestInterrupts()</code></pre>
+              </div>
+              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Request interrupts in synchronous mode where the user program will have to explicitly 
 wait for the interrupt to occur using <a class="xref" href="WPILib.InterruptableSensorBase.html#WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_">WaitForInterrupt(Double)</a>. 
 The default is interrupt on rising edges only.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_Action_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L70">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(Action)">RequestInterrupts(Action)</h4>
-  <div class="markdown level1 summary"><p>Requests one of the 8 interrupts asynchronously on this input.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_Action_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L70">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(Action)">RequestInterrupts(Action)</h4>
+              <div class="markdown level1 summary"><p>Requests one of the 8 interrupts asynchronously on this input.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RequestInterrupts(Action handler)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Action</span></td>
-        <td><span class="parametername">handler</span></td>
-        <td><p>The callback that will be called whenever 
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RequestInterrupts(Action handler)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span></td>
+                    <td><span class="parametername">handler</span></td>
+                    <td><p>The callback that will be called whenever 
 there is an interrupt on this device.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Request interrupts in asynchronous mode where the user program interrupt handler will be 
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Request interrupts in asynchronous mode where the user program interrupt handler will be 
 called when an interrupt occurs. The default is interrupt on rising edges only.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(Action%7BSystem.UInt32%2CSystem.Object%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L97">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(Action{System.UInt32,System.Object},System.Object)">RequestInterrupts(Action&lt;UInt32, Object&gt;, Object)</h4>
-  <div class="markdown level1 summary"><p>Requests one of the 8 interrupts asynchronously on this input.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.RequestInterrupts(Action%7BSystem.UInt32%2CSystem.Object%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L97">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_RequestInterrupts_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object_" data-uid="WPILib.InterruptableSensorBase.RequestInterrupts(Action{System.UInt32,System.Object},System.Object)">RequestInterrupts(Action&lt;UInt32, Object&gt;, Object)</h4>
+              <div class="markdown level1 summary"><p>Requests one of the 8 interrupts asynchronously on this input.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RequestInterrupts(Action&lt;uint, object&gt; handler, object param)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.uint32(v=vs.110).aspx">UInt32</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
-        <td><span class="parametername">handler</span></td>
-        <td><p>The callback that will be called whenever 
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RequestInterrupts(Action&lt;uint, object&gt; handler, object param)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.uint32(v=vs.110).aspx">UInt32</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;</td>
+                    <td><span class="parametername">handler</span></td>
+                    <td><p>The callback that will be called whenever 
 there is an interrupt on this device.</p>
 </td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
-        <td><span class="parametername">param</span></td>
-        <td><p>The object returned when the interrupt occurs.</p>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td><span class="parametername">param</span></td>
+                    <td><p>The object returned when the interrupt occurs.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Request interrupts in asynchronous mode where the user program interrupt handler will be 
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="WPILib_InterruptableSensorBase_RequestInterrupts_Action_System_UInt32_System_Object__System_Object__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Request interrupts in asynchronous mode where the user program interrupt handler will be 
 called when an interrupt occurs. The default is interrupt on rising edges only.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_SetUpSourceEdge_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.SetUpSourceEdge(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L284">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_SetUpSourceEdge_" data-uid="WPILib.InterruptableSensorBase.SetUpSourceEdge*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_SetUpSourceEdge_System_Boolean_System_Boolean_" data-uid="WPILib.InterruptableSensorBase.SetUpSourceEdge(System.Boolean,System.Boolean)">SetUpSourceEdge(Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Set which edge to trigger interrupts on.</p>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_SetUpSourceEdge_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.SetUpSourceEdge(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L284">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_SetUpSourceEdge_" data-uid="WPILib.InterruptableSensorBase.SetUpSourceEdge*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_SetUpSourceEdge_System_Boolean_System_Boolean_" data-uid="WPILib.InterruptableSensorBase.SetUpSourceEdge(System.Boolean,System.Boolean)">SetUpSourceEdge(Boolean, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Set which edge to trigger interrupts on.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetUpSourceEdge(bool risingEdge, bool fallingEdge)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><span class="parametername">risingEdge</span></td>
-        <td><p>True to interrupt on the rising edge</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetUpSourceEdge(bool risingEdge, bool fallingEdge)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">risingEdge</span></td>
+                    <td><p>True to interrupt on the rising edge</p>
 </td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><span class="parametername">fallingEdge</span></td>
-        <td><p>True to interrupt on the falling edge</p>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">fallingEdge</span></td>
+                    <td><p>True to interrupt on the falling edge</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L199">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_WaitForInterrupt_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double)">WaitForInterrupt(Double)</h4>
-  <div class="markdown level1 summary"><p>In synchronous mode, wait for the defined interrupt to occur.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L199">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_WaitForInterrupt_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double)">WaitForInterrupt(Double)</h4>
+              <div class="markdown level1 summary"><p>In synchronous mode, wait for the defined interrupt to occur.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WaitResult WaitForInterrupt(double timeout)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-        <td><span class="parametername">timeout</span></td>
-        <td><p>Timeout in seconds</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public WaitResult WaitForInterrupt(double timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><span class="parametername">timeout</span></td>
+                    <td><p>Timeout in seconds</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WPILib.WaitResult.html">WaitResult</a></td>
-        <td><p>The <a class="xref" href="WPILib.WaitResult.html">WaitResult</a> of the interrupt</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.WaitResult.html">WaitResult</a></td>
+                    <td><p>The <a class="xref" href="WPILib.WaitResult.html">WaitResult</a> of the interrupt</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L182">View Source</a>
-  </span>
-  <a id="WPILib_InterruptableSensorBase_WaitForInterrupt_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt*"></a>
-  <h4 id="WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_System_Boolean_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double,System.Boolean)">WaitForInterrupt(Double, Boolean)</h4>
-  <div class="markdown level1 summary"><p>In synchronous mode, wait for the defined interrupt to occur.</p>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/InterruptableSensorBase.cs/#L182">View Source</a>
+              </span>
+              <a id="WPILib_InterruptableSensorBase_WaitForInterrupt_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt*"></a>
+              <h4 id="WPILib_InterruptableSensorBase_WaitForInterrupt_System_Double_System_Boolean_" data-uid="WPILib.InterruptableSensorBase.WaitForInterrupt(System.Double,System.Boolean)">WaitForInterrupt(Double, Boolean)</h4>
+              <div class="markdown level1 summary"><p>In synchronous mode, wait for the defined interrupt to occur.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WaitResult WaitForInterrupt(double timeout, bool ignorePrevious)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-        <td><span class="parametername">timeout</span></td>
-        <td><p>Timeout in seconds</p>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public WaitResult WaitForInterrupt(double timeout, bool ignorePrevious)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+                    <td><span class="parametername">timeout</span></td>
+                    <td><p>Timeout in seconds</p>
 </td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-        <td><span class="parametername">ignorePrevious</span></td>
-        <td><p>If true, ignore previous interrupts that 
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">ignorePrevious</span></td>
+                    <td><p>If true, ignore previous interrupts that 
 happened before this was called.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WPILib.WaitResult.html">WaitResult</a></td>
-        <td><p>The <a class="xref" href="WPILib.WaitResult.html">WaitResult</a> of the interrupt</p>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="WPILib.WaitResult.html">WaitResult</a></td>
+                    <td><p>The <a class="xref" href="WPILib.WaitResult.html">WaitResult</a> of the interrupt</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-</article>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RTrees
+   | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RTrees
+   | RobotDotNet ">
+    <meta name="generator" content="docfx 2.16.2.2">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="OpenCvSharp_ML_RTrees" data-uid="OpenCvSharp.ML.RTrees">Class RTrees
+              </h1>
+              <div class="markdown level0 summary"><p>The class implements the random forest predictor.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+                  <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+                  <div class="level3"><a class="xref" href="OpenCvSharp.Algorithm.html">Algorithm</a></div>
+                  <div class="level4"><a class="xref" href="OpenCvSharp.ML.StatModel.html">StatModel</a></div>
+                  <div class="level5"><a class="xref" href="OpenCvSharp.ML.DTrees.html">DTrees</a></div>
+                  <div class="level6"><span class="xref">RTrees</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_MaxCategories">DTrees.MaxCategories</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_MaxDepth">DTrees.MaxDepth</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_MinSampleCount">DTrees.MinSampleCount</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_CVFolds">DTrees.CVFolds</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_UseSurrogates">DTrees.UseSurrogates</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_Use1SERule">DTrees.Use1SERule</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_TruncatePrunedTree">DTrees.TruncatePrunedTree</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_RegressionAccuracy">DTrees.RegressionAccuracy</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_Priors">DTrees.Priors</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_GetRoots">DTrees.GetRoots()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_GetNodes">DTrees.GetNodes()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_GetSplits">DTrees.GetSplits()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_GetSubsets">DTrees.GetSubsets()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_GetVarCount">StatModel.GetVarCount()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_Empty">StatModel.Empty()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_IsTrained">StatModel.IsTrained()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_IsClassifier">StatModel.IsClassifier()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_Train_OpenCvSharp_ML_TrainData_System_Int32_">StatModel.Train(TrainData, Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_Train_OpenCvSharp_InputArray_OpenCvSharp_ML_SampleTypes_OpenCvSharp_InputArray_">StatModel.Train(InputArray, SampleTypes, InputArray)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_CalcError_OpenCvSharp_ML_TrainData_System_Boolean_OpenCvSharp_OutputArray_">StatModel.CalcError(TrainData, Boolean, OutputArray)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.ML.StatModel.html#OpenCvSharp_ML_StatModel_Predict_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_OpenCvSharp_ML_StatModel_Flags_">StatModel.Predict(InputArray, OutputArray, StatModel.Flags)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Write_OpenCvSharp_FileStorage_">Algorithm.Write(FileStorage)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Read_OpenCvSharp_FileNode_">Algorithm.Read(FileNode)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Save_System_String_">Algorithm.Save(String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_GetDefaultName">Algorithm.GetDefaultName()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:OpenCvSharp.ML</h6>
+              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
+              <h5 id="OpenCvSharp_ML_RTrees_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class RTrees : DTrees, IDisposable, ICvPtrHolder</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L28">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees__ctor_" data-uid="OpenCvSharp.ML.RTrees.#ctor*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees__ctor_System_IntPtr_" data-uid="OpenCvSharp.ML.RTrees.#ctor(System.IntPtr)">RTrees(IntPtr)</h4>
+              <div class="markdown level1 summary"><p>Creates instance by raw pointer cv::ml::RTrees*</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected RTrees(IntPtr p)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.intptr(v=vs.110).aspx">IntPtr</a></td>
+                    <td><span class="parametername">p</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees_ActiveVarCount.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.ActiveVarCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L103">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees_ActiveVarCount_" data-uid="OpenCvSharp.ML.RTrees.ActiveVarCount*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees_ActiveVarCount" data-uid="OpenCvSharp.ML.RTrees.ActiveVarCount">ActiveVarCount</h4>
+              <div class="markdown level1 summary"><p>The size of the randomly selected subset of features at each tree node 
+and that are used to find the best split(s).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ActiveVarCount { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees_CalculateVarImportance.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.CalculateVarImportance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L93">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees_CalculateVarImportance_" data-uid="OpenCvSharp.ML.RTrees.CalculateVarImportance*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees_CalculateVarImportance" data-uid="OpenCvSharp.ML.RTrees.CalculateVarImportance">CalculateVarImportance</h4>
+              <div class="markdown level1 summary"><p>If true then variable importance will be calculated and then 
+it can be retrieved by RTrees::getVarImportance. Default value is false.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool CalculateVarImportance { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees_TermCriteria.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.TermCriteria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L112">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees_TermCriteria_" data-uid="OpenCvSharp.ML.RTrees.TermCriteria*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees_TermCriteria" data-uid="OpenCvSharp.ML.RTrees.TermCriteria">TermCriteria</h4>
+              <div class="markdown level1 summary"><p>The termination criteria that specifies when the training algorithm stops.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TermCriteria TermCriteria { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees_Create.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.Create%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L39">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees_Create_" data-uid="OpenCvSharp.ML.RTrees.Create*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees_Create" data-uid="OpenCvSharp.ML.RTrees.Create">Create()</h4>
+              <div class="markdown level1 summary"><p>Creates the empty model.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static RTrees Create()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.ML.RTrees.html">RTrees</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L62">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees_Dispose_" data-uid="OpenCvSharp.ML.RTrees.Dispose*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees_Dispose_System_Boolean_" data-uid="OpenCvSharp.ML.RTrees.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Clean up any resources being used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">disposing</span></td>
+                    <td><p>If disposing equals true, the method has been called directly or indirectly by a user&#39;s code. Managed and unmanaged resources can be disposed.
+If false, the method has been called by the runtime from inside the finalizer and you should not reference other objects. Only unmanaged resources can be disposed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="OpenCvSharp.ML.DTrees.html#OpenCvSharp_ML_DTrees_Dispose_System_Boolean_">DTrees.Dispose(Boolean)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees_GetVarImportance.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees.GetVarImportance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L129">View Source</a>
+              </span>
+              <a id="OpenCvSharp_ML_RTrees_GetVarImportance_" data-uid="OpenCvSharp.ML.RTrees.GetVarImportance*"></a>
+              <h4 id="OpenCvSharp_ML_RTrees_GetVarImportance" data-uid="OpenCvSharp.ML.RTrees.GetVarImportance">GetVarImportance()</h4>
+              <div class="markdown level1 summary"><p>Returns the variable importance array. 
+The method returns the variable importance vector, computed at the training 
+stage when CalculateVarImportance is set to true. If this flag was set to false, 
+the empty matrix is returned.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Mat GetVarImportance()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_RTrees.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.RTrees%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/RTrees.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

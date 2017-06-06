@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SVD
+   | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SVD
+   | RobotDotNet ">
+    <meta name="generator" content="docfx 2.16.2.2">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="OpenCvSharp_SVD" data-uid="OpenCvSharp.SVD">Class SVD
+              </h1>
+              <div class="markdown level0 summary"><p>Singular Value Decomposition class</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+                  <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+                  <div class="level3"><span class="xref">SVD</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+                </div>
+                <div>
+                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
+              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
+              <h5 id="OpenCvSharp_SVD_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class SVD : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD__ctor.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L18">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD__ctor_" data-uid="OpenCvSharp.SVD.#ctor*"></a>
+              <h4 id="OpenCvSharp_SVD__ctor" data-uid="OpenCvSharp.SVD.#ctor">SVD()</h4>
+              <div class="markdown level1 summary"><p>the default constructor</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SVD()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD__ctor_OpenCvSharp_InputArray_OpenCvSharp_SVD_Flags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.%23ctor(OpenCvSharp.InputArray%2COpenCvSharp.SVD.Flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L27">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD__ctor_" data-uid="OpenCvSharp.SVD.#ctor*"></a>
+              <h4 id="OpenCvSharp_SVD__ctor_OpenCvSharp_InputArray_OpenCvSharp_SVD_Flags_" data-uid="OpenCvSharp.SVD.#ctor(OpenCvSharp.InputArray,OpenCvSharp.SVD.Flags)">SVD(InputArray, SVD.Flags)</h4>
+              <div class="markdown level1 summary"><p>the constructor that performs SVD</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SVD(InputArray src, SVD.Flags flags = SVD.Flags.None)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">src</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SVD.Flags.html">SVD.Flags</a></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_U.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.U%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L67">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_U_" data-uid="OpenCvSharp.SVD.U*"></a>
+              <h4 id="OpenCvSharp_SVD_U" data-uid="OpenCvSharp.SVD.U">U</h4>
+              <div class="markdown level1 summary"><p>eigenvalues of the covariation matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Mat U { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_Vt.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.Vt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L95">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_Vt_" data-uid="OpenCvSharp.SVD.Vt*"></a>
+              <h4 id="OpenCvSharp_SVD_Vt" data-uid="OpenCvSharp.SVD.Vt">Vt</h4>
+              <div class="markdown level1 summary"><p>mean value subtracted before the projection and added after the back projection</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Mat Vt { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_W.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.W%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L81">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_W_" data-uid="OpenCvSharp.SVD.W*"></a>
+              <h4 id="OpenCvSharp_SVD_W" data-uid="OpenCvSharp.SVD.W">W</h4>
+              <div class="markdown level1 summary"><p>eigenvalues of the covariation matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Mat W { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_BackSubst_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.BackSubst(OpenCvSharp.InputArray%2COpenCvSharp.InputArray%2COpenCvSharp.InputArray%2COpenCvSharp.InputArray%2COpenCvSharp.OutputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L202">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_BackSubst_" data-uid="OpenCvSharp.SVD.BackSubst*"></a>
+              <h4 id="OpenCvSharp_SVD_BackSubst_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_" data-uid="OpenCvSharp.SVD.BackSubst(OpenCvSharp.InputArray,OpenCvSharp.InputArray,OpenCvSharp.InputArray,OpenCvSharp.InputArray,OpenCvSharp.OutputArray)">BackSubst(InputArray, InputArray, InputArray, InputArray, OutputArray)</h4>
+              <div class="markdown level1 summary"><p>performs back substitution</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void BackSubst(InputArray w, InputArray u, InputArray vt, InputArray rhs, OutputArray dst)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">w</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">u</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">vt</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">rhs</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">dst</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_BackSubst_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.BackSubst(OpenCvSharp.InputArray%2COpenCvSharp.OutputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L131">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_BackSubst_" data-uid="OpenCvSharp.SVD.BackSubst*"></a>
+              <h4 id="OpenCvSharp_SVD_BackSubst_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_" data-uid="OpenCvSharp.SVD.BackSubst(OpenCvSharp.InputArray,OpenCvSharp.OutputArray)">BackSubst(InputArray, OutputArray)</h4>
+              <div class="markdown level1 summary"><p>performs back substitution, so that dst is the solution or pseudo-solution of m*dst = rhs, where m is the decomposed matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void BackSubst(InputArray rhs, OutputArray dst)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">rhs</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">dst</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_OpenCvSharp_OutputArray_OpenCvSharp_OutputArray_OpenCvSharp_SVD_Flags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.Compute(OpenCvSharp.InputArray%2COpenCvSharp.OutputArray%2COpenCvSharp.OutputArray%2COpenCvSharp.OutputArray%2COpenCvSharp.SVD.Flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L155">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_Compute_" data-uid="OpenCvSharp.SVD.Compute*"></a>
+              <h4 id="OpenCvSharp_SVD_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_OpenCvSharp_OutputArray_OpenCvSharp_OutputArray_OpenCvSharp_SVD_Flags_" data-uid="OpenCvSharp.SVD.Compute(OpenCvSharp.InputArray,OpenCvSharp.OutputArray,OpenCvSharp.OutputArray,OpenCvSharp.OutputArray,OpenCvSharp.SVD.Flags)">Compute(InputArray, OutputArray, OutputArray, OutputArray, SVD.Flags)</h4>
+              <div class="markdown level1 summary"><p>decomposes matrix and stores the results to user-provided matrices</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Compute(InputArray src, OutputArray w, OutputArray u, OutputArray vt, SVD.Flags flags = SVD.Flags.None)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">src</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">w</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">u</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">vt</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SVD.Flags.html">SVD.Flags</a></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_OpenCvSharp_SVD_Flags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.Compute(OpenCvSharp.InputArray%2COpenCvSharp.OutputArray%2COpenCvSharp.SVD.Flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L182">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_Compute_" data-uid="OpenCvSharp.SVD.Compute*"></a>
+              <h4 id="OpenCvSharp_SVD_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_OpenCvSharp_SVD_Flags_" data-uid="OpenCvSharp.SVD.Compute(OpenCvSharp.InputArray,OpenCvSharp.OutputArray,OpenCvSharp.SVD.Flags)">Compute(InputArray, OutputArray, SVD.Flags)</h4>
+              <div class="markdown level1 summary"><p>computes singular values of a matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Compute(InputArray src, OutputArray w, SVD.Flags flags = SVD.Flags.None)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">src</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">w</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SVD.Flags.html">SVD.Flags</a></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L39">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_Dispose_" data-uid="OpenCvSharp.SVD.Dispose*"></a>
+              <h4 id="OpenCvSharp_SVD_Dispose_System_Boolean_" data-uid="OpenCvSharp.SVD.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><span class="parametername">disposing</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_Run_OpenCvSharp_InputArray_OpenCvSharp_SVD_Flags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.Run(OpenCvSharp.InputArray%2COpenCvSharp.SVD.Flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L114">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_Run_" data-uid="OpenCvSharp.SVD.Run*"></a>
+              <h4 id="OpenCvSharp_SVD_Run_OpenCvSharp_InputArray_OpenCvSharp_SVD_Flags_" data-uid="OpenCvSharp.SVD.Run(OpenCvSharp.InputArray,OpenCvSharp.SVD.Flags)">Run(InputArray, SVD.Flags)</h4>
+              <div class="markdown level1 summary"><p>the operator that performs SVD. The previously allocated SVD::u, SVD::w are SVD::vt are released.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SVD Run(InputArray src, SVD.Flags flags = SVD.Flags.None)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">src</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SVD.Flags.html">SVD.Flags</a></td>
+                    <td><span class="parametername">flags</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.SVD.html">SVD</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD_SolveZ_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD.SolveZ(OpenCvSharp.InputArray%2COpenCvSharp.OutputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L229">View Source</a>
+              </span>
+              <a id="OpenCvSharp_SVD_SolveZ_" data-uid="OpenCvSharp.SVD.SolveZ*"></a>
+              <h4 id="OpenCvSharp_SVD_SolveZ_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_" data-uid="OpenCvSharp.SVD.SolveZ(OpenCvSharp.InputArray,OpenCvSharp.OutputArray)">SolveZ(InputArray, OutputArray)</h4>
+              <div class="markdown level1 summary"><p>finds dst = arg min_{|dst|=1} |m*dst|</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void SolveZ(InputArray src, OutputArray dst)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+                    <td><span class="parametername">src</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+                    <td><span class="parametername">dst</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_SVD.md&amp;value=---%0Auid%3A%20OpenCvSharp.SVD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/SVD.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
