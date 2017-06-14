@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum SVM.KernelTypes
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,74 +67,74 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_ML_SVM_KernelTypes" data-uid="OpenCvSharp.ML.SVM.KernelTypes">Enum SVM.KernelTypes
-              </h1>
-              <div class="markdown level0 summary"><p>SVM kernel type</p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.ML.SVM.KernelTypes">
+  
+  
+  <h1 id="OpenCvSharp_ML_SVM_KernelTypes" data-uid="OpenCvSharp.ML.SVM.KernelTypes">Enum SVM.KernelTypes
+  </h1>
+  <div class="markdown level0 summary"><p>SVM kernel type</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp.ML</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_ML_SVM_KernelTypes_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public enum KernelTypes</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Chi2">Chi2</td>
-                    <td><p>Exponential Chi2 kernel, similar to the RBF kernel:
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.ML.html">OpenCvSharp.ML</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_ML_SVM_KernelTypes_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum KernelTypes</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Chi2">Chi2</td>
+        <td><p>Exponential Chi2 kernel, similar to the RBF kernel:
 \f$K(x_i, x_j) = e^{-\gamma \chi^2(x_i,x_j)}, \chi^2(x_i,x_j) = (x_i-x_j)^2/(x_i+x_j), \gamma &gt; 0\f$. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Custom">Custom</td>
-                    <td><p>Returned by SVM::getKernelType in case when custom kernel has been set</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Custom">Custom</td>
+        <td><p>Returned by SVM::getKernelType in case when custom kernel has been set</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Inter">Inter</td>
-                    <td><p>Histogram intersection kernel. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Inter">Inter</td>
+        <td><p>Histogram intersection kernel. 
 A fast kernel. \f$K(x_i, x_j) = min(x_i,x_j)\f$. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Linear">Linear</td>
-                    <td><p>Linear kernel. No mapping is done, linear discrimination (or regression) is
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Linear">Linear</td>
+        <td><p>Linear kernel. No mapping is done, linear discrimination (or regression) is
 done in the original feature space. It is the fastest option. \f$K(x_i, x_j) = x_i^T x_j\f$.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Poly">Poly</td>
-                    <td><p>Polynomial kernel:
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Poly">Poly</td>
+        <td><p>Polynomial kernel:
 \f$K(x_i, x_j) = (\gamma x_i^T x_j + coef0)^{degree}, \gamma &gt; 0\f$.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Rbf">Rbf</td>
-                    <td><p>Radial basis function (RBF), a good choice in most cases.
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Rbf">Rbf</td>
+        <td><p>Radial basis function (RBF), a good choice in most cases.
 \f$K(x_i, x_j) = e^{-\gamma ||x_i - x_j||^2}, \gamma &gt; 0\f$.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_ML_SVM_KernelTypes_Sigmoid">Sigmoid</td>
-                    <td><p>Sigmoid kernel: 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_ML_SVM_KernelTypes_Sigmoid">Sigmoid</td>
+        <td><p>Sigmoid kernel: 
 \f$K(x_i, x_j) = \tanh(\gamma x_i^T x_j + coef0)\f$.</p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -142,10 +142,10 @@ done in the original feature space. It is the fastest option. \f$K(x_i, x_j) = x
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_SVM_KernelTypes.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.SVM.KernelTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_ML_SVM_KernelTypes.md&amp;value=---%0Auid%3A%20OpenCvSharp.ML.SVM.KernelTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/SVM.cs/#L371" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/ml/SVM.cs/#L371" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -22,99 +22,105 @@
   <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
       <header>
-      </header>
-      <div role="main" class="container body-content">
-        <div class="sidenav">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div>
-              <div class="sidefilter">
-                <form class="toc-filter">
-                  <span class="glyphicon glyphicon-filter filter-icon"></span>
-                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
-                </form>
-              </div>
-              <div class="sidetoc">
-                <div class="toc" id="toc">
-                    
-                    <ul class="nav level1">
-                      <li>
-                        <a href="intro.html" name="" title="Introduction">Introduction</a>
-                      </li>
-                      <li>
-                        <a href="windowsinstall.html" name="" title="Windows installation">Windows installation</a>
-                      </li>
-                      <li>
-                        <a href="provisioning.html" name="" title="Installing the runtime onto the roboRIO">Installing the runtime onto the roboRIO</a>
-                      </li>
-                      <li>
-                        <a href="firstcreate.html" name="" title="Creating your first WPILib project">Creating your first WPILib project</a>
-                      </li>
-                      <li>
-                        <a href="createattributed.html" name="" title="Creating a project with the Attributed Robot Model">Creating a project with the Attributed Robot Model</a>
-                      </li>
-                      <li>
-                        <a href="createlv.html" name="" title="Creating a project using the LabVIEW style base class">Creating a project using the LabVIEW style base class</a>
-                      </li>
-                      <li>
-                        <a href="writingandrunning.html" name="" title="Writing and Running your first WPILib program">Writing and Running your first WPILib program</a>
-                      </li>
-                      <li>
-                        <a href="updatewpilib.html" name="" title="Updating WPILib">Updating WPILib</a>
-                      </li>
-                      <li>
-                        <a href="ctre.html" name="" title="Using the CTRE Libraries">Using the CTRE Libraries</a>
-                      </li>
-                      <li>
-                        <a href="opencv.html" name="" title="Working with Cameras and OpenCV">Working with Cameras and OpenCV</a>
-                      </li>
-                      <li>
-                        <a href="coprocessors.html" name="" title="OpenCV and Arm Coprocessors">OpenCV and Arm Coprocessors</a>
-                      </li>
-                    </ul>                </div>
-              </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
         </div>
-        <div class="article row grid-right">
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
           <div class="col-md-10">
-
-                
-                <ul class="nav level1">
-                  <li>
-                    <a href="intro.html" name="" title="Introduction">Introduction</a>
-                  </li>
-                  <li>
-                    <a href="windowsinstall.html" name="" title="Windows installation">Windows installation</a>
-                  </li>
-                  <li>
-                    <a href="provisioning.html" name="" title="Installing the runtime onto the roboRIO">Installing the runtime onto the roboRIO</a>
-                  </li>
-                  <li>
-                    <a href="firstcreate.html" name="" title="Creating your first WPILib project">Creating your first WPILib project</a>
-                  </li>
-                  <li>
-                    <a href="createattributed.html" name="" title="Creating a project with the Attributed Robot Model">Creating a project with the Attributed Robot Model</a>
-                  </li>
-                  <li>
-                    <a href="createlv.html" name="" title="Creating a project using the LabVIEW style base class">Creating a project using the LabVIEW style base class</a>
-                  </li>
-                  <li>
-                    <a href="writingandrunning.html" name="" title="Writing and Running your first WPILib program">Writing and Running your first WPILib program</a>
-                  </li>
-                  <li>
-                    <a href="updatewpilib.html" name="" title="Updating WPILib">Updating WPILib</a>
-                  </li>
-                  <li>
-                    <a href="ctre.html" name="" title="Using the CTRE Libraries">Using the CTRE Libraries</a>
-                  </li>
-                  <li>
-                    <a href="opencv.html" name="" title="Working with Cameras and OpenCV">Working with Cameras and OpenCV</a>
-                  </li>
-                  <li>
-                    <a href="coprocessors.html" name="" title="OpenCV and Arm Coprocessors">OpenCV and Arm Coprocessors</a>
-                  </li>
-                </ul>          </div>
+            <article class="content wrap" id="_content" data-uid="">
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+            <li>
+              <a href="intro.html" name="" title="Introduction">Introduction</a>
+            </li>
+            <li>
+              <a href="windowsinstall.html" name="" title="Windows installation">Windows installation</a>
+            </li>
+            <li>
+              <a href="provisioning.html" name="" title="Installing the runtime onto the roboRIO">Installing the runtime onto the roboRIO</a>
+            </li>
+            <li>
+              <a href="firstcreate.html" name="" title="Creating your first WPILib project">Creating your first WPILib project</a>
+            </li>
+            <li>
+              <a href="createattributed.html" name="" title="Creating a project with the Attributed Robot Model">Creating a project with the Attributed Robot Model</a>
+            </li>
+            <li>
+              <a href="createlv.html" name="" title="Creating a project using the LabVIEW style base class">Creating a project using the LabVIEW style base class</a>
+            </li>
+            <li>
+              <a href="writingandrunning.html" name="" title="Writing and Running your first WPILib program">Writing and Running your first WPILib program</a>
+            </li>
+            <li>
+              <a href="updatewpilib.html" name="" title="Updating WPILib">Updating WPILib</a>
+            </li>
+            <li>
+              <a href="ctre.html" name="" title="Using the CTRE Libraries">Using the CTRE Libraries</a>
+            </li>
+            <li>
+              <a href="opencv.html" name="" title="Working with Cameras and OpenCV">Working with Cameras and OpenCV</a>
+            </li>
+            <li>
+              <a href="coprocessors.html" name="" title="OpenCV and Arm Coprocessors">OpenCV and Arm Coprocessors</a>
+            </li>
+          </ul>      </div>
+    </div>
+  </div>
+</div></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
       

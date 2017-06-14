@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BackgroundSubtractorMOG2
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,571 +67,571 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_BackgroundSubtractorMOG2" data-uid="OpenCvSharp.BackgroundSubtractorMOG2">Class BackgroundSubtractorMOG2
-              </h1>
-              <div class="markdown level0 summary"><p>The Base Class for Background/Foreground Segmentation.
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.BackgroundSubtractorMOG2">
+  
+  
+  <h1 id="OpenCvSharp_BackgroundSubtractorMOG2" data-uid="OpenCvSharp.BackgroundSubtractorMOG2">Class BackgroundSubtractorMOG2
+  </h1>
+  <div class="markdown level0 summary"><p>The Base Class for Background/Foreground Segmentation.
 The class is only used to define the common interface for
 the whole family of background/foreground segmentation algorithms.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
-                  <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
-                  <div class="level3"><a class="xref" href="OpenCvSharp.Algorithm.html">Algorithm</a></div>
-                  <div class="level4"><a class="xref" href="OpenCvSharp.BackgroundSubtractor.html">BackgroundSubtractor</a></div>
-                  <div class="level5"><span class="xref">BackgroundSubtractorMOG2</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="OpenCvSharp.BackgroundSubtractor.html#OpenCvSharp_BackgroundSubtractor_Apply_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_System_Double_">BackgroundSubtractor.Apply(InputArray, OutputArray, Double)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.BackgroundSubtractor.html#OpenCvSharp_BackgroundSubtractor_GetBackgroundImage_OpenCvSharp_OutputArray_">BackgroundSubtractor.GetBackgroundImage(OutputArray)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Write_OpenCvSharp_FileStorage_">Algorithm.Write(FileStorage)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Read_OpenCvSharp_FileNode_">Algorithm.Read(FileNode)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Empty">Algorithm.Empty</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Save_System_String_">Algorithm.Save(String)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_GetDefaultName">Algorithm.GetDefaultName()</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_BackgroundSubtractorMOG2_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class BackgroundSubtractorMOG2 : BackgroundSubtractor, IDisposable, ICvPtrHolder</code></pre>
-              </div>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_BackgroundRatio.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.BackgroundRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L134">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_BackgroundRatio_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.BackgroundRatio*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_BackgroundRatio" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.BackgroundRatio">BackgroundRatio</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double BackgroundRatio { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_ComplexityReductionThreshold.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.ComplexityReductionThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L248">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_ComplexityReductionThreshold_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ComplexityReductionThreshold*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_ComplexityReductionThreshold" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ComplexityReductionThreshold">ComplexityReductionThreshold</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double ComplexityReductionThreshold { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_DetectShadows.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.DetectShadows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L267">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_DetectShadows_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.DetectShadows*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_DetectShadows" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.DetectShadows">DetectShadows</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool DetectShadows { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_History.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.History%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L96">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_History_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.History*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_History" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.History">History</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int History { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_NMixtures.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.NMixtures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L115">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_NMixtures_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.NMixtures*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_NMixtures" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.NMixtures">NMixtures</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int NMixtures { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_ShadowThreshold.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.ShadowThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L305">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowThreshold_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowThreshold*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowThreshold" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowThreshold">ShadowThreshold</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double ShadowThreshold { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_ShadowValue.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.ShadowValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L286">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowValue_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowValue*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowValue" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowValue">ShadowValue</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int ShadowValue { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarInit.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L191">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarInit_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarInit*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarInit" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarInit">VarInit</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double VarInit { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarMax.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L229">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarMax_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMax*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarMax" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMax">VarMax</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double VarMax { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarMin.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L210">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarMin_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMin*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarMin" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMin">VarMin</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double VarMin { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarThreshold.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L153">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarThreshold_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThreshold*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarThreshold" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThreshold">VarThreshold</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double VarThreshold { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarThresholdGen.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarThresholdGen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L172">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarThresholdGen_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThresholdGen*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarThresholdGen" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThresholdGen">VarThresholdGen</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double VarThresholdGen { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_Create_System_Int32_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.Create(System.Int32%2CSystem.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L32">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_Create_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Create*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_Create_System_Int32_System_Double_System_Boolean_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Create(System.Int32,System.Double,System.Boolean)">Create(Int32, Double, Boolean)</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static BackgroundSubtractorMOG2 Create(int history = 500, double varThreshold = 16, bool detectShadows = true)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">history</span></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">varThreshold</span></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">detectShadows</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.BackgroundSubtractorMOG2.html">BackgroundSubtractorMOG2</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L63">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BackgroundSubtractorMOG2_Dispose_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Dispose*"></a>
-              <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_Dispose_System_Boolean_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-              <div class="markdown level1 summary"><p>Clean up any resources being used.</p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><a class="xref" href="OpenCvSharp.Algorithm.html">Algorithm</a></div>
+    <div class="level4"><a class="xref" href="OpenCvSharp.BackgroundSubtractor.html">BackgroundSubtractor</a></div>
+    <div class="level5"><span class="xref">BackgroundSubtractorMOG2</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.BackgroundSubtractor.html#OpenCvSharp_BackgroundSubtractor_Apply_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_System_Double_">BackgroundSubtractor.Apply(InputArray, OutputArray, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.BackgroundSubtractor.html#OpenCvSharp_BackgroundSubtractor_GetBackgroundImage_OpenCvSharp_OutputArray_">BackgroundSubtractor.GetBackgroundImage(OutputArray)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Write_OpenCvSharp_FileStorage_">Algorithm.Write(FileStorage)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Read_OpenCvSharp_FileNode_">Algorithm.Read(FileNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Empty">Algorithm.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Save_System_String_">Algorithm.Save(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_GetDefaultName">Algorithm.GetDefaultName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_BackgroundSubtractorMOG2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BackgroundSubtractorMOG2 : BackgroundSubtractor, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_BackgroundRatio.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.BackgroundRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L134">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_BackgroundRatio_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.BackgroundRatio*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_BackgroundRatio" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.BackgroundRatio">BackgroundRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double BackgroundRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_ComplexityReductionThreshold.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.ComplexityReductionThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L248">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_ComplexityReductionThreshold_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ComplexityReductionThreshold*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_ComplexityReductionThreshold" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ComplexityReductionThreshold">ComplexityReductionThreshold</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ComplexityReductionThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_DetectShadows.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.DetectShadows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L267">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_DetectShadows_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.DetectShadows*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_DetectShadows" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.DetectShadows">DetectShadows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DetectShadows { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_History.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.History%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L96">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_History_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.History*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_History" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.History">History</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int History { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_NMixtures.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.NMixtures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L115">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_NMixtures_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.NMixtures*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_NMixtures" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.NMixtures">NMixtures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NMixtures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_ShadowThreshold.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.ShadowThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L305">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowThreshold_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowThreshold*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowThreshold" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowThreshold">ShadowThreshold</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ShadowThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_ShadowValue.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.ShadowValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L286">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowValue_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowValue*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_ShadowValue" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.ShadowValue">ShadowValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShadowValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarInit.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L191">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarInit_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarInit*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarInit" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarInit">VarInit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VarInit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarMax.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L229">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarMax_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMax*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarMax" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMax">VarMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VarMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarMin.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L210">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarMin_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMin*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarMin" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarMin">VarMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VarMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarThreshold.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L153">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarThreshold_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThreshold*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarThreshold" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThreshold">VarThreshold</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VarThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_VarThresholdGen.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.VarThresholdGen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L172">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_VarThresholdGen_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThresholdGen*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_VarThresholdGen" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.VarThresholdGen">VarThresholdGen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VarThresholdGen { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_Create_System_Int32_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.Create(System.Int32%2CSystem.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L32">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_Create_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Create*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_Create_System_Int32_System_Double_System_Boolean_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Create(System.Int32,System.Double,System.Boolean)">Create(Int32, Double, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BackgroundSubtractorMOG2 Create(int history = 500, double varThreshold = 16, bool detectShadows = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">history</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">varThreshold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">detectShadows</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.BackgroundSubtractorMOG2.html">BackgroundSubtractorMOG2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L63">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BackgroundSubtractorMOG2_Dispose_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Dispose*"></a>
+  <h4 id="OpenCvSharp_BackgroundSubtractorMOG2_Dispose_System_Boolean_" data-uid="OpenCvSharp.BackgroundSubtractorMOG2.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Clean up any resources being used.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">disposing</span></td>
-                    <td><p>If disposing equals true, the method has been called directly or indirectly by a user&#39;s code. Managed and unmanaged resources can be disposed.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>If disposing equals true, the method has been called directly or indirectly by a user&#39;s code. Managed and unmanaged resources can be disposed.
 If false, the method has been called by the runtime from inside the finalizer and you should not reference other objects. Only unmanaged resources can be disposed.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
-                        </article>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -639,10 +639,10 @@ If false, the method has been called by the runtime from inside the finalizer an
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BackgroundSubtractorMOG2.md&amp;value=---%0Auid%3A%20OpenCvSharp.BackgroundSubtractorMOG2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/video/BackgroundSubtractorMog2.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

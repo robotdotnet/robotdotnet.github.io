@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum EM.Types
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,62 +67,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_EM_Types" data-uid="OpenCvSharp.EM.Types">Enum EM.Types
-              </h1>
-              <div class="markdown level0 summary"><p>Type of covariation matrices</p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.EM.Types">
+  
+  
+  <h1 id="OpenCvSharp_EM_Types" data-uid="OpenCvSharp.EM.Types">Enum EM.Types
+  </h1>
+  <div class="markdown level0 summary"><p>Type of covariation matrices</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_EM_Types_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public enum Types</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_EM_Types_CovMatDefault">CovMatDefault</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_EM_Types_CovMatDiagonal">CovMatDiagonal</td>
-                    <td><p>A diagonal matrix with positive diagonal elements. 
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_EM_Types_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum Types</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_EM_Types_CovMatDefault">CovMatDefault</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_EM_Types_CovMatDiagonal">CovMatDiagonal</td>
+        <td><p>A diagonal matrix with positive diagonal elements. 
 The number of free parameters is d for each matrix. 
 This is most commonly used option yielding good estimation results. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_EM_Types_CovMatGeneric">CovMatGeneric</td>
-                    <td><p>A symmetric positively defined matrix. The number of free parameters in each 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_EM_Types_CovMatGeneric">CovMatGeneric</td>
+        <td><p>A symmetric positively defined matrix. The number of free parameters in each 
 matrix is about \f$d^2/2\f$. It is not recommended to use this option, unless 
 there is pretty accurate initial estimation of the parameters and/or a huge number 
 of training samples.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_EM_Types_CovMatSpherical">CovMatSpherical</td>
-                    <td><p>A scaled identity matrix \f$\mu_k * I\f$. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_EM_Types_CovMatSpherical">CovMatSpherical</td>
+        <td><p>A scaled identity matrix \f$\mu_k * I\f$. 
 There is the only parameter \f$\mu_k\f$ to be estimated for each matrix. 
 The option may be used in special cases, when the constraint is relevant, 
 or as a first step in the optimization (for example in case when the data is 
 preprocessed with PCA). The results of such preliminary estimation may be 
 passed again to the optimization procedure, this time with covMatType=EM::COV_MAT_DIAGONAL.</p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -130,10 +130,10 @@ passed again to the optimization procedure, this time with covMatType=EM::COV_MA
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_EM_Types.md&amp;value=---%0Auid%3A%20OpenCvSharp.EM.Types%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_EM_Types.md&amp;value=---%0Auid%3A%20OpenCvSharp.EM.Types%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/ml/EM.cs/#L360" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/ml/EM.cs/#L360" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

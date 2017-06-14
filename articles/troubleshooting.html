@@ -8,7 +8,7 @@
     <title>Troubleshooting | RobotDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Troubleshooting | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -66,8 +66,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="troubleshooting">Troubleshooting</h1>
-              
+<h1 id="troubleshooting">Troubleshooting</h1>
+
 <p>If you run into issues, try some of the following steps</p>
 <h2 id="deploy-fails-with-nullreferenceexception-or-deploy-fails-telling-you-could-not-find-native-files">Deploy fails with NullReferenceException, or deploy fails telling you could not find native files</h2>
 <p>New to 2017, there is a content library that gets installed whenever a robot project is created. However, we have noticed that rarely, this package does not
@@ -75,8 +75,7 @@ install correctly, and causes the deploy to break. We are working on a better er
 of the WPILibNativeLibraries package. To do this, in Visual Studi, go to Tools -&gt; Nuget Package Manager -&gt; Package Manager Console. Then in that console,
 run <code>Update-Package –reinstall FRC.WPILibNativeLibraries</code>. This should force a reinstall, add a folder called wpinative into your solution, and then the builds
 should work again.</p>
-
-            </article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

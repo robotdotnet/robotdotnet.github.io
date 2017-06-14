@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum CalibrationFlags
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,126 +67,126 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_CalibrationFlags" data-uid="OpenCvSharp.CalibrationFlags">Enum CalibrationFlags
-              </h1>
-              <div class="markdown level0 summary"><p>Different flags for cvCalibrateCamera2 and cvStereoCalibrate</p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.CalibrationFlags">
+  
+  
+  <h1 id="OpenCvSharp_CalibrationFlags" data-uid="OpenCvSharp.CalibrationFlags">Enum CalibrationFlags
+  </h1>
+  <div class="markdown level0 summary"><p>Different flags for cvCalibrateCamera2 and cvStereoCalibrate</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_CalibrationFlags_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Flags]
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_CalibrationFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
 public enum CalibrationFlags</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixAspectRatio">FixAspectRatio</td>
-                    <td><p>fyk is optimized, but the ratio fxk/fyk is fixed.</p>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixAspectRatio">FixAspectRatio</td>
+        <td><p>fyk is optimized, but the ratio fxk/fyk is fixed.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixFocalLength">FixFocalLength</td>
-                    <td><p>fxk and fyk are fixed.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixFocalLength">FixFocalLength</td>
+        <td><p>fxk and fyk are fixed.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixIntrinsic">FixIntrinsic</td>
-                    <td><p>If it is set, camera_matrix1,2, as well as dist_coeffs1,2 are fixed, so that only extrinsic parameters are optimized.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixIntrinsic">FixIntrinsic</td>
+        <td><p>If it is set, camera_matrix1,2, as well as dist_coeffs1,2 are fixed, so that only extrinsic parameters are optimized.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixK1">FixK1</td>
-                    <td><p>The 0-th distortion coefficients (k1) are fixed </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixK1">FixK1</td>
+        <td><p>The 0-th distortion coefficients (k1) are fixed </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixK2">FixK2</td>
-                    <td><p>The 1-th distortion coefficients (k2) are fixed </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixK2">FixK2</td>
+        <td><p>The 1-th distortion coefficients (k2) are fixed </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixK3">FixK3</td>
-                    <td><p>The 4-th distortion coefficients (k3) are fixed </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixK3">FixK3</td>
+        <td><p>The 4-th distortion coefficients (k3) are fixed </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixK4">FixK4</td>
-                    <td><p>Do not change the corresponding radial distortion coefficient during the optimization. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixK4">FixK4</td>
+        <td><p>Do not change the corresponding radial distortion coefficient during the optimization. 
 If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used, otherwise it is set to 0.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixK5">FixK5</td>
-                    <td><p>Do not change the corresponding radial distortion coefficient during the optimization. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixK5">FixK5</td>
+        <td><p>Do not change the corresponding radial distortion coefficient during the optimization. 
 If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used, otherwise it is set to 0.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixK6">FixK6</td>
-                    <td><p>Do not change the corresponding radial distortion coefficient during the optimization. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixK6">FixK6</td>
+        <td><p>Do not change the corresponding radial distortion coefficient during the optimization. 
 If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used, otherwise it is set to 0.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixPrincipalPoint">FixPrincipalPoint</td>
-                    <td><p>The principal points are fixed during the optimization.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixPrincipalPoint">FixPrincipalPoint</td>
+        <td><p>The principal points are fixed during the optimization.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_FixS1S2S3S4">FixS1S2S3S4</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_None">None</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_RationalModel">RationalModel</td>
-                    <td><p>Enable coefficients k4, k5 and k6. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_FixS1S2S3S4">FixS1S2S3S4</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_None">None</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_RationalModel">RationalModel</td>
+        <td><p>Enable coefficients k4, k5 and k6. 
 To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function 
 use the rational model and return 8 coefficients. If the flag is not set, the function will compute only 5 distortion coefficients.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_SameFocalLength">SameFocalLength</td>
-                    <td><p>Enforces fx0=fx1 and fy0=fy1. CV_CALIB_ZERO_TANGENT_DIST - Tangential distortion coefficients for each camera are set to zeros and fixed there.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_SameFocalLength">SameFocalLength</td>
+        <td><p>Enforces fx0=fx1 and fy0=fy1. CV_CALIB_ZERO_TANGENT_DIST - Tangential distortion coefficients for each camera are set to zeros and fixed there.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_ThinPrismModel">ThinPrismModel</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_UseIntrinsicGuess">UseIntrinsicGuess</td>
-                    <td><p>The flag allows the function to optimize some or all of the intrinsic parameters, depending on the other flags, but the initial values are provided by the user</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_ThinPrismModel">ThinPrismModel</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_UseIntrinsicGuess">UseIntrinsicGuess</td>
+        <td><p>The flag allows the function to optimize some or all of the intrinsic parameters, depending on the other flags, but the initial values are provided by the user</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_ZeroDisparity">ZeroDisparity</td>
-                    <td><p>for stereo rectification</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_ZeroDisparity">ZeroDisparity</td>
+        <td><p>for stereo rectification</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CalibrationFlags_ZeroTangentDist">ZeroTangentDist</td>
-                    <td><p>Tangential distortion coefficients are set to zeros and do not change during the optimization.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CalibrationFlags_ZeroTangentDist">ZeroTangentDist</td>
+        <td><p>Tangential distortion coefficients are set to zeros and do not change during the optimization.</p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -194,10 +194,10 @@ use the rational model and return 8 coefficients. If the flag is not set, the fu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_CalibrationFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.CalibrationFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_CalibrationFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.CalibrationFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/calib3d/Enum/CalibrationFlags.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/calib3d/Enum/CalibrationFlags.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

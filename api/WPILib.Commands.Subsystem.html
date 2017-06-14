@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Subsystem
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,334 +67,358 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_Commands_Subsystem" data-uid="WPILib.Commands.Subsystem">Class Subsystem
-              </h1>
-              <div class="markdown level0 summary"><p>This class defines a major component of the robot.</p>
+            <article class="content wrap" id="_content" data-uid="WPILib.Commands.Subsystem">
+  
+  
+  <h1 id="WPILib_Commands_Subsystem" data-uid="WPILib.Commands.Subsystem">Class Subsystem
+  </h1>
+  <div class="markdown level0 summary"><p>This class defines a major component of the robot.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><span class="xref">Subsystem</span></div>
-                  <div class="level2"><a class="xref" href="WPILib.Commands.PIDSubsystem.html">PIDSubsystem</a></div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib.Commands</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_Commands_Subsystem_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class Subsystem : object, INamedSendable, ISendable</code></pre>
-              </div>
-              <h5 id="WPILib_Commands_Subsystem_remarks"><strong>Remarks</strong></h5>
-              <div class="markdown level0 remarks"><p>A good example of a subsystem is the drivebase, or a claw if the robot has one.
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">Subsystem</span></div>
+  </div>
+      <div class="level2"><a class="xref" href="WPILib.Commands.PIDSubsystem.html">PIDSubsystem</a></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WPILib.Commands.html">WPILib.Commands</a></h6>
+  <h6><strong>Assembly</strong>: WPILib.dll</h6>
+  <h5 id="WPILib_Commands_Subsystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Subsystem : INamedSendable, ISendable</code></pre>
+  </div>
+  <h5 id="WPILib_Commands_Subsystem_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A good example of a subsystem is the drivebase, or a claw if the robot has one.
 <p> Subsystems are used within the command system as requirements for <a class="xref" href="WPILib.Commands.Command.html">Command</a>.
 Only one command which requires a subsystem can run at a time. Also, subsystems can have default commands
 which are started if there is no command running which requires this subsystem.</p></p>
 </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem__ctor.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L37">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem__ctor_" data-uid="WPILib.Commands.Subsystem.#ctor*"></a>
-              <h4 id="WPILib_Commands_Subsystem__ctor" data-uid="WPILib.Commands.Subsystem.#ctor">Subsystem()</h4>
-              <div class="markdown level1 summary"><p>Creates a subsystem. This will set the name to the name of the class.</p>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem__ctor.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L37">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem__ctor_" data-uid="WPILib.Commands.Subsystem.#ctor*"></a>
+  <h4 id="WPILib_Commands_Subsystem__ctor" data-uid="WPILib.Commands.Subsystem.#ctor">Subsystem()</h4>
+  <div class="markdown level1 summary"><p>Creates a subsystem. This will set the name to the name of the class.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected Subsystem()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem__ctor_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L28">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem__ctor_" data-uid="WPILib.Commands.Subsystem.#ctor*"></a>
-              <h4 id="WPILib_Commands_Subsystem__ctor_System_String_" data-uid="WPILib.Commands.Subsystem.#ctor(System.String)">Subsystem(String)</h4>
-              <div class="markdown level1 summary"><p>Creates a subsystem with the given name.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Subsystem()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem__ctor_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L28">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem__ctor_" data-uid="WPILib.Commands.Subsystem.#ctor*"></a>
+  <h4 id="WPILib_Commands_Subsystem__ctor_System_String_" data-uid="WPILib.Commands.Subsystem.#ctor(System.String)">Subsystem(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a subsystem with the given name.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected Subsystem(string name)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">name</span></td>
-                    <td><p>The name of the subsystem.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Subsystem(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the subsystem.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_Name.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L143">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_Name_" data-uid="WPILib.Commands.Subsystem.Name*"></a>
-              <h4 id="WPILib_Commands_Subsystem_Name" data-uid="WPILib.Commands.Subsystem.Name">Name</h4>
-              <div class="markdown level1 summary"><p>Returns the name of the subtable of SmartDashboard that the Sendable object will use.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_Name.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L143">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_Name_" data-uid="WPILib.Commands.Subsystem.Name*"></a>
+  <h4 id="WPILib_Commands_Subsystem_Name" data-uid="WPILib.Commands.Subsystem.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the subtable of SmartDashboard that the Sendable object will use.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><p>The name of the subtable of SmartDashboard that the Sendable object will use</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><p>The name of the subtable of SmartDashboard that the Sendable object will use</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.INamedSendable.html#WPILib_Interfaces_INamedSendable_Name">INamedSendable.Name</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L174">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_SmartDashboardType_" data-uid="WPILib.Commands.Subsystem.SmartDashboardType*"></a>
-              <h4 id="WPILib_Commands_Subsystem_SmartDashboardType" data-uid="WPILib.Commands.Subsystem.SmartDashboardType">SmartDashboardType</h4>
-              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.INamedSendable.html#WPILib_Interfaces_INamedSendable_Name">INamedSendable.Name</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L174">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_SmartDashboardType_" data-uid="WPILib.Commands.Subsystem.SmartDashboardType*"></a>
+  <h4 id="WPILib_Commands_Subsystem_SmartDashboardType" data-uid="WPILib.Commands.Subsystem.SmartDashboardType">SmartDashboardType</h4>
+  <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual string SmartDashboardType { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_Table.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L172">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_Table_" data-uid="WPILib.Commands.Subsystem.Table*"></a>
-              <h4 id="WPILib_Commands_Subsystem_Table" data-uid="WPILib.Commands.Subsystem.Table">Table</h4>
-              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SmartDashboardType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_Table.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L172">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_Table_" data-uid="WPILib.Commands.Subsystem.Table*"></a>
+  <h4 id="WPILib_Commands_Subsystem_Table" data-uid="WPILib.Commands.Subsystem.Table">Table</h4>
+  <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_GetCurrentCommand.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.GetCurrentCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L137">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_GetCurrentCommand_" data-uid="WPILib.Commands.Subsystem.GetCurrentCommand*"></a>
-              <h4 id="WPILib_Commands_Subsystem_GetCurrentCommand" data-uid="WPILib.Commands.Subsystem.GetCurrentCommand">GetCurrentCommand()</h4>
-              <div class="markdown level1 summary"><p>Returns the command which currently claims this subsystem.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_GetCurrentCommand.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.GetCurrentCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L137">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_GetCurrentCommand_" data-uid="WPILib.Commands.Subsystem.GetCurrentCommand*"></a>
+  <h4 id="WPILib_Commands_Subsystem_GetCurrentCommand" data-uid="WPILib.Commands.Subsystem.GetCurrentCommand">GetCurrentCommand()</h4>
+  <div class="markdown level1 summary"><p>Returns the command which currently claims this subsystem.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public Command GetCurrentCommand()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Commands.Command.html">Command</a></td>
-                    <td><p>The command which currently claims this subsystem.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command GetCurrentCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Commands.Command.html">Command</a></td>
+        <td><p>The command which currently claims this subsystem.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_InitDefaultCommand.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.InitDefaultCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L50">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_InitDefaultCommand_" data-uid="WPILib.Commands.Subsystem.InitDefaultCommand*"></a>
-              <h4 id="WPILib_Commands_Subsystem_InitDefaultCommand" data-uid="WPILib.Commands.Subsystem.InitDefaultCommand">InitDefaultCommand()</h4>
-              <div class="markdown level1 summary"><p>Initialize the default command for a subsystem.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_InitDefaultCommand.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.InitDefaultCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L50">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_InitDefaultCommand_" data-uid="WPILib.Commands.Subsystem.InitDefaultCommand*"></a>
+  <h4 id="WPILib_Commands_Subsystem_InitDefaultCommand" data-uid="WPILib.Commands.Subsystem.InitDefaultCommand">InitDefaultCommand()</h4>
+  <div class="markdown level1 summary"><p>Initialize the default command for a subsystem.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected abstract void InitDefaultCommand()</code></pre>
-              </div>
-              <h5 id="WPILib_Commands_Subsystem_InitDefaultCommand_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>By default subsystems have no default command, but if they do,
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void InitDefaultCommand()</code></pre>
+  </div>
+  <h5 id="WPILib_Commands_Subsystem_InitDefaultCommand_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>By default subsystems have no default command, but if they do,
 the default command is set with this method. It is called on all Subsystems
 by CommandBase in the users program after all the Subsystems are created.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L145">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_InitTable_" data-uid="WPILib.Commands.Subsystem.InitTable*"></a>
-              <h4 id="WPILib_Commands_Subsystem_InitTable_ITable_" data-uid="WPILib.Commands.Subsystem.InitTable(ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L145">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_InitTable_" data-uid="WPILib.Commands.Subsystem.InitTable*"></a>
+  <h4 id="WPILib_Commands_Subsystem_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.Commands.Subsystem.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+  <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual void InitTable(ITable subtable)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td><span class="parametername">subtable</span></td>
-                    <td><p>The table to put the values in.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitTable(ITable subtable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+        <td><span class="parametername">subtable</span></td>
+        <td><p>The table to put the values in.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_SetDefaultCommand_WPILib_Commands_Command_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.SetDefaultCommand(WPILib.Commands.Command)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L61">View Source</a>
-              </span>
-              <a id="WPILib_Commands_Subsystem_SetDefaultCommand_" data-uid="WPILib.Commands.Subsystem.SetDefaultCommand*"></a>
-              <h4 id="WPILib_Commands_Subsystem_SetDefaultCommand_WPILib_Commands_Command_" data-uid="WPILib.Commands.Subsystem.SetDefaultCommand(WPILib.Commands.Command)">SetDefaultCommand(Command)</h4>
-              <div class="markdown level1 summary"><p>Sets the default command.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Commands_Subsystem_SetDefaultCommand_WPILib_Commands_Command_.md&amp;value=---%0Auid%3A%20WPILib.Commands.Subsystem.SetDefaultCommand(WPILib.Commands.Command)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Commands/Subsystem.cs/#L61">View Source</a>
+  </span>
+  <a id="WPILib_Commands_Subsystem_SetDefaultCommand_" data-uid="WPILib.Commands.Subsystem.SetDefaultCommand*"></a>
+  <h4 id="WPILib_Commands_Subsystem_SetDefaultCommand_WPILib_Commands_Command_" data-uid="WPILib.Commands.Subsystem.SetDefaultCommand(WPILib.Commands.Command)">SetDefaultCommand(Command)</h4>
+  <div class="markdown level1 summary"><p>Sets the default command.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected void SetDefaultCommand(Command command)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Commands.Command.html">Command</a></td>
-                    <td><span class="parametername">command</span></td>
-                    <td><p>The default command(or null if there should be none.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDefaultCommand(Command command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Commands.Command.html">Command</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The default command(or null if there should be none.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Commands_Subsystem_SetDefaultCommand_WPILib_Commands_Command__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this is not called, or is called with null, then there will be no default
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Commands_Subsystem_SetDefaultCommand_WPILib_Commands_Command__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this is not called, or is called with null, then there will be no default
 command for the subsystem.
 <p><strong>WARNING:</strong> This should <strong>NOT</strong> be called in a constructor if the 
 subsystem is a singleton.</p>
 </div>
-              <h5 class="exceptions">Exceptions</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Condition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
-                    <td><p>If the command does not require the subsystem.</p>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Commands.IllegalUseOfCommandException.html">IllegalUseOfCommandException</a></td>
+        <td><p>If the command does not require the subsystem.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-                        </article>
+      </tr>
+    </tbody>
+  </table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

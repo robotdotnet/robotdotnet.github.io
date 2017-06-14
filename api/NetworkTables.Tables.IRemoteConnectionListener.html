@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IRemoteConnectionListener
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,105 +67,105 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="NetworkTables_Tables_IRemoteConnectionListener" data-uid="NetworkTables.Tables.IRemoteConnectionListener">Interface IRemoteConnectionListener
-              </h1>
-              <div class="markdown level0 summary"><p>A listener that listens for connection changes in an <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> object.</p>
+            <article class="content wrap" id="_content" data-uid="NetworkTables.Tables.IRemoteConnectionListener">
+  
+  
+  <h1 id="NetworkTables_Tables_IRemoteConnectionListener" data-uid="NetworkTables.Tables.IRemoteConnectionListener">Interface IRemoteConnectionListener
+  </h1>
+  <div class="markdown level0 summary"><p>A listener that listens for connection changes in an <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> object.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:NetworkTables.Tables</h6>
-              <h6><strong>Assembly</strong>:FRC.NetworkTables.dll</h6>
-              <h5 id="NetworkTables_Tables_IRemoteConnectionListener_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public interface IRemoteConnectionListener</code></pre>
-              </div>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Tables_IRemoteConnectionListener_Connected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_.md&amp;value=---%0Auid%3A%20NetworkTables.Tables.IRemoteConnectionListener.Connected(NetworkTables.Tables.IRemote%2CNetworkTables.ConnectionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/networktables/blob/master/src/Shared/Tables/IRemoteConnectionListener.cs/#L15">View Source</a>
-              </span>
-              <a id="NetworkTables_Tables_IRemoteConnectionListener_Connected_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Connected*"></a>
-              <h4 id="NetworkTables_Tables_IRemoteConnectionListener_Connected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Connected(NetworkTables.Tables.IRemote,NetworkTables.ConnectionInfo)">Connected(IRemote, ConnectionInfo)</h4>
-              <div class="markdown level1 summary"><p>Called when an <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> is connected</p>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NetworkTables.Tables.html">NetworkTables.Tables</a></h6>
+  <h6><strong>Assembly</strong>: FRC.NetworkTables.dll</h6>
+  <h5 id="NetworkTables_Tables_IRemoteConnectionListener_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRemoteConnectionListener</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Tables_IRemoteConnectionListener_Connected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_.md&amp;value=---%0Auid%3A%20NetworkTables.Tables.IRemoteConnectionListener.Connected(NetworkTables.Tables.IRemote%2CNetworkTables.ConnectionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/networktables/blob/master/src/Shared/Tables/IRemoteConnectionListener.cs/#L15">View Source</a>
+  </span>
+  <a id="NetworkTables_Tables_IRemoteConnectionListener_Connected_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Connected*"></a>
+  <h4 id="NetworkTables_Tables_IRemoteConnectionListener_Connected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Connected(NetworkTables.Tables.IRemote,NetworkTables.ConnectionInfo)">Connected(IRemote, ConnectionInfo)</h4>
+  <div class="markdown level1 summary"><p>Called when an <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> is connected</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Connected(IRemote remote, ConnectionInfo info)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a></td>
-                    <td><span class="parametername">remote</span></td>
-                    <td><p>The object that connected.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Connected(IRemote remote, ConnectionInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a></td>
+        <td><span class="parametername">remote</span></td>
+        <td><p>The object that connected.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a></td>
-                    <td><span class="parametername">info</span></td>
-                    <td><p>An object containing information about the 
+      </tr>
+      <tr>
+        <td><a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>An object containing information about the 
 connected remote.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Tables_IRemoteConnectionListener_Disconnected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_.md&amp;value=---%0Auid%3A%20NetworkTables.Tables.IRemoteConnectionListener.Disconnected(NetworkTables.Tables.IRemote%2CNetworkTables.ConnectionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/networktables/blob/master/src/Shared/Tables/IRemoteConnectionListener.cs/#L23">View Source</a>
-              </span>
-              <a id="NetworkTables_Tables_IRemoteConnectionListener_Disconnected_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Disconnected*"></a>
-              <h4 id="NetworkTables_Tables_IRemoteConnectionListener_Disconnected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Disconnected(NetworkTables.Tables.IRemote,NetworkTables.ConnectionInfo)">Disconnected(IRemote, ConnectionInfo)</h4>
-              <div class="markdown level1 summary"><p>Called when an <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> is disconnected.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/networktables/new/master/apiSpec/new?filename=NetworkTables_Tables_IRemoteConnectionListener_Disconnected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_.md&amp;value=---%0Auid%3A%20NetworkTables.Tables.IRemoteConnectionListener.Disconnected(NetworkTables.Tables.IRemote%2CNetworkTables.ConnectionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/networktables/blob/master/src/Shared/Tables/IRemoteConnectionListener.cs/#L23">View Source</a>
+  </span>
+  <a id="NetworkTables_Tables_IRemoteConnectionListener_Disconnected_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Disconnected*"></a>
+  <h4 id="NetworkTables_Tables_IRemoteConnectionListener_Disconnected_NetworkTables_Tables_IRemote_NetworkTables_ConnectionInfo_" data-uid="NetworkTables.Tables.IRemoteConnectionListener.Disconnected(NetworkTables.Tables.IRemote,NetworkTables.ConnectionInfo)">Disconnected(IRemote, ConnectionInfo)</h4>
+  <div class="markdown level1 summary"><p>Called when an <a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a> is disconnected.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Disconnected(IRemote remote, ConnectionInfo info)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a></td>
-                    <td><span class="parametername">remote</span></td>
-                    <td><p>The object that disconnected.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Disconnected(IRemote remote, ConnectionInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.IRemote.html">IRemote</a></td>
+        <td><span class="parametername">remote</span></td>
+        <td><p>The object that disconnected.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a></td>
-                    <td><span class="parametername">info</span></td>
-                    <td><p>An object containing information about the
+      </tr>
+      <tr>
+        <td><a class="xref" href="NetworkTables.ConnectionInfo.html">ConnectionInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>An object containing information about the
 disconnected remote.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-                        </article>
+      </tr>
+    </tbody>
+  </table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

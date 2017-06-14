@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum HaarDetectionType
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,41 +67,41 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_HaarDetectionType" data-uid="OpenCvSharp.HaarDetectionType">Enum HaarDetectionType
-              </h1>
-              <div class="markdown level0 summary"><p>Modes of operation for cvHaarDetectObjects</p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.HaarDetectionType">
+  
+  
+  <h1 id="OpenCvSharp_HaarDetectionType" data-uid="OpenCvSharp.HaarDetectionType">Enum HaarDetectionType
+  </h1>
+  <div class="markdown level0 summary"><p>Modes of operation for cvHaarDetectObjects</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_HaarDetectionType_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Flags]
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_HaarDetectionType_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
 public enum HaarDetectionType</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_HaarDetectionType_DoCannyPruning">DoCannyPruning</td>
-                    <td><p>If it is set, the function uses Canny edge detector to reject some image regions that contain too few or too much edges and thus can not contain the searched object. 
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_HaarDetectionType_DoCannyPruning">DoCannyPruning</td>
+        <td><p>If it is set, the function uses Canny edge detector to reject some image regions that contain too few or too much edges and thus can not contain the searched object. 
 The particular threshold values are tuned for face detection and in this case the pruning speeds up the processing.
 [CV_HAAR_DO_CANNY_PRUNING]</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_HaarDetectionType_DoRoughSearch">DoRoughSearch</td>
-                    <td><p>It should be used only when FindBiggestObject is set and min_neighbors &gt; 0. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_HaarDetectionType_DoRoughSearch">DoRoughSearch</td>
+        <td><p>It should be used only when FindBiggestObject is set and min_neighbors &gt; 0. 
 If the flag is set, the function does not look for candidates of a smaller size 
 as soon as it has found the object (with enough neighbor candidates) at the current scale. 
 Typically, when min_neighbors is fixed, the mode yields less accurate (a bit larger) object rectangle 
@@ -109,23 +109,23 @@ than the regular single-object mode (flags=FindBiggestObject),
 but it is much faster, up to an order of magnitude. A greater value of min_neighbors may be specified to improve the accuracy.
 [CV_HAAR_DO_ROUGH_SEARCH]</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_HaarDetectionType_FindBiggestObject">FindBiggestObject</td>
-                    <td><p>If it is set, the function finds the largest object (if any) in the image. That is, the output sequence will contain one (or zero) element(s).
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_HaarDetectionType_FindBiggestObject">FindBiggestObject</td>
+        <td><p>If it is set, the function finds the largest object (if any) in the image. That is, the output sequence will contain one (or zero) element(s).
 [CV_HAAR_FIND_BIGGEST_OBJECT]</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_HaarDetectionType_ScaleImage">ScaleImage</td>
-                    <td><p>For each scale factor used the function will downscale the image rather than &quot;zoom&quot; the feature coordinates in the classifier cascade. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_HaarDetectionType_ScaleImage">ScaleImage</td>
+        <td><p>For each scale factor used the function will downscale the image rather than &quot;zoom&quot; the feature coordinates in the classifier cascade. 
 Currently, the option can only be used alone, i.e. the flag can not be set together with the others.
 [CV_HAAR_SCALE_IMAGE]</p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -133,10 +133,10 @@ Currently, the option can only be used alone, i.e. the flag can not be set toget
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_HaarDetectionType.md&amp;value=---%0Auid%3A%20OpenCvSharp.HaarDetectionType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_HaarDetectionType.md&amp;value=---%0Auid%3A%20OpenCvSharp.HaarDetectionType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/objdetect/Enum/HaarDetectionType.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/objdetect/Enum/HaarDetectionType.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

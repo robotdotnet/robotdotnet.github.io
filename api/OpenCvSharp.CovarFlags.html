@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum CovarFlags
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,72 +67,72 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_CovarFlags" data-uid="OpenCvSharp.CovarFlags">Enum CovarFlags
-              </h1>
-              <div class="markdown level0 summary"><p>Operation flags for Covariation </p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.CovarFlags">
+  
+  
+  <h1 id="OpenCvSharp_CovarFlags" data-uid="OpenCvSharp.CovarFlags">Enum CovarFlags
+  </h1>
+  <div class="markdown level0 summary"><p>Operation flags for Covariation </p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_CovarFlags_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Flags]
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_CovarFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
 public enum CovarFlags</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_CovarFlags_Cols">Cols</td>
-                    <td><p>Means that all the input vectors are stored as columns of a single matrix, vects[0].count is ignored in this case, 
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_CovarFlags_Cols">Cols</td>
+        <td><p>Means that all the input vectors are stored as columns of a single matrix, vects[0].count is ignored in this case, 
 and avg should be a single-column vector of an appropriate size. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CovarFlags_Normal">Normal</td>
-                    <td><p>scale * [vects[0]-avg,vects[1]-avg,...]*[vects[0]-avg,vects[1]-avg,...]^T<br>that is, cov_mat will be a usual covariation matrix with the same linear size as the total number of elements in every input vector. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CovarFlags_Normal">Normal</td>
+        <td><p>scale * [vects[0]-avg,vects[1]-avg,...]*[vects[0]-avg,vects[1]-avg,...]^T<br>that is, cov_mat will be a usual covariation matrix with the same linear size as the total number of elements in every input vector. 
 One and only one of CV_COVAR_SCRAMBLED and CV_COVAR_NORMAL must be specified</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CovarFlags_Rows">Rows</td>
-                    <td><p>Means that all the input vectors are stored as rows of a single matrix, vects[0].count is ignored in this case, 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CovarFlags_Rows">Rows</td>
+        <td><p>Means that all the input vectors are stored as rows of a single matrix, vects[0].count is ignored in this case, 
 and avg should be a single-row vector of an appropriate size.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CovarFlags_Scale">Scale</td>
-                    <td><p>If the flag is specified, the covariation matrix is scaled by the number of input vectors.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CovarFlags_Scale">Scale</td>
+        <td><p>If the flag is specified, the covariation matrix is scaled by the number of input vectors.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CovarFlags_Scrambled">Scrambled</td>
-                    <td><p>scale * [vects[0]-avg,vects[1]-avg,...]^T * [vects[0]-avg,vects[1]-avg,...]<br>that is, the covariation matrix is count×count. Such an unusual covariation matrix is used for fast PCA of a set of very large vectors
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CovarFlags_Scrambled">Scrambled</td>
+        <td><p>scale * [vects[0]-avg,vects[1]-avg,...]^T * [vects[0]-avg,vects[1]-avg,...]<br>that is, the covariation matrix is count×count. Such an unusual covariation matrix is used for fast PCA of a set of very large vectors
 (see, for example, Eigen Faces technique for face recognition). Eigenvalues of this &quot;scrambled&quot; matrix will match to the eigenvalues of
 the true covariation matrix and the &quot;true&quot; eigenvectors can be easily calculated from the eigenvectors of the &quot;scrambled&quot; covariation matrix.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_CovarFlags_UseAvg">UseAvg</td>
-                    <td><p>If the flag is specified, the function does not calculate avg from the input vectors, 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_CovarFlags_UseAvg">UseAvg</td>
+        <td><p>If the flag is specified, the function does not calculate avg from the input vectors, 
 but, instead, uses the passed avg vector. This is useful if avg  has been already calculated somehow, 
 or if the covariation matrix is calculated by parts - in this case, avg is not a mean vector of the input sub-set of vectors, 
 but rather the mean vector of the whole set.</p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -140,10 +140,10 @@ but rather the mean vector of the whole set.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_CovarFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.CovarFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_CovarFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.CovarFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/Enum/CovarFlags.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/Enum/CovarFlags.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

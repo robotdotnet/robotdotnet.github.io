@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Preferences
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,826 +67,873 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_Preferences" data-uid="WPILib.Preferences">Class Preferences
-              </h1>
-              <div class="markdown level0 summary"><p>The preferences class provides a relatively simple way to save important
+            <article class="content wrap" id="_content" data-uid="WPILib.Preferences">
+  
+  
+  <h1 id="WPILib_Preferences" data-uid="WPILib.Preferences">Class Preferences
+  </h1>
+  <div class="markdown level0 summary"><p>The preferences class provides a relatively simple way to save important
 values to the RoboRIO to access the next time the RoboRIO is booted.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><span class="xref">Preferences</span></div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_Preferences_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class Preferences : ITableListener</code></pre>
-              </div>
-              <h5 id="WPILib_Preferences_remarks"><strong>Remarks</strong></h5>
-              <div class="markdown level0 remarks"><p>This class loads and saves from a file inside the RoboRIO. The user can not
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">Preferences</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WPILib.html">WPILib</a></h6>
+  <h6><strong>Assembly</strong>: WPILib.dll</h6>
+  <h5 id="WPILib_Preferences_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Preferences : ITableListener</code></pre>
+  </div>
+  <h5 id="WPILib_Preferences_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class loads and saves from a file inside the RoboRIO. The user can not
 access the file directly, but may modify values at specific fields which will
 then be automatically saved to the file by the NetworkTables server.
 <p>This class is thread safe.
-<p>This will also interact with <see cref="!:NetworkTable"></see> by creating a table called
+<p>This will also interact with <a class="xref" href="NetworkTables.NetworkTable.html">NetworkTable</a> by creating a table called
 &quot;Preferences&quot; with all the key-value pairs.</p>
 </div>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetKeys.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L60">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetKeys_" data-uid="WPILib.Preferences.GetKeys*"></a>
-              <h4 id="WPILib_Preferences_GetKeys" data-uid="WPILib.Preferences.GetKeys">GetKeys</h4>
-              <div class="markdown level1 summary"><p>Gets a  list of the keys.</p>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetKeys.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L60">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetKeys_" data-uid="WPILib.Preferences.GetKeys*"></a>
+  <h4 id="WPILib_Preferences_GetKeys" data-uid="WPILib.Preferences.GetKeys">GetKeys</h4>
+  <div class="markdown level1 summary"><p>Gets a  list of the keys.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetKeys { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">List</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_Instance.md&amp;value=---%0Auid%3A%20WPILib.Preferences.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L31">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_Instance_" data-uid="WPILib.Preferences.Instance*"></a>
-              <h4 id="WPILib_Preferences_Instance" data-uid="WPILib.Preferences.Instance">Instance</h4>
-              <div class="markdown level1 summary"><p>Returns the preferences instance</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetKeys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx">List</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_Instance.md&amp;value=---%0Auid%3A%20WPILib.Preferences.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L31">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_Instance_" data-uid="WPILib.Preferences.Instance*"></a>
+  <h4 id="WPILib_Preferences_Instance" data-uid="WPILib.Preferences.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>Returns the preferences instance</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static Preferences Instance { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="WPILib.Preferences.html">Preferences</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_ContainsKey_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.ContainsKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L138">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_ContainsKey_" data-uid="WPILib.Preferences.ContainsKey*"></a>
-              <h4 id="WPILib_Preferences_ContainsKey_System_String_" data-uid="WPILib.Preferences.ContainsKey(System.String)">ContainsKey(String)</h4>
-              <div class="markdown level1 summary"><p>Gets whether or not there is a key with the given name.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Preferences Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.Preferences.html">Preferences</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_ContainsKey_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.ContainsKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L138">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_ContainsKey_" data-uid="WPILib.Preferences.ContainsKey*"></a>
+  <h4 id="WPILib_Preferences_ContainsKey_System_String_" data-uid="WPILib.Preferences.ContainsKey(System.String)">ContainsKey(String)</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not there is a key with the given name.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool ContainsKey(string key)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><p>True if there is a value at the given key.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><p>True if there is a value at the given key.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetBoolean_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetBoolean(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L189">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetBoolean_" data-uid="WPILib.Preferences.GetBoolean*"></a>
-              <h4 id="WPILib_Preferences_GetBoolean_System_String_System_Boolean_" data-uid="WPILib.Preferences.GetBoolean(System.String,System.Boolean)">GetBoolean(String, Boolean)</h4>
-              <div class="markdown level1 summary"><p>Returns the boolean at the given key. </p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetBoolean_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetBoolean(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L189">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetBoolean_" data-uid="WPILib.Preferences.GetBoolean*"></a>
+  <h4 id="WPILib_Preferences_GetBoolean_System_String_System_Boolean_" data-uid="WPILib.Preferences.GetBoolean(System.String,System.Boolean)">GetBoolean(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the boolean at the given key. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool GetBoolean(string key, bool backup)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolean(string key, bool backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">backup</span></td>
-                    <td><p>The value to return if non exists in the table.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The value to return if non exists in the table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><p>The value in the table, or the backup if value does not exist in table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><p>The value in the table, or the backup if value does not exist in table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Preferences_GetBoolean_System_String_System_Boolean__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Preferences_GetBoolean_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetDouble_System_String_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetDouble(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L175">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetDouble_" data-uid="WPILib.Preferences.GetDouble*"></a>
-              <h4 id="WPILib_Preferences_GetDouble_System_String_System_Double_" data-uid="WPILib.Preferences.GetDouble(System.String,System.Double)">GetDouble(String, Double)</h4>
-              <div class="markdown level1 summary"><p>Returns the double at the given key. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetDouble_System_String_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetDouble(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L175">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetDouble_" data-uid="WPILib.Preferences.GetDouble*"></a>
+  <h4 id="WPILib_Preferences_GetDouble_System_String_System_Double_" data-uid="WPILib.Preferences.GetDouble(System.String,System.Double)">GetDouble(String, Double)</h4>
+  <div class="markdown level1 summary"><p>Returns the double at the given key. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetDouble(string key, double backup)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDouble(string key, double backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">backup</span></td>
-                    <td><p>The value to return if non exists in the table.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The value to return if non exists in the table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The value in the table, or the backup if value does not exist in table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The value in the table, or the backup if value does not exist in table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Preferences_GetDouble_System_String_System_Double__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Preferences_GetDouble_System_String_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetFloat_System_String_System_Single_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetFloat(System.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L231">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetFloat_" data-uid="WPILib.Preferences.GetFloat*"></a>
-              <h4 id="WPILib_Preferences_GetFloat_System_String_System_Single_" data-uid="WPILib.Preferences.GetFloat(System.String,System.Single)">GetFloat(String, Single)</h4>
-              <div class="markdown level1 summary"><p>Returns the float at the given key. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetFloat_System_String_System_Single_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetFloat(System.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L231">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetFloat_" data-uid="WPILib.Preferences.GetFloat*"></a>
+  <h4 id="WPILib_Preferences_GetFloat_System_String_System_Single_" data-uid="WPILib.Preferences.GetFloat(System.String,System.Single)">GetFloat(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns the float at the given key. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public float GetFloat(string key, float backup)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(string key, float backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110).aspx">Single</a></td>
-                    <td><span class="parametername">backup</span></td>
-                    <td><p>The value to return if non exists in the table.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110).aspx">Single</a></td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The value to return if non exists in the table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110).aspx">Single</a></td>
-                    <td><p>The value in the table, or the backup if value does not exist in table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110).aspx">Single</a></td>
+        <td><p>The value in the table, or the backup if value does not exist in table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Preferences_GetFloat_System_String_System_Single__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Preferences_GetFloat_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetInt_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetInt(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L203">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetInt_" data-uid="WPILib.Preferences.GetInt*"></a>
-              <h4 id="WPILib_Preferences_GetInt_System_String_System_Int32_" data-uid="WPILib.Preferences.GetInt(System.String,System.Int32)">GetInt(String, Int32)</h4>
-              <div class="markdown level1 summary"><p>Returns the int at the given key. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetInt_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetInt(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L203">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetInt_" data-uid="WPILib.Preferences.GetInt*"></a>
+  <h4 id="WPILib_Preferences_GetInt_System_String_System_Int32_" data-uid="WPILib.Preferences.GetInt(System.String,System.Int32)">GetInt(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the int at the given key. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int GetInt(string key, int backup)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt(string key, int backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">backup</span></td>
-                    <td><p>The value to return if non exists in the table.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The value to return if non exists in the table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><p>The value in the table, or the backup if value does not exist in table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><p>The value in the table, or the backup if value does not exist in table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Preferences_GetInt_System_String_System_Int32__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Preferences_GetInt_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetLong_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetLong(System.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L217">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetLong_" data-uid="WPILib.Preferences.GetLong*"></a>
-              <h4 id="WPILib_Preferences_GetLong_System_String_System_Int64_" data-uid="WPILib.Preferences.GetLong(System.String,System.Int64)">GetLong(String, Int64)</h4>
-              <div class="markdown level1 summary"><p>Returns the long at the given key. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetLong_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetLong(System.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L217">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetLong_" data-uid="WPILib.Preferences.GetLong*"></a>
+  <h4 id="WPILib_Preferences_GetLong_System_String_System_Int64_" data-uid="WPILib.Preferences.GetLong(System.String,System.Int64)">GetLong(String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Returns the long at the given key. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public long GetLong(string key, long backup)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetLong(string key, long backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><span class="parametername">backup</span></td>
-                    <td><p>The value to return if non exists in the table.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The value to return if non exists in the table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><p>The value in the table, or the backup if value does not exist in table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><p>The value in the table, or the backup if value does not exist in table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Preferences_GetLong_System_String_System_Int64__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Preferences_GetLong_System_String_System_Int64__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetString_System_String_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L161">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_GetString_" data-uid="WPILib.Preferences.GetString*"></a>
-              <h4 id="WPILib_Preferences_GetString_System_String_System_String_" data-uid="WPILib.Preferences.GetString(System.String,System.String)">GetString(String, String)</h4>
-              <div class="markdown level1 summary"><p>Returns the string at the given key. </p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_GetString_System_String_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.GetString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L161">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_GetString_" data-uid="WPILib.Preferences.GetString*"></a>
+  <h4 id="WPILib_Preferences_GetString_System_String_System_String_" data-uid="WPILib.Preferences.GetString(System.String,System.String)">GetString(String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the string at the given key. </p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string GetString(string key, string backup)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(string key, string backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">backup</span></td>
-                    <td><p>The value to return if non exists in the table.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The value to return if non exists in the table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><p>The value in the table, or the backup if value does not exist in table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><p>The value in the table, or the backup if value does not exist in table.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="WPILib_Preferences_GetString_System_String_System_String__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WPILib_Preferences_GetString_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this table does not have a value for that position, then the given backup value will be returned.</p>
 </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutBoolean_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutBoolean(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L127">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_PutBoolean_" data-uid="WPILib.Preferences.PutBoolean*"></a>
-              <h4 id="WPILib_Preferences_PutBoolean_System_String_System_Boolean_" data-uid="WPILib.Preferences.PutBoolean(System.String,System.Boolean)">PutBoolean(String, Boolean)</h4>
-              <div class="markdown level1 summary"><p>Puts the given boolean into the preferences table.</p>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutBoolean_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutBoolean(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L127">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_PutBoolean_" data-uid="WPILib.Preferences.PutBoolean*"></a>
+  <h4 id="WPILib_Preferences_PutBoolean_System_String_System_Boolean_" data-uid="WPILib.Preferences.PutBoolean(System.String,System.Boolean)">PutBoolean(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Puts the given boolean into the preferences table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void PutBoolean(string key, bool value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutBoolean(string key, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutDouble_System_String_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutDouble(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L83">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_PutDouble_" data-uid="WPILib.Preferences.PutDouble*"></a>
-              <h4 id="WPILib_Preferences_PutDouble_System_String_System_Double_" data-uid="WPILib.Preferences.PutDouble(System.String,System.Double)">PutDouble(String, Double)</h4>
-              <div class="markdown level1 summary"><p>Puts the given double into the preferences table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutDouble_System_String_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutDouble(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L83">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_PutDouble_" data-uid="WPILib.Preferences.PutDouble*"></a>
+  <h4 id="WPILib_Preferences_PutDouble_System_String_System_Double_" data-uid="WPILib.Preferences.PutDouble(System.String,System.Double)">PutDouble(String, Double)</h4>
+  <div class="markdown level1 summary"><p>Puts the given double into the preferences table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void PutDouble(string key, double value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutDouble(string key, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutFloat_System_String_System_Single_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutFloat(System.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L116">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_PutFloat_" data-uid="WPILib.Preferences.PutFloat*"></a>
-              <h4 id="WPILib_Preferences_PutFloat_System_String_System_Single_" data-uid="WPILib.Preferences.PutFloat(System.String,System.Single)">PutFloat(String, Single)</h4>
-              <div class="markdown level1 summary"><p>Puts the given float into the preferences table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutFloat_System_String_System_Single_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutFloat(System.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L116">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_PutFloat_" data-uid="WPILib.Preferences.PutFloat*"></a>
+  <h4 id="WPILib_Preferences_PutFloat_System_String_System_Single_" data-uid="WPILib.Preferences.PutFloat(System.String,System.Single)">PutFloat(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Puts the given float into the preferences table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void PutFloat(string key, float value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutFloat(string key, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110).aspx">Single</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110).aspx">Single</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutInt_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutInt(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L94">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_PutInt_" data-uid="WPILib.Preferences.PutInt*"></a>
-              <h4 id="WPILib_Preferences_PutInt_System_String_System_Int32_" data-uid="WPILib.Preferences.PutInt(System.String,System.Int32)">PutInt(String, Int32)</h4>
-              <div class="markdown level1 summary"><p>Puts the given int into the preferences table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutInt_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutInt(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L94">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_PutInt_" data-uid="WPILib.Preferences.PutInt*"></a>
+  <h4 id="WPILib_Preferences_PutInt_System_String_System_Int32_" data-uid="WPILib.Preferences.PutInt(System.String,System.Int32)">PutInt(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Puts the given int into the preferences table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void PutInt(string key, int value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutInt(string key, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutLong_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutLong(System.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L105">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_PutLong_" data-uid="WPILib.Preferences.PutLong*"></a>
-              <h4 id="WPILib_Preferences_PutLong_System_String_System_Int64_" data-uid="WPILib.Preferences.PutLong(System.String,System.Int64)">PutLong(String, Int64)</h4>
-              <div class="markdown level1 summary"><p>Puts the given long into the preferences table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutLong_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutLong(System.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L105">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_PutLong_" data-uid="WPILib.Preferences.PutLong*"></a>
+  <h4 id="WPILib_Preferences_PutLong_System_String_System_Int64_" data-uid="WPILib.Preferences.PutLong(System.String,System.Int64)">PutLong(String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Puts the given long into the preferences table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void PutLong(string key, long value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutLong(string key, long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutString_System_String_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L68">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_PutString_" data-uid="WPILib.Preferences.PutString*"></a>
-              <h4 id="WPILib_Preferences_PutString_System_String_System_String_" data-uid="WPILib.Preferences.PutString(System.String,System.String)">PutString(String, String)</h4>
-              <div class="markdown level1 summary"><p>Puts the given string into the preferences table.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_PutString_System_String_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.PutString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L68">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_PutString_" data-uid="WPILib.Preferences.PutString*"></a>
+  <h4 id="WPILib_Preferences_PutString_System_String_System_String_" data-uid="WPILib.Preferences.PutString(System.String,System.String)">PutString(String, String)</h4>
+  <div class="markdown level1 summary"><p>Puts the given string into the preferences table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void PutString(string key, string value)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutString(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">value</span></td>
-                    <td><p>The value</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_Remove_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.Remove(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L147">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_Remove_" data-uid="WPILib.Preferences.Remove*"></a>
-              <h4 id="WPILib_Preferences_Remove_System_String_" data-uid="WPILib.Preferences.Remove(System.String)">Remove(String)</h4>
-              <div class="markdown level1 summary"><p>Removes a preference.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentnullexception(v=vs.110).aspx">ArgumentNullException</a></td>
+        <td><p>Thrown if value is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_Remove_System_String_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.Remove(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L147">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_Remove_" data-uid="WPILib.Preferences.Remove*"></a>
+  <h4 id="WPILib_Preferences_Remove_System_String_" data-uid="WPILib.Preferences.Remove(System.String)">Remove(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a preference.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Remove(string key)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td><p>The key.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_ValueChanged_ITable_System_String_Value_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.ValueChanged(ITable%2CSystem.String%2CValue%2CNotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L45">View Source</a>
-              </span>
-              <a id="WPILib_Preferences_ValueChanged_" data-uid="WPILib.Preferences.ValueChanged*"></a>
-              <h4 id="WPILib_Preferences_ValueChanged_ITable_System_String_Value_NotifyFlags_" data-uid="WPILib.Preferences.ValueChanged(ITable,System.String,Value,NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ValueChanged(ITable source, string key, Value value, NotifyFlags flags)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td><span class="parametername">source</span></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td><span class="parametername">key</span></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">Value</span></td>
-                    <td><span class="parametername">value</span></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">NotifyFlags</span></td>
-                    <td><span class="parametername">flags</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-                        </article>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Preferences_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_.md&amp;value=---%0Auid%3A%20WPILib.Preferences.ValueChanged(NetworkTables.Tables.ITable%2CSystem.String%2CNetworkTables.Value%2CNetworkTables.NotifyFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/Preferences.cs/#L45">View Source</a>
+  </span>
+  <a id="WPILib_Preferences_ValueChanged_" data-uid="WPILib.Preferences.ValueChanged*"></a>
+  <h4 id="WPILib_Preferences_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_" data-uid="WPILib.Preferences.ValueChanged(NetworkTables.Tables.ITable,System.String,NetworkTables.Value,NetworkTables.NotifyFlags)">ValueChanged(ITable, String, Value, NotifyFlags)</h4>
+  <div class="markdown level1 summary"><p>Called when a key-value pair is changed in an <a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValueChanged(ITable source, string key, Value value, NotifyFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The table the key-value pair exist in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key associated with the value that changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NetworkTables.NotifyFlags.html">NotifyFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>The update flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="NetworkTables.Tables.ITableListener.html#NetworkTables_Tables_ITableListener_ValueChanged_NetworkTables_Tables_ITable_System_String_NetworkTables_Value_NetworkTables_NotifyFlags_">ITableListener.ValueChanged(ITable, String, Value, NotifyFlags)</a></div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

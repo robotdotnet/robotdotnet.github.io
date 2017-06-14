@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum DftFlags
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,34 +67,34 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_DftFlags" data-uid="OpenCvSharp.DftFlags">Enum DftFlags
-              </h1>
-              <div class="markdown level0 summary"><p>Transformation flags for cvDFT</p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.DftFlags">
+  
+  
+  <h1 id="OpenCvSharp_DftFlags" data-uid="OpenCvSharp.DftFlags">Enum DftFlags
+  </h1>
+  <div class="markdown level0 summary"><p>Transformation flags for cvDFT</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_DftFlags_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Flags]
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_DftFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
 public enum DftFlags</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_DftFlags_ComplexOutput">ComplexOutput</td>
-                    <td><p>performs a forward transformation of 1D or 2D real array; the result, 
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_DftFlags_ComplexOutput">ComplexOutput</td>
+        <td><p>performs a forward transformation of 1D or 2D real array; the result, 
 though being a complex array, has complex-conjugate symmetry (<em>CCS</em>, 
 see the function description below for details), and such an array can 
 be packed into a real array of the same size as input, which is the fastest 
@@ -102,20 +102,20 @@ option and which is what the function does by default; however, you may
 wish to get a full complex array (for simpler spectrum analysis, and so on) - 
 pass the flag to enable the function to produce a full-size complex output array.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_DftFlags_Inverse">Inverse</td>
-                    <td><p>Do inverse 1D or 2D transform. The result is not scaled. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_DftFlags_Inverse">Inverse</td>
+        <td><p>Do inverse 1D or 2D transform. The result is not scaled. 
 (Forward and Inverse are mutually exclusive, of course.)</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_DftFlags_None">None</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_DftFlags_RealOutput">RealOutput</td>
-                    <td><p>performs an inverse transformation of a 1D or 2D complex array; 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_DftFlags_None">None</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_DftFlags_RealOutput">RealOutput</td>
+        <td><p>performs an inverse transformation of a 1D or 2D complex array; 
 the result is normally a complex array of the same size, however, 
 if the input array has conjugate-complex symmetry (for example, 
 it is a result of forward transformation with DFT_COMPLEX_OUTPUT flag), 
@@ -127,22 +127,22 @@ and inverse transformation is executed, the function treats the input
 as a packed complex-conjugate symmetrical array, and the output 
 will also be a real array).</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_DftFlags_Rows">Rows</td>
-                    <td><p>Do forward or inverse transform of every individual row of the input matrix. 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_DftFlags_Rows">Rows</td>
+        <td><p>Do forward or inverse transform of every individual row of the input matrix. 
 This flag allows user to transform multiple vectors simultaneously and can be used to decrease the overhead
 (which is sometimes several times larger than the processing itself), to do 3D and higher-dimensional transforms etc.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_DftFlags_Scale">Scale</td>
-                    <td><p>Scale the result: divide it by the number of array elements. Usually, it is combined with Inverse.</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_DftFlags_Scale">Scale</td>
+        <td><p>Scale the result: divide it by the number of array elements. Usually, it is combined with Inverse.</p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -150,10 +150,10 @@ This flag allows user to transform multiple vectors simultaneously and can be us
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_DftFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.DftFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_DftFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.DftFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/core/Enum/DftFlags.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/core/Enum/DftFlags.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

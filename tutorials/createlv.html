@@ -8,7 +8,7 @@
     <title>Creating a project using the LabVIEW style base class | RobotDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Creating a project using the LabVIEW style base class | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -66,8 +66,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="creating-a-project-using-the-labview-style-base-class">Creating a project using the LabVIEW style base class</h1>
-              
+<h1 id="creating-a-project-using-the-labview-style-base-class">Creating a project using the LabVIEW style base class</h1>
+
 <p>The LabVIEW Style Robot is designed to make it easier for teams to move from LabVIEW to text based programming.
 Instead of running autonomous and test modes in the main robot thread, it runs them in a seperate thread. In addition, the main methods have been renamed
 to match their equivalents in LabVIEW. Information on the methods contained in this base class can be found at <a class="xref" href="../api/WPILib.Extras.LabViewRobot.html">LabVIEW Robot.</a></p>
@@ -105,8 +105,7 @@ Note that this includes Test Disabled, and its state will not switch when switch
 that requires cleanup, such as writing to a log file. If you must, you can try and catch the ThreadAbortedException, and run your cleanup code there.
 However, you have to make sure to not cancel the abort, as this will lock up the robot code. In addition, please do not start another thread,
 as the library will not be able to clean up that thread, and it will continue to run.</p>
-
-            </article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

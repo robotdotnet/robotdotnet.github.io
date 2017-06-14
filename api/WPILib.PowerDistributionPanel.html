@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PowerDistributionPanel
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,549 +67,570 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_PowerDistributionPanel" data-uid="WPILib.PowerDistributionPanel">Class PowerDistributionPanel
-              </h1>
-              <div class="markdown level0 summary"><p>Class for getting voltage, current, temperature, and energy from the CAN PDP.</p>
+            <article class="content wrap" id="_content" data-uid="WPILib.PowerDistributionPanel">
+  
+  
+  <h1 id="WPILib_PowerDistributionPanel" data-uid="WPILib.PowerDistributionPanel">Class PowerDistributionPanel
+  </h1>
+  <div class="markdown level0 summary"><p>Class for getting voltage, current, temperature, and energy from the CAN PDP.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
-                  <div class="level2"><span class="xref">PowerDistributionPanel</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib</h6>
-              <h6><strong>Assembly</strong>:WPILib.dll</h6>
-              <h5 id="WPILib_PowerDistributionPanel_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class PowerDistributionPanel : SensorBase, ILiveWindowSendable, ISendable</code></pre>
-              </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel__ctor.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L29">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel__ctor_" data-uid="WPILib.PowerDistributionPanel.#ctor*"></a>
-              <h4 id="WPILib_PowerDistributionPanel__ctor" data-uid="WPILib.PowerDistributionPanel.#ctor">PowerDistributionPanel()</h4>
-              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.PowerDistributionPanel.html">PowerDistributionPanel</a> with the default module of 0.</p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.SensorBase.html">SensorBase</a></div>
+    <div class="level2"><span class="xref">PowerDistributionPanel</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SystemClockTicksPerMicrosecond">SensorBase.SystemClockTicksPerMicrosecond</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DigitalChannels">SensorBase.DigitalChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogInputChannels">SensorBase.AnalogInputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_AnalogOutputChannels">SensorBase.AnalogOutputChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_SolenoidChannels">SensorBase.SolenoidChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PCMModules">SensorBase.PCMModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PwmChannels">SensorBase.PwmChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_RelayChannels">SensorBase.RelayChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPChannels">SensorBase.PDPChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_PDPModules">SensorBase.PDPModules</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidModule_System_Int32_">SensorBase.CheckSolenoidModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckDigitalChannel_System_Int32_">SensorBase.CheckDigitalChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckRelayChannel_System_Int32_">SensorBase.CheckRelayChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPwmChannel_System_Int32_">SensorBase.CheckPwmChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogInputChannel_System_Int32_">SensorBase.CheckAnalogInputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckAnalogOutputChannel_System_Int32_">SensorBase.CheckAnalogOutputChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckSolenoidChannel_System_Int32_">SensorBase.CheckSolenoidChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPChannel_System_Int32_">SensorBase.CheckPDPChannel(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_CheckPDPModule_System_Int32_">SensorBase.CheckPDPModule(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_DefaultSolenoidModule">SensorBase.DefaultSolenoidModule</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.SensorBase.html#WPILib_SensorBase_Dispose">SensorBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WPILib.html">WPILib</a></h6>
+  <h6><strong>Assembly</strong>: WPILib.dll</h6>
+  <h5 id="WPILib_PowerDistributionPanel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PowerDistributionPanel : SensorBase, IDisposable, ILiveWindowSendable, ISendable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel__ctor.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L29">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel__ctor_" data-uid="WPILib.PowerDistributionPanel.#ctor*"></a>
+  <h4 id="WPILib_PowerDistributionPanel__ctor" data-uid="WPILib.PowerDistributionPanel.#ctor">PowerDistributionPanel()</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.PowerDistributionPanel.html">PowerDistributionPanel</a> with the default module of 0.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public PowerDistributionPanel()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L18">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel__ctor_" data-uid="WPILib.PowerDistributionPanel.#ctor*"></a>
-              <h4 id="WPILib_PowerDistributionPanel__ctor_System_Int32_" data-uid="WPILib.PowerDistributionPanel.#ctor(System.Int32)">PowerDistributionPanel(Int32)</h4>
-              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.PowerDistributionPanel.html">PowerDistributionPanel</a> class using the specified module.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PowerDistributionPanel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L18">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel__ctor_" data-uid="WPILib.PowerDistributionPanel.#ctor*"></a>
+  <h4 id="WPILib_PowerDistributionPanel__ctor_System_Int32_" data-uid="WPILib.PowerDistributionPanel.#ctor(System.Int32)">PowerDistributionPanel(Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WPILib.PowerDistributionPanel.html">PowerDistributionPanel</a> class using the specified module.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public PowerDistributionPanel(int module)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">module</span></td>
-                    <td><p>The module number of the PDP.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PowerDistributionPanel(int module)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">module</span></td>
+        <td><p>The module number of the PDP.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="properties">Properties
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L128">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_SmartDashboardType_" data-uid="WPILib.PowerDistributionPanel.SmartDashboardType*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_SmartDashboardType" data-uid="WPILib.PowerDistributionPanel.SmartDashboardType">SmartDashboardType</h4>
-              <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_SmartDashboardType.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.SmartDashboardType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L128">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_SmartDashboardType_" data-uid="WPILib.PowerDistributionPanel.SmartDashboardType*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_SmartDashboardType" data-uid="WPILib.PowerDistributionPanel.SmartDashboardType">SmartDashboardType</h4>
+  <div class="markdown level1 summary"><p>Returns the string representation of the named data type that will be used by the smart dashboard for this sendable</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_Table.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L126">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_Table_" data-uid="WPILib.PowerDistributionPanel.Table*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_Table" data-uid="WPILib.PowerDistributionPanel.Table">Table</h4>
-              <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SmartDashboardType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_SmartDashboardType">ISendable.SmartDashboardType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_Table.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L126">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_Table_" data-uid="WPILib.PowerDistributionPanel.Table*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_Table" data-uid="WPILib.PowerDistributionPanel.Table">Table</h4>
+  <div class="markdown level1 summary"><p>Returns the table that is currently associated with the sendable</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_ClearStickyFaults.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.ClearStickyFaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L113">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_ClearStickyFaults_" data-uid="WPILib.PowerDistributionPanel.ClearStickyFaults*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_ClearStickyFaults" data-uid="WPILib.PowerDistributionPanel.ClearStickyFaults">ClearStickyFaults()</h4>
-              <div class="markdown level1 summary"><p>Clears all PDP Sticky Faults.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_Table">ISendable.Table</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_ClearStickyFaults.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.ClearStickyFaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L113">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_ClearStickyFaults_" data-uid="WPILib.PowerDistributionPanel.ClearStickyFaults*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_ClearStickyFaults" data-uid="WPILib.PowerDistributionPanel.ClearStickyFaults">ClearStickyFaults()</h4>
+  <div class="markdown level1 summary"><p>Clears all PDP Sticky Faults.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ClearStickyFaults()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetCurrent_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetCurrent(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L59">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_GetCurrent_" data-uid="WPILib.PowerDistributionPanel.GetCurrent*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_GetCurrent_System_Int32_" data-uid="WPILib.PowerDistributionPanel.GetCurrent(System.Int32)">GetCurrent(Int32)</h4>
-              <div class="markdown level1 summary"><p>Query the current of a single channel of the PDP.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearStickyFaults()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetCurrent_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetCurrent(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L59">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_GetCurrent_" data-uid="WPILib.PowerDistributionPanel.GetCurrent*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_GetCurrent_System_Int32_" data-uid="WPILib.PowerDistributionPanel.GetCurrent(System.Int32)">GetCurrent(Int32)</h4>
+  <div class="markdown level1 summary"><p>Query the current of a single channel of the PDP.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetCurrent(int channel)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td><span class="parametername">channel</span></td>
-                    <td><p>The channel to read from. [0..15]</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetCurrent(int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>The channel to read from. [0..15]</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The current of the PDP channel in Amperes.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The current of the PDP channel in Amperes.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTemperature.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTemperature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L47">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_GetTemperature_" data-uid="WPILib.PowerDistributionPanel.GetTemperature*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_GetTemperature" data-uid="WPILib.PowerDistributionPanel.GetTemperature">GetTemperature()</h4>
-              <div class="markdown level1 summary"><p>Query the temperature of the PDP.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTemperature.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTemperature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L47">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_GetTemperature_" data-uid="WPILib.PowerDistributionPanel.GetTemperature*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_GetTemperature" data-uid="WPILib.PowerDistributionPanel.GetTemperature">GetTemperature()</h4>
+  <div class="markdown level1 summary"><p>Query the temperature of the PDP.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetTemperature()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The temperature of the PDP in degrees Celsius.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetTemperature()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The temperature of the PDP in degrees Celsius.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTotalCurrent.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTotalCurrent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L71">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_GetTotalCurrent_" data-uid="WPILib.PowerDistributionPanel.GetTotalCurrent*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_GetTotalCurrent" data-uid="WPILib.PowerDistributionPanel.GetTotalCurrent">GetTotalCurrent()</h4>
-              <div class="markdown level1 summary"><p>Query the current of all monitored PDP channels (0-15).</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTotalCurrent.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTotalCurrent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L71">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_GetTotalCurrent_" data-uid="WPILib.PowerDistributionPanel.GetTotalCurrent*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_GetTotalCurrent" data-uid="WPILib.PowerDistributionPanel.GetTotalCurrent">GetTotalCurrent()</h4>
+  <div class="markdown level1 summary"><p>Query the current of all monitored PDP channels (0-15).</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetTotalCurrent()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The current of all channels in Amperes.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetTotalCurrent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The current of all channels in Amperes.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTotalEnergy.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTotalEnergy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L93">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_GetTotalEnergy_" data-uid="WPILib.PowerDistributionPanel.GetTotalEnergy*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_GetTotalEnergy" data-uid="WPILib.PowerDistributionPanel.GetTotalEnergy">GetTotalEnergy()</h4>
-              <div class="markdown level1 summary"><p>Query the total energy drawn from the monitored PDP channels.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTotalEnergy.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTotalEnergy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L93">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_GetTotalEnergy_" data-uid="WPILib.PowerDistributionPanel.GetTotalEnergy*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_GetTotalEnergy" data-uid="WPILib.PowerDistributionPanel.GetTotalEnergy">GetTotalEnergy()</h4>
+  <div class="markdown level1 summary"><p>Query the total energy drawn from the monitored PDP channels.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetTotalEnergy()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The total enegery in Joules.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetTotalEnergy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The total enegery in Joules.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTotalPower.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTotalPower%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L82">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_GetTotalPower_" data-uid="WPILib.PowerDistributionPanel.GetTotalPower*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_GetTotalPower" data-uid="WPILib.PowerDistributionPanel.GetTotalPower">GetTotalPower()</h4>
-              <div class="markdown level1 summary"><p>Query the total power drawn from the monitored PDP channels.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetTotalPower.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetTotalPower%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L82">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_GetTotalPower_" data-uid="WPILib.PowerDistributionPanel.GetTotalPower*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_GetTotalPower" data-uid="WPILib.PowerDistributionPanel.GetTotalPower">GetTotalPower()</h4>
+  <div class="markdown level1 summary"><p>Query the total power drawn from the monitored PDP channels.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetTotalPower()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The total power in Watts.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetTotalPower()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The total power in Watts.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetVoltage.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetVoltage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L36">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_GetVoltage_" data-uid="WPILib.PowerDistributionPanel.GetVoltage*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_GetVoltage" data-uid="WPILib.PowerDistributionPanel.GetVoltage">GetVoltage()</h4>
-              <div class="markdown level1 summary"><p>Query the input voltage of the PDP</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_GetVoltage.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.GetVoltage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L36">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_GetVoltage_" data-uid="WPILib.PowerDistributionPanel.GetVoltage*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_GetVoltage" data-uid="WPILib.PowerDistributionPanel.GetVoltage">GetVoltage()</h4>
+  <div class="markdown level1 summary"><p>Query the input voltage of the PDP</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double GetVoltage()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
-                    <td><p>The voltage of the PDP in volts.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetVoltage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The voltage of the PDP in volts.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_InitTable_ITable_.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.InitTable(ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L120">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_InitTable_" data-uid="WPILib.PowerDistributionPanel.InitTable*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_InitTable_ITable_" data-uid="WPILib.PowerDistributionPanel.InitTable(ITable)">InitTable(ITable)</h4>
-              <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_InitTable_NetworkTables_Tables_ITable_.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.InitTable(NetworkTables.Tables.ITable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L120">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_InitTable_" data-uid="WPILib.PowerDistributionPanel.InitTable*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_InitTable_NetworkTables_Tables_ITable_" data-uid="WPILib.PowerDistributionPanel.InitTable(NetworkTables.Tables.ITable)">InitTable(ITable)</h4>
+  <div class="markdown level1 summary"><p>Initialize a table for this sendable object.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">ITable</span></td>
-                    <td><span class="parametername">subtable</span></td>
-                    <td><p>The table to put the values in.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitTable(ITable subtable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NetworkTables.Tables.ITable.html">ITable</a></td>
+        <td><span class="parametername">subtable</span></td>
+        <td><p>The table to put the values in.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_ITable_">ISendable.InitTable(ITable)</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_ResetTotalEnergy.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.ResetTotalEnergy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L103">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_ResetTotalEnergy_" data-uid="WPILib.PowerDistributionPanel.ResetTotalEnergy*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_ResetTotalEnergy" data-uid="WPILib.PowerDistributionPanel.ResetTotalEnergy">ResetTotalEnergy()</h4>
-              <div class="markdown level1 summary"><p>Resets the total energy to 0.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.Interfaces.ISendable.html#WPILib_Interfaces_ISendable_InitTable_NetworkTables_Tables_ITable_">ISendable.InitTable(ITable)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_ResetTotalEnergy.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.ResetTotalEnergy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L103">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_ResetTotalEnergy_" data-uid="WPILib.PowerDistributionPanel.ResetTotalEnergy*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_ResetTotalEnergy" data-uid="WPILib.PowerDistributionPanel.ResetTotalEnergy">ResetTotalEnergy()</h4>
+  <div class="markdown level1 summary"><p>Resets the total energy to 0.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ResetTotalEnergy()</code></pre>
-              </div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L155">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_StartLiveWindowMode_" data-uid="WPILib.PowerDistributionPanel.StartLiveWindowMode*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_StartLiveWindowMode" data-uid="WPILib.PowerDistributionPanel.StartLiveWindowMode">StartLiveWindowMode()</h4>
-              <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTotalEnergy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_StartLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.StartLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L155">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_StartLiveWindowMode_" data-uid="WPILib.PowerDistributionPanel.StartLiveWindowMode*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_StartLiveWindowMode" data-uid="WPILib.PowerDistributionPanel.StartLiveWindowMode">StartLiveWindowMode()</h4>
+  <div class="markdown level1 summary"><p>Start having this sendable object automatically respond to
 value changes reflect the value on the table.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L159">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_StopLiveWindowMode_" data-uid="WPILib.PowerDistributionPanel.StopLiveWindowMode*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_StopLiveWindowMode" data-uid="WPILib.PowerDistributionPanel.StopLiveWindowMode">StopLiveWindowMode()</h4>
-              <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLiveWindowMode()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StartLiveWindowMode">ILiveWindowSendable.StartLiveWindowMode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_StopLiveWindowMode.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.StopLiveWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L159">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_StopLiveWindowMode_" data-uid="WPILib.PowerDistributionPanel.StopLiveWindowMode*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_StopLiveWindowMode" data-uid="WPILib.PowerDistributionPanel.StopLiveWindowMode">StopLiveWindowMode()</h4>
+  <div class="markdown level1 summary"><p>Stop having this sendable object automatically respond to value changes.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L130">View Source</a>
-              </span>
-              <a id="WPILib_PowerDistributionPanel_UpdateTable_" data-uid="WPILib.PowerDistributionPanel.UpdateTable*"></a>
-              <h4 id="WPILib_PowerDistributionPanel_UpdateTable" data-uid="WPILib.PowerDistributionPanel.UpdateTable">UpdateTable()</h4>
-              <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopLiveWindowMode()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_StopLiveWindowMode">ILiveWindowSendable.StopLiveWindowMode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PowerDistributionPanel_UpdateTable.md&amp;value=---%0Auid%3A%20WPILib.PowerDistributionPanel.UpdateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib/PowerDistributionPanel.cs/#L130">View Source</a>
+  </span>
+  <a id="WPILib_PowerDistributionPanel_UpdateTable_" data-uid="WPILib.PowerDistributionPanel.UpdateTable*"></a>
+  <h4 id="WPILib_PowerDistributionPanel_UpdateTable" data-uid="WPILib.PowerDistributionPanel.UpdateTable">UpdateTable()</h4>
+  <div class="markdown level1 summary"><p>Update the table for this sendable object with the latest
 values.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
-              </div>
-              <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
-                        </article>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTable()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="WPILib.LiveWindow.ILiveWindowSendable.html#WPILib_LiveWindow_ILiveWindowSendable_UpdateTable">ILiveWindowSendable.UpdateTable()</a></div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

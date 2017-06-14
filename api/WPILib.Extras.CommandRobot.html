@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CommandRobot
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,170 +67,191 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="WPILib_Extras_CommandRobot" data-uid="WPILib.Extras.CommandRobot">Class CommandRobot
-              </h1>
-              <div class="markdown level0 summary"><p>Implements the boilerplate needed to use an <a class="xref" href="WPILib.IterativeRobot.html">IterativeRobot</a>
+            <article class="content wrap" id="_content" data-uid="WPILib.Extras.CommandRobot">
+  
+  
+  <h1 id="WPILib_Extras_CommandRobot" data-uid="WPILib.Extras.CommandRobot">Class CommandRobot
+  </h1>
+  <div class="markdown level0 summary"><p>Implements the boilerplate needed to use an <a class="xref" href="WPILib.IterativeRobot.html">IterativeRobot</a>
 with the command-based model, by running the scheduler as needed.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="WPILib.RobotBase.html">RobotBase</a></div>
-                  <div class="level2"><a class="xref" href="WPILib.IterativeRobot.html">IterativeRobot</a></div>
-                  <div class="level3"><span class="xref">CommandRobot</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_StartCompetition">IterativeRobot.StartCompetition()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_RobotInit">IterativeRobot.RobotInit()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TestInit">IterativeRobot.TestInit()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_AutonomousInit">IterativeRobot.AutonomousInit()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TeleopInit">IterativeRobot.TeleopInit()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_RobotPeriodic">IterativeRobot.RobotPeriodic()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_m_ds">RobotBase.m_ds</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_Dispose">RobotBase.Dispose()</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsSimulation">RobotBase.IsSimulation</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsReal">RobotBase.IsReal</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsDisabled">RobotBase.IsDisabled</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsEnabled">RobotBase.IsEnabled</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsAutonomous">RobotBase.IsAutonomous</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsTest">RobotBase.IsTest</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsOperatorControl">RobotBase.IsOperatorControl</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsNewDataAvailable">RobotBase.IsNewDataAvailable</a>
-                </div>
-                <div>
-                  <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_Main_Assembly_Type_">RobotBase.Main(Assembly, Type)</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:WPILib.Extras</h6>
-              <h6><strong>Assembly</strong>:WPILib.Extras.dll</h6>
-              <h5 id="WPILib_Extras_CommandRobot_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class CommandRobot : IterativeRobot</code></pre>
-              </div>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_AutonomousPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.AutonomousPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L15">View Source</a>
-              </span>
-              <a id="WPILib_Extras_CommandRobot_AutonomousPeriodic_" data-uid="WPILib.Extras.CommandRobot.AutonomousPeriodic*"></a>
-              <h4 id="WPILib_Extras_CommandRobot_AutonomousPeriodic" data-uid="WPILib.Extras.CommandRobot.AutonomousPeriodic">AutonomousPeriodic()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void AutonomousPeriodic()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_AutonomousPeriodic">IterativeRobot.AutonomousPeriodic()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_DisabledInit.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.DisabledInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L18">View Source</a>
-              </span>
-              <a id="WPILib_Extras_CommandRobot_DisabledInit_" data-uid="WPILib.Extras.CommandRobot.DisabledInit*"></a>
-              <h4 id="WPILib_Extras_CommandRobot_DisabledInit" data-uid="WPILib.Extras.CommandRobot.DisabledInit">DisabledInit()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void DisabledInit()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_DisabledInit">IterativeRobot.DisabledInit()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_DisabledPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.DisabledPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L12">View Source</a>
-              </span>
-              <a id="WPILib_Extras_CommandRobot_DisabledPeriodic_" data-uid="WPILib.Extras.CommandRobot.DisabledPeriodic*"></a>
-              <h4 id="WPILib_Extras_CommandRobot_DisabledPeriodic" data-uid="WPILib.Extras.CommandRobot.DisabledPeriodic">DisabledPeriodic()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void DisabledPeriodic()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_DisabledPeriodic">IterativeRobot.DisabledPeriodic()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_TeleopPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.TeleopPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L21">View Source</a>
-              </span>
-              <a id="WPILib_Extras_CommandRobot_TeleopPeriodic_" data-uid="WPILib.Extras.CommandRobot.TeleopPeriodic*"></a>
-              <h4 id="WPILib_Extras_CommandRobot_TeleopPeriodic" data-uid="WPILib.Extras.CommandRobot.TeleopPeriodic">TeleopPeriodic()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void TeleopPeriodic()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TeleopPeriodic">IterativeRobot.TeleopPeriodic()</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_TestPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.TestPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L24">View Source</a>
-              </span>
-              <a id="WPILib_Extras_CommandRobot_TestPeriodic_" data-uid="WPILib.Extras.CommandRobot.TestPeriodic*"></a>
-              <h4 id="WPILib_Extras_CommandRobot_TestPeriodic" data-uid="WPILib.Extras.CommandRobot.TestPeriodic">TestPeriodic()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public override void TestPeriodic()</code></pre>
-              </div>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TestPeriodic">IterativeRobot.TestPeriodic()</a></div>
-                        </article>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.RobotBase.html">RobotBase</a></div>
+    <div class="level2"><a class="xref" href="WPILib.IterativeRobot.html">IterativeRobot</a></div>
+    <div class="level3"><span class="xref">CommandRobot</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_StartCompetition">IterativeRobot.StartCompetition()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_RobotInit">IterativeRobot.RobotInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TestInit">IterativeRobot.TestInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_AutonomousInit">IterativeRobot.AutonomousInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TeleopInit">IterativeRobot.TeleopInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_RobotPeriodic">IterativeRobot.RobotPeriodic()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_m_ds">RobotBase.m_ds</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_Dispose">RobotBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsSimulation">RobotBase.IsSimulation</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsReal">RobotBase.IsReal</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsDisabled">RobotBase.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsEnabled">RobotBase.IsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsAutonomous">RobotBase.IsAutonomous</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsTest">RobotBase.IsTest</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsOperatorControl">RobotBase.IsOperatorControl</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_IsNewDataAvailable">RobotBase.IsNewDataAvailable</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.RobotBase.html#WPILib_RobotBase_Main_System_Reflection_Assembly_System_Type_">RobotBase.Main(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WPILib.Extras.html">WPILib.Extras</a></h6>
+  <h6><strong>Assembly</strong>: WPILib.Extras.dll</h6>
+  <h5 id="WPILib_Extras_CommandRobot_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CommandRobot : IterativeRobot, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_AutonomousPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.AutonomousPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L15">View Source</a>
+  </span>
+  <a id="WPILib_Extras_CommandRobot_AutonomousPeriodic_" data-uid="WPILib.Extras.CommandRobot.AutonomousPeriodic*"></a>
+  <h4 id="WPILib_Extras_CommandRobot_AutonomousPeriodic" data-uid="WPILib.Extras.CommandRobot.AutonomousPeriodic">AutonomousPeriodic()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AutonomousPeriodic()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_AutonomousPeriodic">IterativeRobot.AutonomousPeriodic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_DisabledInit.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.DisabledInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L18">View Source</a>
+  </span>
+  <a id="WPILib_Extras_CommandRobot_DisabledInit_" data-uid="WPILib.Extras.CommandRobot.DisabledInit*"></a>
+  <h4 id="WPILib_Extras_CommandRobot_DisabledInit" data-uid="WPILib.Extras.CommandRobot.DisabledInit">DisabledInit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DisabledInit()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_DisabledInit">IterativeRobot.DisabledInit()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_DisabledPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.DisabledPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L12">View Source</a>
+  </span>
+  <a id="WPILib_Extras_CommandRobot_DisabledPeriodic_" data-uid="WPILib.Extras.CommandRobot.DisabledPeriodic*"></a>
+  <h4 id="WPILib_Extras_CommandRobot_DisabledPeriodic" data-uid="WPILib.Extras.CommandRobot.DisabledPeriodic">DisabledPeriodic()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DisabledPeriodic()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_DisabledPeriodic">IterativeRobot.DisabledPeriodic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_TeleopPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.TeleopPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L21">View Source</a>
+  </span>
+  <a id="WPILib_Extras_CommandRobot_TeleopPeriodic_" data-uid="WPILib.Extras.CommandRobot.TeleopPeriodic*"></a>
+  <h4 id="WPILib_Extras_CommandRobot_TeleopPeriodic" data-uid="WPILib.Extras.CommandRobot.TeleopPeriodic">TeleopPeriodic()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TeleopPeriodic()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TeleopPeriodic">IterativeRobot.TeleopPeriodic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_Extras_CommandRobot_TestPeriodic.md&amp;value=---%0Auid%3A%20WPILib.Extras.CommandRobot.TestPeriodic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/WPILib.Extras/CommandRobot.cs/#L24">View Source</a>
+  </span>
+  <a id="WPILib_Extras_CommandRobot_TestPeriodic_" data-uid="WPILib.Extras.CommandRobot.TestPeriodic*"></a>
+  <h4 id="WPILib_Extras_CommandRobot_TestPeriodic" data-uid="WPILib.Extras.CommandRobot.TestPeriodic">TestPeriodic()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TestPeriodic()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.IterativeRobot.html#WPILib_IterativeRobot_TestPeriodic">IterativeRobot.TestPeriodic()</a></div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

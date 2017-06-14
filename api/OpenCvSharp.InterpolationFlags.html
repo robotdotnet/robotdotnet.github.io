@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum InterpolationFlags
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,75 +67,75 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_InterpolationFlags" data-uid="OpenCvSharp.InterpolationFlags">Enum InterpolationFlags
-              </h1>
-              <div class="markdown level0 summary"><p>Interpolation algorithm</p>
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.InterpolationFlags">
+  
+  
+  <h1 id="OpenCvSharp_InterpolationFlags" data-uid="OpenCvSharp.InterpolationFlags">Enum InterpolationFlags
+  </h1>
+  <div class="markdown level0 summary"><p>Interpolation algorithm</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_InterpolationFlags_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">[Flags]
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_InterpolationFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
 public enum InterpolationFlags</code></pre>
-              </div>
-              <h3 id="fields">Fields
-              </h3>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                <thead>
-                <tbody>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_Area">Area</td>
-                    <td><p>Resampling using pixel area relation. It is the preferred method for image decimation that gives moire-free results. In case of zooming it is similar to CV_INTER_NN method. </p>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_Area">Area</td>
+        <td><p>Resampling using pixel area relation. It is the preferred method for image decimation that gives moire-free results. In case of zooming it is similar to CV_INTER_NN method. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_Cubic">Cubic</td>
-                    <td><p>Bicubic interpolation. </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_Cubic">Cubic</td>
+        <td><p>Bicubic interpolation. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_Lanczos4">Lanczos4</td>
-                    <td><p>Lanczos interpolation over 8x8 neighborhood</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_Lanczos4">Lanczos4</td>
+        <td><p>Lanczos interpolation over 8x8 neighborhood</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_Linear">Linear</td>
-                    <td><p>Bilinear interpolation (used by default) </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_Linear">Linear</td>
+        <td><p>Bilinear interpolation (used by default) </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_Max">Max</td>
-                    <td><p>mask for interpolation codes</p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_Max">Max</td>
+        <td><p>mask for interpolation codes</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_Nearest">Nearest</td>
-                    <td><p>Nearest-neighbor interpolation, </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_Nearest">Nearest</td>
+        <td><p>Nearest-neighbor interpolation, </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_WarpFillOutliers">WarpFillOutliers</td>
-                    <td><p>Fill all the destination image pixels. If some of them correspond to outliers in the source image, they are set to fillval. </p>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_WarpFillOutliers">WarpFillOutliers</td>
+        <td><p>Fill all the destination image pixels. If some of them correspond to outliers in the source image, they are set to fillval. </p>
 </td>
-                  </tr>
-                  <tr>
-                    <td id="OpenCvSharp_InterpolationFlags_WarpInverseMap">WarpInverseMap</td>
-                    <td><p>Indicates that matrix is inverse transform from destination image to source and, 
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_InterpolationFlags_WarpInverseMap">WarpInverseMap</td>
+        <td><p>Indicates that matrix is inverse transform from destination image to source and, 
 thus, can be used directly for pixel interpolation. Otherwise, the function finds the inverse transform from map_matrix. </p>
 </td>
-                  </tr>
-                </tbody>
-              </thead></thead></table>
-                        </article>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -143,10 +143,10 @@ thus, can be used directly for pixel interpolation. Otherwise, the function find
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_InterpolationFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.InterpolationFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_InterpolationFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.InterpolationFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/imgproc/Enum/InterpolationFlags.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/imgproc/Enum/InterpolationFlags.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BOWImgDescriptorExtractor
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.16.2.2">
+    <meta name="generator" content="docfx 2.18.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,484 +67,484 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content">
-              
-              
-              <h1 id="OpenCvSharp_BOWImgDescriptorExtractor" data-uid="OpenCvSharp.BOWImgDescriptorExtractor">Class BOWImgDescriptorExtractor
-              </h1>
-              <div class="markdown level0 summary"><p>Brute-force descriptor matcher.
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.BOWImgDescriptorExtractor">
+  
+  
+  <h1 id="OpenCvSharp_BOWImgDescriptorExtractor" data-uid="OpenCvSharp.BOWImgDescriptorExtractor">Class BOWImgDescriptorExtractor
+  </h1>
+  <div class="markdown level0 summary"><p>Brute-force descriptor matcher.
 For each descriptor in the first set, this matcher finds the closest descriptor in the second set by trying each one.</p>
 </div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
-                  <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
-                  <div class="level3"><span class="xref">BOWImgDescriptorExtractor</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
-                </div>
-                <div>
-                  <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:OpenCvSharp</h6>
-              <h6><strong>Assembly</strong>:FRC.OpenCvSharp.dll</h6>
-              <h5 id="OpenCvSharp_BOWImgDescriptorExtractor_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class BOWImgDescriptorExtractor : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
-              </div>
-              <h3 id="constructors">Constructors
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_DescriptorMatcher_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.%23ctor(OpenCvSharp.DescriptorMatcher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L31">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_DescriptorMatcher_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor(OpenCvSharp.DescriptorMatcher)">BOWImgDescriptorExtractor(DescriptorMatcher)</h4>
-              <div class="markdown level1 summary"><p>The constructor.</p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><span class="xref">BOWImgDescriptorExtractor</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_dataHandle">DisposableObject.dataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: FRC.OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_BOWImgDescriptorExtractor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BOWImgDescriptorExtractor : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_DescriptorMatcher_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.%23ctor(OpenCvSharp.DescriptorMatcher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L31">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_DescriptorMatcher_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor(OpenCvSharp.DescriptorMatcher)">BOWImgDescriptorExtractor(DescriptorMatcher)</h4>
+  <div class="markdown level1 summary"><p>The constructor.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public BOWImgDescriptorExtractor(DescriptorMatcher dmatcher)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.DescriptorMatcher.html">DescriptorMatcher</a></td>
-                    <td><span class="parametername">dmatcher</span></td>
-                    <td><p>Descriptor matcher that is used to find the nearest word of the trained vocabulary for each keypoint descriptor of the image.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BOWImgDescriptorExtractor(DescriptorMatcher dmatcher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.DescriptorMatcher.html">DescriptorMatcher</a></td>
+        <td><span class="parametername">dmatcher</span></td>
+        <td><p>Descriptor matcher that is used to find the nearest word of the trained vocabulary for each keypoint descriptor of the image.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_Feature2D_OpenCvSharp_DescriptorMatcher_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.%23ctor(OpenCvSharp.Feature2D%2COpenCvSharp.DescriptorMatcher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L18">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_Feature2D_OpenCvSharp_DescriptorMatcher_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor(OpenCvSharp.Feature2D,OpenCvSharp.DescriptorMatcher)">BOWImgDescriptorExtractor(Feature2D, DescriptorMatcher)</h4>
-              <div class="markdown level1 summary"><p>The constructor.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_Feature2D_OpenCvSharp_DescriptorMatcher_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.%23ctor(OpenCvSharp.Feature2D%2COpenCvSharp.DescriptorMatcher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L18">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor__ctor_OpenCvSharp_Feature2D_OpenCvSharp_DescriptorMatcher_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.#ctor(OpenCvSharp.Feature2D,OpenCvSharp.DescriptorMatcher)">BOWImgDescriptorExtractor(Feature2D, DescriptorMatcher)</h4>
+  <div class="markdown level1 summary"><p>The constructor.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public BOWImgDescriptorExtractor(Feature2D dextractor, DescriptorMatcher dmatcher)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.Feature2D.html">Feature2D</a></td>
-                    <td><span class="parametername">dextractor</span></td>
-                    <td><p>Descriptor extractor that is used to compute descriptors for an input image and its keypoints.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BOWImgDescriptorExtractor(Feature2D dextractor, DescriptorMatcher dmatcher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Feature2D.html">Feature2D</a></td>
+        <td><span class="parametername">dextractor</span></td>
+        <td><p>Descriptor extractor that is used to compute descriptors for an input image and its keypoints.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.DescriptorMatcher.html">DescriptorMatcher</a></td>
-                    <td><span class="parametername">dmatcher</span></td>
-                    <td><p>Descriptor matcher that is used to find the nearest word of the trained vocabulary for each keypoint descriptor of the image.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.DescriptorMatcher.html">DescriptorMatcher</a></td>
+        <td><span class="parametername">dmatcher</span></td>
+        <td><p>Descriptor matcher that is used to find the nearest word of the trained vocabulary for each keypoint descriptor of the image.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="methods">Methods
-              </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_KeyPoint____OpenCvSharp_OutputArray_System_Int32______OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray%2COpenCvSharp.KeyPoint%5B%5D%40%2COpenCvSharp.OutputArray%2CSystem.Int32%5B%5D%5B%5D%40%2COpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L115">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_KeyPoint____OpenCvSharp_OutputArray_System_Int32______OpenCvSharp_Mat_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray,OpenCvSharp.KeyPoint[]@,OpenCvSharp.OutputArray,System.Int32[][]@,OpenCvSharp.Mat)">Compute(InputArray, out KeyPoint[], OutputArray, out Int32[][], Mat)</h4>
-              <div class="markdown level1 summary"><p>Computes an image descriptor using the set visual vocabulary.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_KeyPoint____OpenCvSharp_OutputArray_System_Int32______OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray%2COpenCvSharp.KeyPoint%5B%5D%40%2COpenCvSharp.OutputArray%2CSystem.Int32%5B%5D%5B%5D%40%2COpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L115">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_KeyPoint____OpenCvSharp_OutputArray_System_Int32______OpenCvSharp_Mat_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray,OpenCvSharp.KeyPoint[]@,OpenCvSharp.OutputArray,System.Int32[][]@,OpenCvSharp.Mat)">Compute(InputArray, out KeyPoint[], OutputArray, out Int32[][], Mat)</h4>
+  <div class="markdown level1 summary"><p>Computes an image descriptor using the set visual vocabulary.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Compute(InputArray image, out KeyPoint[] keypoints, OutputArray imgDescriptor, out int[][] pointIdxsOfClusters, Mat descriptors = null)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
-                    <td><span class="parametername">image</span></td>
-                    <td><p>Image, for which the descriptor is computed.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compute(InputArray image, out KeyPoint[] keypoints, OutputArray imgDescriptor, out int[][] pointIdxsOfClusters, Mat descriptors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image, for which the descriptor is computed.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a>[]</td>
-                    <td><span class="parametername">keypoints</span></td>
-                    <td><p>Keypoints detected in the input image.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a>[]</td>
+        <td><span class="parametername">keypoints</span></td>
+        <td><p>Keypoints detected in the input image.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
-                    <td><span class="parametername">imgDescriptor</span></td>
-                    <td><p>Computed output image descriptor.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+        <td><span class="parametername">imgDescriptor</span></td>
+        <td><p>Computed output image descriptor.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a>[][]</td>
-                    <td><span class="parametername">pointIdxsOfClusters</span></td>
-                    <td><p>pointIdxsOfClusters Indices of keypoints that belong to the cluster. 
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a>[][]</td>
+        <td><span class="parametername">pointIdxsOfClusters</span></td>
+        <td><p>pointIdxsOfClusters Indices of keypoints that belong to the cluster. 
 This means that pointIdxsOfClusters[i] are keypoint indices that belong to the i -th cluster(word of vocabulary) returned if it is non-zero.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
-                    <td><span class="parametername">descriptors</span></td>
-                    <td><p>Descriptors of the image keypoints that are returned if they are non-zero.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">descriptors</span></td>
+        <td><p>Descriptors of the image keypoints that are returned if they are non-zero.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_System_Int32______.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray%2COpenCvSharp.OutputArray%2CSystem.Int32%5B%5D%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L145">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_System_Int32______" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray,OpenCvSharp.OutputArray,System.Int32[][]@)">Compute(InputArray, OutputArray, out Int32[][])</h4>
-              <div class="markdown level1 summary"><p>Computes an image descriptor using the set visual vocabulary.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_System_Int32______.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray%2COpenCvSharp.OutputArray%2CSystem.Int32%5B%5D%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L145">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Compute_OpenCvSharp_InputArray_OpenCvSharp_OutputArray_System_Int32______" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute(OpenCvSharp.InputArray,OpenCvSharp.OutputArray,System.Int32[][]@)">Compute(InputArray, OutputArray, out Int32[][])</h4>
+  <div class="markdown level1 summary"><p>Computes an image descriptor using the set visual vocabulary.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Compute(InputArray keypointDescriptors, OutputArray imgDescriptor, out int[][] pointIdxsOfClusters)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
-                    <td><span class="parametername">keypointDescriptors</span></td>
-                    <td><p>Computed descriptors to match with vocabulary.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compute(InputArray keypointDescriptors, OutputArray imgDescriptor, out int[][] pointIdxsOfClusters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">keypointDescriptors</span></td>
+        <td><p>Computed descriptors to match with vocabulary.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
-                    <td><span class="parametername">imgDescriptor</span></td>
-                    <td><p>Computed output image descriptor.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+        <td><span class="parametername">imgDescriptor</span></td>
+        <td><p>Computed output image descriptor.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a>[][]</td>
-                    <td><span class="parametername">pointIdxsOfClusters</span></td>
-                    <td><p>Indices of keypoints that belong to the cluster. 
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a>[][]</td>
+        <td><span class="parametername">pointIdxsOfClusters</span></td>
+        <td><p>Indices of keypoints that belong to the cluster. 
 This means that pointIdxsOfClusters[i] are keypoint indices that belong to the i -th cluster(word of vocabulary) returned if it is non-zero.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Compute2_OpenCvSharp_Mat_OpenCvSharp_KeyPoint____OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Compute2(OpenCvSharp.Mat%2COpenCvSharp.KeyPoint%5B%5D%40%2COpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L170">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_Compute2_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute2*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Compute2_OpenCvSharp_Mat_OpenCvSharp_KeyPoint____OpenCvSharp_Mat_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute2(OpenCvSharp.Mat,OpenCvSharp.KeyPoint[]@,OpenCvSharp.Mat)">Compute2(Mat, out KeyPoint[], Mat)</h4>
-              <div class="markdown level1 summary"><p>Computes an image descriptor using the set visual vocabulary.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Compute2_OpenCvSharp_Mat_OpenCvSharp_KeyPoint____OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Compute2(OpenCvSharp.Mat%2COpenCvSharp.KeyPoint%5B%5D%40%2COpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L170">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_Compute2_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute2*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Compute2_OpenCvSharp_Mat_OpenCvSharp_KeyPoint____OpenCvSharp_Mat_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Compute2(OpenCvSharp.Mat,OpenCvSharp.KeyPoint[]@,OpenCvSharp.Mat)">Compute2(Mat, out KeyPoint[], Mat)</h4>
+  <div class="markdown level1 summary"><p>Computes an image descriptor using the set visual vocabulary.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Compute2(Mat image, out KeyPoint[] keypoints, Mat imgDescriptor)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
-                    <td><span class="parametername">image</span></td>
-                    <td><p>Image, for which the descriptor is computed.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compute2(Mat image, out KeyPoint[] keypoints, Mat imgDescriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image, for which the descriptor is computed.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a>[]</td>
-                    <td><span class="parametername">keypoints</span></td>
-                    <td><p>Keypoints detected in the input image.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a>[]</td>
+        <td><span class="parametername">keypoints</span></td>
+        <td><p>Keypoints detected in the input image.</p>
 </td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
-                    <td><span class="parametername">imgDescriptor</span></td>
-                    <td><p>Computed output image descriptor.</p>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">imgDescriptor</span></td>
+        <td><p>Computed output image descriptor.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_DescriptorSize.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.DescriptorSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L193">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorSize_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorSize*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorSize" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorSize">DescriptorSize()</h4>
-              <div class="markdown level1 summary"><p>Returns an image descriptor size if the vocabulary is set. Otherwise, it returns 0.</p>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_DescriptorSize.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.DescriptorSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L193">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorSize_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorSize*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorSize" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorSize">DescriptorSize()</h4>
+  <div class="markdown level1 summary"><p>Returns an image descriptor size if the vocabulary is set. Otherwise, it returns 0.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int DescriptorSize()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_DescriptorType.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.DescriptorType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L204">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorType_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorType*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorType" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorType">DescriptorType()</h4>
-              <div class="markdown level1 summary"><p>Returns an image descriptor type.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescriptorSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_DescriptorType.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.DescriptorType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L204">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorType_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorType*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_DescriptorType" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.DescriptorType">DescriptorType()</h4>
+  <div class="markdown level1 summary"><p>Returns an image descriptor type.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int DescriptorType()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L55">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_Dispose_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Dispose*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Dispose_System_Boolean_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-              <div class="markdown level1 summary"><p>Releases the resources</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescriptorType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L55">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_Dispose_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Dispose*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_Dispose_System_Boolean_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases the resources</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><span class="parametername">disposing</span></td>
-                    <td><p>If disposing equals true, the method has been called directly or indirectly by a user&#39;s code. Managed and unmanaged resources can be disposed.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>If disposing equals true, the method has been called directly or indirectly by a user&#39;s code. Managed and unmanaged resources can be disposed.
 If false, the method has been called by the runtime from inside the finalizer and you should not reference other objects. Only unmanaged resources can be disposed.</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_GetVocabulary.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.GetVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L98">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_GetVocabulary_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.GetVocabulary*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_GetVocabulary" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.GetVocabulary">GetVocabulary()</h4>
-              <div class="markdown level1 summary"><p>Returns the set vocabulary.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_Dispose_System_Boolean_">DisposableCvObject.Dispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_GetVocabulary.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.GetVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L98">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_GetVocabulary_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.GetVocabulary*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_GetVocabulary" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.GetVocabulary">GetVocabulary()</h4>
+  <div class="markdown level1 summary"><p>Returns the set vocabulary.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public Mat GetVocabulary()</code></pre>
-              </div>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_SetVocabulary_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.SetVocabulary(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L84">View Source</a>
-              </span>
-              <a id="OpenCvSharp_BOWImgDescriptorExtractor_SetVocabulary_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.SetVocabulary*"></a>
-              <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_SetVocabulary_OpenCvSharp_Mat_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.SetVocabulary(OpenCvSharp.Mat)">SetVocabulary(Mat)</h4>
-              <div class="markdown level1 summary"><p>Sets a visual vocabulary.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mat GetVocabulary()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor_SetVocabulary_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor.SetVocabulary(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L84">View Source</a>
+  </span>
+  <a id="OpenCvSharp_BOWImgDescriptorExtractor_SetVocabulary_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.SetVocabulary*"></a>
+  <h4 id="OpenCvSharp_BOWImgDescriptorExtractor_SetVocabulary_OpenCvSharp_Mat_" data-uid="OpenCvSharp.BOWImgDescriptorExtractor.SetVocabulary(OpenCvSharp.Mat)">SetVocabulary(Mat)</h4>
+  <div class="markdown level1 summary"><p>Sets a visual vocabulary.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetVocabulary(Mat vocabulary)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
-                    <td><span class="parametername">vocabulary</span></td>
-                    <td><p>Vocabulary (can be trained using the inheritor of BOWTrainer ). 
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVocabulary(Mat vocabulary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">vocabulary</span></td>
+        <td><p>Vocabulary (can be trained using the inheritor of BOWTrainer ). 
 Each row of the vocabulary is a visual word(cluster center).</p>
 </td>
-                  </tr>
-                </tbody>
-              </table>
-                        </article>
+      </tr>
+    </tbody>
+  </table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -552,10 +552,10 @@ Each row of the vocabulary is a visual word(cluster center).</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/new/master/apiSpec/new?filename=OpenCvSharp_BOWImgDescriptorExtractor.md&amp;value=---%0Auid%3A%20OpenCvSharp.BOWImgDescriptorExtractor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/robotdotnet/frc-opencvsharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/robotdotnet/FRC-OpenCvSharp/blob/master/src/FRC.OpenCvSharp/modules/features2d/BOWImgDescriptorExtractor.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
