@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AHRS
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.18.3.0">
+    <meta name="generator" content="docfx 2.19.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="WPILib.Extras.NavX.AHRS">
   
   
-  <h1 id="WPILib_Extras_NavX_AHRS" data-uid="WPILib.Extras.NavX.AHRS">Class AHRS
+  <h1 id="WPILib_Extras_NavX_AHRS" data-uid="WPILib.Extras.NavX.AHRS" class="text-break">Class AHRS
   </h1>
   <div class="markdown level0 summary"><p>The AHRS class provides access to a KauaiLabs NavX Robotics Navigation Sensor.</p>
 </div>
@@ -688,8 +688,8 @@ the sensor.</p>
   <h5 class="implements">Implements</h5>
       <div><a class="xref" href="WPILib.Interfaces.IGyro.html#WPILib_Interfaces_IGyro_GetAngle">IGyro.GetAngle()</a></div>
   <h5 id="WPILib_Extras_NavX_AHRS_GetAngle_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>NOTE: The angle is continuous, meaning it&#39;s range is beyond 360 degrees.
-This ensures that algorithms that wouldn&#39;t want to see a discontinuity 
+  <div class="markdown level1 remarks"><p>NOTE: The angle is continuous, meaning it&apos;s range is beyond 360 degrees.
+This ensures that algorithms that wouldn&apos;t want to see a discontinuity 
 in the gyro output as it sweeps past 0 on the second time around.
 <p>
 Note that the returned yaw value will be offset by a user-specified
@@ -804,7 +804,7 @@ whether this value is valid, see <a class="xref" href="WPILib.Extras.NavX.AHRS.h
 axis/direction are configurable.
 <p>
 For more information on Omnimount, please see: 
-<see cref="!:http://navx-mxp.kauailabs.com/installation/omnimount/&gt;Omnimount"></see></p>
+<see cref="!:http://navx-mxp.kauailabs.com/installation/omnimount/>Omnimount"></see></p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -1075,7 +1075,7 @@ increases quickly as time progresses.</p>
 compass heading, and magnetic disturbance detection. Note that the 
 magnetometer calibraion procedure is required in order to achieve valid 9-axis headings.
 <p>
-The 9-axis Heading represents the sensor&#39;s best estimate of current heading,
+The 9-axis Heading represents the sensor&apos;s best estimate of current heading,
 based upon the last known valid Compass Angle, and updated b y the change in the
 Yaw Angle since the last known valid Compass Angle. The last known valid Compass
 Angle is updated whenever a Calibrated Compass Alge is read and the sensor has 
@@ -2296,7 +2296,7 @@ communication with the sensor has occured recently.</p>
   <a id="WPILib_Extras_NavX_AHRS_IsMagneticDisturbance_" data-uid="WPILib.Extras.NavX.AHRS.IsMagneticDisturbance*"></a>
   <h4 id="WPILib_Extras_NavX_AHRS_IsMagneticDisturbance" data-uid="WPILib.Extras.NavX.AHRS.IsMagneticDisturbance">IsMagneticDisturbance()</h4>
   <div class="markdown level1 summary"><p>Indicates whether the current magnetic field strength diverges from the calibrated
-value for the earth&#39;s magnetic field by more than the currently-
+value for the earth&apos;s magnetic field by more than the currently-
 configured Magnetic Disturbance Ratio.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2321,7 +2321,7 @@ configured Magnetic Disturbance Ratio.</p>
     </tbody>
   </table>
   <h5 id="WPILib_Extras_NavX_AHRS_IsMagneticDisturbance_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This function will always return false if the sensor&#39;s magnetometer
+  <div class="markdown level1 remarks"><p>This function will always return false if the sensor&apos;s magnetometer
 has not yet been calibrated; see <a class="xref" href="WPILib.Extras.NavX.AHRS.html#WPILib_Extras_NavX_AHRS_IsMagnetometerCalibrated">IsMagnetometerCalibrated()</a>.</p>
 </div>
   <span class="small pull-right mobile-hide">

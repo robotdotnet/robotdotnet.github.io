@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum CANTalon.SetValueMotionProfile
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.18.3.0">
+    <meta name="generator" content="docfx 2.19.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="CTRE.CANTalon.SetValueMotionProfile">
   
   
-  <h1 id="CTRE_CANTalon_SetValueMotionProfile" data-uid="CTRE.CANTalon.SetValueMotionProfile">Enum CANTalon.SetValueMotionProfile
+  <h1 id="CTRE_CANTalon_SetValueMotionProfile" data-uid="CTRE.CANTalon.SetValueMotionProfile" class="text-break">Enum CANTalon.SetValueMotionProfile
   </h1>
   <div class="markdown level0 summary"><p>Enumerated types for Motion Control Set Values</p>
 </div>
@@ -90,7 +90,7 @@ output into neutral drive. Talon will stop processing motion profile points.  Th
 the buffer is effectively disconnected from the executer, allowing the robot to gracefully 
 clear and push new traj points. <a class="xref" href="CTRE.CANTalon.MotionProfileStatus.html#CTRE_CANTalon_MotionProfileStatus_IsUnderrun">IsUnderrun</a> will get cleared. The active trajectory is also cleared.
 <p>
-Enable will signal Talon to pop a trajectory point from it&#39;s buffer and process it. If the 
+Enable will signal Talon to pop a trajectory point from it&apos;s buffer and process it. If the 
 active trajectory is empty, Talon will shift in the next point. If the active traj is empty, 
 and so is the buffer, the motor drive is neutral and <a class="xref" href="CTRE.CANTalon.MotionProfileStatus.html#CTRE_CANTalon_MotionProfileStatus_IsUnderrun">IsUnderrun</a> is set. 
 When active traj times out, and buffer has at least one point, Talon shifts in the next one, 

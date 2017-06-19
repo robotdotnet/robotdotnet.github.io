@@ -1,0 +1,910 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriveWheelMechanism
+   | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriveWheelMechanism
+   | RobotDotNet ">
+    <meta name="generator" content="docfx 2.19.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism">
+  
+  
+  <h1 id="HAL_Simulator_Mechanisms_DriveWheelMechanism" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism" class="text-break">Class DriveWheelMechanism
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html">FeedbackMechanismBase</a></div>
+    <div class="level2"><span class="xref">DriveWheelMechanism</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_input">FeedbackMechanismBase.m_input</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_output">FeedbackMechanismBase.m_output</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_model">FeedbackMechanismBase.m_model</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_invert">FeedbackMechanismBase.m_invert</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_maxRadians">FeedbackMechanismBase.m_maxRadians</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_minRadians">FeedbackMechanismBase.m_minRadians</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_m_scaler">FeedbackMechanismBase.m_scaler</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_CurrentMeters">FeedbackMechanismBase.CurrentMeters</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_CurrentRadians">FeedbackMechanismBase.CurrentRadians</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_CurrentRotations">FeedbackMechanismBase.CurrentRotations</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_CurrentRadiansPerSecond">FeedbackMechanismBase.CurrentRadiansPerSecond</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_CurrentRotationsPerMinute">FeedbackMechanismBase.CurrentRotationsPerMinute</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_RadiansPerMeter">FeedbackMechanismBase.RadiansPerMeter</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_RotationsPerMeter">FeedbackMechanismBase.RotationsPerMeter</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_Deadzone">FeedbackMechanismBase.Deadzone</a>
+    </div>
+    <div>
+      <a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_Limit_System_Double_">FeedbackMechanismBase.Limit(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HAL.Simulator.Mechanisms.html">HAL.Simulator.Mechanisms</a></h6>
+  <h6><strong>Assembly</strong>: HAL.dll</h6>
+  <h5 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DriveWheelMechanism : FeedbackMechanismBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism__ctor_HAL_Simulator_Outputs_DCMotor_HAL_Simulator_Outputs_ISimSpeedController_System_Double_System_Double_HAL_Simulator_Inputs_IServoFeedback_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.%23ctor(HAL.Simulator.Outputs.DCMotor%2CHAL.Simulator.Outputs.ISimSpeedController%2CSystem.Double%2CSystem.Double%2CHAL.Simulator.Inputs.IServoFeedback%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L152">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism__ctor_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.#ctor*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism__ctor_HAL_Simulator_Outputs_DCMotor_HAL_Simulator_Outputs_ISimSpeedController_System_Double_System_Double_HAL_Simulator_Inputs_IServoFeedback_System_Double_System_Double_System_Double_System_Double_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.#ctor(HAL.Simulator.Outputs.DCMotor,HAL.Simulator.Outputs.ISimSpeedController,System.Double,System.Double,HAL.Simulator.Inputs.IServoFeedback,System.Double,System.Double,System.Double,System.Double)">DriveWheelMechanism(DCMotor, ISimSpeedController, Double, Double, IServoFeedback, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HAL.Simulator.Mechanisms.DriveWheelMechanism.html">DriveWheelMechanism</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriveWheelMechanism(DCMotor motor, ISimSpeedController input, double wheelbaseXM, double wheelDiameterM, IServoFeedback output, double wheelStaticCoef = 1.07, double wheelDynamicCoef = 0.1, double staticFriction = 0.1, double dynamicFriction = 0.01)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.DCMotor.html">DCMotor</a></td>
+        <td><span class="parametername">motor</span></td>
+        <td><p>The motor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.ISimSpeedController.html">ISimSpeedController</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelbaseXM</span></td>
+        <td><p>The wheelbase xm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelDiameterM</span></td>
+        <td><p>The wheel diameter m.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Inputs.IServoFeedback.html">IServoFeedback</a></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelStaticCoef</span></td>
+        <td><p>The wheel static coef.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelDynamicCoef</span></td>
+        <td><p>The wheel dynamic coef.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">staticFriction</span></td>
+        <td><p>The static friction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">dynamicFriction</span></td>
+        <td><p>The dynamic friction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism__ctor_HAL_Simulator_Outputs_DCMotor_HAL_Simulator_Outputs_ISimSpeedController_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.%23ctor(HAL.Simulator.Outputs.DCMotor%2CHAL.Simulator.Outputs.ISimSpeedController%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L126">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism__ctor_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.#ctor*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism__ctor_HAL_Simulator_Outputs_DCMotor_HAL_Simulator_Outputs_ISimSpeedController_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.#ctor(HAL.Simulator.Outputs.DCMotor,HAL.Simulator.Outputs.ISimSpeedController,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">DriveWheelMechanism(DCMotor, ISimSpeedController, Double, Double, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HAL.Simulator.Mechanisms.DriveWheelMechanism.html">DriveWheelMechanism</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriveWheelMechanism(DCMotor motor, ISimSpeedController input, double wheelbaseXM, double wheelDiameterM, double wheelStaticCoef = 1.07, double wheelDynamicCoef = 0.1, double staticFriction = 0.1, double dynamicFriction = 0.01)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.DCMotor.html">DCMotor</a></td>
+        <td><span class="parametername">motor</span></td>
+        <td><p>The motor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.ISimSpeedController.html">ISimSpeedController</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelbaseXM</span></td>
+        <td><p>The wheelbase xm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelDiameterM</span></td>
+        <td><p>The wheel diameter m.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelStaticCoef</span></td>
+        <td><p>The wheel static coef.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">wheelDynamicCoef</span></td>
+        <td><p>The wheel dynamic coef.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">staticFriction</span></td>
+        <td><p>The static friction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">dynamicFriction</span></td>
+        <td><p>The dynamic friction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_Acceleration.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.Acceleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L113">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Acceleration_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Acceleration*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Acceleration" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Acceleration">Acceleration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the acceleration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Acceleration { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The acceleration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_DynamicCoef.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.DynamicCoef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L54">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_DynamicCoef_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.DynamicCoef*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_DynamicCoef" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.DynamicCoef">DynamicCoef</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the dynamic coef.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DynamicCoef { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The dynamic coef.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_DynamicFriction.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.DynamicFriction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L83">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_DynamicFriction_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.DynamicFriction*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_DynamicFriction" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.DynamicFriction">DynamicFriction</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the dynamic friction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DynamicFriction { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The dynamic friction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_ForceApplied.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.ForceApplied%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L98">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_ForceApplied_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.ForceApplied*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_ForceApplied" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.ForceApplied">ForceApplied</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the force applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ForceApplied { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The force applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_MassLoad.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.MassLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L91">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_MassLoad_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.MassLoad*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_MassLoad" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.MassLoad">MassLoad</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the mass load.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MassLoad { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The mass load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_MotorPower.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.MotorPower%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L106">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_MotorPower_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.MotorPower*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_MotorPower" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.MotorPower">MotorPower</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the motor power.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MotorPower { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The motor power.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_RPosition.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.RPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L40">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_RPosition_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.RPosition*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_RPosition" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.RPosition">RPosition</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the r position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double RPosition { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The r position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_Slipping.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.Slipping%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L19">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Slipping_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Slipping*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Slipping" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Slipping">Slipping</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this <a class="xref" href="HAL.Simulator.Mechanisms.DriveWheelMechanism.html">DriveWheelMechanism</a> is slipping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Slipping { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><p><code>true</code> if slipping; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_StaticCoef.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.StaticCoef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L47">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_StaticCoef_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.StaticCoef*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_StaticCoef" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.StaticCoef">StaticCoef</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the static coef.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double StaticCoef { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The static coef.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_StaticFriction.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.StaticFriction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L76">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_StaticFriction_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.StaticFriction*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_StaticFriction" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.StaticFriction">StaticFriction</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the static friction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double StaticFriction { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The static friction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_Type.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L68">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Type_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Type*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Type" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_WheelDiameter.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.WheelDiameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L61">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_WheelDiameter_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.WheelDiameter*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_WheelDiameter" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.WheelDiameter">WheelDiameter</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the wheel diameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double WheelDiameter { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The wheel diameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_XPosition.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.XPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L26">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_XPosition_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.XPosition*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_XPosition" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.XPosition">XPosition</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the x position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double XPosition { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The x position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_YPosition.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.YPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L33">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_YPosition_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.YPosition*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_YPosition" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.YPosition">YPosition</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the y position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double YPosition { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The y position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_Update_System_Double_.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.Update(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L222">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Update_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Update*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Update_System_Double_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Update(System.Double)">Update(Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(double seconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">seconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html#HAL_Simulator_Mechanisms_FeedbackMechanismBase_Update_System_Double_">FeedbackMechanismBase.Update(Double)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism_Update_System_Double_System_Double___System_Double_System_Int32_System_Double___.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism.Update(System.Double%2CSystem.Double%5B%5D%2CSystem.Double%2CSystem.Int32%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L168">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Update_" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Update*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_DriveWheelMechanism_Update_System_Double_System_Double___System_Double_System_Int32_System_Double___" data-uid="HAL.Simulator.Mechanisms.DriveWheelMechanism.Update(System.Double,System.Double[],System.Double,System.Int32,System.Double[])">Update(Double, Double[], Double, Int32, Double[])</h4>
+  <div class="markdown level1 summary"><p>UUpdates the mechanism with the specified delta time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(double seconds, double[] driveAcceleration, double massKg, int numberOfWheels, double[] botVel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">seconds</span></td>
+        <td><p>The delta time in seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
+        <td><span class="parametername">driveAcceleration</span></td>
+        <td><p>The drive acceleration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">massKg</span></td>
+        <td><p>The mass kg.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">numberOfWheels</span></td>
+        <td><p>The number of wheels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>[]</td>
+        <td><span class="parametername">botVel</span></td>
+        <td><p>The bot vel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="HAL.Simulator.Mechanisms.FeedbackMechanismBase.html">FeedbackMechanismBase</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_DriveWheelMechanism.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.DriveWheelMechanism%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/DriveWheelMechanism.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

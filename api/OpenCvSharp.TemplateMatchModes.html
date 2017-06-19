@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum TemplateMatchModes
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.18.3.0">
+    <meta name="generator" content="docfx 2.19.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="OpenCvSharp.TemplateMatchModes">
   
   
-  <h1 id="OpenCvSharp_TemplateMatchModes" data-uid="OpenCvSharp.TemplateMatchModes">Enum TemplateMatchModes
+  <h1 id="OpenCvSharp_TemplateMatchModes" data-uid="OpenCvSharp.TemplateMatchModes" class="text-break">Enum TemplateMatchModes
   </h1>
   <div class="markdown level0 summary"><p>Specifies the way the template must be compared with image regions</p>
 </div>
@@ -93,34 +93,34 @@
     <tbody>
       <tr>
         <td id="OpenCvSharp_TemplateMatchModes_CCoeff">CCoeff</td>
-        <td><p>\f[R(x,y)= \sum <em>{x&#39;,y&#39;} (T&#39;(x&#39;,y&#39;)  \cdot I&#39;(x+x&#39;,y+y&#39;))\f]
+        <td><p>\f[R(x,y)= \sum <em>{x&apos;,y&apos;} (T&apos;(x&apos;,y&apos;)  \cdot I&apos;(x+x&apos;,y+y&apos;))\f]
 where
-\f[\begin{array}{l} T&#39;(x&#39;,y&#39;)=T(x&#39;,y&#39;) - 1/(w  \cdot h)  \cdot \sum </em>{x&#39;&#39;,y&#39;&#39;} T(x&#39;&#39;,y&#39;&#39;) \ I&#39;(x+x&#39;,y+y&#39;)=I(x+x&#39;,y+y&#39;) - 1/(w  \cdot h)  \cdot \sum _{x&#39;&#39;,y&#39;&#39;} I(x+x&#39;&#39;,y+y&#39;&#39;) \end{array}\f]</p>
+\f[\begin{array}{l} T&apos;(x&apos;,y&apos;)=T(x&apos;,y&apos;) - 1/(w  \cdot h)  \cdot \sum </em>{x&apos;&apos;,y&apos;&apos;} T(x&apos;&apos;,y&apos;&apos;) \ I&apos;(x+x&apos;,y+y&apos;)=I(x+x&apos;,y+y&apos;) - 1/(w  \cdot h)  \cdot \sum _{x&apos;&apos;,y&apos;&apos;} I(x+x&apos;&apos;,y+y&apos;&apos;) \end{array}\f]</p>
 </td>
       </tr>
       <tr>
         <td id="OpenCvSharp_TemplateMatchModes_CCoeffNormed">CCoeffNormed</td>
-        <td><p>\f[R(x,y)= \frac{ \sum_{x&#39;,y&#39;} (T&#39;(x&#39;,y&#39;) \cdot I&#39;(x+x&#39;,y+y&#39;)) }{ \sqrt{\sum_{x&#39;,y&#39;}T&#39;(x&#39;,y&#39;)^2 \cdot \sum_{x&#39;,y&#39;} I&#39;(x+x&#39;,y+y&#39;)^2} }\f]</p>
+        <td><p>\f[R(x,y)= \frac{ \sum_{x&apos;,y&apos;} (T&apos;(x&apos;,y&apos;) \cdot I&apos;(x+x&apos;,y+y&apos;)) }{ \sqrt{\sum_{x&apos;,y&apos;}T&apos;(x&apos;,y&apos;)^2 \cdot \sum_{x&apos;,y&apos;} I&apos;(x+x&apos;,y+y&apos;)^2} }\f]</p>
 </td>
       </tr>
       <tr>
         <td id="OpenCvSharp_TemplateMatchModes_CCorr">CCorr</td>
-        <td><p>\f[R(x,y)= \sum _{x&#39;,y&#39;} (T(x&#39;,y&#39;)  \cdot I(x+x&#39;,y+y&#39;))\f]</p>
+        <td><p>\f[R(x,y)= \sum _{x&apos;,y&apos;} (T(x&apos;,y&apos;)  \cdot I(x+x&apos;,y+y&apos;))\f]</p>
 </td>
       </tr>
       <tr>
         <td id="OpenCvSharp_TemplateMatchModes_CCorrNormed">CCorrNormed</td>
-        <td><p>\f[R(x,y)= \frac{\sum_{x&#39;,y&#39;} (T(x&#39;,y&#39;) \cdot I(x+x&#39;,y+y&#39;))}{\sqrt{\sum_{x&#39;,y&#39;}T(x&#39;,y&#39;)^2 \cdot \sum_{x&#39;,y&#39;} I(x+x&#39;,y+y&#39;)^2}}\f]</p>
+        <td><p>\f[R(x,y)= \frac{\sum_{x&apos;,y&apos;} (T(x&apos;,y&apos;) \cdot I(x+x&apos;,y+y&apos;))}{\sqrt{\sum_{x&apos;,y&apos;}T(x&apos;,y&apos;)^2 \cdot \sum_{x&apos;,y&apos;} I(x+x&apos;,y+y&apos;)^2}}\f]</p>
 </td>
       </tr>
       <tr>
         <td id="OpenCvSharp_TemplateMatchModes_SqDiff">SqDiff</td>
-        <td><p>\f[R(x,y)= \sum _{x&#39;,y&#39;} (T(x&#39;,y&#39;)-I(x+x&#39;,y+y&#39;))^2\f]</p>
+        <td><p>\f[R(x,y)= \sum _{x&apos;,y&apos;} (T(x&apos;,y&apos;)-I(x+x&apos;,y+y&apos;))^2\f]</p>
 </td>
       </tr>
       <tr>
         <td id="OpenCvSharp_TemplateMatchModes_SqDiffNormed">SqDiffNormed</td>
-        <td><p>\f[R(x,y)= \frac{\sum_{x&#39;,y&#39;} (T(x&#39;,y&#39;)-I(x+x&#39;,y+y&#39;))^2}{\sqrt{\sum_{x&#39;,y&#39;}T(x&#39;,y&#39;)^2 \cdot \sum_{x&#39;,y&#39;} I(x+x&#39;,y+y&#39;)^2}}\f]</p>
+        <td><p>\f[R(x,y)= \frac{\sum_{x&apos;,y&apos;} (T(x&apos;,y&apos;)-I(x+x&apos;,y+y&apos;))^2}{\sqrt{\sum_{x&apos;,y&apos;}T(x&apos;,y&apos;)^2 \cdot \sum_{x&apos;,y&apos;} I(x+x&apos;,y+y&apos;)^2}}\f]</p>
 </td>
       </tr>
     </tbody>

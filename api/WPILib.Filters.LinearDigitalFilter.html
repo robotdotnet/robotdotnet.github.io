@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LinearDigitalFilter
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.18.3.0">
+    <meta name="generator" content="docfx 2.19.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="WPILib.Filters.LinearDigitalFilter">
   
   
-  <h1 id="WPILib_Filters_LinearDigitalFilter" data-uid="WPILib.Filters.LinearDigitalFilter">Class LinearDigitalFilter
+  <h1 id="WPILib_Filters_LinearDigitalFilter" data-uid="WPILib.Filters.LinearDigitalFilter" class="text-break">Class LinearDigitalFilter
   </h1>
   <div class="markdown level0 summary"><p>This class implements a linear, digital filter.</p>
 </div>
@@ -121,19 +121,17 @@
   <div class="markdown level0 remarks"><p>All types of FIR and IIR filters are supported.Static factory methods are provided to create commonly used types of filters.<br><p>
 Filters are of the form:<br> y[n] = (b0<em>x[n] + b1</em>x[n-1] + ... + bP<em>x[n-P) - (a0</em>y[n-1] + a2<em>y[n-2] + ... + aQ</em>y[n-Q])
 <p>
-Where:<br> y[n] is the output at time &quot;n&quot; 
- x[n] is the input at time &quot;n&quot;<br> y[n - 1] is the output from the LAST time step (&quot;n-1&quot;)<br>x[n - 1] is the input from the LAST time step(&quot;n-1&quot;) 
-b0...bP are the &quot;feedforward&quot; (FIR) gains<br>a0...aQ are the &quot;feedback&quot; (IIR) gains<br>IMPORTANT! Note the &quot;-&quot; sign in front of the feedback term! This is a common 
+Where:<br> y[n] is the output at time &quot;n&quot;<br> x[n] is the input at time &quot;n&quot;<br> y[n - 1] is the output from the LAST time step (&quot;n-1&quot;)<br>x[n - 1] is the input from the LAST time step(&quot;n-1&quot;) 
+b0...bP are the &quot;feedforward&quot; (FIR) gains 
+a0...aQ are the &quot;feedback&quot; (IIR) gains<br>IMPORTANT! Note the &quot;-&quot; sign in front of the feedback term! This is a common 
 convention in signal processing.<br><p>
 What can linear filters do? Basically, they can filter, or diminish, the 
-effects of undesirable input frequencies.High frequencies, or rapid changes,<br>can be indicative of sensor noise or be otherwise undesirable. A &quot;low pass&quot; 
-filter smooths out the signal, reducing the impact of these high frequency<br>components.Likewise, a &quot;high pass&quot; filter gets rid of slow-moving signal<br>components, letting you detect large changes more easily.<br>3<p>
+effects of undesirable input frequencies.High frequencies, or rapid changes,<br>can be indicative of sensor noise or be otherwise undesirable. A &quot;low pass&quot;<br>filter smooths out the signal, reducing the impact of these high frequency<br>components.Likewise, a &quot;high pass&quot; filter gets rid of slow-moving signal<br>components, letting you detect large changes more easily.<br>3<p>
 Example FRC applications of filters:    </p>
 <ul>
-<li>Getting rid of noise from an analog sensor input (note: the roboRIO&#39;s FPGA<br>can do this faster in hardware)   </li>
+<li>Getting rid of noise from an analog sensor input (note: the roboRIO&apos;s FPGA<br>can do this faster in hardware)   </li>
 <li>Smoothing out joystick input to prevent the wheels from slipping or the<br>robot from tipping    </li>
-<li>Smoothing motor commands so that unnecessary strain isn&#39;t put on 
-electrical or mechanical components </li>
+<li>Smoothing motor commands so that unnecessary strain isn&apos;t put on<br>electrical or mechanical components </li>
 <li>If you use clever gains, you can make a PID controller out of this class!<br><p>
 For more on filters, I highly recommend the following articles: 
 <a href="http://en.wikipedia.org/wiki/Linear_filter">http://en.wikipedia.org/wiki/Linear_filter</a><br><a href="http://en.wikipedia.org/wiki/Iir_filter">http://en.wikipedia.org/wiki/Iir_filter</a> 
@@ -445,7 +443,7 @@ This filter is always stable</p>
       <tr>
         <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
         <td><span class="parametername">timeConstant</span></td>
-        <td><p>The filter&#39;s feedforward gain factor (lower = smoother but slower).</p>
+        <td><p>The filter&apos;s feedforward gain factor (lower = smoother but slower).</p>
 </td>
       </tr>
       <tr>

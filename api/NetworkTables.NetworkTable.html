@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NetworkTable
    | RobotDotNet ">
-    <meta name="generator" content="docfx 2.18.3.0">
+    <meta name="generator" content="docfx 2.19.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="NetworkTables.NetworkTable">
   
   
-  <h1 id="NetworkTables_NetworkTable" data-uid="NetworkTables.NetworkTable">Class NetworkTable
+  <h1 id="NetworkTables_NetworkTable" data-uid="NetworkTables.NetworkTable" class="text-break">Class NetworkTable
   </h1>
   <div class="markdown level0 summary"><p>This class is the Main Class for interfacing with NetworkTables.</p>
 </div>
@@ -121,15 +121,14 @@ NetworkTable.SetServerMode();
 NetworkTable.Initialize();
 
 //Get a reference to the smartdashboard.
-var smartDashboard = NetworkTable.GetTable("SmartDashboard");</code></pre>
-<code>smartDashboard</code> can now be used to get and set values in the smart dashboard.
+var smartDashboard = NetworkTable.GetTable(&quot;SmartDashboard&quot;);</code></pre>
+<p><code>smartDashboard</code> can now be used to get and set values in the smart dashboard.
 Examples on this can be found below the client section.
 <p>
-The following example demonstrates creating a client and connecting it to a server:
-
+The following example demonstrates creating a client and connecting it to a server:</p>
 <pre><code class="cs">//Set IP Address. Replace xxxx with your team number if connecting to a RoboRIO,
-//or the server's IP if the server is not a RoboRIO.
-NetworkTable.SetIPAddress("roborio-xxxx.local");
+//or the server&apos;s IP if the server is not a RoboRIO.
+NetworkTable.SetIPAddress(&quot;roborio-xxxx.local&quot;);
 
 //Set Client Mode
 NetworkTable.SetClientMode();
@@ -138,34 +137,33 @@ NetworkTable.SetClientMode();
 NetworkTable.Initialize();
 
 //Get a reference to the smartdashboard.
-var smartDashboard = NetworkTable.GetTable("SmartDashboard");</code></pre>
-<code>smartDashboard</code> can now be used to get and set values in the smart dashboard.
+var smartDashboard = NetworkTable.GetTable(&quot;SmartDashboard&quot;);</code></pre>
+<p><code>smartDashboard</code> can now be used to get and set values in the smart dashboard.
 <p>
-The following example shows how to get and put values into the smart dashboard:
-
+The following example shows how to get and put values into the smart dashboard:</p>
 <pre><code class="cs">//Strings
-smartDashboard.PutString("MyString", "MyValue");
-string s = smartDashboard.GetString("MyString");
+smartDashboard.PutString(&quot;MyString&quot;, &quot;MyValue&quot;);
+string s = smartDashboard.GetString(&quot;MyString&quot;);
 //Note that if the key has not been put in the smart dashboard,
 //the GetString function will throw a TableKeyNotDefinedException.
 //To get around this, set a default value to be returned if there is no key, like this:
-string s = smartDashboard.GetString("MyString", "Default");
+string s = smartDashboard.GetString(&quot;MyString&quot;, &quot;Default&quot;);
 
 //Numbers
-smartDashboard.PutNumber("MyNumber", 3.562);
-double s = smartDashboard.GetNumber("MyNumber");
+smartDashboard.PutNumber(&quot;MyNumber&quot;, 3.562);
+double s = smartDashboard.GetNumber(&quot;MyNumber&quot;);
 //Note that if the key has not been put in the smart dashboard,
 //the GetString function will throw a TableKeyNotDefinedException.
 //To get around this, set a default value to be returned if there is no key, like this:
-double s = smartDashboard.GetDouble("MyNumber", 0.0);
+double s = smartDashboard.GetDouble(&quot;MyNumber&quot;, 0.0);
 
 //Bools
-smartDashboard.PutBoolean("MyBool", true);
-bool s = smartDashboard.GetBoolean("MyBool");
+smartDashboard.PutBoolean(&quot;MyBool&quot;, true);
+bool s = smartDashboard.GetBoolean(&quot;MyBool&quot;);
 //Note that if the key has not been put in the smart dashboard,
 //the GetString function will throw a TableKeyNotDefinedException.
 //To get around this, set a default value to be returned if there is no key, like this:
-bool s = smartDashboard.GetBoolean("MyBool", false);</code></pre>
+bool s = smartDashboard.GetBoolean(&quot;MyBool&quot;, false);</code></pre>
 
   <h3 id="fields">Fields
   </h3>
@@ -1063,7 +1061,7 @@ otherwise just notify remote listeners.</p>
   </span>
   <a id="NetworkTables_NetworkTable_ClearPersistent_" data-uid="NetworkTables.NetworkTable.ClearPersistent*"></a>
   <h4 id="NetworkTables_NetworkTable_ClearPersistent_System_String_" data-uid="NetworkTables.NetworkTable.ClearPersistent(System.String)">ClearPersistent(String)</h4>
-  <div class="markdown level1 summary"><p>Stop making a key&#39;s value persistent through program restarts.</p>
+  <div class="markdown level1 summary"><p>Stop making a key&apos;s value persistent through program restarts.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1670,7 +1668,7 @@ as a different type in the table.</p>
       <tr>
         <td><a class="xref" href="NetworkTables.NtType.html">NtType</a></td>
         <td><span class="parametername">types</span></td>
-        <td><p>Bitmask of types to check for; 0 is treated as a &quot;don&#39;t care&quot;.</p>
+        <td><p>Bitmask of types to check for; 0 is treated as a &quot;don&apos;t care&quot;.</p>
 </td>
       </tr>
     </tbody>
@@ -4401,7 +4399,7 @@ has already been initialized.</p>
   </span>
   <a id="NetworkTables_NetworkTable_SetPersistent_" data-uid="NetworkTables.NetworkTable.SetPersistent*"></a>
   <h4 id="NetworkTables_NetworkTable_SetPersistent_System_String_" data-uid="NetworkTables.NetworkTable.SetPersistent(System.String)">SetPersistent(String)</h4>
-  <div class="markdown level1 summary"><p>Makes a key&#39;s value persistent through program restarts.</p>
+  <div class="markdown level1 summary"><p>Makes a key&apos;s value persistent through program restarts.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

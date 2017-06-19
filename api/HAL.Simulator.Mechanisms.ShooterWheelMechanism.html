@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ShooterWheelMechanism
+   | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ShooterWheelMechanism
+   | RobotDotNet ">
+    <meta name="generator" content="docfx 2.19.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism">
+  
+  
+  <h1 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism" class="text-break">Class ShooterWheelMechanism
+  </h1>
+  <div class="markdown level0 summary"><p>Mechanism for simulating a shooter wheel.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">ShooterWheelMechanism</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HAL.Simulator.Mechanisms.html">HAL.Simulator.Mechanisms</a></h6>
+  <h6><strong>Assembly</strong>: HAL.dll</h6>
+  <h5 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ShooterWheelMechanism</code></pre>
+  </div>
+  <h5 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class can be used to simulate a shooter wheel. It has been tested mainly using a Bang-Bang control scheme. 
+In order to use this you will need a model for your motor. In addition, you will need to know the inertia of your
+system, and the drag that your system has on it.
+<p>
+The drag realistically can only be found experimentally. To find this, spin the wheel up to a known speed, and start
+graphing velocity over time. Velocity should be in Radians Per Second, however it can be in RPMs, which can be converted
+later. Once you are ready, turn off the motor while graphing. Stop graphing when the velocity hits zero. The acceleration is
+the slope of this graph, which should be fairly linear. Make sure this number is in Radians Per Second Squared, 
+and make sure to keep the negative. A good estimate for this number should be around -80 Radians Per Second Squared.
+<p>
+The system inertia can be found using one of two methods. The first is experimentally. The second is to calculate the inertial manually.
+For reference, this should be around 0.003 if using an unweighted 6 inch wheel.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism__ctor_HAL_Simulator_Outputs_ISimSpeedController_HAL_Simulator_Inputs_IServoFeedback_HAL_Simulator_Outputs_DCMotor_System_Boolean_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.%23ctor(HAL.Simulator.Outputs.ISimSpeedController%2CHAL.Simulator.Inputs.IServoFeedback%2CHAL.Simulator.Outputs.DCMotor%2CSystem.Boolean%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L104">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism__ctor_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.#ctor*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism__ctor_HAL_Simulator_Outputs_ISimSpeedController_HAL_Simulator_Inputs_IServoFeedback_HAL_Simulator_Outputs_DCMotor_System_Boolean_System_Double_System_Double_System_Double_System_Double_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.#ctor(HAL.Simulator.Outputs.ISimSpeedController,HAL.Simulator.Inputs.IServoFeedback,HAL.Simulator.Outputs.DCMotor,System.Boolean,System.Double,System.Double,System.Double,System.Double)">ShooterWheelMechanism(ISimSpeedController, IServoFeedback, DCMotor, Boolean, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HAL.Simulator.Mechanisms.ShooterWheelMechanism.html">ShooterWheelMechanism</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShooterWheelMechanism(ISimSpeedController input, IServoFeedback output, DCMotor model, bool invertInput, double minimumVelocity, double deaccelConstant, double systemInertia, double cpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.ISimSpeedController.html">ISimSpeedController</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The speed controller being used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Inputs.IServoFeedback.html">IServoFeedback</a></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The feedback output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.DCMotor.html">DCMotor</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The motor model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">invertInput</span></td>
+        <td><p>True if the input is inverted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">minimumVelocity</span></td>
+        <td><p>The minimum velocity in Rotations Per Minute</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">deaccelConstant</span></td>
+        <td><p>The deaccel constant in Rotations Per Minute</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">systemInertia</span></td>
+        <td><p>The system inertia in kg*m^2.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">cpr</span></td>
+        <td><p>The counts per rotation of the sensor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentoutofrangeexception(v=vs.110).aspx">ArgumentOutOfRangeException</a></td>
+        <td><p>Shooter Wheels do not support analog inputs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_cpr.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_cpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L52">View Source</a>
+  </span>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_cpr" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_cpr">m_cpr</h4>
+  <div class="markdown level1 summary"><p>The sensor CPR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly double m_cpr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_input.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_input%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L30">View Source</a>
+  </span>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_input" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_input">m_input</h4>
+  <div class="markdown level1 summary"><p>The motor driving the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ISimSpeedController m_input</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.ISimSpeedController.html">ISimSpeedController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_invert.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_invert%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L43">View Source</a>
+  </span>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_invert" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_invert">m_invert</h4>
+  <div class="markdown level1 summary"><p>True if the input is inverted for your code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_invert</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_minimumVelocity.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_minimumVelocity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L47">View Source</a>
+  </span>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_minimumVelocity" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_minimumVelocity">m_minimumVelocity</h4>
+  <div class="markdown level1 summary"><p>The minimum velocity allowed for your shooter wheel. (radians per second)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly double m_minimumVelocity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_model.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L38">View Source</a>
+  </span>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_model" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_model">m_model</h4>
+  <div class="markdown level1 summary"><p>The model of the motor and transmission for the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly DCMotor m_model</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Outputs.DCMotor.html">DCMotor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_output.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_output%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L34">View Source</a>
+  </span>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_m_output" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.m_output">m_output</h4>
+  <div class="markdown level1 summary"><p>The feedback sensor for the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IServoFeedback m_output</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HAL.Simulator.Inputs.IServoFeedback.html">IServoFeedback</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_CurrentRadiansPerSecond.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.CurrentRadiansPerSecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L76">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_CurrentRadiansPerSecond_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.CurrentRadiansPerSecond*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_CurrentRadiansPerSecond" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.CurrentRadiansPerSecond">CurrentRadiansPerSecond</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the current radians per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CurrentRadiansPerSecond { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The current radians per second.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_CurrentRotationsPerMinute.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.CurrentRotationsPerMinute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L81">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_CurrentRotationsPerMinute_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.CurrentRotationsPerMinute*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_CurrentRotationsPerMinute" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.CurrentRotationsPerMinute">CurrentRotationsPerMinute</h4>
+  <div class="markdown level1 summary"><p>Gets the current rotations per minute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CurrentRotationsPerMinute { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_DeaccelerationConstant.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.DeaccelerationConstant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L60">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_DeaccelerationConstant_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.DeaccelerationConstant*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_DeaccelerationConstant" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.DeaccelerationConstant">DeaccelerationConstant</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the deacceleration constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DeaccelerationConstant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The deacceleration constant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_Deadzone.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.Deadzone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L89">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_Deadzone_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.Deadzone*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_Deadzone" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.Deadzone">Deadzone</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the deadzone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Deadzone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The deadzone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_SystemInertia.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.SystemInertia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L68">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_SystemInertia_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.SystemInertia*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_SystemInertia" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.SystemInertia">SystemInertia</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the system inertia.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SystemInertia { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><p>The system inertia.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_Limit_System_Double_.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.Limit(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L126">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_Limit_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.Limit*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_Limit_System_Double_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.Limit(System.Double)">Limit(Double)</h4>
+  <div class="markdown level1 summary"><p>Limits the specified PWM value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Limit(double pwmValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">pwmValue</span></td>
+        <td><p>The PWM value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism_Update_System_Double_.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism.Update(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L151">View Source</a>
+  </span>
+  <a id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_Update_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.Update*"></a>
+  <h4 id="HAL_Simulator_Mechanisms_ShooterWheelMechanism_Update_System_Double_" data-uid="HAL.Simulator.Mechanisms.ShooterWheelMechanism.Update(System.Double)">Update(Double)</h4>
+  <div class="markdown level1 summary"><p>Updates the mechanism with the specified delta time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update(double seconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">seconds</span></td>
+        <td><p>The delta time in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=HAL_Simulator_Mechanisms_ShooterWheelMechanism.md&amp;value=---%0Auid%3A%20HAL.Simulator.Mechanisms.ShooterWheelMechanism%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/wpilib/blob/master/HAL/Simulator/Mechanisms/ShooterWheelMechanism.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
