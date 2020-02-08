@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting started with NativeLibraryUtilities | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting started with NativeLibraryUtilities | RobotDotNet ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started-with-nativelibraryutilities">Getting started with NativeLibraryUtilities</h1>
+
+<p>When getting started with using the library, it is recommended to have a good knowledge of P/Invoke, and already have your P/Invoke declarations made.
+This will make understanding some of the differences much easier. For instance, we are going to start with the following class and function declaration.</p>
+<pre><code class="lang-csharp" name="Simple">internal class NativeFunctions
+{
+    [DllImport(&quot;MyLibrary.dll&quot;)]
+    internal static extern int Add2Numbers(int x, int y);
+}
+</code></pre><p>This class declares a single function <code>Add2Numbers</code> that takes 2 integers, and returns an integer. The declaration is specified in a library called 
+<code>MyLibrary.dll</code>. The main issue with this function are that it has no way to detect between 32 and 64 bit CLR runtimes, or different OS.
+The 64 vs 32 bit issue can be fixed wih some initialization code, however the OS issue is much harder to fix, and is almost impossible to fix
+in .NET Core.</p>
+<p>To start porting this to NativeLibraryUtilities, we first need to get our native delaration worked out. Unlike P/Invoke, we need both
+a delegate type, and a delegate instance for our code to work properly. For our delegate type, we normally name that the same name
+as the native function name, suffixed with <code>Delegate</code>. So our native delegate declaration would be </p>
+<pre><code class="lang-csharp" name="Simple">internal delegate int Add2NumbersDelegate(int x, int y);
+</code></pre><p>After this, our native delegate instance can be created with the following code.</p>
+<pre><code class="lang-csharp" name="Simple">internal static Add2NumbersDelegate Add2Numbers;
+</code></pre><p>Putting this together, we get the following declaration. Note that it is very important this class is <del>NOT</del>~ static, so reasons later in this tutorial.
+To make it so this class cannot be instanciated, add a private constructor.</p>
+<pre><code class="lang-csharp" name="Simple">internal class NativeFunctions
+{
+    internal delegate int Add2NumbersDelegate(int x, int y);
+    internal static Add2NumbersDelegate Add2Numbers;
+}
+</code></pre><p>Note however that this is not complete. Nowhere in our declaration have we provided a library name to look at, and in fact our delegate instance is null right now.
+There are a few ways this can be done, however we are going to go over doing the initialization code in the static constructor for the class. To create a static
+constructor, add the following to your class. This adds a <a href="xref:NativeLibraryUtilities.NativeLibraryLoader">NativeLibraryLoader</a> object to the class, and initializes
+it. This is what we will eventually use to load our delegates.</p>
+<pre><code class="lang-csharp" name="Simple">internal static NativeLibraryLoader NativeLoader { get; }
+static NativeFunctions()
+{
+    NativeLoader = new NativeLibraryLoader();
+}
+</code></pre><p>Once you are here, you need to determine how you are going to load the native library. There are 3 supported options</p>
+<ul>
+<li>Load from path: Use this when the native libraries are located on disk, and their locations are known.</li>
+<li>Load from resources in assembly: Use this when your native libraries are stored as a resource in an assembly. The loader will automatically
+extract the file to the TEMP folder on your system</li>
+<li>Load from resources in reflected assembly: This is a special case of the resources version. This one is used when you want too specify multiple assemblies to hold
+the native libraries, and don&#39;t want to require those assemblies to all be required. We will not be going over this case, as it is more difficult to use. However this is the case
+all RobotDotNet projects use. </li>
+</ul>
+<p>Programmatically, we support 9 different OS platforms, with 2 more (Linux aarch64 and Windows Arm) possibly on the way. The list of these platforms can be found at the
+<a href="xref:NativeLibraryUtilities.OsType">OsType</a> enum documentation page. Before we can load any library, we have to specify where to load the libraries from for each specific OS.
+To do this, use the <a href="xref:NativeLibraryUtilities.NativeLibraryLoader.AddLibraryLocation">AddLibraryLocation</a> method. For example, to add a 64 bit Windows library and a
+32 bit linux library to the loader, use the following declaration, inside of the static constructor below the NativeLoader initialization.</p>
+<pre><code class="lang-csharp" name="Simple">NativeLoader.AddLibraryLocation(OsType.Windows64, &quot;myLibrary.dll&quot;);
+NativeLoader.AddLibraryLocation(OsType.Linux32, &quot;libMyLibrary.so&quot;);
+</code></pre><p>The enum can be changed to change where the resource is located at. The path can either be a full path from the root of the drive, a relative path, or if the file is an embedded
+resource, it must be the full path of the resource. Note we do not currently support loading some libraries from embedded and some from already on the file system, however
+this functionality might be added later.</p>
+<p>Once you have this, you are ready to load the library. This is where the differences come in between the resource loading and loading the file from on disk.
+To load the files from on disk, use the following function. This will cause the files to be loaded from disk:</p>
+<pre><code class="lang-csharp" name="Simple">NativeLoader.LoadNativeLibrary&lt;NativeFunctions&gt;(true);
+</code></pre><p>To load from the embedded resource, the parameter to the function just needs to be false, or the the default. So the following will load from an embedded resource:</p>
+<pre><code class="lang-csharp" name="Simple">NativeLoader.LoadNativeLibrary&lt;NativeFunctions&gt;();
+</code></pre><p>Once we have the library loaded, all that is left to do is load our native symbols into the delegate we created earlier. This can be done manually for every delegate
+with a call to <a href="xref:NativeLibraryUtilities.NativeDelegateInitializer.SetupNativeDelegate(NativeLibraryUtilities.ILibraryInformation,System.String,System.Type)">NativeDelegateInitializer.SetupNativeDelegate</a>. This works for a small amount
+of delegates, however for a large number of delegates this is not sustainable. To solve this, we can use the <a href="xref:NativeLibraryUtilities.NativeDelegateAttribute">NativeDelegate</a> attribute
+to all of our delegate instances. This delegate is either parameterless, or takes in a string parameter. If no parameter is passed in, the name of the delegate instance
+is used for the native function name. If the parameter is used, that string is used for the name of the native function.
+For instance, the following 2 calls will connect to the same native library function:</p>
+<pre><code class="lang-csharp" name="Simple">[NativeDelegate(&quot;Add2Numbers&quot;)] internal static Add2NumbersDelegate Foo;
+[NativeDelegate] internal static Add2NumbersDelegate Add2Numbers;
+</code></pre><p>To load all delegates with the attribute placed on them, use the 
+<a href="xref:NativeLibraryUtilities.NativeDelegateInitializer.SetupNativeDelegates``1(NativeLibraryUtilities.ILibraryInformation)">NativeDelegateInitializer.SetupNativeDelegates</a>
+method. This will load all the native delegates with attributes from the passed in generic type. </p>
+<p>Putting this all together, the following code is enough to get our libraries and symbols loaded. </p>
+<pre><code class="lang-csharp" name="Simple">internal class NativeFunctions
+{
+    private NativeFunctions() { } // Private constructor to disallow initialization
+
+    internal static NativeLibraryLoader NativeLoader { get; }
+    static NativeFunctions()
+    {
+        NativeLoader = new NativeLibraryLoader();
+        NativeLoader.AddLibraryLocation(OsType.Windows64, &quot;myLibrary.dll&quot;);
+        NativeLoader.AddLibraryLocation(OsType.Linux32, &quot;libMyLibrary.so&quot;);
+
+        NativeLoader.LoadNativeLibrary&lt;NativeFunctions&gt;(true);
+
+        NativeDelegateInitializer.SetupNativeDelegates&lt;NativeFunctions&gt;(NativeLoader);
+    }
+
+    internal delegate int Add2NumbersDelegate(int x, int y);
+    [NativeDelegate] internal static Add2NumbersDelegate Add2Numbers;
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/blob/master/examples/nlu/gettingstarted.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
