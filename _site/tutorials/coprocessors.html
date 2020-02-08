@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>OpenCV and Arm Coprocessors | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="OpenCV and Arm Coprocessors | RobotDotNet ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="opencv-and-arm-coprocessors">OpenCV and Arm Coprocessors</h1>
+
+<p>Coprocessors running vision has been one of the most discussed items in FRC the past few years. On the roboRIO, the new <a href="xref:WPILib.CameraServer">CameraServer</a>
+helps makes vision and streaming easy. For 2017, beta support for the 3 libraries required (ntcore, cscore and opencv) has been added for running on Arm based coprocessor boards.
+With these additions, it is easier than ever to get vision support on an FRC robot. In addition to these being supported in C++ and Java, we provide full .NET support
+for all of these tool as well, which makes it easy to have your choice of language to do your processing in.</p>
+<h2 id="picking-a-board-and-camera">Picking a board and camera</h2>
+<p>There are many choices out in the marketplace for arm based coprocessors. However, for FRC you will most likely come across 2. The NVIDIA Jetson has been provided on FIRST
+Choice for a few years now, and is a great choice for vision processing. The other option is the highly popular Raspberry Pi. Both of these options are very viable options, 
+and either choice is highly recommended. Note that when choosing a Pi, we heavily recommend a Pi 3. A Pi 2 works, but the additional processing power is very useful. The Pi 1 
+and Pi Zero are not supported platforms because of their old architecture. When using a Pi, we recommend adding both a heatsink and a fan to the device, in order to keep 
+your framerates high and your temperatures low. </p>
+<p>For cameras, there are a lot more options. We recommend either a Microsoft or a Logitech camera. A Microsoft Lifecam has been offered on FIRST Choice in the past, 
+and is a great option. If you are running on a Raspberry Pi, it is actually possible to get the Raspberry Pi Camera working with CameraServer as well. 
+This has the advantages of being off the USB bus, so you don&#39;t have to worry about running out of USB bandwidth. This requires running the following command at boot to enable it. </p>
+<pre><code>sudo modprobe bcm2835-v4l2
+</code></pre><p>You can follow the instructions <a href="http://www.richardmudhar.com/blog/2015/02/raspberry-pi-camera-and-motion-out-of-the-box-sparrowcam/">here</a> to see how to enable
+that setting on startup.</p>
+<h2 id="installing-mono">Installing Mono</h2>
+<p>On these coprocessors, Mono is what we will use to run our processing. To install Mono on these plaforms, follow the instructions found on 
+<a href="http://www.mono-project.com/docs/getting-started/install/linux/">the mono website</a>. When choosing the package to install, make sure to install
+<code>mono-complete</code> in order to make sure you have all the necessary runtime dependencies.</p>
+<h2 id="setting-up-a-project">Setting up a project</h2>
+<p>A project for your coprocessor can either be set up using Visual Studio, or use can build locally on the coprocessor using Mono. We 
+recommend Visual Studio on Windows for the easiest support. See the note at the bottom of this page for information on using .NET Core.</p>
+<p>To set up a project in Visual Studio, create a new Console Application, and make sure that the target framework is set to at least 4.6. Once you
+have that, install the following packages from NuGet:</p>
+<ul>
+<li><a href="https://www.nuget.org/packages/FRC.CameraServer/">FRC.CameraServer</a></li>
+<li><a href="https://www.nuget.org/packages/FRC.NetworkTables/">FRC.NetworkTables</a></li>
+<li><a href="https://www.nuget.org/packages/FRC.OpenCvSharp/">FRC.OpenCvSharp</a></li>
+<li><a href="https://www.nuget.org/packages/FRC.OpenCvSharp.DesktopLibraries/">FRC.OpenCvSharp.DesktopLibraries</a></li>
+</ul>
+<p>This will get you all the dependencies you will need to set up a coprocessor project. </p>
+<h2 id="deploying-to-the-coprocessor">Deploying to the Coprocessor</h2>
+<p>Once you have your project created, you need to get the code onto the coprocessor. To do this, run a build. The output will be placed into either <code>bin/Release</code> or <code>bin/Debug</code>
+in your project folder. You need to copy all files from this directory to a folder on your coprocessor.</p>
+<p>Once you do this, from the terminal on the coprocessor, run <code>mono YourExecutableNameHere.exe</code>. This will run your vision project.</p>
+<h2 id="using-net-core">Using .NET Core</h2>
+<p>If your choses platform has .NET Core support, all of our libraries support .NET Core Standard 1.5 or above. So if you want to compile for
+.NET Core, you can. However note that no arm devices at the time of this writing have released .NET Core support, so our instructions are
+currently only for running on the full framework. You can however use the .NET Core SDK and target .NET 4.6 in order to run on mono, 
+but we do not currently have instructions for doing this.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/blob/master/tutorials/coprocessors.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

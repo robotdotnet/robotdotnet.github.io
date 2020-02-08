@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating a project using the LabVIEW style base class | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating a project using the LabVIEW style base class | RobotDotNet ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-a-project-using-the-labview-style-base-class">Creating a project using the LabVIEW style base class</h1>
+
+<p>The LabVIEW Style Robot is designed to make it easier for teams to move from LabVIEW to text based programming.
+Instead of running autonomous and test modes in the main robot thread, it runs them in a seperate thread. In addition, the main methods have been renamed
+to match their equivalents in LabVIEW. Information on the methods contained in this base class can be found at <a href="xref:WPILib.Extras.LabViewRobot">LabVIEW Robot.</a></p>
+<h2 id="creating-a-project-with-the-labview-template">Creating a project with the LabVIEW Template</h2>
+<ol>
+<li>Create a new robot project using the LabVIEW Robot template. You should see the following methods in the main robot class.<ul>
+<li><strong>Begin</strong><ul>
+<li>The method is equivalent to <em>Begin.vi</em>. This is where you should put your robot initialization code</li>
+</ul>
+</li>
+<li><strong>Disabled</strong><ul>
+<li>This method is equivalent to <em>Disabled.vi</em>. It runs in the main robot thread whenever the robot is Disabled. Use the 
+CallContext parameter to determine if it is the initialization run or the execute run on the method.</li>
+</ul>
+</li>
+<li><strong>Teleoperated</strong><ul>
+<li>This method is equivalent to <em>Teleop.vi</em>. It runs in the main robot thread whenever the robot is in Telop mode and Enabled.
+Use the CallContext parameter to determine if it is the initialization run or the execute run on the method.</li>
+</ul>
+</li>
+<li><strong>Autonomous</strong><ul>
+<li>This method is equivalent to Autonomous.vi. It runs in its own thread, and is called once only at the beginning of Autonomous Enabled.</li>
+</ul>
+</li>
+<li><strong>Test</strong><ul>
+<li>This method is equivalent to <em>Test.vi</em>. It runs in its own thread, and is called once only when the robot first enters test mode.
+Note that this includes Test Disabled, and its state will not switch when switching between enabled and disabled test modes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="properly-handling-threads">Properly handling threads</h3>
+<p>When dealing with threads, it is important to note that the threads will be aborted when switching modes. This means you should not use any functionality
+that requires cleanup, such as writing to a log file. If you must, you can try and catch the ThreadAbortedException, and run your cleanup code there.
+However, you have to make sure to not cancel the abort, as this will lock up the robot code. In addition, please do not start another thread,
+as the library will not be able to clean up that thread, and it will continue to run.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/blob/master/tutorials/createlv.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PWM
+   | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PWM
+   | RobotDotNet ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WPILib.PWM">
+  
+  
+  <h1 id="WPILib_PWM" data-uid="WPILib.PWM" class="text-break">Class PWM
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="WPILib.MotorSafety.html">MotorSafety</a></div>
+    <div class="level2"><span class="xref">PWM</span></div>
+      <div class="level3"><a class="xref" href="WPILib.PWMSpeedController.html">PWMSpeedController</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="WPILib.SmartDashboard.ISendable.html">ISendable</a></div>
+    <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_DefaultSafetyExpiration">MotorSafety.DefaultSafetyExpiration</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_Feed">MotorSafety.Feed()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_Expiration">MotorSafety.Expiration</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_IsAlive">MotorSafety.IsAlive</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_Check">MotorSafety.Check()</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_SafetyEnabled">MotorSafety.SafetyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_CheckMotors">MotorSafety.CheckMotors()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WPILib.html">WPILib</a></h6>
+  <h6><strong>Assembly</strong>: WPILibSharp.dll</h6>
+  <h5 id="WPILib_PWM_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PWM : MotorSafety, ISendable, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20WPILib.PWM.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L21">View Source</a>
+  </span>
+  <a id="WPILib_PWM__ctor_" data-uid="WPILib.PWM.#ctor*"></a>
+  <h4 id="WPILib_PWM__ctor_System_Int32_" data-uid="WPILib.PWM.#ctor(System.Int32)">PWM(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PWM(int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_Channel.md&amp;value=---%0Auid%3A%20WPILib.PWM.Channel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L58">View Source</a>
+  </span>
+  <a id="WPILib_PWM_Channel_" data-uid="WPILib.PWM.Channel*"></a>
+  <h4 id="WPILib_PWM_Channel" data-uid="WPILib.PWM.Channel">Channel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Channel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_Description.md&amp;value=---%0Auid%3A%20WPILib.PWM.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L56">View Source</a>
+  </span>
+  <a id="WPILib_PWM_Description_" data-uid="WPILib.PWM.Description*"></a>
+  <h4 id="WPILib_PWM_Description" data-uid="WPILib.PWM.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_Description">MotorSafety.Description</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_PeriodMultiplier.md&amp;value=---%0Auid%3A%20WPILib.PWM.PeriodMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L101">View Source</a>
+  </span>
+  <a id="WPILib_PWM_PeriodMultiplier_" data-uid="WPILib.PWM.PeriodMultiplier*"></a>
+  <h4 id="WPILib_PWM_PeriodMultiplier" data-uid="WPILib.PWM.PeriodMultiplier">PeriodMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PWM.PeriodMultiplierType PeriodMultiplier { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.PWM.PeriodMultiplierType.html">PWM.PeriodMultiplierType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_Position.md&amp;value=---%0Auid%3A%20WPILib.PWM.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L60">View Source</a>
+  </span>
+  <a id="WPILib_PWM_Position_" data-uid="WPILib.PWM.Position*"></a>
+  <h4 id="WPILib_PWM_Position" data-uid="WPILib.PWM.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_Raw.md&amp;value=---%0Auid%3A%20WPILib.PWM.Raw%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L84">View Source</a>
+  </span>
+  <a id="WPILib_PWM_Raw_" data-uid="WPILib.PWM.Raw*"></a>
+  <h4 id="WPILib_PWM_Raw" data-uid="WPILib.PWM.Raw">Raw</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Raw { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_Speed.md&amp;value=---%0Auid%3A%20WPILib.PWM.Speed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L72">View Source</a>
+  </span>
+  <a id="WPILib_PWM_Speed_" data-uid="WPILib.PWM.Speed*"></a>
+  <h4 id="WPILib_PWM_Speed" data-uid="WPILib.PWM.Speed">Speed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Speed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_Dispose.md&amp;value=---%0Auid%3A%20WPILib.PWM.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L37">View Source</a>
+  </span>
+  <a id="WPILib_PWM_Dispose_" data-uid="WPILib.PWM.Dispose*"></a>
+  <h4 id="WPILib_PWM_Dispose" data-uid="WPILib.PWM.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_SetBounds_System_Double_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20WPILib.PWM.SetBounds(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L51">View Source</a>
+  </span>
+  <a id="WPILib_PWM_SetBounds_" data-uid="WPILib.PWM.SetBounds*"></a>
+  <h4 id="WPILib_PWM_SetBounds_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="WPILib.PWM.SetBounds(System.Double,System.Double,System.Double,System.Double,System.Double)">SetBounds(Double, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBounds(double max, double deadbandMax, double center, double deadbandMin, double min)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">deadbandMax</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">center</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">deadbandMin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_SetDisabled.md&amp;value=---%0Auid%3A%20WPILib.PWM.SetDisabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L96">View Source</a>
+  </span>
+  <a id="WPILib_PWM_SetDisabled_" data-uid="WPILib.PWM.SetDisabled*"></a>
+  <h4 id="WPILib_PWM_SetDisabled" data-uid="WPILib.PWM.SetDisabled">SetDisabled()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisabled()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_SetZeroLatch.md&amp;value=---%0Auid%3A%20WPILib.PWM.SetZeroLatch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L120">View Source</a>
+  </span>
+  <a id="WPILib_PWM_SetZeroLatch_" data-uid="WPILib.PWM.SetZeroLatch*"></a>
+  <h4 id="WPILib_PWM_SetZeroLatch" data-uid="WPILib.PWM.SetZeroLatch">SetZeroLatch()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZeroLatch()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_StopMotor.md&amp;value=---%0Auid%3A%20WPILib.PWM.StopMotor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L46">View Source</a>
+  </span>
+  <a id="WPILib_PWM_StopMotor_" data-uid="WPILib.PWM.StopMotor*"></a>
+  <h4 id="WPILib_PWM_StopMotor" data-uid="WPILib.PWM.StopMotor">StopMotor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void StopMotor()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="WPILib.MotorSafety.html#WPILib_MotorSafety_StopMotor">MotorSafety.StopMotor()</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM_WPILib_SmartDashboard_ISendable_InitSendable_WPILib_SmartDashboard_ISendableBuilder_.md&amp;value=---%0Auid%3A%20WPILib.PWM.WPILib%23SmartDashboard%23ISendable%23InitSendable(WPILib.SmartDashboard.ISendableBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L125">View Source</a>
+  </span>
+  <a id="WPILib_PWM_WPILib_SmartDashboard_ISendable_InitSendable_" data-uid="WPILib.PWM.WPILib#SmartDashboard#ISendable#InitSendable*"></a>
+  <h4 id="WPILib_PWM_WPILib_SmartDashboard_ISendable_InitSendable_WPILib_SmartDashboard_ISendableBuilder_" data-uid="WPILib.PWM.WPILib#SmartDashboard#ISendable#InitSendable(WPILib.SmartDashboard.ISendableBuilder)">ISendable.InitSendable(ISendableBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ISendable.InitSendable(ISendableBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WPILib.SmartDashboard.ISendableBuilder.html">ISendableBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="WPILib.SmartDashboard.ISendable.html">ISendable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/wpilib/new/master/apiSpec/new?filename=WPILib_PWM.md&amp;value=---%0Auid%3A%20WPILib.PWM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/robotdotnet/wpilib/blob/master/src/wpilibsharp/PWM.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

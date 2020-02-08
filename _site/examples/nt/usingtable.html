@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using an ITable object | RobotDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using an ITable object | RobotDotNet ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="using-an-itable-object">Using an ITable object</h1>
+
+<p>NetworkTables works using the <a href="xref:NetworkTables.Tables.ITable">ITable</a> interface. See the <a href="xref:NetworkTables.Tables.ITable">ITable API Docs</a>
+for all functionality, but here are some higher level examples on how to use them. See <a href="gettingtable.html">getting a table</a> for instructions on actually getting a table.</p>
+<h2 id="accessing-a-value">Accessing a value</h2>
+<p>NetworkTables can store the following types of data:</p>
+<ul>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Bool</a></li>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></li>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></li>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Bool</a>&gt;</li>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>&gt;</li>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</li>
+<li><a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>&gt; (Use for Raw Values)</li>
+</ul>
+<p>For any of these, use either the Put### functions to put the data, or the Get### functions to get the data. 
+You can also use the <a href="xref:NetworkTables.Tables.ITable.PutValue(System.String,NetworkTables.Value)">PutValue</a> and 
+<a href="xref:NetworkTables.Tables.ITable.GetValue(System.String)">GetValue</a> methods to directly get the <a href="xref:NetworkTables.Value">Value</a> 
+representation of the object.</p>
+<h2 id="persisting-a-key-between-restarts">Persisting a key between restarts</h2>
+<p>NetworkTables supports making any key persistent between boots. This operation can be performed either on the server, or
+on any client. To set a key to persistent, call the <a href="xref:NetworkTables.Tables.ITable.SetPersistent(System.String)">SetPersistent</a> method
+for the specific key. To stop a key from being persistent, call <a href="xref:NetworkTables.Tables.ITable.ClearPersistent(System.String)">ClearPersistent</a>.
+To check if a key is persistent, call <a href="xref:NetworkTables.Tables.ITable.IsPersistent(System.String)">IsPersistent</a>.</p>
+<h2 id="deleting-a-key">Deleting a key</h2>
+<p>Key deletion is also supported. However note that this feature only works when all clients and the server are based on the NT 3.0 protocol.
+All versions of NetworkTables after and including the 2016 season support this feature, so most likely this will work for your purpose.
+To delete a key, call <a href="xref:NetworkTables.Tables.ITable.Delete(System.String)">Delete</a>.</p>
+<h2 id="ensuring-a-key-exists-in-the-table">Ensuring a key exists in the table</h2>
+<p>Often times, for configuration values you want the value to be persistent, but also want to ensure a safe default value is used if
+the persistent values fail to load. In addition, you might want to ensure the values are in the table just to ensure that they can be modified
+from the dashboard. To enable this, there is a set of functions called SetDefault###. These functions take in a key and a value.
+If the key already exists in the table, nothing happens, so no data is overwritten. If the key does not exist, the value passed in will be
+entered into the table. </p>
+<h2 id="working-with-subtables">Working with SubTables</h2>
+<p>As mentioned in the <a href="gettingtable.html">getting a table</a> doc, subtables can exist in the table. To get a list of all subtables, you can call
+<a href="xref:NetworkTables.Tables.ITable.GetSubTables">GetSubTables</a>. You can also check for the existance of an individual subtable with a call to
+<a href="xref:NetworkTables.Tables.ITable.ContainsSubTable(System.String)">ContainsSubTable</a>. Using <a href="xref:NetworkTables.Tables.ITable.GetSubTable(System.String)">GetSubTable</a>
+you can get an <a href="xref:NetworkTables.Tables.ITable">ITable</a> object to the specified subtable, after which all the other operations in this doc can be performed.</p>
+<h2 id="listing-all-keys">Listing all keys</h2>
+<p>A call to <a href="xref:NetworkTables.Tables.ITable.GetKeys">GetKeys</a> will get a list of all keys that exist either in the current table, or in any subtables of the
+current table. If you want to filter the keys by type in the table, call <a href="xref:NetworkTables.Tables.ITable.GetKeys(NetworkTables.NtType)">GetKeys(NtType)</a> with
+the types as a bitmask of the types you want to get from the query. </p>
+<h2 id="working-with-table-listeners">Working with Table Listeners</h2>
+<p>Table listeners are an advanced subject, and can be found on their own <a href="tablelisteners.html">TableListner</a> documentation page.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/robotdotnet/WPILib-Docs/blob/master/examples/nt/usingtable.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 RobotDotNet
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
